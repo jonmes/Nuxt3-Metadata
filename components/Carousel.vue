@@ -38,10 +38,11 @@ onMounted(() => {
     <slide
       v-for="slide in props.cardSlider"
       :key="slide"
-      class="w-full lg:mx-10 2xl:mx-16"
+      class="w-full lg:mx-10 2xl:mx-16 group"
     >
-      <div
-        class="mx-2 w-full rounded-xl bg-white dark:bg-HahuGray1 lg:mx-10 2xl:mx-16"
+      <NuxtLink
+        :to="'/projects/' + slide.id"
+        class="mx-2 w-full rounded-xl bg-white dark:bg-HahuGray1 duration-500 lg:mx-10 2xl:mx-16 border-2 border-transparent group-hover:border-primary"
       >
         <div class="w-full">
           <img class="mb-7 w-full" :src="slide.thumbnail" />
@@ -83,8 +84,7 @@ onMounted(() => {
           </div>
         </div>
         <div class="mr-12 mb-8 flex justify-end">
-          <NuxtLink
-            to="/Projects"
+          <button
             class="group flex items-center text-lg font-semibold leading-7 text-primary"
           >
             Explore More
@@ -92,9 +92,9 @@ onMounted(() => {
               class="ml-2 h-5 w-5 text-primary duration-300 group-hover:translate-x-2"
             />
             <!-- <div class="mr-[46px]"></div> -->
-          </NuxtLink>
+          </button>
         </div>
-      </div>
+      </NuxtLink>
     </slide>
     <template #addons="{ slideWidth }">
       <!-- <navigation :class="{ hidden: !showNav }" /> -->

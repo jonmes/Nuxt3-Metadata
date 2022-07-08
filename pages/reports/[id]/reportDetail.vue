@@ -29,7 +29,7 @@ const crumb = [
       <div class="relative mb-10 mt-6 flex flex-wrap items-end font-bold">
         <Contained :crumb="crumb" />
         <div class="ml-auto flex">
-          <router-link
+          <NuxtLink
             class="mt-[38px] flex self-end"
             :to="{ name: 'reports' }"
           >
@@ -40,7 +40,7 @@ const crumb = [
                 class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-1"
               />Back
             </button>
-          </router-link>
+          </NuxtLink>
         </div>
       </div>
 
