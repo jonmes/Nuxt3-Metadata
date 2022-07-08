@@ -7,14 +7,6 @@ const props = defineProps({ cardSlider: Array });
 const itemsToShow = ref(1);
 const showNav = ref(false);
 
-onMounted(() => {
-  const windowWidth = ref(window.innerWidth);
-  carWidth(window.innerWidth);
-  window.onresize = () => {
-    windowWidth.value = window.innerWidth;
-    carWidth(windowWidth.value);
-  };
-});
 
 const carWidth = (windowWidth) => {
   if (windowWidth < 768) {
@@ -31,6 +23,17 @@ const carWidth = (windowWidth) => {
     showNav.value = true;
   }
 };
+
+onMounted(() => {
+  const windowWidth = ref(window.innerWidth);
+  carWidth(window.innerWidth);
+  window.onresize = () => {
+    windowWidth.value = window.innerWidth;
+    carWidth(windowWidth.value);
+  };
+});
+
+
 </script>
 
 <template>

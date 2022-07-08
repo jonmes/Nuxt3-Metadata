@@ -1,5 +1,5 @@
 <script setup>
-import readmore from "@/assets/svg/ReadMore.svg?url";
+import readmore from "@/assets/svg/readmore.svg?url";
 </script>
 <template>
   <section id="services" class="flex min-h-full flex-col">

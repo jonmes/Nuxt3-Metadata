@@ -8,7 +8,6 @@ import HamburgerIcon from "@/assets/svg/hamburger.svg?component";
 const open = ref(false);
 const sidebarOpen = ref(false);
 const showShadow = ref(false);
-onMounted(() => window.addEventListener("scroll", handleScroll));
 
 const handleScroll = (e) => {
   if (document.documentElement.scrollTop >= 10) {
@@ -17,6 +16,9 @@ const handleScroll = (e) => {
     showShadow.value = false;
   }
 };
+
+onMounted(() => window.addEventListener("scroll", handleScroll));
+
 </script>
 
 <template>

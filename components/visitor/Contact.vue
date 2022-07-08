@@ -115,7 +115,6 @@
         </InputsHtextfield>
         <InputsHtextfield
           v-model="item.phone"
-          rules="required|ethiopian_phone_number"
           type="text"
           name="phone"
           placeholder="09..."

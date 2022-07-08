@@ -112,7 +112,7 @@
 <script setup>
 import { Switch } from "@headlessui/vue";
 import LightIcon from "@/assets/svg/lightIcon.svg?url";
-import DarkIcon from "@/assets/svg/DarkIcon.svg?url";
+import DarkIcon from "@/assets/svg/darkIcon.svg?url";
 import Facebook from "@/assets/svg/Facebookfooter.svg?url";
 import Twitter from "@/assets/svg/Twitterfooter.svg?url";
 import LinkedIn from "@/assets/svg/LinkedInFooter.svg?url";
