@@ -2,8 +2,17 @@ import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  head: {
+    title: "HahuJobs",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "HaHu Jobs" },
+    ],
+    // link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+  },
 
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
   css: ["@/assets/css/main.css"],
   postcss: {
     plugins: {
