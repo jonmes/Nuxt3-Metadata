@@ -87,12 +87,16 @@ const crumb = [
 
       <div class="mt-20 flex">
         <div class="mr-24 flex flex-col">
-          <h2 class="text-xl font-black leading-[30px]">Client</h2>
+          <h2 class="text-xl font-black leading-[30px] dark:text-white">
+            Client
+          </h2>
           <img class="mt-10" src="/images/projectC1.png" />
         </div>
         <div class="mt-16 rounded-full border-[3px] border-HahuGray3" />
         <div class="ml-28 flex flex-col">
-          <h2 class="text-xl font-black leading-[30px]">Partners</h2>
+          <h2 class="text-xl font-black leading-[30px] dark:text-white">
+            Partners
+          </h2>
           <div class="mt-10 grid grid-cols-2 gap-x-16 gap-y-10">
             <img v-for="img in partners" class="object-contain" :src="img" />
           </div>
@@ -100,7 +104,7 @@ const crumb = [
       </div>
 
       <div class="mb-[78px] mt-20 flex flex-col">
-        <h2 class="text-xl font-black leading-[30px]">Team</h2>
+        <h2 class="text-xl font-black leading-[30px] dark:text-white">Team</h2>
         <div
           class="mt-12 flex flex-col gap-y-10 gap-x-20 md:flex-row md:gap-y-10"
         >

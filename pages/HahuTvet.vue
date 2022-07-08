@@ -9,15 +9,19 @@
         <h1
           class="items-center text-[50px] font-black leading-[50px] dark:text-HahuGray/4"
         >
-          HaHu TVET
+          HaHuJob TVET
         </h1>
 
         <p
           class="mt-[27px] items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor
-          sit ut consequat vitae, orci amet. Augue hac viverra nunc facilisi
-          amet, sit urna, euismod.
+          HaHuJobs TVET is a targeted service deployment to trace skill-based
+          education graduates and content encoding service offered for TVET
+          institutes intended for both formal as well as career guiding lesson
+          materials. The platform aims to capacitate deliverlogy departments of
+          both private and government TVET institutes for digitized graduate
+          tracing and supporting TVET trainers to provide curricular as well as
+          non-structured digital learning materially.
         </p>
         <button
           class="mt-[113px] rounded-md bg-primary px-[50px] py-[13px] text-base font-medium leading-6 text-white"
@@ -42,14 +46,14 @@
       <h2
         class="mt-[30px] self-center text-3xl font-semibold leading-[35px] text-HahuGray1 dark:text-HahuGray/4"
       >
-        What is HaHu TVET?
+        What is in HaHuJobs TVET?
       </h2>
       <p
         class="mt-[17px] max-w-[860px] self-center text-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam feugiat
-        mauris viverra orci. Turpis congue nisl a sodales congue. At imperdiet
-        convallis turpis proin augue.
+        The HaHuJobs TVET deployment are a set of services pillared in three
+        primary categories, digital student tracing, digital material encoding
+        and assessments.
       </p>
 
       <div
@@ -71,11 +75,12 @@
           <p
             class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-            volutpat pulvinar tortor viverra sed tristique interdum consequat.
-            Amet mauris nunc nisl tortor egestas etiam. Bibendum eu lacus congue
-            blandit. Mattis lacus, senectus sed dolor euismod nunc ultrices. Sed
-            gravida ultrices praesent diam odio cursus nunc, quis massa.
+            This service enables TVET institutions to conduct biometric based
+            registration of both their students and graduates that have
+            successfully completed their enrolled occupation level. The
+            registration identifies enrolled training and a competence profile
+            based on which education materials are dispersed as per relevance to
+            the TVET students.
           </p>
         </div>
 
@@ -95,11 +100,12 @@
           <p
             class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-            volutpat pulvinar tortor viverra sed tristique interdum consequat.
-            Amet mauris nunc nisl tortor egestas etiam. Bibendum eu lacus congue
-            blandit. Mattis lacus, senectus sed dolor euismod nunc ultrices. Sed
-            gravida ultrices praesent diam odio cursus nunc, quis massa.
+            Contents relevant to all levels of students can be submitted by the
+            institution using these services, contents delivered through our
+            training platform called HaHuJobs muya. Each of these contents can
+            have a dynamically defined curricular structure or can be offered in
+            an informal format based on the convenience need of the TVET
+            instructors.
           </p>
         </div>
 
@@ -114,16 +120,16 @@
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4"
           >
-            Digital Assessments
+            Digital assessment
           </h2>
           <p
             class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-            volutpat pulvinar tortor viverra sed tristique interdum consequat.
-            Amet mauris nunc nisl tortor egestas etiam. Bibendum eu lacus congue
-            blandit. Mattis lacus, senectus sed dolor euismod nunc ultrices. Sed
-            gravida ultrices praesent diam odio cursus nunc, quis massa.
+            These set of TVET services are extension of the HaHuJobs core
+            assessment services customized for academic purposed to evaluate
+            specific competence of TVET students or graduates regarding a set of
+            topics for which training materials have been provided. Assessments
+            can be conducted in both supervised and unsupervised model.
           </p>
         </div>
       </div>
@@ -138,15 +144,15 @@
       <h2
         class="mt-[30px] self-center text-center text-3xl font-semibold leading-[35px] text-HahuGray1 dark:text-HahuGray/4"
       >
-        HaHu TVET service values
+        HaHuJobs TVET service values
       </h2>
       <p
         class="mt-[17px] max-w-[860px] self-center text-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
-        aliquam duis nulla augue eget pellentesque aliquam. Placerat imperdiet
-        fringilla mi vitae, a nunc massa ultrices non. Nunc non pharetra amet
-        sed etiam ac dolor sit.
+        These TVET services are essential to offer a holistic tracing of skills
+        from their sourcing to qualification offer values in providing
+        institutionalized training content, building a qualified set of
+        jobseekers, and tracking progress through reporting
       </p>
       <div
         class="mt-[59px] flex flex-col items-center justify-center gap-[38px] xl:flex-row"
@@ -167,11 +173,12 @@
           <p
             class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-            volutpat pulvinar tortor viverra sed tristique interdum consequat.
-            Amet mauris nunc nisl tortor egestas etiam. Bibendum eu lacus congue
-            blandit. Mattis lacus, senectus sed dolor euismod nunc ultrices. Sed
-            gravida ultrices praesent diam odio cursus nunc, quis massa.
+            HaHuJobs Muya is capacity building and training platform intended
+            for both jobseeker and students’ which sources various digital
+            contents from training institutes in both document and multimedia
+            formats. It offers users a digitally enabled environment to consume
+            both formal and non-formal training material sourced from
+            instructors.
           </p>
         </div>
 
@@ -191,11 +198,12 @@
           <p
             class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-            volutpat pulvinar tortor viverra sed tristique interdum consequat.
-            Amet mauris nunc nisl tortor egestas etiam. Bibendum eu lacus congue
-            blandit. Mattis lacus, senectus sed dolor euismod nunc ultrices. Sed
-            gravida ultrices praesent diam odio cursus nunc, quis massa.
+            Any student or graduate registered in HaHuJobs TVET services will
+            automatically join our jobseekers’ pools and based on their concept
+            their details will be availed for employers as well as enterprises
+            that offer internship opportunities. Each profile data set is
+            consistent throughout HaHuJobs services hence no need for recapture
+            of these details.
           </p>
         </div>
 
@@ -215,11 +223,12 @@
           <p
             class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-            volutpat pulvinar tortor viverra sed tristique interdum consequat.
-            Amet mauris nunc nisl tortor egestas etiam. Bibendum eu lacus congue
-            blandit. Mattis lacus, senectus sed dolor euismod nunc ultrices. Sed
-            gravida ultrices praesent diam odio cursus nunc, quis massa.
+            One of the primary challenges of training providing institutes is
+            lack of compiled data to plan for demand driven training and tracing
+            the succuss of trainees or graduates after joining the work force.
+            To this end the HaHuJobs TVET deployment offers graduate employment
+            status tracking and labor market demand insights through
+            standardized KPIs.
           </p>
         </div>
       </div>
@@ -227,17 +236,17 @@
 
     <section class="flex flex-col">
       <h2
-        class="mt-20 text-center text-3xl font-semibold leading-[35px] text-black dark:text-HahuGray/4 xl:mt-40"
+        class="mt-20 text-center text-3xl font-semibold leading-[35px] dark:text-HahuGray/4 xl:mt-40"
       >
-        Lorem ipsum dolor sit amet, consectetur
+        Some of our achievements so far
       </h2>
-      <p
+      <!-- <p
         class="mt-16 max-w-[860px] self-center text-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
         aliquam duis nulla augue eget pellentesque aliquam. Placerat imperdiet
         fringilla mi vitae, a nunc massa ultrices non.
-      </p>
+      </p> -->
 
       <div
         class="mt-20 mb-28 flex flex-col justify-center space-y-10 space-x-0 lg:flex-row lg:space-y-0 lg:space-x-36 xl:justify-evenly xl:space-x-[16.5rem]"
@@ -267,7 +276,7 @@
           <h3
             class="self-center text-xl font-medium leading-[30px] dark:text-HahuGray/4"
           >
-            Students
+            Users
           </h3>
           <hr
             class="mt-4 w-[167px] self-center rounded-full border-2 border-primary-lite bg-primary-lite px-1"
@@ -283,7 +292,7 @@
           <h3
             class="self-center text-xl font-medium leading-[30px] dark:text-HahuGray/4"
           >
-            Sectors
+            Content
           </h3>
           <hr
             class="mt-4 w-[167px] self-center rounded-full border-2 border-primary-lite bg-primary-lite px-1"

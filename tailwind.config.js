@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -80,6 +81,7 @@ module.exports = {
         "HaHuGreen/4": "#E6F5F3",
         HahuRed: "#FF007A",
         DarkModeBg: "#263142",
+        "LightDark": "#304159",
         primary: "#009688",
         "primary-lite": "#6ec8c0;",
         "primary-dark": "#007166",

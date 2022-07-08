@@ -3,7 +3,7 @@ import { ref, watch, watchEffect } from "vue";
 import HahuLogo from "@/assets/svg/Hahu_logo1.svg?url";
 import HahuLogoDark from "@/assets/svg/Hahu_logo1_dark.svg?url";
 import dropdown from "@/assets/svg/dropDownIcon.svg?url";
-import HamburgerIcon from "@/assets/svg/hamburger.svg?component";
+import { MenuAlt3Icon } from "@heroicons/vue/solid/index.js";
 
 const open = ref(false);
 const sidebarOpen = ref(false);
@@ -18,13 +18,15 @@ const handleScroll = (e) => {
 };
 
 onMounted(() => window.addEventListener("scroll", handleScroll));
-
 </script>
 
 <template>
-  <nav
+  <!-- <nav
     class="sticky top-0 z-20 flex items-center justify-between bg-secondary-3 bg-opacity-80 px-8 py-6 backdrop-blur-sm duration-300 ease-in dark:bg-DarkModeBg md:px-[50px] xl:px-[100px]"
     :class="[showShadow ? 'shadow-xl' : 'shadow-none']"
+  > -->
+  <nav
+    class="sticky top-0 z-20 flex items-center justify-between bg-secondary-3 bg-opacity-80 px-8 py-6 backdrop-blur-sm duration-300 ease-in dark:bg-DarkModeBg md:px-[50px] xl:px-[100px]"
   >
     <div class="z-10 flex items-center">
       <span class="mr-1 text-xl text-white">
@@ -34,10 +36,9 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
         </NuxtLink>
       </span>
     </div>
-    <img
-      src="/images/hamburger-64.png"
+    <MenuAlt3Icon
       @click="open = !open"
-      class="w-8 z-20 cursor-pointer items-center lg:hidden"
+      class="w-8 z-20 cursor-pointer items-center dark:text-white lg:hidden"
     />
 
     <ul
@@ -51,7 +52,7 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
           :class="
             $route.fullPath == '' || $route.fullPath.length <= 1
               ? 'text-primary'
-              : ''
+              : 'text-HahuGray1'
           "
           @click="open = !open"
           >Home</NuxtLink
@@ -65,7 +66,7 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
           :class="
             $route.fullPath == '/#about' || $route.fullPath == '/aboutus'
               ? 'text-primary'
-              : ''
+              : 'text-HahuGray1'
           "
           @click="open = !open"
           >About</NuxtLink
@@ -76,7 +77,9 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
         <NuxtLink
           :to="{ path: '/', hash: '#services' }"
           class="text-lg font-medium leading-[35px] duration-500 hover:text-primary"
-          :class="$route.fullPath == '/#services' ? 'text-primary' : ''"
+          :class="
+            $route.fullPath == '/#services' ? 'text-primary' : 'text-HahuGray1'
+          "
           @click="open = !open"
           >Services</NuxtLink
         >
@@ -89,7 +92,7 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
           :class="
             $route.fullPath == '/#projects' || $route.fullPath == '/projects'
               ? 'text-primary'
-              : ''
+              : 'text-HahuGray1'
           "
           @click="open = !open"
           >Projects</NuxtLink
@@ -103,7 +106,7 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
           :class="
             $route.fullPath == '/#blog' || $route.fullPath == '/blogs'
               ? 'text-primary'
-              : ''
+              : 'text-HahuGray1'
           "
           @click="open = !open"
           >Blog</NuxtLink
@@ -117,7 +120,7 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
           :class="
             $route.fullPath == '/#report' || $route.fullPath == '/reports'
               ? 'text-primary'
-              : ''
+              : 'text-HahuGray1'
           "
           @click="open = !open"
           >Report</NuxtLink
@@ -128,7 +131,9 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
         <NuxtLink
           :to="{ path: '/', hash: '#team' }"
           class="text-lg font-medium leading-[35px] duration-500 hover:text-primary"
-          :class="$route.fullPath == '/#team' ? 'text-primary' : ''"
+          :class="
+            $route.fullPath == '/#team' ? 'text-primary' : 'text-HahuGray1'
+          "
           @click="open = !open"
           >Team</NuxtLink
         >
@@ -138,15 +143,16 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
         <NuxtLink
           :to="{ path: '/', hash: '#contact' }"
           class="text-lg font-medium leading-[35px] duration-500 hover:text-primary"
-          :class="$route.fullPath == '/#contact' ? 'text-primary' : ''"
+          :class="
+            $route.fullPath == '/#contact' ? 'text-primary' : 'text-HahuGray1'
+          "
           @click="open = !open"
           >Contact</NuxtLink
         >
       </li>
-
       <li class="flex justify-center">
         <button
-          class="mt-1 flex text-lg font-medium leading-[35px]"
+          class="mt-1 flex text-lg text-HahuGray1 font-medium leading-[35px]"
           @click="open = !open"
         >
           Eng <img :src="dropdown" class="ml-[15px] self-center" />

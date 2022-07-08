@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "HaHu Jobs" },
     ],
-    // link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/images/favicon.ico" }],
   },
 
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
@@ -21,8 +21,8 @@ export default defineNuxtConfig({
     },
   },
   colorMode: {
-    preference: "system", // default value of $colorMode.preference
-    fallback: "light", // fallback value if not system preference found
+    preference: "light", // default value of $colorMode.preference
+    // fallback: "light", // fallback value if not system preference found
     hid: "nuxt-color-mode-script",
     globalName: "__NUXT_COLOR_MODE__",
     componentName: "ColorScheme",

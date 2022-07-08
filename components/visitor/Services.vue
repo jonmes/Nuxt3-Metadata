@@ -12,7 +12,7 @@ import readmore from "@/assets/svg/readmore.svg?url";
       <h2
         class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
-        World class services with Ethiopian hospitality!
+        Standard service with Ethiopian hospitality!
       </h2>
       <p
         class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
@@ -51,16 +51,17 @@ import readmore from "@/assets/svg/readmore.svg?url";
         <h1
           class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray/4 lg:text-2xl xl:text-3xl"
         >
-          Hahu Core
+          HaHu Core services
         </h1>
         <p
           class="mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-[68px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium quis
-          massa pulvinar nec. Nisi tempus erat vulputate molestie ornare hac ac.
-          In duis tortor euismod volutpat. Id scelerisque gravida scelerisque
-          condimentum sagittis in eu donec nunc. Id massa viverra est congue.
-          Ante vivamus ac pulvinar enim aliquam morbi pulvinar nec.
+          HaHU core services is a deployment targeting the Ethiopian jobseeker,
+          with both online and assisted models the platform caters to the tool
+          needs of looking for a job in all levels of employment. It features
+          vacancy aggregation and posting from various sources as well as
+          enterprises, build career profiles, apply for jobs and subscribe to
+          customized alerts for each user.
         </p>
 
         <hr class="mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
@@ -96,11 +97,11 @@ import readmore from "@/assets/svg/readmore.svg?url";
         <p
           class="mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-[68px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium quis
-          massa pulvinar nec. Nisi tempus erat vulputate molestie ornare hac ac.
-          In duis tortor euismod volutpat. Id scelerisque gravida scelerisque
-          condimentum sagittis in eu donec nunc. Id massa viverra est congue.
-          Ante vivamus ac pulvinar enim aliquam morbi pulvinar nec.
+          Provides human resources and related services starting from job
+          vacancy announcements, recruitment, all the way to human resources
+          management until termination. This deployment also offers unique
+          services to a category of businesses that operate within industry
+          parks, in addition to Addis Ababa based foreign employment agencies.
         </p>
         <hr class="mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
       </div>
@@ -130,16 +131,17 @@ import readmore from "@/assets/svg/readmore.svg?url";
         <h1
           class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray/4 lg:text-2xl xl:text-3xl"
         >
-          Hahu Industry Park
+          HaHu Industry Parks
         </h1>
         <p
           class="mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-[68px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium quis
-          massa pulvinar nec. Nisi tempus erat vulputate molestie ornare hac ac.
-          In duis tortor euismod volutpat. Id scelerisque gravida scelerisque
-          condimentum sagittis in eu donec nunc. Id massa viverra est congue.
-          Ante vivamus ac pulvinar enim aliquam morbi pulvinar nec.
+          With biometric based identification to both register workers and job
+          seekers. The process begins with mass registration of employment
+          seekers to build a digital pool of job seekers from which they are
+          allocated for labor demands from factories with in the industry parks.
+          It logs the recruitment status of allocated jobseekers and indexes
+          transaction data for analytics.
         </p>
         <hr class="mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
       </div>
@@ -169,16 +171,18 @@ import readmore from "@/assets/svg/readmore.svg?url";
         <h1
           class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray3 lg:text-2xl xl:text-3xl"
         >
-          Hahu TVET
+          HaHuJob TVET
         </h1>
         <p
           class="mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-[68px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium quis
-          massa pulvinar nec. Nisi tempus erat vulputate molestie ornare hac ac.
-          In duis tortor euismod volutpat. Id scelerisque gravida scelerisque
-          condimentum sagittis in eu donec nunc. Id massa viverra est congue.
-          Ante vivamus ac pulvinar enim aliquam morbi pulvinar nec.
+          HaHuJobs TVET is a targeted service deployment to trace skill-based
+          education graduates and content encoding service offered for TVET
+          institutes intended for both formal as well as career guiding lesson
+          materials. The platform aims to capacitate deliverlogy departments of
+          both private and government TVET institutes for digitized graduate
+          tracing and supporting TVET trainers to provide curricular as well as
+          non-structured digital learning materially.
         </p>
 
         <hr class="mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
@@ -209,16 +213,19 @@ import readmore from "@/assets/svg/readmore.svg?url";
         <h1
           class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray3 lg:text-2xl xl:text-3xl"
         >
-          Hahu University
+          HaHu University
         </h1>
         <p
           class="mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-[68px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium quis
-          massa pulvinar nec. Nisi tempus erat vulputate molestie ornare hac ac.
-          In duis tortor euismod volutpat. Id scelerisque gravida scelerisque
-          condimentum sagittis in eu donec nunc. Id massa viverra est congue.
-          Ante vivamus ac pulvinar enim aliquam morbi pulvinar nec.
+          HaHuJobs university is a deployment intended to serve the needs of
+          deliver ology departments, offer alternative digital contend
+          disbursement for instructors and tracing graduates of Ethiopian
+          universities that are subscribers of these services. The service
+          offers a reporting and visualization for all its service components
+          cospeciating higher education institute with a well compiled data to
+          acquire relevant insights regarding the labor market and competence
+          requirements.
         </p>
         <hr class="mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
       </div>
@@ -253,11 +260,13 @@ import readmore from "@/assets/svg/readmore.svg?url";
         <p
           class="mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-[68px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium quis
-          massa pulvinar nec. Nisi tempus erat vulputate molestie ornare hac ac.
-          In duis tortor euismod volutpat. Id scelerisque gravida scelerisque
-          condimentum sagittis in eu donec nunc. Id massa viverra est congue.
-          Ante vivamus ac pulvinar enim aliquam morbi pulvinar nec.
+          HaHuJobs Muya is capacity building and training platform intended for
+          both jobseeker and students’ which sources various digital contents
+          from training institutes in both document and multimedia formats. It
+          offers users a digitally enabled environment to consume both formal
+          and non-formal training material sourced from instructors with in the
+          local context. Resources can be offered in both targeted or public
+          access formats depending on the choice of the contributor.
         </p>
         <hr class="mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
       </div>

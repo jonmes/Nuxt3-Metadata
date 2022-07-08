@@ -17,15 +17,19 @@ const crumb = [
 </script>
 
 <template>
-
   <div class="flex min-h-screen justify-center md:px-11 xl:px-24">
     <section
-      class="mt-3 flex w-9/12 flex-col rounded-xl bg-white px-10 sm:px-10 md:px-20 xl:px-40 2xl:px-40"
+      class="mt-3 flex w-11/12 xs:w-9/12 flex-col rounded-xl bg-white dark:bg-HahuGray1 px-4 xs:px-10 sm:px-10 md:px-20 xl:px-40 2xl:px-40"
     >
-      <div class="relative mb-10 mt-6 flex flex-wrap items-end font-bold">
-        <Contained :crumb="crumb" />
-        <div class="ml-auto flex">
-          <NuxtLink class="mt-[38px] flex self-end" :to="{ name: 'index' }">
+      <div
+        class="relative mb-10 mt-6 flex flex-wrap flex-col xs:flex-row justify-start xs:justify-between items-end xs:items-center font-bold"
+      >
+        <Contained :crumb="crumb" class="self-start" />
+        <div class="flex">
+          <NuxtLink
+            class="mt-[38px] sm:mt-0 flex self-start sm:self-end"
+            :to="{ name: 'index' }"
+          >
             <button
               class="group flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3"
             >

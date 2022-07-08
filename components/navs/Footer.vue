@@ -54,37 +54,42 @@
     <div class="flex items-center pb-10">
       <Switch
         v-model="enabled"
+        @click="
+          $colorMode.preference == 'light'
+            ? ($colorMode.preference = 'dark')
+            : ($colorMode.preference = 'light'); showMe
+        "
         :class="enabled ? 'bg-gray-300' : 'bg-gray-300'"
         class="relative inline-flex h-9 w-24 items-center rounded-full"
       >
-        <span class="sr-only">Enable notifications</span>
+        <!-- <span class="sr-only">Enable notifications</span> -->
         <span
           class="absolute left-4 text-sm font-bold leading-4 text-black"
           :class="enabled ? 'block' : 'hidden'"
           >Dark</span
         >
         <span
-          class="flex w-full items-center justify-between"
+          class="flex w-full items-center justify-between duration-500"
           :class="enabled ? 'translate-x-[62px]' : 'translate-x-1'"
         >
           <div class="h-full rounded-full bg-white px-2 py-2">
-            <img
-              :src="LightIcon"
-              class="h-full w-full fill-white"
-              :class="!enabled ? 'block' : 'hidden'"
-            />
             <img
               :src="DarkIcon"
               class="h-full w-full fill-white"
               :class="enabled ? 'block' : 'hidden'"
             />
+            <img
+              :src="LightIcon"
+              class="h-full w-full fill-white"
+              :class="!enabled ? 'block' : 'hidden'"
+            />
           </div>
-          <span
-            class="pr-5 text-sm font-bold leading-4 text-white"
-            :class="!enabled ? 'block' : 'hidden'"
-            >Light</span
-          >
         </span>
+        <span
+          class="absolute right-4 text-sm font-bold leading-4 text-white delay-500 duration-100 ease-in-out"
+          :class="!enabled ? 'block' : 'hidden'"
+          >Light</span
+        >
       </Switch>
     </div>
   </div>
@@ -117,19 +122,11 @@ import Facebook from "@/assets/svg/Facebookfooter.svg?url";
 import Twitter from "@/assets/svg/Twitterfooter.svg?url";
 import LinkedIn from "@/assets/svg/LinkedInFooter.svg?url";
 
-const setColorTheme = (newTheme) => {
-  useColorMode().preference = newTheme;
-};
-
-const enabled = ref(false);
-
-watchEffect(() => {
-  if (enabled.value) {
-    setColorTheme("dark");
-  } else {
-    setColorTheme("light");
-  }
-});
+const enabled = ref();
+const colorMode = useColorMode()
+const showMe = () => {
+  console.log('who me ', colorMode.preference);
+}
 </script>
 
 <style scoped></style>

@@ -190,7 +190,7 @@
 
     <section class="flex flex-col">
       <h2
-        class="text-center text-3xl font-semibold leading-[35px] text-black dark:text-HahuGray/4"
+        class="text-center text-3xl font-semibold leading-[35px] dark:text-HahuGray/4"
       >
         Our achievements So Far
       </h2>
@@ -303,7 +303,6 @@ const cFile = [
 const itemsToShow = ref(1);
 const showNav = ref(false);
 
-
 const carWidth = (windowWidth) => {
   if (windowWidth < 768) {
     itemsToShow.value = 1;
@@ -329,6 +328,4 @@ onMounted(() => {
     carWidth(windowWidth.value);
   };
 });
-
-
 </script>

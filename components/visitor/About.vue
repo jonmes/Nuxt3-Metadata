@@ -14,7 +14,7 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
         <h2
           class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
         >
-          Here is how we started!
+          What is HaHuJobs?
         </h2>
       </div>
       <div class="flex flex-col lg:mt-10 3xl:flex-row">
@@ -27,31 +27,32 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
         </div>
         <article class="mt-[54px] flex-1">
           <p class="text-lg font-normal leading-[35px] dark:text-HahuGray/4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
-            ultricies aliquet sed vel eu dictumst sed. Amet, habitant augue
-            pharetra risus bibendum scelerisque tellus. Mi imperdiet elit elit
-            quam ornare massa egestas id. Consectetur dolor at eget sem lectus
-            maecenas in. Volutpat vitae sed egestas vitae habitasse mollis
-            pharetra sit. Tellus vitae arcu massa vivamus in odio. Adipiscing
-            sed ante ut magna nullam. Tincidunt nullam ornare orci in. Phasellus
-            eu mi, adipiscing vivamus. Arcu, eu adipiscing convallis at faucibus
-            eget tincidunt magna. Quisque adipiscing quis sit libero in
-            malesuada rhoncus egestas. Varius sem nec, consequat elit, aliquam
-            nullam. In augue facilisis feugiat vulputate tristique commodo,
-            turpis. In fermentum tempus sed potenti eget tortor gravida netus
-            tempor.
+            HaHuJobs a cloud services operating to capture structured data of
+            the Ethiopian skilled and non-skilled labor market through digitally
+            connecting thousands of job seekers in major Ethiopian cities as
+            well as industrial parks. The platform in a collection of micro
+            services groped to compose web application modules that offer a set
+            of functionalities. HaHuJobs is an electronic product sold as
+            service to a category of clients as per their specific needs in the
+            labor market of Ethiopia. It features various service categories
+            which revolves around data driven job matching of the right
+            candidate with the right job opening, student tracing, capacity
+            building and assessing of Jobseekers. This platform has sub services
+            tailored to the specific industries and stakeholders, but as a
+            primary concept HaHuJobs has a strong biometric based jobseeker
+            identification and an automated method of matching workers with
+            appropriate vacancy through structured data formats.
             <br />
             <br />
-            Adipiscing sed ante ut magna nullam. Tincidunt nullam ornare orci
-            in. Phasellus eu mi, adipiscing vivamus. Arcu, eu adipiscing
-            convallis at faucibus eget tincidunt magna. Quisque adipiscing quis
-            sit libero in malesuada rhoncus egestas. Varius sem nec, consequat
-            elit, aliquam nullam. In augue facilisis feugiat vulputate tristique
-            commodo, turpis. In fermentum tempus sed potenti eget tortor gravida
-            netus tempor.
+            The service is built as an ecosystem of digital services to offer a
+            holistic approach to respond to various data and automation gaps
+            with in the Ethiopian labor market. It features layers and network
+            of deployments that provide services to various types of industry
+            stakeholders like, the jobseekers, employers, the government and
+            development partners.
           </p>
           <div class="mt-12 mb-14 flex">
-            <NuxtLink :to="{name: 'AboutUs'}" class="group">
+            <NuxtLink :to="{ name: 'AboutUs' }" class="group">
               <button
                 class="flex items-center self-end rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white"
               >

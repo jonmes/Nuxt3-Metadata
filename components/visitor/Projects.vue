@@ -9,7 +9,7 @@
       <h2
         class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
-        We deliver quality projects on time!
+        Our Labor market related projects
       </h2>
       <p
         class="mt-10 max-w-[750px] self-center text-center text-base font-normal leading-8 dark:text-white xs:text-lg"
@@ -26,9 +26,9 @@
             27
           </h2>
           <h2
-            class="self-center text-xl font-medium leading-[30px] dark:text-white"
+            class="self-center text-xl font-medium leading-[30px] text-HahuGray1 dark:text-white"
           >
-            Projects completed
+            Projects
           </h2>
           <hr
             class="mt-4 h-[5px] w-[167px] self-center rounded-full bg-primary-lite px-1"
@@ -42,9 +42,9 @@
             19
           </h2>
           <h2
-            class="self-center text-xl font-medium leading-[30px] dark:text-white"
+            class="self-center text-xl font-medium leading-[30px] text-HahuGray1 dark:text-white"
           >
-            Customers
+            Stakeholders
           </h2>
           <hr
             class="mt-4 h-[5px] w-[167px] self-center rounded-full bg-primary-lite px-1"
@@ -58,9 +58,9 @@
             6<span class="text-3xl">mon</span>
           </h2>
           <h2
-            class="self-center text-xl font-medium leading-[30px] dark:text-white"
+            class="self-center text-xl font-medium leading-[30px] text-HahuGray1 dark:text-white"
           >
-            Projects completed
+            Total Durations
           </h2>
           <hr
             class="mt-4 h-[5px] w-[167px] self-center rounded-full bg-primary-lite px-1"

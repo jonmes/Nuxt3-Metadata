@@ -9,15 +9,16 @@
         <h1
           class="items-center text-[50px] font-black leading-[50px] dark:text-HahuGray/4"
         >
-          HaHu Muya
+          HaHuJobs Muya
         </h1>
 
         <p
           class="mt-[27px] items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor
-          sit ut consequat vitae, orci amet. Augue hac viverra nunc facilisi
-          amet, sit urna, euismod.
+          Muya provides a variety of resources to assist Ethiopian students and
+          alumni with career exploration and guidance, job and internship search
+          as well as scholarships. Training and learning materials are
+          accessible in various formats, such as videos, audios and text.
         </p>
         <button
           class="mt-[113px] rounded-md bg-primary px-[50px] py-[13px] text-base font-medium leading-6 text-white"
@@ -42,9 +43,13 @@
       <p
         class="mt-[17px] max-w-[860px] self-center text-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam feugiat
-        mauris viverra orci. Turpis congue nisl a sodales congue. At imperdiet
-        convallis turpis proin augue.
+        The United States Agency for International Development (USAID)’s
+        Building the Potential of Youth Activity (POTENTIAL) a five-year project
+        implemented by Save the Children as well as the Ministry of Science and
+        Higher Education are partners in this implementation. This partnership
+        in cooperation with participating universities aims to equip graduates
+        with the skills necessary to pursue and land appropriate job
+        opportunities.
       </p>
 
       <div
@@ -63,13 +68,13 @@
           <p
             class="mt-5 text-center text-lg font-normal leading-[30px] group-hover:visible dark:text-HahuGray/4 xl:invisible"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In purus
-            malesuada dignissim lectus sodales dignissim integer sit.
-            Scelerisque adipiscing id vitae, malesuada enim vulputate. Id
-            molestie ultricies sagittis amet. Nibh amet mattis amet, felis quam
-            tellus volutpat lectus. Vestibulum cursus faucibus vitae egestas
-            turpis ut tristique mi. Viverra scelerisque vestibulum quam est
-            nullam tellus.
+            The United States Agency for International Development (USAID)’s
+            Building the Potential of Youth Activity (POTENTIAL) a five-year
+            project implemented by Save the Children as well as the Ministry of
+            Science and Higher Education are partners in this implementation.
+            This partnership in cooperation with participating universities aims
+            to equip graduates with the skills necessary to pursue and land
+            appropriate job opportunities.
           </p>
         </div>
 
@@ -86,13 +91,10 @@
           <p
             class="mt-5 text-center text-lg font-normal leading-[30px] group-hover:visible dark:text-HahuGray/4 xl:invisible 2xl:mb-[110px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In purus
-            malesuada dignissim lectus sodales dignissim integer sit.
-            Scelerisque adipiscing id vitae, malesuada enim vulputate. Id
-            molestie ultricies sagittis amet. Nibh amet mattis amet, felis quam
-            tellus volutpat lectus. Vestibulum cursus faucibus vitae egestas
-            turpis ut tristique mi. Viverra scelerisque vestibulum quam est
-            nullam tellus.
+            Save the Children, was established in the United Kingdom in 1919 to
+            improve the lives of children through better education, health care,
+            and economic opportunities, as well as providing emergency aid in
+            natural disasters, war, and other conflicts
           </p>
         </div>
 
@@ -109,13 +111,10 @@
           <p
             class="mt-5 text-center text-lg font-normal leading-[30px] group-hover:visible dark:text-HahuGray/4 xl:invisible 2xl:mb-[110px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In purus
-            malesuada dignissim lectus sodales dignissim integer sit.
-            Scelerisque adipiscing id vitae, malesuada enim vulputate. Id
-            molestie ultricies sagittis amet. Nibh amet mattis amet, felis quam
-            tellus volutpat lectus. Vestibulum cursus faucibus vitae egestas
-            turpis ut tristique mi. Viverra scelerisque vestibulum quam est
-            nullam tellus.
+            Ministry of Science and Higher Education is the Federal Democratic
+            Republic of Ethiopia's ministry which has a responsibility to lead
+            the development of science, higher education, and the technical and
+            vocational education and training in the country.
           </p>
         </div>
       </div>
@@ -130,15 +129,16 @@
       <h2
         class="mt-8 self-center text-center text-3xl font-semibold leading-[35px] text-HahuGray1 dark:text-HahuGray/4"
       >
-        What is in HaHu Muya?
+        What is in Muya?
       </h2>
       <p
         class="mt-[17px] max-w-[860px] self-center text-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
-        aliquam duis nulla augue eget pellentesque aliquam. Placerat imperdiet
-        fringilla mi vitae, a nunc massa ultrices non. Nunc non pharetra amet
-        sed etiam ac dolor sit.
+        Partnering institutions provide content that equips graduates with the
+        skills necessary to pursue and land appropriate job opportunities,
+        including high-order thinking skills, positive self-concepts, and
+        self-control. Students can also build intuitive CVs online in order to
+        showcase their skillsets.
       </p>
       <div
         class="mt-[59px] flex flex-col items-center justify-center gap-[38px] xl:flex-row"
@@ -154,16 +154,16 @@
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1"
           >
-            Job
+            Jobs & Scholarships
           </h2>
           <p
             class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-            volutpat pulvinar tortor viverra sed tristique interdum consequat.
-            Amet mauris nunc nisl tortor egestas etiam. Bibendum eu lacus congue
-            blandit. Mattis lacus, senectus sed dolor euismod nunc ultrices. Sed
-            gravida ultrices praesent diam odio cursus nunc, quis massa.
+            Fresh graduates often face challenges finding jobs that are aimed at
+            their skillsets. Muya aggregates job and scholarship opportunities
+            for fresh graduates from all over the country and presents free of
+            charge in one place, while companies can advertise their vacancies.
+            are also made available
           </p>
         </div>
 
@@ -178,16 +178,16 @@
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1"
           >
-            Career
+            Career Guidance & CV Building
           </h2>
           <p
             class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-            volutpat pulvinar tortor viverra sed tristique interdum consequat.
-            Amet mauris nunc nisl tortor egestas etiam. Bibendum eu lacus congue
-            blandit. Mattis lacus, senectus sed dolor euismod nunc ultrices. Sed
-            gravida ultrices praesent diam odio cursus nunc, quis massa.
+            Partnering institutions provide content that equips graduates with
+            the skills necessary to pursue and land appropriate job
+            opportunities, including high-order thinking skills, positive
+            self-concepts, and self-control. Students can also build intuitive
+            CVs online in order to showcase their skillsets
           </p>
         </div>
 
@@ -202,16 +202,16 @@
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1"
           >
-            Education
+            Content & Assessment
           </h2>
           <p
             class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-            volutpat pulvinar tortor viverra sed tristique interdum consequat.
-            Amet mauris nunc nisl tortor egestas etiam. Bibendum eu lacus congue
-            blandit. Mattis lacus, senectus sed dolor euismod nunc ultrices. Sed
-            gravida ultrices praesent diam odio cursus nunc, quis massa.
+            Due to the Covid-19 pandemic all in-person education at higher
+            education facilities is momentarily suspended. Educators can make
+            learning materials accessible to students in various formats,
+            including videos, audios and texts. Furthermore, they can make
+            online assessments
           </p>
         </div>
       </div>
@@ -219,16 +219,15 @@
 
     <section class="flex flex-col">
       <h2
-        class="mt-20 text-center text-3xl font-semibold leading-[35px] text-black dark:text-HahuGray/4 xl:mt-40"
+        class="mt-20 text-center text-3xl font-semibold leading-[35px] dark:text-HahuGray/4 xl:mt-40"
       >
-        Lorem ipsum dolor sit amet, consectetur
+        Growing community
       </h2>
       <p
         class="mt-16 max-w-[860px] self-center text-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
-        aliquam duis nulla augue eget pellentesque aliquam. Placerat imperdiet
-        fringilla mi vitae, a nunc massa ultrices non.
+        Our community of students, educators and contents is growing by the day.
+        Below is a live look into the current numbers.
       </p>
 
       <div
@@ -243,7 +242,7 @@
           <h3
             class="self-center text-xl font-medium leading-[30px] dark:text-HahuGray/4"
           >
-            Industry parks
+            Content
           </h3>
           <hr
             class="mt-4 w-[167px] self-center rounded-full border-2 border-primary-lite bg-primary-lite px-1"
@@ -275,7 +274,7 @@
           <h3
             class="self-center text-xl font-medium leading-[30px] dark:text-HahuGray/4"
           >
-            Companies
+            Institutes
           </h3>
           <hr
             class="mt-4 w-[167px] self-center rounded-full border-2 border-primary-lite bg-primary-lite px-1"

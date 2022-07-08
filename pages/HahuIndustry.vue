@@ -62,10 +62,10 @@
         class="mt-[59px] mb-10 grid min-h-[750px] grid-cols-1 justify-items-center gap-y-10 md:min-h-[800px] lg:min-h-[400px] lg:w-auto lg:grid-cols-3 lg:gap-x-10 3xl:min-h-[310px]"
       >
         <div
-          class="transition-newtransition group flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
+          class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
         >
           <img
-            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale"
+            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-10 darK:invert dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
             src="/images/mastercard_colored.png"
           />
           <hr
@@ -83,10 +83,10 @@
           </p>
         </div>
         <div
-          class="transition-newtransition group flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
+          class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
         >
           <img
-            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale"
+            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-10 darK:invert dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
             src="/images/first_consult_colored.png"
           />
           <hr
@@ -104,10 +104,10 @@
           </p>
         </div>
         <div
-          class="transition-newtransition group flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
+          class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
         >
           <img
-            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale"
+            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-10 darK:invert dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
             src="/images/minab_colorized.png"
           />
           <hr
@@ -226,7 +226,7 @@
 
     <section class="flex flex-col">
       <h2
-        class="mt-20 text-center text-3xl font-semibold leading-[35px] text-black dark:text-HahuGray/4 xl:mt-40"
+        class="mt-20 text-center text-3xl font-semibold leading-[35px] dark:text-HahuGray/4 xl:mt-40"
       >
         Our Achievements So Far
       </h2>
@@ -293,10 +293,7 @@
   </div>
 </template>
 
-<script setup>
-
-</script>
-
+<script setup></script>
 
 <style scoped>
 #height_hover {
