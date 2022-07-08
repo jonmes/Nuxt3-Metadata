@@ -7,7 +7,6 @@ const props = defineProps({ cardSlider: Array });
 const itemsToShow = ref(1);
 const showNav = ref(false);
 
-
 const carWidth = (windowWidth) => {
   if (windowWidth < 768) {
     itemsToShow.value = 1;
@@ -32,8 +31,6 @@ onMounted(() => {
     carWidth(windowWidth.value);
   };
 });
-
-
 </script>
 
 <template>

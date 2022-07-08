@@ -16,9 +16,8 @@
       <p
         class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui urna,
-        ullamcorper odio odio turpis ipsum imperdiet turpis. Elit, nec, leo
-        morbi elit enim semper cras. Sapien
+        Below are some of our updates regarding our ventures with in the labor
+        market and our partners offers in regards to related endeavors
       </p>
     </div>
 
