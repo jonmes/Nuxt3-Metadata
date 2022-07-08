@@ -375,6 +375,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/vue@npm:^1.6.6":
+  version: 1.6.6
+  resolution: "@headlessui/vue@npm:1.6.6"
+  peerDependencies:
+    vue: ^3.2.0
+  checksum: 7e4849c9ddbe02a5000a476c0393921d8b05f54bc9ccd0a811f27fbd048f71f1cf8a355cc8934c3d2730f936afdc99275aaf9bd686b7eabb3ba1cf737ba36537
+  languageName: node
+  linkType: hard
+
+"@heroicons/vue@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "@heroicons/vue@npm:1.0.6"
+  peerDependencies:
+    vue: ">= 3"
+  checksum: 63cf6ad94e271e5f8c47a2ee27e14d16aac8989f8450048853fea89bff545dae42db8ba3cb28dd08cef752fe32c88a418e976aae9ecd5a698973d56f5e87cb3c
+  languageName: node
+  linkType: hard
+
 "@ioredis/commands@npm:^1.1.1":
   version: 1.2.0
   resolution: "@ioredis/commands@npm:1.2.0"
@@ -5997,6 +6015,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@headlessui/vue": ^1.6.6
+    "@heroicons/vue": ^1.0.6
     "@nuxtjs/color-mode": ^3.1.4
     "@nuxtjs/tailwindcss": ^5.1.3
     "@tailwindcss/forms": ^0.5.2
