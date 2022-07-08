@@ -1,4 +1,10 @@
-<script>
+<script setup>
+const route = useRoute();
+const layout = ref("visitor");
+if (route.path == "/admin") {
+  layout.value = "default";
+}
+
 useHead({
   title: "HaHu Jobs",
   // or, instead:
@@ -14,6 +20,8 @@ useHead({
 
 <template>
   <div>
-    <NuxtPage />
+    <NuxtLayout :name="layout">
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>

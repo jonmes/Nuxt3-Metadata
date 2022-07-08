@@ -1,5 +1,5 @@
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.directive("focus", {
+  nuxtApp.vueApp.directive("click-outside", {
     beforeMount: (el, binding) => {
       el.clickOutsideEvent = (event) => {
         // here I check that click was outside the el and his children
