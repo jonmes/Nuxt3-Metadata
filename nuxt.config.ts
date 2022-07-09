@@ -66,7 +66,8 @@ export default defineNuxtConfig({
         {
           "data-n-head": "1",
           property: "twitter:image",
-          content: "https://hahujobs.net/images/Hahu_socialCard.png",
+          content:
+            "https://nuxt-static-dep.netlify.app/images/Hahu_socialCard.png",
         },
       ],
       link: [
