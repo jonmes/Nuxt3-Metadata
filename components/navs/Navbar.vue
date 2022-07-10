@@ -1,5 +1,4 @@
 <script setup>
-import { ref, watch, watchEffect } from "vue";
 import HahuLogo from "@/assets/svg/Hahu_logo1.svg?url";
 import HahuLogoDark from "@/assets/svg/Hahu_logo1_dark.svg?url";
 import dropdown from "@/assets/svg/dropDownIcon.svg?url";

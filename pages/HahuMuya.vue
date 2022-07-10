@@ -31,9 +31,9 @@
 
     <section class="flex flex-col" id="partners">
       <h3
-        class="mt-20 self-center rounded-[36px] bg-primary-lite px-[33px] py-[2px] text-xs font-medium leading-[18px] text-primary-dark"
+        class="mt-24 self-center rounded-[36px] bg-primary-lite px-[33px] py-[2px] text-xs font-medium leading-[18px] text-primary-dark"
       >
-        Services
+        Partners
       </h3>
       <h2
         class="mt-[30px] self-center text-3xl font-semibold leading-[35px] text-HahuGray1 dark:text-HahuGray/4"
@@ -122,7 +122,7 @@
 
     <section class="flex flex-col" id="about">
       <h3
-        class="self-center rounded-[36px] bg-primary-lite px-[33px] py-[2px] text-xs font-medium leading-[18px] text-primary-dark lg:mt-[200px]"
+        class="self-center rounded-[36px] bg-primary-lite px-[33px] py-[2px] text-xs font-medium leading-[18px] text-primary-dark mt-24"
       >
         About
       </h3>

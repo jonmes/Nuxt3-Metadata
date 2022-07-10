@@ -94,70 +94,72 @@
           </div>
         </div>
       </div>
-      <form
-        @submit.prevent="submit"
-        class="flex max-h-[915px] flex-1 flex-col rounded-md bg-white py-11 px-2 duration-500 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24"
-      >
-        <InputsHtextfield
-          v-model="item.name"
-          type="text"
-          name="name"
-          placeholder="Your name..."
-          placeholderStyle="text-HahuGray2"
+      <div class="flex-1 flex justify-center">
+        <form
+          @submit.prevent="submit"
+          class="flex max-h-[915px] w-9/12 flex-col rounded-md bg-white pt-11 px-2 duration-500 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24"
         >
-          <template v-slot:label
-            ><div
-              class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white"
-            >
-              Name
-            </div></template
+          <InputsHtextfield
+            v-model="item.name"
+            type="text"
+            name="name"
+            placeholder="Your name..."
+            placeholderStyle="text-HahuGray2"
           >
-        </InputsHtextfield>
-        <InputsHtextfield
-          v-model="item.phone"
-          type="text"
-          name="phone"
-          placeholder="09..."
-          placeholderStyle="text-HahuGray2"
-          ><template v-slot:label
-            ><div
-              class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white"
+            <template v-slot:label
+              ><div
+                class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white"
+              >
+                Name
+              </div></template
             >
-              Phone Number
-            </div></template
-          ></InputsHtextfield
-        >
-        <InputsHtextfield
-          v-model="item.email"
-          type="text"
-          name="email"
-          placeholder="Your email..."
-          placeholderStyle="text-HahuGray2"
-          ><template v-slot:label
-            ><div
-              class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white"
-            >
-              Email
-            </div></template
-          ></InputsHtextfield
-        >
-        <InputsHtextarea
-          type="text"
-          v-model="item.message"
-          placeholder="Your message..."
-          placeholderStyle="text-HahuGray2"
-          label="Message"
-          labelClass="font-medium text-gray-800 text-lg leading-6 dark:text-white duration-500 ease-in mb-5"
-          name="message"
-        />
-
-        <button
-          type="submit"
-          class="mt-9 mb-12 w-full rounded-md bg-primary py-3 text-xl font-medium leading-7 text-whitePrimary"
-        >
-          Send
-        </button>
-      </form>
+          </InputsHtextfield>
+          <InputsHtextfield
+            v-model="item.phone"
+            type="text"
+            name="phone"
+            placeholder="09..."
+            placeholderStyle="text-HahuGray2"
+            ><template v-slot:label
+              ><div
+                class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white"
+              >
+                Phone Number
+              </div></template
+            ></InputsHtextfield
+          >
+          <InputsHtextfield
+            v-model="item.email"
+            type="text"
+            name="email"
+            placeholder="Your email..."
+            placeholderStyle="text-HahuGray2"
+            ><template v-slot:label
+              ><div
+                class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white"
+              >
+                Email
+              </div></template
+            ></InputsHtextfield
+          >
+          <InputsHtextarea
+            type="text"
+            v-model="item.message"
+            placeholder="Your message..."
+            placeholderStyle="text-HahuGray2"
+            label="Message"
+            labelClass="font-medium text-gray-800 text-lg leading-6 dark:text-white duration-500 ease-in mb-5"
+            name="message"
+          />
+  
+          <button
+            type="submit"
+            class="mt-9 w-full rounded-md bg-primary py-3 text-xl font-medium leading-7 text-whitePrimary"
+          >
+            Send
+          </button>
+        </form>
+      </div>
     </div>
   </section>
 </template>

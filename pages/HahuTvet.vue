@@ -137,7 +137,7 @@
 
     <section class="flex flex-col" id="about">
       <h3
-        class="mt-20 self-center rounded-[36px] bg-primary-lite px-[33px] py-[2px] text-xs font-medium leading-[18px] text-primary-dark xl:mt-[200px]"
+        class="mt-24 self-center rounded-[36px] bg-primary-lite px-[33px] py-[2px] text-xs font-medium leading-[18px] text-primary-dark"
       >
         About
       </h3>
