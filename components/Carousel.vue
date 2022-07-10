@@ -38,11 +38,11 @@ onMounted(() => {
     <slide
       v-for="slide in props.cardSlider"
       :key="slide"
-      class="w-full lg:mx-10 2xl:mx-16 group"
+      class="w-full lg:mx-10 2xl:mx-16 py-5"
     >
       <NuxtLink
         :to="'/projects/' + slide.id"
-        class="mx-2 w-full rounded-xl bg-white dark:bg-HahuGray1 duration-500 lg:mx-10 2xl:mx-16 border-2 border-transparent group-hover:border-primary"
+        class="mx-2 w-full hover:scale-105 rounded-2xl bg-white dark:bg-HahuGray1 duration-500 lg:mx-10 2xl:mx-16 border-2 border-transparent hover:border-primary"
       >
         <div class="w-full">
           <img class="mb-7 w-full" :src="slide.thumbnail" />

@@ -9,13 +9,13 @@
       <h2
         class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
-        Let’s stay connected
+        We would love to hear from you!
       </h2>
       <p
         class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
-        It's never been easier to get in touch with HaHu Jobs. Call us, use our
-        live chat widget or email and we'll get back to you as soon as possible!
+        Please fill out the form below to reach our communications department
+        for any enquiries you may have, our doors are open for everyone
       </p>
     </div>
     <div class="flex flex-col 2xl:flex-row 2xl:space-x-[106px]">
