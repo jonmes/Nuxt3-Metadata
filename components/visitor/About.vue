@@ -4,7 +4,6 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
 onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
-      console.log(entries);
       entries.forEach((entry) => {
         entry.target.classList.toggle(
           "[&[show=true]]:opacity-100",
@@ -36,24 +35,22 @@ onMounted(() => {
       <div class="flex flex-col items-center">
         <h1
           show="true"
-          class="abouti duration-1000 opacity-0 translate-y-10 mt-20 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+          class="abouti duration-700 opacity-0 translate-y-20 mt-20 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
         >
           About
         </h1>
         <h2
           show="true"
-          class="abouti duration-1000 opacity-0 translate-y-10 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+          class="abouti duration-700 opacity-0 translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
         >
           What is HaHuJobs?
         </h2>
       </div>
       <div class="flex flex-col lg:mt-10 3xl:flex-row">
-        <div
-          show="true"
-          class="abouti duration-1000 opacity-0 translate-y-10 flex flex-1 overflow-hidden"
-        >
+        <div class="flex flex-1 overflow-hidden">
           <img
-            class="object-contain"
+            show="true"
+            class="abouti duration-700 opacity-0 translate-y-10 object-contain"
             alt="hahu core"
             src="/images/Hahu_core.png"
           />
@@ -61,7 +58,7 @@ onMounted(() => {
         <article class="mt-[54px] flex-1">
           <p
             show="true"
-            class="abouti duration-1000 opacity-0 translate-y-10 text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+            class="abouti duration-700 opacity-0 translate-y-20 text-lg font-normal leading-[35px] dark:text-HahuGray/4"
           >
             HaHuJobs a cloud services operating to capture structured data of
             the Ethiopian skilled and non-skilled labor market through digitally
@@ -81,13 +78,16 @@ onMounted(() => {
           </p>
           <br
             show="true"
-            class="abouti duration-1000 opacity-0 translate-y-10"
+            class="abouti duration-700 opacity-0 translate-y-20"
           />
           <br
             show="true"
-            class="abouti duration-1000 opacity-0 translate-y-10"
+            class="abouti duration-700 opacity-0 translate-y-20"
           />
-          <p show="true" class="abouti duration-1000 opacity-0 translate-y-10">
+          <p
+            show="true"
+            class="abouti duration-700 opacity-0 translate-y-20 text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+          >
             The service is built as an ecosystem of digital services to offer a
             holistic approach to respond to various data and automation gaps
             with in the Ethiopian labor market. It features layers and network
@@ -98,7 +98,7 @@ onMounted(() => {
 
           <div
             show="true"
-            class="mt-12 mb-14 flex abouti duration-1000 opacity-0 translate-y-10"
+            class="mt-12 mb-14 flex abouti duration-700 opacity-0 translate-y-20"
           >
             <NuxtLink :to="{ name: 'AboutUs' }" class="group">
               <button

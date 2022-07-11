@@ -1,21 +1,51 @@
 <script setup>
 import readmore from "@/assets/svg/readmore.svg?url";
+const count = ref(1);
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries, self) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle(
+          "[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "[&[show=true]]:translate-y-0",
+          entry.isIntersecting
+        );
+        if (entry.isIntersecting) {
+          self.unobserve(entry.target);
+          return entry.target;
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+  document.querySelectorAll(".servicei").forEach((card) => {
+    observer.observe(card);
+  });
+});
 </script>
 <template>
   <section id="services" class="flex min-h-full flex-col">
     <div class="flex flex-col items-center">
       <h1
-        class="mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        show="true"
+        class="servicei opacity-0 translate-y-20 duration-700 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         Services
       </h1>
       <h2
-        class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+        show="true"
+        class="servicei opacity-0 duration-700 translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
         Standard service with Ethiopian hospitality!
       </h2>
       <p
-        class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
+        show="true"
+        class="servicei opacity-0 translate-y-20 duration-700 mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui urna,
         ullamcorper odio odio turpis ipsum imperdiet turpis. Elit, nec, leo
@@ -26,7 +56,8 @@ import readmore from "@/assets/svg/readmore.svg?url";
       class="mt-[76px] grid grid-cols-1 justify-items-center gap-y-12 md:grid-cols-2 md:gap-x-12 md:gap-y-12 xl:grid-cols-3 xl:gap-x-12 xl:gap-y-12"
     >
       <div
-        class="group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        show="true"
+        class="servicei opacity-0 translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -68,7 +99,8 @@ import readmore from "@/assets/svg/readmore.svg?url";
       </div>
 
       <div
-        class="group relative z-10 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        show="true"
+        class="servicei opacity-0 delay-100 translate-y-20 group relative z-10 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -107,7 +139,8 @@ import readmore from "@/assets/svg/readmore.svg?url";
       </div>
 
       <div
-        class="group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        show="true"
+        class="servicei opacity-0 delay-200 translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -147,7 +180,8 @@ import readmore from "@/assets/svg/readmore.svg?url";
       </div>
 
       <div
-        class="group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        show="true"
+        class="servicei opacity-0 translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -189,7 +223,8 @@ import readmore from "@/assets/svg/readmore.svg?url";
       </div>
 
       <div
-        class="group relative z-10 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        show="true"
+        class="servicei opacity-0 delay-100 translate-y-20 group relative z-10 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -231,7 +266,8 @@ import readmore from "@/assets/svg/readmore.svg?url";
       </div>
 
       <div
-        class="group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        show="true"
+        class="servicei opacity-0 delay-200 translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"

@@ -185,7 +185,7 @@ const branchs = [
 
 const { handleSubmit } = useForm({});
 const submit = handleSubmit(async (values) => {
-  console.log("printing out value", values);
+  // console.log("printing out value", values);
 });
 </script>
 

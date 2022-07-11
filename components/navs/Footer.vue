@@ -57,7 +57,8 @@
         @click="
           $colorMode.preference == 'light'
             ? ($colorMode.preference = 'dark')
-            : ($colorMode.preference = 'light'); showMe
+            : ($colorMode.preference = 'light');
+          showMe;
         "
         :class="enabled ? 'bg-gray-300' : 'bg-gray-300'"
         class="relative inline-flex h-9 w-24 items-center rounded-full"
@@ -123,10 +124,10 @@ import Twitter from "@/assets/svg/Twitterfooter.svg?url";
 import LinkedIn from "@/assets/svg/LinkedInFooter.svg?url";
 
 const enabled = ref();
-const colorMode = useColorMode()
+const colorMode = useColorMode();
 const showMe = () => {
-  console.log('who me ', colorMode.preference);
-}
+  // console.log('who me ', colorMode.preference);
+};
 </script>
 
 <style scoped></style>

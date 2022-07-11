@@ -30,11 +30,40 @@ onMounted(() => {
     windowWidth.value = window.innerWidth;
     carWidth(windowWidth.value);
   };
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle(
+          "[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "[&[show=true]]:translate-x-0",
+          entry.isIntersecting
+        );
+        if (entry.isIntersecting) {
+          observer.unobserve(entry.target);
+          return entry.target;
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+  document.querySelectorAll(".carouseli").forEach((selection) => {
+    observer.observe(selection);
+  });
 });
 </script>
 
 <template>
-  <carousel :items-to-show="itemsToShow" :wrap-around="true" class="w-full">
+  <carousel
+    :items-to-show="itemsToShow"
+    :wrap-around="true"
+    show="true"
+    class="w-full carouseli duration-700 opacity-0 translate-x-40"
+  >
     <slide
       v-for="slide in props.cardSlider"
       :key="slide"
