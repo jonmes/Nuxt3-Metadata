@@ -30,7 +30,7 @@
               <h4
                 class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4"
               >
-                contact@hahujobs.co
+                info@hahu.jobs
               </h4>
             </div>
           </div>
@@ -44,7 +44,9 @@
               <h4
                 class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4"
               >
-                +251-843-672-431
+                +251-11 822 1001
+                <br />
+                +251-11 822 1002
               </h4>
             </div>
           </div>
@@ -58,12 +60,8 @@
               <h4
                 class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4"
               >
-                1686, Geraldine Lane
-              </h4>
-              <h4
-                class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4"
-              >
-                New York, NY 10013
+                Bole, Behind DH geda tower <br />Afomi Building 3rd floor
+                <br />Addis Ababa
               </h4>
             </div>
           </div>
@@ -97,7 +95,7 @@
       <div class="flex-1 flex justify-center">
         <form
           @submit.prevent="submit"
-          class="flex max-h-[915px] w-9/12 flex-col rounded-md bg-white pt-11 px-2 duration-500 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24"
+          class="flex pb-10 lg:pb-0 max-h-[915px] w-10/12 flex-col rounded-md bg-white pt-11 px-2 duration-500 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24"
         >
           <InputsHtextfield
             v-model="item.name"
@@ -151,7 +149,7 @@
             labelClass="font-medium text-gray-800 text-lg leading-6 dark:text-white duration-500 ease-in mb-5"
             name="message"
           />
-  
+
           <button
             type="submit"
             class="mt-9 w-full rounded-md bg-primary py-3 text-xl font-medium leading-7 text-whitePrimary"
@@ -172,15 +170,18 @@ import Phone from "@/assets/svg/Phone.svg?url";
 import Office from "@/assets/svg/Office.svg?url";
 const item = reactive({});
 const branchs = [
-  { name: "Bahr Dar", Phone: "+251-843-672-431" },
-  { name: "Assosa", Phone: "+251-843-672-431" },
-  { name: "Nazerat", Phone: "+251-843-672-431" },
-  { name: "Hawassa", Phone: "+251-843-672-431" },
-  { name: "Dilla", Phone: "+251-843-672-431" },
-  { name: "Sodo", Phone: "+251-843-672-431" },
-  { name: "Arba Minch", Phone: "+251-843-672-431" },
-  { name: "Dessie", Phone: "+251-843-672-431" },
-  { name: "Jigijiga", Phone: "+251-843-672-431" },
+  { name: "Bahr Dar", Phone: "+251-5-85-56-67-77" },
+  { name: "Bole lemi", Phone: " +251-1-18-60-07-66" },
+  { name: "Adama", Phone: "+251-2-22-12-92-51" },
+  { name: "Debire Birhan", Phone: "+251-1-16-73-11-20" },
+  { name: "Dire Dawa", Phone: "+251-2-58-90-90-18" },
+  { name: "Kombolcha", Phone: "+251-3-33-51-64-35" },
+  { name: "Hawassa", Phone: "+251-4-68-21-23-37" },
+  // { name: "Mekelle", Phone: "" },
+  // { name: "Yirgalem", Phone: "Comming soon!" },
+  // { name: "Bure", Phone: "Comming soon" },
+  // { name: "Bulbula", Phone: "Comming soon" },
+
 ];
 
 const { handleSubmit } = useForm({});
