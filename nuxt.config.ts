@@ -37,7 +37,7 @@ export default defineNuxtConfig({
           "data-n-head": "1",
           property: "og:image",
           content:
-            "https://nuxt-static-dep.netlify.app/images/Hahu_socialCard.png",
+            "https://nuxt-static-dep.netlify.app/images/Hahu_MetaCard.png",
         },
 
         // twitter
@@ -67,7 +67,7 @@ export default defineNuxtConfig({
           "data-n-head": "1",
           property: "twitter:image",
           content:
-            "https://nuxt-static-dep.netlify.app/images/Hahu_socialCard.png",
+            "https://nuxt-static-dep.netlify.app/images/Hahu_MetaCard.png",
         },
       ],
       link: [
