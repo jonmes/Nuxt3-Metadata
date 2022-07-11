@@ -111,13 +111,13 @@ export default defineNuxtConfig({
           rel: "stylesheet",
         },
       ],
-      script: [
-        {
-          src: "https://www.google-analytics.com/analytics.js",
-          charset: "utf-8",
-          async: true,
-        },
-      ],
+      // script: [
+      //   {
+      //     src: "https://www.google-analytics.com/analytics.js",
+      //     charset: "utf-8",
+      //     async: true,
+      //   },
+      // ],
     },
   },
 

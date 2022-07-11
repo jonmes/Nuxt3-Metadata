@@ -124,7 +124,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
       <p
         class="mt-5 text-base font-light leading-9 duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        {{ filteredPro.title }}
       </p>
       <p
         class="mt-14 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-lg"

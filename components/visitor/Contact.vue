@@ -181,7 +181,6 @@ const branchs = [
   // { name: "Yirgalem", Phone: "Comming soon!" },
   // { name: "Bure", Phone: "Comming soon" },
   // { name: "Bulbula", Phone: "Comming soon" },
-
 ];
 
 const { handleSubmit } = useForm({});
