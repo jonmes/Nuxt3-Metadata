@@ -1,32 +1,62 @@
 <script setup>
 import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle(
+          "[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "[&[show=true]]:translate-y-0",
+          entry.isIntersecting
+        );
+        if (entry.isIntersecting) {
+          observer.unobserve(entry.target);
+          return entry.target;
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+  document.querySelectorAll(".reporti").forEach((selection) => {
+    observer.observe(selection);
+  });
+});
 </script>
 
 <template>
   <section class="flex flex-col" id="report">
     <div class="flex flex-col items-center">
       <h1
-        class="reporti mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        show="true"
+        class="reporti duration-700 opacity-0 translate-y-20 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         Report
       </h1>
       <h2
-        class="reporti mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+        show="true"
+        class="reporti duration-700 opacity-0 translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
-        We release reports on the performace of Industry parks and employment in
-        Ethiopia!
+        Our Reports are here!
       </h2>
     </div>
     <div class="flex flex-col 2xl:flex-row">
       <div class="flex flex-1 overflow-hidden">
         <img
-          class="reporti object-contain"
+          show="true"
+          class="reporti duration-700 opacity-0 translate-y-20 object-contain"
           src="/images/robo_analysis-01.png"
         />
       </div>
       <article class="flex-1 2xl:mt-[100px] 2xl:ml-[137px]">
         <p
-          class="reporti text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+          show="true"
+          class="reporti duration-700 opacity-0 translate-y-20 text-lg font-normal leading-[35px] dark:text-HahuGray/4"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
           ultricies aliquet sed vel eu dictumst sed. Amet, habitant augue
@@ -44,7 +74,8 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
         <br />
         <br />
         <p
-          class="reporti text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+          show="true"
+          class="reporti duration-700 opacity-0 translate-y-20 text-lg font-normal leading-[35px] dark:text-HahuGray/4"
         >
           Adipiscing sed ante ut magna nullam. Tincidunt nullam ornare orci in.
           Phasellus eu mi, adipiscing vivamus. Arcu, eu adipiscing convallis at
@@ -54,7 +85,7 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
           turpis. In fermentum tempus sed potenti eget tortor gravida netus
           tempor.
         </p>
-        <div class="reporti mt-12 flex">
+        <div class="reporti duration-700 opacity-0 translate-y-20 mt-12 flex">
           <NuxtLink to="/reports" class="group flex">
             <button
               class="flex items-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white"

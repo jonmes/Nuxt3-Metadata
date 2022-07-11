@@ -65,7 +65,7 @@ onMounted(() => {
     <div class="flex flex-col items-center">
       <h1
         show="true"
-        class="mt-10 blogi duration-700 opacity-0 translate-y-20 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        class="blogi duration-700 opacity-0 translate-y-20 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         Blog
       </h1>

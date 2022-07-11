@@ -88,23 +88,57 @@ const team = [
   //   prov: "The only way to do great work is to love what you do.",
   // },
 ];
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle(
+          "[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "[&[show=true]]:translate-x-0",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "[&[show=true]]:translate-y-0",
+          entry.isIntersecting
+        );
+        if (entry.isIntersecting) {
+          observer.unobserve(entry.target);
+          return entry.target;
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+  document.querySelectorAll(".teami").forEach((selection) => {
+    observer.observe(selection);
+  });
+});
 </script>
 
 <template>
   <section class="flex flex-col" id="team">
     <div class="flex flex-col items-center">
       <h2
-        class="mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        show="true"
+        class="teami duration-700 opacity-0 translate-y-20 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         OUR TEAM
       </h2>
       <h2
-        class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+        show="true"
+        class="teami duration-700 opacity-0 translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
         Here are some of our core management team
       </h2>
       <p
-        class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
+        show="true"
+        class="teami duration-700 opacity-0 translate-y-20 mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
         Highly professional and capable of running your business across all
         digital channels.
@@ -115,7 +149,8 @@ const team = [
       class="mt-11 flex flex-wrap items-center justify-center gap-x-0 gap-y-6 md:gap-x-4 lg:gap-x-6 lg:gap-y-6 4xl:gap-x-16 4xl:gap-y-16"
     >
       <div
-        class="self-center rounded-md bg-white duration-500 hover:shadow-lg dark:bg-HahuGray1"
+        show="true"
+        class="self-center delay-100 rounded-md bg-white hover:shadow-lg dark:bg-HahuGray1 teami duration-700 opacity-0 translate-y-20 translate-x-20"
         v-for="(person, i) in team"
       >
         <div class="relative mt-[20px] flex flex-row justify-center">
