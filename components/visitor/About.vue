@@ -1,5 +1,33 @@
 <script setup>
 import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      console.log(entries);
+      entries.forEach((entry) => {
+        entry.target.classList.toggle(
+          "[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "[&[show=true]]:translate-y-0",
+          entry.isIntersecting
+        );
+        if (entry.isIntersecting) {
+          observer.unobserve(entry.target);
+          return entry.target;
+        }
+      });
+    },
+    {
+      threshold: 0.5,
+    }
+  );
+  document.querySelectorAll(".abouti").forEach((selection) => {
+    observer.observe(selection);
+  });
+});
 </script>
 
 <template>
@@ -7,18 +35,23 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
     <div id="about">
       <div class="flex flex-col items-center">
         <h1
-          class="mt-20 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+          show="true"
+          class="abouti duration-1000 opacity-0 translate-y-10 mt-20 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
         >
           About
         </h1>
         <h2
-          class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+          show="true"
+          class="abouti duration-1000 opacity-0 translate-y-10 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
         >
           What is HaHuJobs?
         </h2>
       </div>
       <div class="flex flex-col lg:mt-10 3xl:flex-row">
-        <div class="flex flex-1 overflow-hidden">
+        <div
+          show="true"
+          class="abouti duration-1000 opacity-0 translate-y-10 flex flex-1 overflow-hidden"
+        >
           <img
             class="object-contain"
             alt="hahu core"
@@ -26,7 +59,10 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
           />
         </div>
         <article class="mt-[54px] flex-1">
-          <p class="text-lg font-normal leading-[35px] dark:text-HahuGray/4">
+          <p
+            show="true"
+            class="abouti duration-1000 opacity-0 translate-y-10 text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+          >
             HaHuJobs a cloud services operating to capture structured data of
             the Ethiopian skilled and non-skilled labor market through digitally
             connecting thousands of job seekers in major Ethiopian cities as
@@ -42,8 +78,16 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
             primary concept HaHuJobs has a strong biometric based jobseeker
             identification and an automated method of matching workers with
             appropriate vacancy through structured data formats.
-            <br />
-            <br />
+          </p>
+          <br
+            show="true"
+            class="abouti duration-1000 opacity-0 translate-y-10"
+          />
+          <br
+            show="true"
+            class="abouti duration-1000 opacity-0 translate-y-10"
+          />
+          <p show="true" class="abouti duration-1000 opacity-0 translate-y-10">
             The service is built as an ecosystem of digital services to offer a
             holistic approach to respond to various data and automation gaps
             with in the Ethiopian labor market. It features layers and network
@@ -51,7 +95,11 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
             stakeholders like, the jobseekers, employers, the government and
             development partners.
           </p>
-          <div class="mt-12 mb-14 flex">
+
+          <div
+            show="true"
+            class="mt-12 mb-14 flex abouti duration-1000 opacity-0 translate-y-10"
+          >
             <NuxtLink :to="{ name: 'AboutUs' }" class="group">
               <button
                 class="flex items-center self-end rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white"
