@@ -57,7 +57,7 @@ const Blogs = [
   },
   {
     id: 6,
-    img: "/images/blog_post_6.jpg",
+    img: "/images/blog_post_6.png",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "HahuJobs have signed a service agreement with SNV",
@@ -88,6 +88,7 @@ const Blogs = [
   //   link: "blogs-id-blogDetail",
   // },
 ];
+
 </script>
 
 <template>
@@ -139,7 +140,8 @@ const Blogs = [
       <div
         class="mt-[56px] grid grid-cols-1 gap-y-[68px] lg:grid-cols-2 lg:gap-x-[100px] xl:gap-x-[155px]"
       >
-        <div
+        <NuxtLink
+          :to="'/blogs/' + blog.id"
           class="flex flex-col self-start rounded-2xl bg-white duration-500 ease-in dark:bg-HahuGray1"
           v-for="(blog, index) in Blogs"
           :key="index"
@@ -156,16 +158,15 @@ const Blogs = [
           >
             {{ blog.title }}
           </h2>
-          <NuxtLink
-            :to="{ name: `${blog.link}`, params: { id: `${blog.id}` } }"
+          <button
             class="mt-[34px] ml-8 mb-[30px] flex items-center self-start group text-lg font-medium text-primary"
           >
             Read Post
             <ArrowNarrowRightIcon
               class="ml-[9px] w-[18px] text-primary group-hover:translate-x-2 duration-300"
             />
-          </NuxtLink>
-        </div>
+          </button>
+        </NuxtLink>
       </div>
 
       <button

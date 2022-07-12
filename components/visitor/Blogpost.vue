@@ -114,7 +114,7 @@ const blogs = [
           {{ blog.title }}
         </p>
         <NuxtLink
-          :to="{ name: `${blog.link}`, params: { id: `${blog.id}` } }"
+          :to="'/blogs/' + blog.id"
           class="group mt-[34px] ml-8 mb-[30px] flex items-center self-start text-lg font-medium text-primary"
         >
           Read Post

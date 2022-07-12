@@ -14,6 +14,58 @@ const crumb = [
   { id: 1, name: "Blog", link: "blogs", current: false },
   { id: 2, name: "Blog Detail", link: "", current: true },
 ];
+
+const Blogs = [
+  {
+    id: 1,
+    img: "/images/blog_post_1.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title: "Hey! Today let's introduce yout to AWAQI",
+    p1: "We announced that HaHuJobs have signed an MoU with the Ethiopian Investment Commission to cooperate on digitizing labour grievance reporting, investor OSSCs center service request management and worker identification with in the federal industrial parks.",
+    p2: "It's with great pleasure that we announce HaHuJobs have signed an MoU with the Ethiopian Investment Commission to cooperate on digitizing labour grievance reporting, investor OSSCs center service request management and worker identification with in the federal industrial parks. We are greatful for the opportunity to contribute and look forward to merits of this engagement.",
+  },
+  {
+    id: 2,
+    img: "/images/blog_post_2.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title:
+      "HaHuJobs have signed an MoU with the Ethiopian Investment Commission",
+  },
+  {
+    id: 3,
+    img: "/images/blog_post_3.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title: "ALx Software Engineering training programm.",
+  },
+  {
+    id: 4,
+    img: "/images/blog_post_4.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title: "ALx African Career Catalyst (ACC)",
+  },
+  {
+    id: 5,
+    img: "/images/blog_post_5.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title: "ALx Young Entrepreneurs Programme (YEP)",
+  },
+  {
+    id: 6,
+    img: "/images/blog_post_6.png",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title: "HahuJobs have signed a service agreement with SNV",
+  },
+];
+
+const router = useRoute();
+
+const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
 </script>
 
 <template>
@@ -28,7 +80,7 @@ const crumb = [
         <div class="flex">
           <NuxtLink
             class="mt-[38px] sm:mt-0 flex self-start sm:self-end"
-            :to="{ name: 'index' }"
+            to="/blogs"
           >
             <button
               class="group flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3"
@@ -43,41 +95,32 @@ const crumb = [
       <h1
         class="mt-10 text-2xl font-bold leading-[60px] text-HahuGray1 dark:text-HahuGray/4 xl:text-3xl"
       >
-        Lorem ipsum dolor sit amet
+        {{ filteredBlog.title }}
       </h1>
       <div class="mt-6 flex items-center gap-14">
-        <h2
+        <h1
           class="rounded-full bg-primary-lite px-3 py-[5px] text-xs font-medium leading-[18px] text-primary"
         >
-          TECHNOLOGY
-        </h2>
+          {{ filteredBlog.cat }}
+        </h1>
         <p class="text-base font-medium leading-6 text-primary">Jan 12, 2022</p>
       </div>
 
       <p
         class="mt-[40px] text-base font-normal leading-[30px] text-HahuGray2 dark:text-HahuGray/4 md:text-lg"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum
-        etiam elit vel ligula massa sagittis sit. At nec massa fermentum
-        consectetur diam faucibus hendrerit. Fringilla sit arcu eu vitae. Diam
-        euismod varius ac sed neque cursus in. Tellus nunc posuere morbi ac
-        tellus cursus malesuada blandit. Purus ut laoreet ornare amet, vel,
-        porttitor eleifend egestas mauris. Blandit odio aliquet egestas magna
-        amet.
+        {{ filteredBlog.p1 }}
       </p>
-      <img class="mt-10 md:mt-[90px]" src="/images/blogImg.png" />
-      <p
+      <img class="mt-10 md:mt-[90px] rounded-2xl" :src="filteredBlog.img" />
+      <!-- <p
         class="mt-[25px] text-base font-light leading-[30px] text-HahuGray1 md:text-lg"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
+        {{filteredBlog.title}}
+      </p> -->
       <p
         class="mt-10 text-base font-normal leading-[30px] text-HahuGray1 dark:text-HahuGray/4 md:mt-[90px] md:text-lg"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa.
-        Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non
-        massa enim vitae duis mattis. Vel in ultricies vel fringilla.
+        {{filteredBlog.p2}}
       </p>
       <h1
         class="mt-10 text-3xl font-semibold leading-[38px] text-gray-800 dark:text-HahuGray/4 md:mt-[100px]"

@@ -22,7 +22,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       const el = await findEl(to.hash);
 
       if ("scrollBehavior" in document.documentElement.style) {
-        return window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
+        return window.scrollTo({ top: el?.offsetTop, behavior: "smooth" });
       } else {
         return window.scrollTo(0, el.offsetTop);
       }
