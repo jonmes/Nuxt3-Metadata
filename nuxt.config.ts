@@ -18,7 +18,7 @@ export default defineNuxtConfig({
           "data-hid": "description",
           name: "description",
           content:
-            "Find career opportunities in Ethiopia in a sector of your choice. HaHuJobs vacancy aggregation and core services for the Ethiopian labor market services.",
+            "Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job matching and labor market information platform in Ethiopia. With various service deployments to address the Ethiopian labor market needs; we stand at the for front of the local digital job matching industry.",
         },
         {
           "data-n-head": "1",
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
           "data-n-head": "1",
           property: "og:description",
           content:
-            "Find career opportunities in Ethiopia in a sector of your choice. HaHuJobs vacancy aggregation and core services for the Ethiopian labor market services.",
+            "Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job matching and labor market information platform in Ethiopia. With various service deployments to address the Ethiopian labor market needs; we stand at the for front of the local digital job matching industry.",
         },
         {
           "data-n-head": "1",
@@ -59,7 +59,7 @@ export default defineNuxtConfig({
           "data-n-head": "1",
           property: "twitter:description",
           content:
-            "Find career opportunities in Ethiopia in a sector of your choice. HaHuJobs vacancy aggregation and core services for the Ethiopian labor market services.",
+            "Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job matching and labor market information platform in Ethiopia. With various service deployments to address the Ethiopian labor market needs; we stand at the for front of the local digital job matching industry.",
         },
         { name: "twitter:image", content: "/images/logo_150.png" },
         {

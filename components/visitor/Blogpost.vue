@@ -51,7 +51,7 @@ onMounted(() => {
       });
     },
     {
-      threshold: 0.3,
+      threshold: 0.1,
     }
   );
   document.querySelectorAll(".blogi").forEach((selection) => {
@@ -64,15 +64,14 @@ onMounted(() => {
   <section class="mt-10 flex flex-col" id="blog">
     <div class="flex flex-col items-center">
       <h1
-        show="true"
-        class="blogi duration-700 opacity-0 translate-y-20 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        class="mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         Blog
       </h1>
       <NuxtLink
         show="true"
         :to="{ name: 'blogs' }"
-        class="blogi duration-700 opacity-0 translate-y-20 mt-[34px] self-center"
+        class="mt-[34px] self-center"
       >
         <button
           class="rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white duration-300 hover:translate-x-1 hover:-translate-y-1 hover:shadow-2xl active:translate-x-0 active:translate-y-0 active:shadow-none xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
@@ -82,7 +81,7 @@ onMounted(() => {
       </NuxtLink>
       <p
         show="true"
-        class="blogi duration-700 opacity-0 translate-y-20 mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
+        class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
         Below are some of our updates regarding our ventures with in the labor
         market and our partners offers in regards to related endeavors

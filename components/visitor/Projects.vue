@@ -147,7 +147,7 @@ onMounted(() => {
       });
     },
     {
-      threshold: 0.5,
+      threshold: 0.1,
     }
   );
   document.querySelectorAll(".projecti").forEach((selection) => {
@@ -239,10 +239,12 @@ onMounted(() => {
       </div>
     </div>
 
-    <Carousel
-      class="mt-20 w-full justify-center self-center"
-      :cardSlider="cardSlider"
-    />
+    <div class="overflow-hidden">
+      <Carousel
+        class="mt-20 justify-center self-center"
+        :cardSlider="cardSlider"
+      />
+    </div>
   </section>
 </template>
 

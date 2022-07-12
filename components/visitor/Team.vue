@@ -89,20 +89,22 @@ const team = [
   // },
 ];
 
+const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
+
 onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         entry.target.classList.toggle(
-          "[&[show=true]]:opacity-100",
+          "lg:[&[show=true]]:opacity-100",
           entry.isIntersecting
         );
         entry.target.classList.toggle(
-          "[&[show=true]]:translate-x-0",
+          "lg:[&[show=true]]:translate-x-0",
           entry.isIntersecting
         );
         entry.target.classList.toggle(
-          "[&[show=true]]:translate-y-0",
+          "lg:[&[show=true]]:translate-y-0",
           entry.isIntersecting
         );
         if (entry.isIntersecting) {
@@ -122,23 +124,23 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="flex flex-col" id="team">
+  <section class="flex flex-col overflow-hidden" id="team">
     <div class="flex flex-col items-center">
       <h2
         show="true"
-        class="teami duration-700 opacity-0 translate-y-20 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        class="teami lg:duration-700 lg:opacity-0 lg:translate-y-20 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         OUR TEAM
       </h2>
       <h2
         show="true"
-        class="teami duration-700 opacity-0 translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+        class="teami lg:duration-700 lg:opacity-0 lg:translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
         Here are some of our core management team
       </h2>
       <p
         show="true"
-        class="teami duration-700 opacity-0 translate-y-20 mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
+        class="teami lg:duration-700 lg:opacity-0 lg:translate-y-20 mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
         Highly professional and capable of running your business across all
         digital channels.
@@ -150,7 +152,8 @@ onMounted(() => {
     >
       <div
         show="true"
-        class="self-center delay-100 rounded-md bg-white hover:shadow-lg dark:bg-HahuGray1 teami duration-700 opacity-0 translate-y-20 translate-x-20"
+        class="self-center rounded-md bg-white hover:shadow-lg overflow-hidden dark:bg-HahuGray1 teami lg:duration-700 lg:opacity-0 lg:translate-y-20 lg:translate-x-20"
+        :class="`lg:delay-${delay[i]}`"
         v-for="(person, i) in team"
       >
         <div class="relative mt-[20px] flex flex-row justify-center">

@@ -20,7 +20,7 @@ onMounted(() => {
       });
     },
     {
-      threshold: 0.2,
+      threshold: 0.01,
     }
   );
   document.querySelectorAll(".servicei").forEach((card) => {
@@ -33,19 +33,19 @@ onMounted(() => {
     <div class="flex flex-col items-center">
       <h1
         show="true"
-        class="servicei opacity-0 translate-y-20 duration-700 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        class="servicei lg:opacity-0 lg:translate-y-20 lg:duration-700 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         Services
       </h1>
       <h2
         show="true"
-        class="servicei opacity-0 duration-700 translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+        class="servicei lg:opacity-0 lg:duration-700 lg:translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
         Standard service with Ethiopian hospitality!
       </h2>
       <p
         show="true"
-        class="servicei opacity-0 translate-y-20 duration-700 mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
+        class="servicei lg:opacity-0 lg:translate-y-20 lg:duration-700 mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-base md"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui urna,
         ullamcorper odio odio turpis ipsum imperdiet turpis. Elit, nec, leo
@@ -57,7 +57,7 @@ onMounted(() => {
     >
       <div
         show="true"
-        class="servicei opacity-0 translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        class="servicei lg:opacity-0 lg:translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -100,7 +100,7 @@ onMounted(() => {
 
       <div
         show="true"
-        class="servicei opacity-0 delay-100 translate-y-20 group relative z-10 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        class="servicei lg:opacity-0 lg:delay-100 lg:translate-y-20 group relative z-10 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -140,7 +140,7 @@ onMounted(() => {
 
       <div
         show="true"
-        class="servicei opacity-0 delay-200 translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        class="servicei lg:opacity-0 lg:delay-200 lg:translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -181,7 +181,7 @@ onMounted(() => {
 
       <div
         show="true"
-        class="servicei opacity-0 translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        class="servicei lg:opacity-0 lg:translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-300 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -224,7 +224,7 @@ onMounted(() => {
 
       <div
         show="true"
-        class="servicei opacity-0 delay-100 translate-y-20 group relative z-10 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        class="servicei lg:opacity-0 lg:delay-100 lg:translate-y-20 group relative z-10 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
@@ -267,7 +267,7 @@ onMounted(() => {
 
       <div
         show="true"
-        class="servicei opacity-0 delay-200 translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
+        class="servicei lg:opacity-0 lg:delay-200 lg:translate-y-20 group relative flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-700 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]"
       >
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
