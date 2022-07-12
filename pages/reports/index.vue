@@ -17,7 +17,7 @@ const Reports = [
   {
     id: "1",
     link: "reports-id-reportDetail",
-    img: "/images/MonthlyReport.png",
+    img: "/images/report-1.jpg",
     title: "Job by sector from 2019 – 2020 ",
     range: "Monthly",
     date: "Jan 12, 2022",
@@ -37,7 +37,7 @@ const Reports = [
   {
     id: "3",
     link: "reports-id-reportDetail",
-    img: "/images/HahuYearlyReport.png",
+    img: "/images/YouTube_annual_report.png",
     title: "Total aggregated jobs by sector from 2019 - 2020",
     range: "Annually",
     date: "Jan 12, 2022",
@@ -47,7 +47,7 @@ const Reports = [
   {
     id: "4",
     link: "reports-id-reportDetail",
-    img: "/images/HahuYearlyReport.png",
+    img: "/images/YouTube_annual_report.png",
     title: "Total aggregated jobs by sector 2020-2021",
     range: "Annually",
     date: "Jan 12, 2022",
@@ -57,7 +57,7 @@ const Reports = [
   {
     id: "5",
     link: "reports-id-reportDetail",
-    img: "/images/HahuYearlyReport.png",
+    img: "/images/YouTube_annual_report.png",
     title: "Jobs by years of experience from 2020 - 2021",
     range: "Annually",
     date: "Jan 12, 2022",
@@ -67,7 +67,7 @@ const Reports = [
   {
     id: "6",
     link: "reports-id-reportDetail",
-    img: "/images/HahuYearlyReport.png",
+    img: "/images/YouTube_annual_report.png",
     title: "Industry Parks service yearly report ",
     range: "Annually",
     date: "Jan 12, 2022",
@@ -77,7 +77,7 @@ const Reports = [
   {
     id: "7",
     link: "reports-id-reportDetail",
-    img: "/images/HahuYearlyReport.png",
+    img: "/images/report-7.jpg",
     title: "Monthly Job Post from April 01-30, 2022",
     range: "Annually",
     date: "Jan 12, 2022",
@@ -87,7 +87,7 @@ const Reports = [
   {
     id: "8",
     link: "reports-id-reportDetail",
-    img: "/images/HahuYearlyReport.png",
+    img: "/images/report-8.jpg",
     title: "Monthly Job Post from May 01-31, 2022",
     range: "Monthly",
     date: "Jan 12, 2022",
@@ -97,7 +97,7 @@ const Reports = [
   {
     id: "9",
     link: "reports-id-reportDetail",
-    img: "/images/HahuYearlyReport.png",
+    img: "/images/report-9.jpg",
     title: "Monthly Job Post from June 01-30, 2022",
     range: "Monthly",
     date: "Jan 12, 2022",
@@ -216,14 +216,15 @@ const filter = (e) => {
           >
         </div>
 
-
         <NuxtLink
           v-for="(report, index) in Reports"
           :key="index"
           :to="{ name: `${report.link}`, params: { id: `${report.id}` } }"
           class="mt-10 flex flex-col justify-around gap-x-[67px] self-start rounded-[15px] bg-white px-7 pt-[58px] duration-500 ease-in dark:bg-HahuGray1 lg:mt-[105px] lg:flex-row xl:pl-12 4xl:min-w-[1263px]"
         >
-          <img :src="report.img" class="mb-2 object-contain" />
+          <div class="flex w-4/12">
+            <img :src="report.img" class="mb-2 object-contain" />
+          </div>
           <div class="flex flex-col">
             <h1
               class="text-lg font-bold leading-[30px] text-HahuGray1 duration-500 ease-in dark:text-HahuGray/4"

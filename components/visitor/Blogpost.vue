@@ -4,60 +4,61 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
 const blogs = [
   {
     id: 1,
-    img: "/images/blog_post_1.png",
+    img: "/images/blog_post_1.jpg",
     catg: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Lorem ipsum dolor sit amet, consectetur elit.",
+    title: "Hey! Today let's introduce yout to AWAQI",
     link: "blogs-id-blogDetail",
   },
   {
     id: 2,
-    img: "/images/blog_post_2.png",
+    img: "/images/blog_post_2.jpg",
     catg: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Lorem ipsum dolor sit amet, consectetur elit.",
+    title:
+      "HaHuJobs have signed an MoU with the Ethiopian Investment Commission",
     link: "blogs-id-blogDetail",
   },
   {
     id: 3,
-    img: "/images/blog_post_3.png",
+    img: "/images/blog_post_3.jpg",
     catg: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Lorem ipsum dolor sit amet, consectetur elit.",
+    title: "ALx Software Engineering training",
     link: "blogs-id-blogDetail",
   },
 ];
 
-onMounted(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle(
-          "[&[show=true]]:opacity-100",
-          entry.isIntersecting
-        );
-        entry.target.classList.toggle(
-          "[&[show=true]]:translate-x-0",
-          entry.isIntersecting
-        );
-        entry.target.classList.toggle(
-          "[&[show=true]]:translate-y-0",
-          entry.isIntersecting
-        );
-        if (entry.isIntersecting) {
-          observer.unobserve(entry.target);
-          return entry.target;
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
-  document.querySelectorAll(".blogi").forEach((selection) => {
-    observer.observe(selection);
-  });
-});
+// onMounted(() => {
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         entry.target.classList.toggle(
+//           "[&[show=true]]:opacity-100",
+//           entry.isIntersecting
+//         );
+//         entry.target.classList.toggle(
+//           "[&[show=true]]:translate-x-0",
+//           entry.isIntersecting
+//         );
+//         entry.target.classList.toggle(
+//           "[&[show=true]]:translate-y-0",
+//           entry.isIntersecting
+//         );
+//         if (entry.isIntersecting) {
+//           observer.unobserve(entry.target);
+//           return entry.target;
+//         }
+//       });
+//     },
+//     {
+//       threshold: 0.1,
+//     }
+//   );
+//   document.querySelectorAll(".blogi").forEach((selection) => {
+//     observer.observe(selection);
+//   });
+// });
 </script>
 
 <template>
@@ -93,7 +94,7 @@ onMounted(() => {
     >
       <div
         show="true"
-        class="blogi duration-700 opacity-0 -translate-x-20 flex max-w-[560px] flex-col rounded-t-md rounded-b-[15px] bg-white dark:bg-HahuGray1"
+        class="flex max-w-[560px] flex-col rounded-t-md rounded-b-[15px] bg-white dark:bg-HahuGray1"
         :class="`delay-${i * 100}`"
         v-for="(blog, i) in blogs"
         :key="i"
@@ -108,7 +109,7 @@ onMounted(() => {
           {{ blog.date }}
         </h4>
         <p
-          class="mt-4 ml-8 pr-[24px] text-xl font-bold leading-[38px] dark:text-HahuGray/4 xl:text-3xl"
+          class="mt-4 ml-8 pr-[24px] text-xl font-bold leading-[38px] dark:text-HahuGray/4 xl:text-2xl"
         >
           {{ blog.title }}
         </p>

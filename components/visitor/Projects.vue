@@ -128,32 +128,32 @@ const cardSlider = [
   },
 ];
 
-onMounted(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle(
-          "[&[show=true]]:opacity-100",
-          entry.isIntersecting
-        );
-        entry.target.classList.toggle(
-          "[&[show=true]]:translate-y-0",
-          entry.isIntersecting
-        );
-        if (entry.isIntersecting) {
-          observer.unobserve(entry.target);
-          return entry.target;
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
-  document.querySelectorAll(".projecti").forEach((selection) => {
-    observer.observe(selection);
-  });
-});
+// onMounted(() => {
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         entry.target.classList.toggle(
+//           "[&[show=true]]:opacity-100",
+//           entry.isIntersecting
+//         );
+//         entry.target.classList.toggle(
+//           "[&[show=true]]:translate-y-0",
+//           entry.isIntersecting
+//         );
+//         if (entry.isIntersecting) {
+//           observer.unobserve(entry.target);
+//           return entry.target;
+//         }
+//       });
+//     },
+//     {
+//       threshold: 0.1,
+//     }
+//   );
+//   document.querySelectorAll(".projecti").forEach((selection) => {
+//     observer.observe(selection);
+//   });
+// });
 </script>
 
 <template>
@@ -161,31 +161,28 @@ onMounted(() => {
     <div class="flex flex-col">
       <h1
         show="true"
-        class="projecti duration-700 opacity-0 translate-y-20 mt-10 self-center text-lg font-medium leading-5 dark:text-white md:mt-24"
+        class="mt-10 self-center text-lg font-medium leading-5 dark:text-white md:mt-24"
       >
         Projects
       </h1>
       <h2
         show="true"
-        class="projecti duration-700 opacity-0 translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+        class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
         Our Labor market related projects
       </h2>
-      <p
+      <!-- <p
         show="true"
         class="projecti duration-700 opacity-0 translate-y-20 mt-10 max-w-[750px] self-center text-center text-base font-normal leading-8 dark:text-white xs:text-lg"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa commodo
         sed nunc, justo. Potenti morbi ornare enim tortor, viverra nec.
-      </p>
+      </p> -->
 
       <div
         class="mt-10 flex flex-col justify-center space-y-10 space-x-0 lg:flex-row lg:space-y-0 lg:space-x-36 xl:space-x-[16.5rem]"
       >
-        <div
-          show="true"
-          class="flex flex-col projecti duration-700 opacity-0 translate-y-20"
-        >
+        <div show="true" class="flex flex-col">
           <h2 class="leading-16 self-center text-5xl font-bold text-primary">
             27
           </h2>
@@ -199,10 +196,7 @@ onMounted(() => {
           />
         </div>
 
-        <div
-          show="true"
-          class="flex flex-col projecti duration-700 opacity-0 translate-y-20 delay-150"
-        >
+        <div show="true" class="flex flex-col">
           <h2
             class="self-center text-5xl font-bold leading-[60px] text-primary"
           >
@@ -218,10 +212,7 @@ onMounted(() => {
           />
         </div>
 
-        <div
-          show="true"
-          class="flex flex-col projecti duration-700 opacity-0 translate-y-20 delay-300"
-        >
+        <div show="true" class="flex flex-col">
           <h2
             class="self-center text-5xl font-bold leading-[60px] text-primary"
           >

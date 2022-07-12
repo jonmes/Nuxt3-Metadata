@@ -30,39 +30,40 @@ onMounted(() => {
     windowWidth.value = window.innerWidth;
     carWidth(windowWidth.value);
   };
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle(
-          "lg:[&[show=true]]:opacity-100",
-          entry.isIntersecting
-        );
-        entry.target.classList.toggle(
-          "lg:[&[show=true]]:translate-x-0",
-          entry.isIntersecting
-        );
-        if (entry.isIntersecting) {
-          observer.unobserve(entry.target);
-          return entry.target;
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
-  document.querySelectorAll(".carouseli").forEach((selection) => {
-    observer.observe(selection);
-  });
 });
+// onMounted(() => {
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         entry.target.classList.toggle(
+//           "[&[show=true]]:opacity-100",
+//           entry.isIntersecting
+//         );
+//         entry.target.classList.toggle(
+//           "[&[show=true]]:translate-x-0",
+//           entry.isIntersecting
+//         );
+//         // if (entry.isIntersecting) {
+//         //   observer.unobserve(entry.target);
+//         //   return entry.target;
+//         // }
+//       });
+//     },
+//     {
+//       threshold: 0.2,
+//     }
+//   );
+//   document.querySelectorAll(".carouseli").forEach((selection) => {
+//     observer.observe(selection);
+//   });
+// });
 </script>
 
 <template>
   <carousel
     :items-to-show="itemsToShow"
     :wrap-around="true"
-    show="true"
-    class="mx-5 carouseli lg:duration-700 lg:opacity-0 lg:translate-x-40"
+    class="mx-5"
   >
     <slide
       v-for="slide in props.cardSlider"
@@ -125,14 +126,11 @@ onMounted(() => {
         </div>
       </NuxtLink>
     </slide>
-    <!-- <div> -->
     <template #addons="{ slideWidth }">
-      <div class="mx-10 hidden lg:block">
+      <div class="hidden lg:block">
         <navigation />
       </div>
-      <!-- <navigation :class="{ 'w-10': !showNav }" /> -->
     </template>
-    <!-- </div> -->
   </carousel>
 </template>
 

@@ -107,10 +107,10 @@ onMounted(() => {
           "lg:[&[show=true]]:translate-y-0",
           entry.isIntersecting
         );
-        if (entry.isIntersecting) {
-          observer.unobserve(entry.target);
-          return entry.target;
-        }
+        // if (entry.isIntersecting) {
+        //   observer.unobserve(entry.target);
+        //   return entry.target;
+        // }
       });
     },
     {
@@ -128,19 +128,19 @@ onMounted(() => {
     <div class="flex flex-col items-center">
       <h2
         show="true"
-        class="teami lg:duration-700 lg:opacity-0 lg:translate-y-20 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        class="mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         OUR TEAM
       </h2>
       <h2
         show="true"
-        class="teami lg:duration-700 lg:opacity-0 lg:translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+        class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
         Here are some of our core management team
       </h2>
       <p
         show="true"
-        class="teami lg:duration-700 lg:opacity-0 lg:translate-y-20 mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
+        class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
         Highly professional and capable of running your business across all
         digital channels.
@@ -152,7 +152,7 @@ onMounted(() => {
     >
       <div
         show="true"
-        class="self-center rounded-md bg-white hover:shadow-lg overflow-hidden dark:bg-HahuGray1 teami lg:duration-700 lg:opacity-0 lg:translate-y-20 lg:translate-x-20"
+        class="self-center rounded-md bg-white hover:shadow-lg overflow-hidden dark:bg-HahuGray"
         :class="`lg:delay-${delay[i]}`"
         v-for="(person, i) in team"
       >

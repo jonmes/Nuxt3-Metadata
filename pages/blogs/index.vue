@@ -16,52 +16,77 @@ const category = [
 const Blogs = [
   {
     id: 1,
-    img: "/images/Blog1.png",
+    img: "/images/blog_post_1.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Lorem ipsum dolor sit amet, consectetur elit.",
+    title: "Hey! Today let's introduce yout to AWAQI",
     link: "blogs-id-blogDetail",
   },
   {
     id: 2,
-    img: "/images/Blog2.png",
+    img: "/images/blog_post_2.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Lorem ipsum dolor sit amet, consectetur elit.",
+    title:
+      "HaHuJobs have signed an MoU with the Ethiopian Investment Commission",
     link: "blogs-id-blogDetail",
   },
   {
     id: 3,
-    img: "/images/Blog3.png",
+    img: "/images/blog_post_3.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Lorem ipsum dolor sit amet, consectetur elit.",
+    title: "ALx Software Engineering training programm.",
     link: "blogs-id-blogDetail",
   },
   {
     id: 4,
-    img: "/images/Blog4.png",
+    img: "/images/blog_post_4.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Lorem ipsum dolor sit amet, consectetur elit.",
+    title: "ALx African Career Catalyst (ACC)",
     link: "blogs-id-blogDetail",
   },
   {
     id: 5,
-    img: "/images/Blog5.png",
+    img: "/images/blog_post_5.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Lorem ipsum dolor sit amet, consectetur elit.",
+    title: "ALx Young Entrepreneurs Programme (YEP)",
     link: "blogs-id-blogDetail",
   },
   {
     id: 6,
-    img: "/images/Blog6.png",
+    img: "/images/blog_post_6.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Lorem ipsum dolor sit amet, consectetur elit.",
+    title: "HahuJobs have signed a service agreement with SNV",
     link: "blogs-id-blogDetail",
   },
+  // {
+  //   id: 4,
+  //   img: "/images/Blog4.png",
+  //   cat: "TECHNOLOGY",
+  //   date: "19 Jan 2022",
+  //   title: "Lorem ipsum dolor sit amet, consectetur elit.",
+  //   link: "blogs-id-blogDetail",
+  // },
+  // {
+  //   id: 5,
+  //   img: "/images/Blog5.png",
+  //   cat: "TECHNOLOGY",
+  //   date: "19 Jan 2022",
+  //   title: "Lorem ipsum dolor sit amet, consectetur elit.",
+  //   link: "blogs-id-blogDetail",
+  // },
+  // {
+  //   id: 6,
+  //   img: "/images/Blog6.png",
+  //   cat: "TECHNOLOGY",
+  //   date: "19 Jan 2022",
+  //   title: "Lorem ipsum dolor sit amet, consectetur elit.",
+  //   link: "blogs-id-blogDetail",
+  // },
 ];
 </script>
 
@@ -115,11 +140,11 @@ const Blogs = [
         class="mt-[56px] grid grid-cols-1 gap-y-[68px] lg:grid-cols-2 lg:gap-x-[100px] xl:gap-x-[155px]"
       >
         <div
-          class="flex flex-col rounded-2xl bg-white duration-500 ease-in dark:bg-HahuGray1"
+          class="flex flex-col self-start rounded-2xl bg-white duration-500 ease-in dark:bg-HahuGray1"
           v-for="(blog, index) in Blogs"
           :key="index"
         >
-          <img :src="blog.img" class="object-contain" />
+          <img :src="blog.img" class="object-contain rounded-t-2xl" />
           <h3
             class="mt-6 ml-8 self-start rounded-full bg-primary-lite px-3 py-[5px] text-xs font-medium leading-[18px] text-primary-dark"
           >

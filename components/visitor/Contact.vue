@@ -26,36 +26,36 @@ const submit = handleSubmit(async (values) => {
 
 const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
 
-onMounted(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle(
-          "lg:[&[show=true]]:opacity-100",
-          entry.isIntersecting
-        );
-        entry.target.classList.toggle(
-          "lg:[&[show=true]]:translate-x-0",
-          entry.isIntersecting
-        );
-        entry.target.classList.toggle(
-          "lg:[&[show=true]]:translate-y-0",
-          entry.isIntersecting
-        );
-        if (entry.isIntersecting) {
-          observer.unobserve(entry.target);
-          return entry.target;
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
-  document.querySelectorAll(".contacti").forEach((selection) => {
-    observer.observe(selection);
-  });
-});
+// onMounted(() => {
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         entry.target.classList.toggle(
+//           "lg:[&[show=true]]:opacity-100",
+//           entry.isIntersecting
+//         );
+//         entry.target.classList.toggle(
+//           "lg:[&[show=true]]:translate-x-0",
+//           entry.isIntersecting
+//         );
+//         entry.target.classList.toggle(
+//           "lg:[&[show=true]]:translate-y-0",
+//           entry.isIntersecting
+//         );
+//         if (entry.isIntersecting) {
+//           observer.unobserve(entry.target);
+//           return entry.target;
+//         }
+//       });
+//     },
+//     {
+//       threshold: 0.1,
+//     }
+//   );
+//   document.querySelectorAll(".contacti").forEach((selection) => {
+//     observer.observe(selection);
+//   });
+// });
 </script>
 
 <template>
@@ -63,19 +63,19 @@ onMounted(() => {
     <div class="mb-20 flex flex-col items-center">
       <h2
         show="true"
-        class="contacti lg:duration-700 lg:opacity-0 lg:translate-y-20 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        class="mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         Contact
       </h2>
       <h2
         show="true"
-        class="contacti lg:duration-700 lg:opacity-0 lg:translate-y-20 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+        class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
       >
         We would love to hear from you!
       </h2>
       <p
         show="true"
-        class="contacti lg:duration-700 lg:opacity-0 lg:translate-y-20 mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
+        class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
         Please fill out the form below to reach our communications department
         for any enquiries you may have, our doors are open for everyone
@@ -84,10 +84,7 @@ onMounted(() => {
     <div class="flex flex-col 2xl:flex-row 2xl:space-x-[106px]">
       <div class="mb-[58px] flex-1">
         <div class="mt-6 flex flex-col justify-around sm:flex-row">
-          <div
-            show="true"
-            class="contacti lg:duration-700 lg:opacity-0 lg:translate-y-20 flex flex-row flex-wrap items-baseline"
-          >
+          <div show="true" class="flex flex-row flex-wrap items-baseline">
             <img :src="Email" />
             <div class="ml-[15px] flex flex-col">
               <h2 class="text-xl font-bold leading-[38px] text-primary">
@@ -101,10 +98,7 @@ onMounted(() => {
             </div>
           </div>
 
-          <div
-            show="true"
-            class="contacti lg:delay-100 lg:duration-700 lg:opacity-0 lg:translate-y-20 flex flex-row flex-wrap items-baseline"
-          >
+          <div show="true" class="flex flex-row flex-wrap items-baseline">
             <img :src="Phone" />
             <div class="ml-[15px] flex flex-col">
               <h2 class="text-xl font-bold leading-[38px] text-primary">
@@ -120,10 +114,7 @@ onMounted(() => {
             </div>
           </div>
 
-          <div
-            show="true"
-            class="contacti lg:delay-200 lg:duration-700 lg:opacity-0 lg:translate-y-20 flex flex-row flex-wrap items-baseline"
-          >
+          <div show="true" class="flex flex-row flex-wrap items-baseline">
             <img :src="Office" />
             <div class="ml-[15px] flex flex-col">
               <h2 class="text-xl font-bold leading-[38px] text-primary">
@@ -150,8 +141,7 @@ onMounted(() => {
             >
               <li
                 show="true"
-                class="contacti lg:duration-700 lg:opacity-0 flex flex-col gap-y-1"
-                :class="`lg:delay-${delay[i]}`"
+                class="flex flex-col gap-y-1"
                 v-for="(branch, i) in branchs"
               >
                 <h2
@@ -173,7 +163,7 @@ onMounted(() => {
         <form
           @submit.prevent="submit"
           show="true"
-          class="contacti lg:duration-700 lg:opacity-0 lg:translate-x-20 flex pb-10 lg:pb-0 max-h-[915px] w-full sm:w-10/12 flex-col rounded-md bg-white pt-11 px-2 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24"
+          class="flex pb-10 lg:pb-0 max-h-[915px] w-full sm:w-10/12 flex-col rounded-md bg-white pt-11 px-2 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24"
         >
           <InputsHtextfield
             v-model="item.name"
