@@ -19,7 +19,7 @@ const Reports = [
     id: "1",
     link: "reports-id-reportDetail",
     img: "/images/report-1.jpg",
-    title: "Job by sector from 2019 – 2020 ",
+    title: "Jobs by sector from June 2019 - January 2020",
     range: "Monthly",
     date: "Jan 12, 2022",
     content:
@@ -29,37 +29,37 @@ const Reports = [
     id: "2",
     link: "reports-id-reportDetail",
     img: "/images/YouTube_annual_report.png",
-    title: "Jobs by source from 2019 - 2020",
+    title: "Jobs by source from September 2019 - September 2020",
     range: "Annually",
     date: "Jan 12, 2022",
     content:
-      "From 2019 to 2020, we have been able to collect job vacancies from 10 different sources, including newspapers, and presented them in a more user-friendly manner on the HaHuJobs platform. Vacancies from the Ethiopian Reporter newspaper posses the highest number with 8,484 job posts, according to the published report.",
+      "From September 2019 to September 2020, we have been able to collect job vacancies from 10 different sources, including newspapers, and presented them in a more user-friendly manner on the HaHuJobs platform. Vacancies from the Ethiopian Reporter newspaper posses the highest number with 8,484 job posts, according to the published report.",
   },
   {
     id: "3",
     link: "reports-id-reportDetail",
     img: "/images/YouTube_annual_report.png",
-    title: "Total aggregated jobs by sector from 2019 - 2020",
+    title: "Jobs by sector from September 2019 - September 2020",
     range: "Annually",
     date: "Jan 12, 2022",
     content:
-      "From 2019 to 2020, we have been able to deliver more than 19,000 job vacancies of various sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
+      "From September 2019 to September 2020, we have been able to deliver more than 19,000 job vacancies of various sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
   },
   {
     id: "4",
     link: "reports-id-reportDetail",
     img: "/images/YouTube_annual_report.png",
-    title: "Total aggregated jobs by sector 2020-2021",
+    title: "Jobs by sector from September 2020 - September 2021",
     range: "Annually",
     date: "Jan 12, 2022",
     content:
-      "From 2020 to 2021, we have been able to deliver more than 28,000 job vacancies from 16 different sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
+      "From September 2020 to September 2021, we have been able to deliver more than 28,000 job vacancies from 16 different sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
   },
   {
     id: "5",
     link: "reports-id-reportDetail",
     img: "/images/YouTube_annual_report.png",
-    title: "Jobs by years of experience from 2020 - 2021",
+    title: "Jobs by years of experience from September 2020 - September 2021",
     range: "Annually",
     date: "Jan 12, 2022",
     content:
@@ -69,7 +69,7 @@ const Reports = [
     id: "6",
     link: "reports-id-reportDetail",
     img: "/images/YouTube_annual_report.png",
-    title: "Industry Parks service yearly report ",
+    title: "Supply and demand data in 7 industry parks in the year 2020/21",
     range: "Annually",
     date: "Jan 12, 2022",
     content:
