@@ -96,13 +96,13 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
       <meta
         data-n-head="1"
         property="og:url"
-        content="https://nuxt-static-dep.netlify.app/"
+        content="https://Hahu-nuxt-3-dep.netlify.app/"
       />
       <meta data-n-head="1" property="og:type" content="website" />
       <meta
         data-n-head="1"
         property="og:image"
-        :content="'https://nuxt-static-dep.netlify.app' + filteredBlog.img"
+        :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
       />
       <meta
         data-n-head="1"
@@ -112,19 +112,25 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
       <meta
         data-n-head="1"
         property="twitter:domain"
-        content="nuxt-static-dep.netlify.app"
+        content="Hahu-nuxt-3-dep.netlify.app"
       />
       <meta
         property="twitter:url"
-        content="https://nuxt-static-dep.netlify.app/"
+        content="https://Hahu-nuxt-3-dep.netlify.app/"
       />
-      <meta data-n-head="1" property="twitter:title" content="Hahu Jobs" />
-      <meta data-n-head="1" property="twitter:title" content="Hahu Jobs" />
-      <meta name="twitter:image" :content="'https://hahu-nuxt-deployment.netlify.app' + filteredBlog.img" />
+      <meta
+        data-n-head="1"
+        property="twitter:title"
+        :content="filteredBlog.title"
+      />
+      <meta
+        name="twitter:image"
+        :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
+      />
       <meta
         data-n-head="1"
         property="twitter:image"
-        :content="'https://hahu-nuxt-deployment.netlify.app' + filteredBlog.img"
+        :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
       />
     </Head>
     <div class="flex min-h-screen justify-center md:px-11 xl:px-24">

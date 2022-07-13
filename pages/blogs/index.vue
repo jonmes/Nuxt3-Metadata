@@ -88,11 +88,56 @@ const Blogs = [
   //   link: "blogs-id-blogDetail",
   // },
 ];
-
 </script>
 
 <template>
   <div class="min-h-screen">
+    <Head>
+      <Title>Blogs</Title>
+      <!-- <Meta name="description" :content="filteredBlog.p1" /> -->
+      <meta data-n-head="1" property="og:description" content="List of Blogs" />
+      <meta
+        data-n-head="1"
+        data-hid="description"
+        name="description"
+        content="List of Blogs"
+      />
+      <meta
+        data-n-head="1"
+        property="og:url"
+        content="https://Hahu-nuxt-3-dep.netlify.app/"
+      />
+      <meta data-n-head="1" property="og:type" content="website" />
+      <meta
+        data-n-head="1"
+        property="og:image"
+        content="https://Hahu-nuxt-3-dep.netlify.app"
+      />
+      <meta
+        data-n-head="1"
+        property="twitter:card"
+        content="summary_large_image"
+      />
+      <meta
+        data-n-head="1"
+        property="twitter:domain"
+        content="Hahu-nuxt-3-dep.netlify.app"
+      />
+      <meta
+        property="twitter:url"
+        content="https://Hahu-nuxt-3-dep.netlify.app/"
+      />
+      <meta data-n-head="1" property="twitter:title" content="Blogs" />
+      <meta
+        name="twitter:image"
+        content="'https://Hahu-nuxt-3-dep.netlify.app/images/meta_img.png'"
+      />
+      <meta
+        data-n-head="1"
+        property="twitter:image"
+        content="https://Hahu-nuxt-3-dep.netlify.app/images/meta_img.png"
+      />
+    </Head>
     <section
       class="mt-10 flex flex-col px-5 md:px-20 lg:px-20 xl:px-36 2xl:px-[230px]"
     >

@@ -697,6 +697,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/kit@npm:@nuxt/kit-edge@latest":
+  version: 3.0.0-rc.4-27627432.1ced224
+  resolution: "@nuxt/kit-edge@npm:3.0.0-rc.4-27627432.1ced224"
+  dependencies:
+    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-rc.4-27627432.1ced224"
+    c12: ^0.2.8
+    consola: ^2.15.3
+    defu: ^6.0.0
+    globby: ^13.1.2
+    hash-sum: ^2.0.0
+    ignore: ^5.2.0
+    jiti: ^1.14.0
+    knitwork: ^0.1.2
+    lodash.template: ^4.5.0
+    mlly: ^0.5.4
+    pathe: ^0.3.2
+    pkg-types: ^0.3.3
+    scule: ^0.2.1
+    semver: ^7.3.7
+    unctx: ^1.1.4
+    unimport: ^0.4.4
+    untyped: ^0.4.4
+  checksum: 139d3ac4e51d3135bd16a66dc49226ed2235a2983070f3f953e04245622f0504f79d4b151c2bd65c0790542d90db12f41a3fcdc6ed2b3234c3c88195f641a78a
+  languageName: node
+  linkType: hard
+
 "@nuxt/kit@npm:^3.0.0-rc.3, @nuxt/kit@npm:^3.0.0-rc.4":
   version: 3.0.0-rc.4
   resolution: "@nuxt/kit@npm:3.0.0-rc.4"
@@ -736,6 +762,24 @@ __metadata:
     postcss-url: ^10.1.1
     semver: ^7.3.4
   checksum: e2846ad1383200ea3fe4d1146717f1c4ac06afb74997cc2ea0ba91210b6225f201fbd43af5d6bd5a03a86c7a53b95aae555f7d67a63a549d2d1036f0fe4b50fb
+  languageName: node
+  linkType: hard
+
+"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-rc.4-27627432.1ced224":
+  version: 3.0.0-rc.4-27627432.1ced224
+  resolution: "@nuxt/schema-edge@npm:3.0.0-rc.4-27627432.1ced224"
+  dependencies:
+    c12: ^0.2.8
+    create-require: ^1.1.1
+    defu: ^6.0.0
+    jiti: ^1.14.0
+    pathe: ^0.3.2
+    postcss-import-resolver: ^2.0.0
+    scule: ^0.2.1
+    std-env: ^3.1.1
+    ufo: ^0.8.5
+    unimport: ^0.4.4
+  checksum: 86ba4224db51eace4c700fd4fb231c4ddb44505299ca647b51fe57c8939a3a5c958ce74734e2e23a681890808bd3f4ffa51680832fb0811b3d345dfe8ff2c255
   languageName: node
   linkType: hard
 
@@ -1293,6 +1337,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/core@npm:^6.5.3":
+  version: 6.9.2
+  resolution: "@vueuse/core@npm:6.9.2"
+  dependencies:
+    "@vueuse/shared": 6.9.2
+    vue-demi: "*"
+  peerDependencies:
+    "@vue/composition-api": ^1.1.0
+    vue: ^2.6.0 || ^3.2.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    vue:
+      optional: true
+  checksum: 2b829c6520b7b9899a8780196e4d4162b9704be47bf6c624c7ba17a8c2afda8c4a814a7561137f4f0c8aa0a9ea79911e5ca8f62b6866e0ce31d88ed073f79d8a
+  languageName: node
+  linkType: hard
+
 "@vueuse/head@npm:^0.7.6":
   version: 0.7.6
   resolution: "@vueuse/head@npm:0.7.6"
@@ -1306,6 +1368,23 @@ __metadata:
   version: 8.9.1
   resolution: "@vueuse/metadata@npm:8.9.1"
   checksum: 06023a9bfbe68f0a837820bf808acdc7d14eb1c301dc0b861e1bd70b430c47636c6a42e2dcd57f33e82f383a91f2624f676fa8a906e787f805fb1cc630784ce4
+  languageName: node
+  linkType: hard
+
+"@vueuse/motion@npm:2.0.0-beta.4":
+  version: 2.0.0-beta.4
+  resolution: "@vueuse/motion@npm:2.0.0-beta.4"
+  dependencies:
+    "@vueuse/core": ^6.5.3
+    popmotion: ^10.0.1
+    vue-demi: "*"
+  peerDependencies:
+    "@vue/composition-api": ^1.2.2
+    vue: ^2.0.0 || >=3.0.0-rc.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  checksum: 2c9aa95422a2c6ad317cc7ccdd01ba928ca367f7a37ba9fafa322237e388b3f9cc4a0dad2550c774092548baf5b7382fed00ff3fd3a5bb7c520a0179eaad7f52
   languageName: node
   linkType: hard
 
@@ -1341,6 +1420,23 @@ __metadata:
     local-pkg: ^0.4.1
     vue-demi: "*"
   checksum: c61036b5ef2e8956f794d0fea5f3e87bc069d6f7fcc2317cec431d33c8304e49936353d6336dd67661daf59b36fe70ab0f787536cb4b78e659ff327054866b37
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:6.9.2":
+  version: 6.9.2
+  resolution: "@vueuse/shared@npm:6.9.2"
+  dependencies:
+    vue-demi: "*"
+  peerDependencies:
+    "@vue/composition-api": ^1.1.0
+    vue: ^2.6.0 || ^3.2.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    vue:
+      optional: true
+  checksum: d4cfa824ae4581e766dd7f230d0d0ede2ada565e7fa04dfa41b641f221f4ec8b64cbc0fdd6d4d25752b0798666a34f5c13d923d549bc8f650d703e81944ed546
   languageName: node
   linkType: hard
 
@@ -1789,7 +1885,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"c12@npm:^0.2.7":
+"c12@npm:^0.2.7, c12@npm:^0.2.8":
   version: 0.2.8
   resolution: "c12@npm:0.2.8"
   dependencies:
@@ -2514,6 +2610,13 @@ __metadata:
   version: 3.2.2
   resolution: "defu@npm:3.2.2"
   checksum: 60e0a5b849bdd9ebf527d65ef721edc144a0570579115fcfd0c3c8d8b5df41304c8a7b9fe82e739f4baccf6fc637cae3e800d16132fc968369786555d4f33621
+  languageName: node
+  linkType: hard
+
+"defu@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "defu@npm:5.0.1"
+  checksum: f65556c2e8aa7789080f04c1d52fd7188d8258d9bc7f673e5bedc6be33eb6150f41844ac96aec99c798e47eb9beb97dae03c24edd73d3ddc643e4c7c72124606
   languageName: node
   linkType: hard
 
@@ -3248,7 +3351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framesync@npm:^6.1.0":
+"framesync@npm:^6.0.1, framesync@npm:^6.1.0":
   version: 6.1.0
   resolution: "framesync@npm:6.1.0"
   dependencies:
@@ -5078,6 +5181,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuxt-use-motion@npm:^2.0.0-beta.11":
+  version: 2.0.0-beta.11
+  resolution: "nuxt-use-motion@npm:2.0.0-beta.11"
+  dependencies:
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest"
+    "@vueuse/motion": 2.0.0-beta.4
+    defu: ^5.0.0
+    vue-demi: ^0.12.1
+  checksum: ce162edcb3eaf335d1097ccee6c845a12150d630b3c4bf484e9be0f7d689f45b23f074a0ee472fd9f8e21d11a14ac66da13beac1a0dfe76a6b6885cc276b973f
+  languageName: node
+  linkType: hard
+
 "nuxt@npm:3.0.0-rc.4":
   version: 3.0.0-rc.4
   resolution: "nuxt@npm:3.0.0-rc.4"
@@ -5425,6 +5540,18 @@ __metadata:
     mlly: ^0.5.3
     pathe: ^0.3.0
   checksum: 1c74b65e12274c157bbbadfad50e68a17e4091f1e352d30c600de5da18200dbea35f349516e02a1fec6992a9b5531074bf0b3bcee9da160fe0754135127ede24
+  languageName: node
+  linkType: hard
+
+"popmotion@npm:^10.0.1":
+  version: 10.0.2
+  resolution: "popmotion@npm:10.0.2"
+  dependencies:
+    framesync: ^6.0.1
+    hey-listen: ^1.0.8
+    style-value-types: 5.0.0
+    tslib: ^2.1.0
+  checksum: 6c793f637a5dd9861edca257eac523c2d6c1d895399e9320562c26c2f2a2d1288af1892925af5bc88e091e0444b4478f352772b7d1a5ba1b972cd889d1560d4a
   languageName: node
   linkType: hard
 
@@ -6341,6 +6468,7 @@ __metadata:
     autoprefixer: latest
     gsap: ^3.10.4
     nuxt: 3.0.0-rc.4
+    nuxt-use-motion: ^2.0.0-beta.11
     petite-vue-i18n: ^9.2.0-beta.34
     postcss: latest
     tailwindcss: ^3.1.5
@@ -7062,7 +7190,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ufo@npm:^0.8.3, ufo@npm:^0.8.4":
+"ufo@npm:^0.8.3, ufo@npm:^0.8.4, ufo@npm:^0.8.5":
   version: 0.8.5
   resolution: "ufo@npm:0.8.5"
   checksum: 4dcf657a906550112ab1eb045110ebb768a914fb653373a2c363776a1f6ba25ea9d20bd5ed7f4bb44fb72bd4421b37d62991cd5ce4e3a2aef7e3eae450bb9508
@@ -7150,6 +7278,24 @@ __metadata:
     strip-literal: ^0.4.0
     unplugin: ^0.7.1
   checksum: f4215eb7d5c9b6ef09f7a239780da904b5908a0f05bfd71f540d39440ef72b53f8cdde4a6c6267844dcc028fbf28afd74142abd8c005590134400bd4c85f4f15
+  languageName: node
+  linkType: hard
+
+"unimport@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "unimport@npm:0.4.4"
+  dependencies:
+    "@rollup/pluginutils": ^4.2.1
+    escape-string-regexp: ^5.0.0
+    fast-glob: ^3.2.11
+    local-pkg: ^0.4.1
+    magic-string: ^0.26.2
+    mlly: ^0.5.4
+    pathe: ^0.3.2
+    scule: ^0.2.1
+    strip-literal: ^0.4.0
+    unplugin: ^0.7.1
+  checksum: d8a7421001a9781cd1244b8bf040b084e6085a9df3f0d4ff9bc8db543e4a898e1bea6870108ff4e65813eb65c42b877b0730a380f8dc51c3db92b422d79d2657
   languageName: node
   linkType: hard
 
@@ -7460,6 +7606,22 @@ __metadata:
     vue-demi-fix: bin/vue-demi-fix.js
     vue-demi-switch: bin/vue-demi-switch.js
   checksum: 085dbab000609d90837d730ccef33328caa7e381f1afe27e6b71c37a3be4be24843b692968805aee3d8079576ab54f554d5c5b1ec6bc823a70d668007dab3fc8
+  languageName: node
+  linkType: hard
+
+"vue-demi@npm:^0.12.1":
+  version: 0.12.5
+  resolution: "vue-demi@npm:0.12.5"
+  peerDependencies:
+    "@vue/composition-api": ^1.0.0-rc.1
+    vue: ^3.0.0-0 || ^2.6.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  bin:
+    vue-demi-fix: bin/vue-demi-fix.js
+    vue-demi-switch: bin/vue-demi-switch.js
+  checksum: 40a0470caea8312e0d4df2541f141c36c768dfc7f2f7d41f0f28ba29df11d3119e2f09b94c815f13b7c7f3f45dbc247b0e9e0c02a1800e2823e241c1d771e39b
   languageName: node
   linkType: hard
 

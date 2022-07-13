@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         {
           "data-n-head": "1",
           property: "og:url",
-          content: "https://nuxt-static-dep.netlify.app/",
+          content: "https://Hahu-nuxt-3-dep.netlify.app/",
         },
         { "data-n-head": "1", property: "og:type", content: "website" },
         { "data-n-head": "1", property: "og:title", content: "Hahu Jobs" },
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
         {
           "data-n-head": "1",
           property: "og:image",
-          content: "https://nuxt-static-dep.netlify.app/images/meta_img.png",
+          content: "https://Hahu-nuxt-3-dep.netlify.app/images/meta_img.png",
         },
 
         // twitter
@@ -48,11 +48,11 @@ export default defineNuxtConfig({
         {
           "data-n-head": "1",
           property: "twitter:domain",
-          content: "nuxt-static-dep.netlify.app",
+          content: "Hahu-nuxt-3-dep.netlify.app",
         },
         {
           property: "twitter:url",
-          content: "https://nuxt-static-dep.netlify.app/",
+          content: "https://Hahu-nuxt-3-dep.netlify.app/",
         },
         { "data-n-head": "1", property: "twitter:title", content: "Hahu Jobs" },
         {
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
         {
           "data-n-head": "1",
           property: "twitter:image",
-          content: "https://nuxt-static-dep.netlify.app/images/meta_img.png",
+          content: "https://Hahu-nuxt-3-dep.netlify.app/images/meta_img.png",
         },
       ],
       link: [
@@ -123,6 +123,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@vueuse/nuxt",
+    "nuxt-use-motion",
     // "@vueuse/motion/nuxt",
   ],
   css: ["@/assets/css/main.css"],
