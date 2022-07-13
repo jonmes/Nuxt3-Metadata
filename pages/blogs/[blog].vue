@@ -87,7 +87,7 @@ const copyLinkFunc = () => {
 
   navigator.clipboard.writeText(copyText.value);
 
-  alert("Link Copied");
+  // alert("Link Copied");
 };
 </script>
 
