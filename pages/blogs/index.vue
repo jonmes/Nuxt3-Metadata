@@ -19,7 +19,7 @@ const Blogs = [
     img: "/images/blog_post_1.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Hey! Today let's introduce yout to AWAQI",
+    title: "Hey! Today let's introduce you to AWAQI",
     link: "blogs-id-blogDetail",
   },
   {

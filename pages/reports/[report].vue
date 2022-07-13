@@ -6,13 +6,13 @@ import {
   SearchIcon,
   ChevronRightIcon,
 } from "@heroicons/vue/solid/index.js";
-
 import Facebook from "@/assets/svg/facebookShare.svg?url";
 import Insta from "@/assets/svg/instaShare.svg?url";
 import Twitter from "@/assets/svg/twitterShare.svg?url";
 import Telegram from "@/assets/svg/telegramShare.svg?url";
 import YoutubeButton from "@/assets/svg/YoutubeButton.svg?url";
 import CopyLink from "@/assets/svg/copyLinkIcon.svg?url";
+import { useClipboard, usePermission } from "@vueuse/core";
 
 const router = useRoute();
 const crumb = [
@@ -114,6 +114,10 @@ const Reports = [
 ];
 
 const filteredReport = ref(Reports.find((el) => el.id == router.params.report));
+
+onMounted(() => {
+  window.location.href;
+});
 </script>
 
 <template>
@@ -243,26 +247,30 @@ const filteredReport = ref(Reports.find((el) => el.id == router.params.report));
           <span class="py-2 pr-4 pl-[7px]">Copy Link</span>
         </button>
         <div class="flex gap-2">
-          <button
-            class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
+          <a
+            :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&t=${filteredReport.title}`"
+            target="_blank"
+            class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Facebook" />
-          </button>
+          </a>
           <button
             class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
           </button>
-          <button
+          <a
+            :href="`http://twitter.com/share?text=${filteredReport.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
             class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
-          </button>
-          <button
+          </a>
+          <a
+            :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&text=${filteredReport.title}`"
             class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Telegram" />
-          </button>
+          </a>
         </div>
       </div>
     </section>

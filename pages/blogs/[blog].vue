@@ -22,8 +22,8 @@ const Blogs = [
     img: "/images/blog_post_1.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Hey! Today let's introduce yout to AWAQI",
-    p1: "Awaqi is a youth-focused thinking skills training and information exchange channel. The training Includes short videos, trainings and job opportunities for the youth. It will also serve as a training center for young entrepreneurs, small and medium enterprises (MSMEs) and opportunities for growth. Awaqi are set to work with HaHuJobs on entrepreneurship, employment training and career guidance, and we will provide you with a range of multimedia resources that promote weekly skills development and professional thinking.",
+    title: "Hey! Today let's introduce you to AWAQI",
+    p1: "Awaqi, aims to be the catalyst for the young people of Ethiopia, aiming to serve as a youth-centered online training and coaching platform focused on mindset, soft skills and information sharing. All with the end-goal of pushing the country’s youth to take control of their futures by actively working on themselves to have an entrepreneurial mindset. It will also serve as a training platform for young entrepreneurs, small and medium enterprises (MSMEs) and opportunities for growth. Awaqi are set to work with HaHuJobs on entrepreneurship, employment training and career guidance, and we will provide you with a range of multimedia resources that promote weekly skills development and professional thinking.",
     p2: "",
   },
   {
@@ -33,8 +33,7 @@ const Blogs = [
     date: "19 Jan 2022",
     title:
       "HaHuJobs have signed an MoU with the Ethiopian Investment Commission",
-    p1: "We announced that HaHuJobs have signed an MoU with the Ethiopian Investment Commission to cooperate on digitizing labour grievance reporting, investor OSSCs center service request management and worker identification with in the federal industrial parks.",
-    p2: "It's with great pleasure that we announce HaHuJobs have signed an MoU with the Ethiopian Investment Commission to cooperate on digitizing labour grievance reporting, investor OSSCs center service request management and worker identification with in the federal industrial parks. We are greatful for the opportunity to contribute and look forward to merits of this engagement.",
+    p1: "We announce that HaHuJobs have signed an MoU with the Ethiopian Investment Commission to cooperate on digitizing labour grievance reporting, investor OSSCs center service request management and worker identification with in the federal industrial parks. We are greatful for the opportunity to contribute and look forward to merits of this engagement.",
   },
   {
     id: 3,
@@ -201,26 +200,30 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
             <span class="py-2 pr-4 pl-[7px]">Copy Link</span>
           </button>
           <div class="flex gap-2">
-            <button
-              class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
+            <a
+              :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&t=${filteredBlog.title}`"
+              target="_blank"
+              class="share-popup rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
             >
               <img class="object-contain px-[13px] py-[9px]" :src="Facebook" />
-            </button>
+            </a>
             <button
               class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
             >
               <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
             </button>
-            <button
+            <a
+              :href="`http://twitter.com/share?text=${filteredBlog.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
               class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
             >
               <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
-            </button>
-            <button
+            </a>
+            <a
+              :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&text=${filteredBlog.title}`"
               class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
             >
               <img class="object-contain px-[13px] py-[9px]" :src="Telegram" />
-            </button>
+            </a>
           </div>
         </div>
       </section>

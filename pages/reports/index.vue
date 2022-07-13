@@ -12,6 +12,7 @@ import Insta from "@/assets/svg/instaShare.svg?url";
 import Twitter from "@/assets/svg/twitterShare.svg?url";
 import Telegram from "@/assets/svg/telegramShare.svg?url";
 import YoutubeButton from "@/assets/svg/YoutubeButton.svg?url";
+import readmoreGreen from "@/assets/svg/readmoreGreen.svg?url";
 
 const Reports = [
   {
@@ -28,7 +29,7 @@ const Reports = [
     id: "2",
     link: "reports-id-reportDetail",
     img: "/images/YouTube_annual_report.png",
-    title: "ባሳለፍነው የፈረንጆች ወር ያወጣናቸው የስራ ማስታወቂያዎች መረጃ ምን ይመስላል?",
+    title: "Jobs by source from 2019 - 2020",
     range: "Annually",
     date: "Jan 12, 2022",
     content:
@@ -273,16 +274,15 @@ const filter = (e) => {
           >
         </div>
 
-        <NuxtLink
+        <div
           v-for="(report, index) in Reports"
           :key="index"
-          :to="'/reports/' + report.id"
           class="mt-10 flex flex-col justify-around gap-x-[67px] self-start rounded-[15px] bg-white px-7 pt-[58px] duration-500 ease-in dark:bg-HahuGray1 lg:mt-[105px] lg:flex-row xl:pl-12 4xl:min-w-[1263px]"
         >
-          <div class="flex w-4/12">
+          <NuxtLink :to="'/reports/' + report.id" class="flex flex-1 w-4/12">
             <img :src="report.img" class="mb-2 object-contain" />
-          </div>
-          <div class="flex flex-col">
+          </NuxtLink>
+          <div class="flex flex-1 flex-col">
             <h1
               class="text-lg font-bold leading-[30px] text-HahuGray1 duration-500 ease-in dark:text-HahuGray/4"
             >
@@ -303,41 +303,53 @@ const filter = (e) => {
             >
               {{ report.content }}
             </p>
+
+            <NuxtLink
+              :to="'/reports/' + report.id"
+              class="rounded-md px-2 py-1 hover:bg-primary-lite space-x-3 mt-4 self-start flex justify-between border-2 border-primary duration-200 ease-in dark:bg-HahuGray/4"
+            >
+              <span>Read More</span> <img :src="readmoreGreen" />
+            </NuxtLink>
+
             <p
               class="mt-11 text-xs font-normal leading-[18px] text-HahuGray1 duration-500 ease-in dark:text-HahuGray/4"
             >
               Share
             </p>
             <div class="mt-2 mb-10 flex gap-2">
-              <button
-                class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
+              <a
+                :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}/${report.id}&t=${report.title}`"
+                target="_blank"
+                class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
               >
                 <img
                   class="object-contain px-[13px] py-[9px]"
                   :src="Facebook"
                 />
-              </button>
+              </a>
               <button
                 class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
               >
                 <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
               </button>
-              <button
+              <a
+                :href="`http://twitter.com/share?text=${report.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}/${report.id}&hashtags=HahuJobs,Minab_ICT_Solutions`"
                 class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
               >
                 <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
-              </button>
-              <button
+              </a>
+              <a
+                :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}/${report.id}&text=${report.title}`"
                 class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
               >
                 <img
                   class="object-contain px-[13px] py-[9px]"
                   :src="Telegram"
                 />
-              </button>
+              </a>
             </div>
           </div>
-        </NuxtLink>
+        </div>
 
         <button
           class="group mt-[78px] flex items-center self-center rounded-md bg-primary py-2 pl-4 pr-5 text-sm font-medium leading-5 text-HahuGray/4"
