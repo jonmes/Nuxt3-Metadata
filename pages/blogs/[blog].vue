@@ -79,90 +79,71 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
 
 <template>
   <div>
-    <!-- <Head>
+    <Head>
       <Title>{{ filteredBlog.title }}</Title>
-      <meta data-n-head="1" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      <meta data-n-head="1" property="og:title" :content="filteredBlog.title"/>
-      <meta
+      <Meta
+        data-n-head="1"
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      />
+      <Meta data-n-head="1" property="og:title" :content="filteredBlog.title" />
+      <Meta
         data-n-head="1"
         property="og:description"
         :content="filteredBlog.p1"
       />
-      <meta
+      <Meta
         data-n-head="1"
         data-hid="description"
         name="description"
         :content="filteredBlog.p1"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="og:url"
         content="https://Hahu-nuxt-3-dep.netlify.app/"
       />
-      <meta data-n-head="1" property="og:type" content="website" />
-      <meta
+      <Meta data-n-head="1" property="og:type" content="website" />
+      <Meta
         data-n-head="1"
         property="og:image"
         :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="twitter:card"
         content="summary_large_image"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="twitter:domain"
         content="Hahu-nuxt-3-dep.netlify.app"
       />
-      <meta
+      <Meta
         property="twitter:url"
         content="https://Hahu-nuxt-3-dep.netlify.app/"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="twitter:title"
         :content="filteredBlog.title"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="twitter:description"
         :content="filteredBlog.p1"
       />
-      <meta
+      <Meta
         name="twitter:image"
         :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="twitter:image"
         :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
       />
-    </Head> -->
-    <Head>
-      <meta property="og:url" content="https://Hahu-nuxt-1.netlify.app" />
-      <meta property="og:site_name" content="#site_name" />
-      <meta property="og:title" :content="filteredBlog.title" />
-      <meta property="og:description" :content="filteredBlog.p1" />
-      <meta property="og:image" :content="'@url' + filteredBlog.img" />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="@title" />
-      <meta property="og:image" :content="'@url' + filteredBlog.img" />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="600" />
-      <meta property="og:image:height" content="314" />
-      <meta property="og:image:alt" content="@title" />
-      <meta property="og:image" :content="'@url' + filteredBlog.img" />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="400" />
-      <meta property="og:image:height" content="400" />
-      <meta property="og:image:alt" :content="filteredBlog.title" />
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="#site_twitter" />
-      <meta name="twitter:creator" content="#creator_twitter" />
     </Head>
+
     <div class="flex min-h-screen justify-center md:px-11 xl:px-24">
       <section
         class="mt-3 flex w-11/12 xs:w-9/12 flex-col rounded-xl bg-white dark:bg-HahuGray1 px-4 xs:px-10 sm:px-10 md:px-20 xl:px-40 2xl:px-40"
