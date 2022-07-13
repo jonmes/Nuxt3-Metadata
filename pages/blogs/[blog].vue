@@ -72,8 +72,23 @@ const Blogs = [
     p2: "",
   },
 ];
-
 const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
+
+const copyLinkInp = ref("");
+onMounted(() => {
+  copyLinkInp.value = window.location.href;
+});
+const copyLinkFunc = () => {
+  let copyText = document.getElementById("myLink");
+
+  copyText.select();
+
+  copyText.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(copyText.value);
+
+  alert("Link Copied");
+};
 </script>
 
 <template>
@@ -195,7 +210,9 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
         <div class="mt-10 mb-16 flex flex-wrap justify-center gap-2 xl:mt-20">
           <button
             class="flex items-center rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4 sm:mr-[102px]"
+            @click="copyLinkFunc()"
           >
+            <input class="hidden" id="myLink" v-model="copyLinkInp" />
             <img class="object-contain pl-4" :src="CopyLink" />
             <span class="py-2 pr-4 pl-[7px]">Copy Link</span>
           </button>

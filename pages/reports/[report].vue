@@ -115,9 +115,21 @@ const Reports = [
 
 const filteredReport = ref(Reports.find((el) => el.id == router.params.report));
 
+const copyLinkInp = ref("");
 onMounted(() => {
-  window.location.href;
+  copyLinkInp.value = window.location.href;
 });
+const copyLinkFunc = () => {
+  let copyText = document.getElementById("myLink");
+
+  copyText.select();
+
+  copyText.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(copyText.value);
+
+  alert("Link Copied");
+};
 </script>
 
 <template>
@@ -241,8 +253,11 @@ onMounted(() => {
         class="mt-20 mb-16 flex flex-wrap justify-start gap-2 sm:justify-center"
       >
         <button
+          id="copyLinkButton"
           class="mr-[102px] flex items-center rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
+          @click="copyLinkFunc()"
         >
+          <input class="hidden" id="myLink" v-model="copyLinkInp" />
           <img class="object-contain pl-4" :src="CopyLink" />
           <span class="py-2 pr-4 pl-[7px]">Copy Link</span>
         </button>
