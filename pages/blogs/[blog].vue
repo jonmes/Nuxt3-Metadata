@@ -101,13 +101,13 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
       <Meta
         data-n-head="1"
         property="og:url"
-        content="https://Hahu-nuxt-3-dep.netlify.app/"
+        content="https://hahuone.netlify.app/"
       />
       <Meta data-n-head="1" property="og:type" content="website" />
       <Meta
         data-n-head="1"
         property="og:image"
-        :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
+        :content="'https://hahuone.netlify.app' + filteredBlog.img"
       />
       <Meta
         data-n-head="1"
@@ -117,12 +117,9 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
       <Meta
         data-n-head="1"
         property="twitter:domain"
-        content="Hahu-nuxt-3-dep.netlify.app"
+        content="hahuone.netlify.app"
       />
-      <Meta
-        property="twitter:url"
-        content="https://Hahu-nuxt-3-dep.netlify.app/"
-      />
+      <Meta property="twitter:url" content="https://hahuone.netlify.app/" />
       <Meta
         data-n-head="1"
         property="twitter:title"
@@ -135,12 +132,12 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
       />
       <Meta
         name="twitter:image"
-        :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
+        :content="'https://hahuone.netlify.app' + filteredBlog.img"
       />
       <Meta
         data-n-head="1"
         property="twitter:image"
-        :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
+        :content="'https://hahuone.netlify.app' + filteredBlog.img"
       />
     </Head>
 
