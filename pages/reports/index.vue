@@ -136,6 +136,63 @@ const filter = (e) => {
 </script>
 <template>
   <div class="min-h-screen">
+    <Head>
+      <Title>Reports</Title>
+      <Meta
+        data-n-head="1"
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      />
+      <Meta data-n-head="1" property="og:title" content="Reports" />
+      <Meta
+        data-n-head="1"
+        property="og:description"
+        content="You can find our weekly, montly and annually reports here"
+      />
+      <Meta
+        data-n-head="1"
+        data-hid="description"
+        name="description"
+        content="You can find our weekly, montly and annually reports here"
+      />
+      <Meta
+        data-n-head="1"
+        property="og:url"
+        content="https://hahuone.netlify.app/"
+      />
+      <Meta data-n-head="1" property="og:type" content="website" />
+      <Meta
+        data-n-head="1"
+        property="og:image"
+        content="https://hahuone.netlify.app/images/meta_img.png"
+      />
+      <Meta
+        data-n-head="1"
+        property="twitter:card"
+        content="summary_large_image"
+      />
+      <Meta
+        data-n-head="1"
+        property="twitter:domain"
+        content="hahuone.netlify.app"
+      />
+      <Meta property="twitter:url" content="https://hahuone.netlify.app/" />
+      <Meta data-n-head="1" property="twitter:title" content="Reports" />
+      <Meta
+        data-n-head="1"
+        property="twitter:description"
+        content="You can find our weekly, montly and annually reports here"
+      />
+      <Meta
+        name="twitter:image"
+        content="https://hahuone.netlify.app/images/meta_img.png"
+      />
+      <Meta
+        data-n-head="1"
+        property="twitter:image"
+        content="https://hahuone.netlify.app/images/meta_img.png"
+      />
+    </Head>
     <!-- <section class="mt-10 px-[230px] flex flex-col"> -->
     <section
       class="mt-10 flex flex-col justify-center px-5 md:px-20 lg:px-20 2xl:px-[230px]"
@@ -219,7 +276,7 @@ const filter = (e) => {
         <NuxtLink
           v-for="(report, index) in Reports"
           :key="index"
-          :to="{ name: `${report.link}`, params: { id: `${report.id}` } }"
+          :to="'/reports/' + report.id"
           class="mt-10 flex flex-col justify-around gap-x-[67px] self-start rounded-[15px] bg-white px-7 pt-[58px] duration-500 ease-in dark:bg-HahuGray1 lg:mt-[105px] lg:flex-row xl:pl-12 4xl:min-w-[1263px]"
         >
           <div class="flex w-4/12">

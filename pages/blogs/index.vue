@@ -94,48 +94,59 @@ const Blogs = [
   <div class="min-h-screen">
     <Head>
       <Title>Blogs</Title>
-      <!-- <Meta name="description" :content="filteredBlog.p1" /> -->
-      <meta data-n-head="1" property="og:description" content="List of Blogs" />
-      <meta
+      <Meta
+        data-n-head="1"
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      />
+      <Meta data-n-head="1" property="og:title" content="Blogs" />
+      <Meta
+        data-n-head="1"
+        property="og:description"
+        content="You can read our blogs about Technology, Development, Marketing and Start-ups"
+      />
+      <Meta
         data-n-head="1"
         data-hid="description"
         name="description"
-        content="List of Blogs"
+        content="You can read our blogs about Technology, Development, Marketing and Start-ups"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="og:url"
-        content="https://Hahu-nuxt-3-dep.netlify.app/"
+        content="https://hahuone.netlify.app/"
       />
-      <meta data-n-head="1" property="og:type" content="website" />
-      <meta
+      <Meta data-n-head="1" property="og:type" content="website" />
+      <Meta
         data-n-head="1"
         property="og:image"
-        content="https://Hahu-nuxt-3-dep.netlify.app"
+        content="https://hahuone.netlify.app/images/meta_img.png"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="twitter:card"
         content="summary_large_image"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="twitter:domain"
-        content="Hahu-nuxt-3-dep.netlify.app"
+        content="hahuone.netlify.app"
       />
-      <meta
-        property="twitter:url"
-        content="https://Hahu-nuxt-3-dep.netlify.app/"
+      <Meta property="twitter:url" content="https://hahuone.netlify.app/" />
+      <Meta data-n-head="1" property="twitter:title" content="Blogs" />
+      <Meta
+        data-n-head="1"
+        property="twitter:description"
+        content="You can read our blogs about Technology, Development, Marketing and Start-ups"
       />
-      <meta data-n-head="1" property="twitter:title" content="Blogs" />
-      <meta
+      <Meta
         name="twitter:image"
-        content="'https://Hahu-nuxt-3-dep.netlify.app/images/meta_img.png'"
+        content="https://hahuone.netlify.app/images/meta_img.png"
       />
-      <meta
+      <Meta
         data-n-head="1"
         property="twitter:image"
-        content="https://Hahu-nuxt-3-dep.netlify.app/images/meta_img.png"
+        content="https://hahuone.netlify.app/images/meta_img.png"
       />
     </Head>
     <section

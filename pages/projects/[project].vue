@@ -91,6 +91,67 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
 </script>
 <template>
   <div class="min-h-screen px-8 md:px-[50px] xl:px-[100px]">
+    <Head>
+      <Title>{{ filteredPro.title }}</Title>
+      <Meta
+        data-n-head="1"
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      />
+      <Meta data-n-head="1" property="og:title" :content="filteredPro.title" />
+      <Meta
+        data-n-head="1"
+        property="og:description"
+        :content="filteredPro.p1"
+      />
+      <Meta
+        data-n-head="1"
+        data-hid="description"
+        name="description"
+        :content="filteredPro.p1"
+      />
+      <Meta
+        data-n-head="1"
+        property="og:url"
+        content="https://hahuone.netlify.app/"
+      />
+      <Meta data-n-head="1" property="og:type" content="website" />
+      <Meta
+        data-n-head="1"
+        property="og:image"
+        :content="'https://hahuone.netlify.app' + filteredPro.img"
+      />
+      <Meta
+        data-n-head="1"
+        property="twitter:card"
+        content="summary_large_image"
+      />
+      <Meta
+        data-n-head="1"
+        property="twitter:domain"
+        content="hahuone.netlify.app"
+      />
+      <Meta property="twitter:url" content="https://hahuone.netlify.app/" />
+      <Meta
+        data-n-head="1"
+        property="twitter:title"
+        :content="filteredPro.title"
+      />
+      <Meta
+        data-n-head="1"
+        property="twitter:description"
+        :content="filteredPro.p1"
+      />
+      <Meta
+        name="twitter:image"
+        :content="'https://hahuone.netlify.app' + filteredPro.img"
+      />
+      <Meta
+        data-n-head="1"
+        property="twitter:image"
+        :content="'https://hahuone.netlify.app' + filteredPro.img"
+      />
+    </Head>
     <section
       class="mt-10 flex flex-col rounded-[15px] bg-white px-5 duration-500 ease-in dark:bg-HahuGray1 sm:px-10 md:px-20 lg:px-40 3xl:px-24"
     >
