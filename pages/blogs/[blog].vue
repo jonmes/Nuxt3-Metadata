@@ -79,9 +79,10 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
 
 <template>
   <div>
-    <Head>
+    <!-- <Head>
       <Title>{{ filteredBlog.title }}</Title>
-      <!-- <Meta name="description" :content="filteredBlog.p1" /> -->
+      <meta data-n-head="1" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <meta data-n-head="1" property="og:title" :content="filteredBlog.title"/>
       <meta
         data-n-head="1"
         property="og:description"
@@ -126,7 +127,7 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
       <meta
         data-n-head="1"
         property="twitter:description"
-        :content="filteredBlog.title"
+        :content="filteredBlog.p1"
       />
       <meta
         name="twitter:image"
@@ -137,6 +138,30 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
         property="twitter:image"
         :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
       />
+    </Head> -->
+    <Head>
+      <meta property="og:url" content="https://Hahu-nuxt-1.netlify.app" />
+      <meta property="og:site_name" content="#site_name" />
+      <meta property="og:title" :content="filteredBlog.title" />
+      <meta property="og:description" :content="filteredBlog.p1" />
+      <meta property="og:image" :content="'@url' + filteredBlog.img" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="@title" />
+      <meta property="og:image" :content="'@url' + filteredBlog.img" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="600" />
+      <meta property="og:image:height" content="314" />
+      <meta property="og:image:alt" content="@title" />
+      <meta property="og:image" :content="'@url' + filteredBlog.img" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="400" />
+      <meta property="og:image:height" content="400" />
+      <meta property="og:image:alt" :content="filteredBlog.title" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="#site_twitter" />
+      <meta name="twitter:creator" content="#creator_twitter" />
     </Head>
     <div class="flex min-h-screen justify-center md:px-11 xl:px-24">
       <section
