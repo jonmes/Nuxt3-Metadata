@@ -123,8 +123,6 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@vueuse/nuxt",
-    "nuxt-use-motion",
-    // "@vueuse/motion/nuxt",
   ],
   css: ["@/assets/css/main.css"],
   postcss: {
