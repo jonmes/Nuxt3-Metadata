@@ -124,6 +124,11 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
         :content="filteredBlog.title"
       />
       <meta
+        data-n-head="1"
+        property="twitter:description"
+        :content="filteredBlog.title"
+      />
+      <meta
         name="twitter:image"
         :content="'https://Hahu-nuxt-3-dep.netlify.app' + filteredBlog.img"
       />
