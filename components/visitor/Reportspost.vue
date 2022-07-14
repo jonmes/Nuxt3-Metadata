@@ -58,15 +58,18 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
           show="true"
           class="w-10/12 text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
         >
-          Under HahuJobs, we provide annually, semi-annually, and monthly
-          reports to our subscribers using a variety of visual aids such as; bar
-          chart, pie chart, and data visualization . Our reports include; annual
-          report on job vacancies by sectors, as well as annual report on job
-          vacancies by years of experience, and annual report on the source of
-          job vacancies that we aggregate. It also includes monthly visual
-          reports which reviews the overall content of the job vacancies that we
-          aggregate. You can check the list of our annually, semi-annually and
-          monthly reports by clicking the link below.
+          Starting from November 2018, we began to aggregate vacancies from
+          various sources and started delivering them to our subscribers. From
+          the various sources of vacancies we aggregate, we provide annually,
+          semi-annually, and monthly reports to our subscribers using a variety
+          of visual aids such as; bar chart, pie chart, and data visualization.
+          Our reports include; annual report on job vacancies by sectors, as
+          well as annual report on job vacancies by years of experience, and
+          annual report on the source of job vacancies that we aggregate. It
+          also includes monthly visual reports which reviews the overall content
+          of the job vacancies that we aggregate. You can check the list of
+          annual, semi-annual and monthly reports we provide in the section
+          below.
         </p>
         <br />
         <br />

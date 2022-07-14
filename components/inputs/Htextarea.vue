@@ -75,7 +75,7 @@ watch(
             : 'border-red-500 hover:border-red-500 focus:border-red-500 focus:ring-red-500',
           props.inputClass ? props.inputClass : '',
         ]"
-        class="text-hahugray block w-full rounded-md pr-10 text-base focus:outline-none"
+        class="text-HahuGray1 block w-full rounded-md pr-10 text-base dark:bg-HahuGray1 focus:outline-none"
         :placeholder="placeholder"
         aria-invalid="true"
         aria-describedby="email-error"

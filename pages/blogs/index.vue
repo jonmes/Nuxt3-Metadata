@@ -65,6 +65,13 @@ const Blogs = [
     title:
       "Three-month training program for Bahir Dar Institute of Technology Students",
   },
+  {
+    id: 8,
+    img: "/images/blog_post_8.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title: "HahuJobs online job application skill training",
+  },
   // {
   //   id: 4,
   //   img: "/images/Blog4.png",
@@ -173,11 +180,11 @@ const Blogs = [
 
       <div class="relative mt-24 flex items-center">
         <input
-          class="w-full rounded-2xl px-8 py-4 text-xl font-normal leading-6 text-HahuGray2 focus:outline-primary md:px-16 md:py-7"
+          class="w-full rounded-2xl dark:text-whitePrimary dark:bg-LightDark px-8 py-4 text-xl font-normal leading-6 text-HahuGray2 focus:outline-primary md:px-16 md:py-7"
           placeholder="Search"
         />
         <SearchIcon
-          class="relative right-10 h-6 w-6 cursor-pointer md:right-20"
+          class="relative right-10 h-6 w-6 dark:text-whitePrimary cursor-pointer md:right-20"
         />
       </div>
       <div class="flex flex-wrap items-center gap-10 xl:ml-[196px] xl:gap-x-20">
@@ -212,7 +219,7 @@ const Blogs = [
           </h3>
           <h3 class="ml-8 mt-4 dark:text-HahuGray/4">{{ blog.date }}</h3>
           <h2
-            class="mt-4 ml-8 text-xl font-bold leading-[38px] text-gray-800 dark:text-HahuGray/4 sm:text-2xl 2xl:text-3xl"
+            class="mt-4 ml-8 mx-2 text-xl font-bold leading-[38px] text-gray-800 dark:text-HahuGray/4 sm:text-2xl 2xl:text-3xl"
           >
             {{ blog.title }}
           </h2>

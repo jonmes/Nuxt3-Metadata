@@ -140,7 +140,7 @@ watch(
             ? props.placeholderStyle
             : ' placeholder-gray-500',
         ]"
-        class="block w-full rounded-md font-body text-base text-secondary placeholder-secondary focus:outline-none"
+        class="block w-full rounded-md font-body text-base text-secondary dark:bg-HahuGray1 placeholder-secondary focus:outline-none"
         :placeholder="props.placeholder"
         aria-invalid="true"
         aria-describedby="email-error"

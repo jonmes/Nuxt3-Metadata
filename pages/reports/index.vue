@@ -215,15 +215,24 @@ const filter = (e) => {
         </NuxtLink>
       </div>
       <div class="flex max-w-[1240px] flex-col">
-        <div class="relative mt-[55px] flex items-center max-w-[1240px]">
+        <div class="relative mt-24 flex items-center">
           <input
-            class="w-full rounded-2xl px-8 py-4 text-xl font-normal leading-6 text-HahuGray2 focus:outline-primary dark:text-HahuGray/4 md:px-16 md:py-7"
+            class="w-full rounded-2xl dark:text-whitePrimary dark:bg-LightDark px-8 py-4 text-xl font-normal leading-6 text-HahuGray2 focus:outline-primary md:px-16 md:py-7"
             placeholder="Search"
           />
           <SearchIcon
-            class="relative right-10 h-6 w-6 cursor-pointer md:right-20"
+            class="relative right-10 h-6 w-6 dark:text-whitePrimary cursor-pointer md:right-20"
           />
         </div>
+        <!-- <InputsHtextfield
+          type="text"
+          name="email"
+          placeholder="Your email..."
+          placeholderStyle="text-HahuGray2"
+          class="dark:text-white w-11/12 flex justify-start mt-14"
+          :trailingIcon="SearchIcon"
+        ></InputsHtextfield> -->
+
         <div
           class="mt-[67px] ml-10 flex flex-wrap gap-14 lg:gap-[118px] xl:ml-[196px]"
         >

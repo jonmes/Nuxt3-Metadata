@@ -29,60 +29,73 @@ const blogs = [
   },
 ];
 
-// onMounted(() => {
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         entry.target.classList.toggle(
-//           "[&[show=true]]:opacity-100",
-//           entry.isIntersecting
-//         );
-//         entry.target.classList.toggle(
-//           "[&[show=true]]:translate-x-0",
-//           entry.isIntersecting
-//         );
-//         entry.target.classList.toggle(
-//           "[&[show=true]]:translate-y-0",
-//           entry.isIntersecting
-//         );
-//         if (entry.isIntersecting) {
-//           observer.unobserve(entry.target);
-//           return entry.target;
-//         }
-//       });
-//     },
-//     {
-//       threshold: 0.1,
-//     }
-//   );
-//   document.querySelectorAll(".blogi").forEach((selection) => {
-//     observer.observe(selection);
-//   });
-// });
+const target = ref(null);
+const observer = shallowRef();
+const delay = [0, 150, 300];
+
+onMounted(() => {
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach(
+      (entry) => {
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:translate-y-0",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:translate-x-0",
+          entry.isIntersecting
+        );
+        if (entry.isIntersecting) {
+          observer.value.unobserve(entry.target);
+          return entry.target;
+        }
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+  });
+  target.value.forEach((card) => {
+    observer.value.observe(card);
+  });
+});
+
+onBeforeUnmount(() => {
+  observer.value.disconnect();
+});
 </script>
 
 <template>
-  <section class="mt-10 flex flex-col" id="blog">
+  <section v-for="i in 1" class="mt-10 flex flex-col" id="blog">
     <div class="flex flex-col items-center">
       <h1
-        class="mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        show="true"
+        ref="target"
+        class="mt-10 opacity-0 translate-y-20 duration-1000 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         Blog
       </h1>
-      <NuxtLink
+      <div
         show="true"
-        :to="{ name: 'blogs' }"
-        class="mt-[34px] self-center"
+        ref="target"
+        class="flex pacity-0 translate-y-20 duration-1000 mt-9"
       >
-        <button
-          class="rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white duration-300 hover:translate-x-1 hover:-translate-y-1 hover:shadow-2xl active:translate-x-0 active:translate-y-0 active:shadow-none xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
-        >
-          Recent Blogs
-        </button>
-      </NuxtLink>
+        <NuxtLink :to="{ name: 'blogs' }" class="self-center">
+          <button
+            class="rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white duration-300 hover:translate-x-1 hover:-translate-y-1 hover:shadow-2xl active:translate-x-0 active:translate-y-0 active:shadow-none xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+          >
+            Recent Blogs
+          </button>
+        </NuxtLink>
+      </div>
       <p
         show="true"
-        class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
+        ref="target"
+        class="mt-[34px] opacity-0 translate-y-20 duration-1000 max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
         Below are some of our updates regarding our ventures with in the labor
         market and our partners offers in regards to related endeavors
@@ -94,8 +107,9 @@ const blogs = [
     >
       <div
         show="true"
-        class="flex max-w-[560px] flex-col rounded-t-md rounded-b-[15px] bg-white dark:bg-HahuGray1"
-        :class="`delay-${i * 100}`"
+        ref="target"
+        class="flex max-w-[560px] opacity-0 -translate-x-40 duration-1000 flex-col rounded-t-md rounded-b-[15px] bg-white dark:bg-HahuGray1"
+        :class="`delay-${delay[i]}`"
         v-for="(blog, i) in blogs"
         :key="i"
       >

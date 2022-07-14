@@ -83,6 +83,15 @@ const Blogs = [
     p1: "A three-month training introductory program was held for students of Bahir Dar Institute of Technology students. We discussed with Bahir Dar Institute of Technology in an opening ceremony to provide training for students who are interested in web and mobile application enrichment. Our planned training will last for 3 months and will include modules such as Front End, Back End and Mobile app Development.",
     p2: "",
   },
+  {
+    id: 8,
+    img: "/images/blog_post_8.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title: "HahuJobs online job application skill training",
+    p1: "HahuJobs provides an online job application skill training and tips for jobseekers. After noticing lack of competence and preparation on jobseekers, HahuJobs organize to give skill set training in the following portions: how a jobseeker can apply for online job applications, how a jobseeker can apply for an online job application via email, how a jobseeker can fill forms in online job application, and different ways to apply in an online job application. The training inaugurate; January 9th, 2022 morning 10:00 am and will be a free online training via the HahuJobs telegram channel live stream session and will last for an hour and a half.",
+    p2: "",
+  },
 ];
 const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
 

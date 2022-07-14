@@ -8,7 +8,8 @@ const itemsToShow = ref(1);
 const showNav = ref(false);
 const target = ref(null);
 const observer = shallowRef();
-const showme = ref(null);
+const hello = ref(null);
+
 const carWidth = (windowWidth) => {
   if (windowWidth < 768) {
     itemsToShow.value = 1;
@@ -33,37 +34,37 @@ onMounted(() => {
     carWidth(windowWidth.value);
   };
 
-  // console.log("target", target.value);
-  // console.log("showme", showme.value.forEach);
-  // target.value.forEach((card) => {
-  //   console.log("show", card);
-  // });
+  console.log("hello", hello.value);
 
-  // observer.value = new IntersectionObserver((entries) => {
-  //   entries.forEach(
-  //     (entry) => {
-  //       entry.target.classList.toggle(
-  //         "lg:[&[show=true]]:translate-x-0",
-  //         entry.isIntersecting
-  //       );
-  //       if (entry.isIntersecting) {
-  //         observer.value.unobserve(entry.target);
-  //         return entry.target;
-  //       }
-  //     },
-  //     {
-  //       threshold: 0.5,
-  //     }
-  //   );
-  // });
-  // target.value.forEach((card) => {
-  //   observer.value.observe(card);
-  // });
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach(
+      (entry) => {
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:translate-x-0",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        if (entry.isIntersecting) {
+          observer.value.unobserve(entry.target);
+          return entry.target;
+        }
+      },
+      {
+        threshold: 1,
+      }
+    );
+  });
+  target.value.forEach((card) => {
+    observer.value.observe(card.$el);
+  });
 });
 
-// onBeforeUnmount(() => {
-//   observer.value.disconnect();
-// });
+onBeforeUnmount(() => {
+  observer.value.disconnect();
+});
 </script>
 
 <template>
@@ -71,12 +72,14 @@ onMounted(() => {
     :items-to-show="itemsToShow"
     :wrap-around="true"
     show="true"
-    class="mx-5 duration-1000 translate-x-20"
+    class="mx-5"
   >
     <slide
-      v-for="slide in props.cardSlider"
+      v-for="(slide, i) in props.cardSlider"
       :key="slide"
-      class="w-full lg:mx-10 2xl:mx-16 py-5"
+      show="true"
+      class="w-full lg:mx-10 2xl:mx-16 py-5 lg:translate-x-40 lg:opacity-0 lg:duration-1000"
+      ref="target"
     >
       <NuxtLink
         :to="'/projects/' + slide.id"
@@ -134,6 +137,7 @@ onMounted(() => {
         </div>
       </NuxtLink>
     </slide>
+
     <template #addons="{ slideWidth }">
       <div class="hidden lg:block">
         <navigation />

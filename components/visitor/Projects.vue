@@ -202,7 +202,7 @@ onBeforeUnmount(() => {
             Projects
           </h2>
           <hr
-            class="mt-4 h-[5px] w-[167px] self-center rounded-full bg-primary-lite px-1"
+            class="mt-4 border-b-2 border-primary w-[167px] self-center rounded-full bg-primary-lite"
           />
         </div>
 
@@ -222,7 +222,7 @@ onBeforeUnmount(() => {
             Stakeholders
           </h2>
           <hr
-            class="mt-4 h-[5px] w-[167px] self-center rounded-full bg-primary-lite px-1"
+            class="mt-4 border-b-2 border-primary w-[167px] self-center rounded-full bg-primary-lite"
           />
         </div>
 
@@ -242,7 +242,7 @@ onBeforeUnmount(() => {
             Total Durations
           </h2>
           <hr
-            class="mt-4 h-[5px] w-[167px] self-center rounded-full bg-primary-lite px-1"
+            class="mt-4 border-b-2 border-primary w-[167px] self-center rounded-full bg-primary-lite"
           />
         </div>
       </div>
