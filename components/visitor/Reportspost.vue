@@ -56,7 +56,7 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
       <article class="flex-1 2xl:mt-48 2xl:ml-[137px]">
         <p
           show="true"
-          class="text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+          class="w-10/12 text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
         >
           Under HahuJobs, we provide annually, semi-annually, and monthly
           reports to our subscribers using a variety of visual aids such as; bar

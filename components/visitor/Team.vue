@@ -152,7 +152,7 @@ onMounted(() => {
     >
       <div
         show="true"
-        class="self-center rounded-md bg-white hover:shadow-lg overflow-hidden dark:bg-HahuGray"
+        class="self-center rounded-md bg-white hover:shadow-lg overflow-hidden dark:bg-HahuGray1"
         :class="`lg:delay-${delay[i]}`"
         v-for="(person, i) in team"
       >

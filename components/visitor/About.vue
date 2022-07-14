@@ -1,55 +1,57 @@
 <script setup>
 import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
 
-// onMounted(() => {
-//   // console.log("about class mounted");
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         // console.log("here we start again");
-//         entry.target.classList.add(
-//           "[&[show=true]]:opacity-100",
-//           entry.isIntersecting
-//         );
-//         entry.target.classList.add(
-//           "[&[show=true]]:translate-y-0",
-//           entry.isIntersecting
-//         );
-//         if (entry.isIntersecting) {
-//           observer.unobserve(entry.target);
-//           return entry.target;
-//         }
-//       });
-//     },
-//     {
-//       threshold: 0.1,
-//     }
-//   );
-//   document.querySelectorAll(".abouti").forEach((selection) => {
-//     observer.observe(selection);
-//   });
-// });
+const target = ref(null);
+const observer = shallowRef();
+
+onMounted(() => {
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach(
+      (entry) => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
+        if (entry.isIntersecting) {
+          observer.value.unobserve(entry.target);
+          return entry.target;
+        }
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+  });
+  target.value.forEach((card) => {
+    observer.value.observe(card);
+  });
+});
+
+onBeforeUnmount(() => {
+  observer.value.disconnect();
+});
 </script>
 
 <template>
   <section>
-    <div id="about">
+    <div v-for="i in 1" id="about">
       <div class="flex flex-col items-center">
         <h1
-          show="true"
-          class="mt-20 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+          ref="target"
+          class="card mt-20 self-center text-lg font-medium leading-[18px] duration-1000 dark:text-white lg:mt-[90px]"
         >
           About
         </h1>
         <h2
-          show="true"
-          class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+          ref="target"
+          class="card mt-8 self-center rounded-[36px] duration-1000 bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
         >
           What is HaHuJobs?
         </h2>
       </div>
       <div class="flex flex-col lg:mt-10 3xl:flex-row">
-        <div class="flex flex-1 overflow-hidden">
+        <div
+          ref="target"
+          show="true"
+          class="card flex flex-1 overflow-hidden duration-1000"
+        >
           <img
             show="true"
             class="object-contain"
@@ -60,7 +62,8 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
         <article class="mt-[54px] flex-1">
           <p
             show="true"
-            class="text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+            ref="target"
+            class="card text-lg font-normal duration-1000 leading-[35px] dark:text-HahuGray/4"
           >
             HaHuJobs a cloud services operating to capture structured data of
             the Ethiopian skilled and non-skilled labor market through digitally
@@ -82,7 +85,8 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
           <br />
           <p
             show="true"
-            class="text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+            ref="target"
+            class="card text-lg font-normal duration-1000 leading-[35px] dark:text-HahuGray/4"
           >
             The service is built as an ecosystem of digital services to offer a
             holistic approach to respond to various data and automation gaps
@@ -92,7 +96,11 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
             development partners.
           </p>
 
-          <div show="true" class="mt-12 mb-14 flex">
+          <div
+            ref="target"
+            show="true"
+            class="card mt-12 mb-14 flex duration-1000"
+          >
             <NuxtLink :to="{ name: 'AboutUs' }" class="group">
               <button
                 class="flex items-center self-end rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white"
@@ -110,4 +118,14 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
   </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.card {
+  transition: 1000ms;
+  transform: translatey(100px);
+  opacity: 0;
+}
+.card.show {
+  transform: translatey(0);
+  opacity: 1;
+}
+</style>

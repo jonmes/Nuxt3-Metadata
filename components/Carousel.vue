@@ -6,7 +6,9 @@ import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 const props = defineProps({ cardSlider: Array });
 const itemsToShow = ref(1);
 const showNav = ref(false);
-
+const target = ref(null);
+const observer = shallowRef();
+const showme = ref(null);
 const carWidth = (windowWidth) => {
   if (windowWidth < 768) {
     itemsToShow.value = 1;
@@ -30,32 +32,37 @@ onMounted(() => {
     windowWidth.value = window.innerWidth;
     carWidth(windowWidth.value);
   };
+
+  // console.log("target", target.value);
+  // console.log("showme", showme.value.forEach);
+  // target.value.forEach((card) => {
+  //   console.log("show", card);
+  // });
+
+  // observer.value = new IntersectionObserver((entries) => {
+  //   entries.forEach(
+  //     (entry) => {
+  //       entry.target.classList.toggle(
+  //         "lg:[&[show=true]]:translate-x-0",
+  //         entry.isIntersecting
+  //       );
+  //       if (entry.isIntersecting) {
+  //         observer.value.unobserve(entry.target);
+  //         return entry.target;
+  //       }
+  //     },
+  //     {
+  //       threshold: 0.5,
+  //     }
+  //   );
+  // });
+  // target.value.forEach((card) => {
+  //   observer.value.observe(card);
+  // });
 });
-// onMounted(() => {
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         entry.target.classList.toggle(
-//           "[&[show=true]]:opacity-100",
-//           entry.isIntersecting
-//         );
-//         entry.target.classList.toggle(
-//           "[&[show=true]]:translate-x-0",
-//           entry.isIntersecting
-//         );
-//         // if (entry.isIntersecting) {
-//         //   observer.unobserve(entry.target);
-//         //   return entry.target;
-//         // }
-//       });
-//     },
-//     {
-//       threshold: 0.2,
-//     }
-//   );
-//   document.querySelectorAll(".carouseli").forEach((selection) => {
-//     observer.observe(selection);
-//   });
+
+// onBeforeUnmount(() => {
+//   observer.value.disconnect();
 // });
 </script>
 
@@ -63,7 +70,8 @@ onMounted(() => {
   <carousel
     :items-to-show="itemsToShow"
     :wrap-around="true"
-    class="mx-5"
+    show="true"
+    class="mx-5 duration-1000 translate-x-20"
   >
     <slide
       v-for="slide in props.cardSlider"
