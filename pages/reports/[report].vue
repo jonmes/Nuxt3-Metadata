@@ -161,14 +161,6 @@ const copyLinkFunc = () => {
         :content="filteredReport.content"
       />
       <Meta
-        property="og:video"
-        content="http://www.youtube.com/v/GFLGRidF04?version=3&autohide=1"
-      />
-      <Meta property="og:video:type" content="application/x-shockwave-flash" />
-      <Meta property="og:video:width" content="398" />
-      <Meta property="og:video:height" content="264" />
-      <Meta property="og:site_name" content="YouTube" />
-      <Meta
         data-n-head="1"
         data-hid="description"
         name="description"
@@ -177,13 +169,15 @@ const copyLinkFunc = () => {
       <Meta
         data-n-head="1"
         property="og:url"
-        content="https://hahuone.netlify.app/"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/"
       />
       <Meta data-n-head="1" property="og:type" content="website" />
       <Meta
         data-n-head="1"
         property="og:image"
-        :content="'https://hahuone.netlify.app' + filteredReport.img"
+        :content="
+          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredReport.img
+        "
       />
       <Meta
         data-n-head="1"
@@ -195,7 +189,10 @@ const copyLinkFunc = () => {
         property="twitter:domain"
         content="hahuone.netlify.app"
       />
-      <Meta property="twitter:url" content="https://hahuone.netlify.app/" />
+      <Meta
+        property="twitter:url"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/"
+      />
       <Meta
         data-n-head="1"
         property="twitter:title"
@@ -206,14 +203,13 @@ const copyLinkFunc = () => {
         property="twitter:description"
         :content="filteredReport.content"
       />
-      <Meta
-        name="twitter:image"
-        :content="'https://hahuone.netlify.app' + filteredReport.img"
-      />
+
       <Meta
         data-n-head="1"
         property="twitter:image"
-        :content="'https://hahuone.netlify.app' + filteredReport.img"
+        :content="
+          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredReport.img
+        "
       />
     </Head>
 

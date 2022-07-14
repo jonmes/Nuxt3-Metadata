@@ -136,13 +136,15 @@ const copyLinkFunc = () => {
       <Meta
         data-n-head="1"
         property="og:url"
-        content="https://hahuone.netlify.app/"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/"
       />
       <Meta data-n-head="1" property="og:type" content="website" />
       <Meta
         data-n-head="1"
         property="og:image"
-        :content="'https://hahuone.netlify.app' + filteredBlog.img"
+        :content="
+          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredBlog.img
+        "
       />
       <Meta
         data-n-head="1"
@@ -154,7 +156,10 @@ const copyLinkFunc = () => {
         property="twitter:domain"
         content="hahuone.netlify.app"
       />
-      <Meta property="twitter:url" content="https://hahuone.netlify.app/" />
+      <Meta
+        property="twitter:url"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/"
+      />
       <Meta
         data-n-head="1"
         property="twitter:title"
@@ -165,14 +170,13 @@ const copyLinkFunc = () => {
         property="twitter:description"
         :content="filteredBlog.p1"
       />
-      <Meta
-        name="twitter:image"
-        :content="'https://hahuone.netlify.app' + filteredBlog.img"
-      />
+
       <Meta
         data-n-head="1"
         property="twitter:image"
-        :content="'https://hahuone.netlify.app' + filteredBlog.img"
+        :content="
+          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredBlog.img
+        "
       />
     </Head>
 
