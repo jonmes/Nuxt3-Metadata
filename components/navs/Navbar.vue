@@ -7,6 +7,8 @@ import { MenuAlt3Icon } from "@heroicons/vue/solid/index.js";
 const open = ref(false);
 const sidebarOpen = ref(false);
 const showShadow = ref(false);
+const target = ref(null);
+const observer = shallowRef();
 
 const handleScroll = (e) => {
   if (document.documentElement.scrollTop >= 10) {
@@ -16,7 +18,30 @@ const handleScroll = (e) => {
   }
 };
 
-onMounted(() => window.addEventListener("scroll", handleScroll));
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach(
+      (entry) => {
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        if (entry.isIntersecting) {
+          observer.value.unobserve(entry.target);
+          return entry.target;
+        }
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+  });
+  target.value.forEach((card) => {
+    observer.value.observe(card);
+  });
+});
 </script>
 
 <template>
@@ -25,7 +50,10 @@ onMounted(() => window.addEventListener("scroll", handleScroll));
     :class="[showShadow ? 'shadow-xl' : 'shadow-none']"
   > -->
   <nav
-    class="sticky top-0 z-20 flex items-center justify-between bg-secondary-3 bg-opacity-80 px-8 py-6 backdrop-blur-sm duration-300 ease-in dark:bg-DarkModeBg md:px-[50px] xl:px-[100px]"
+    v-for="i in 1"
+    ref="target"
+    show="true"
+    class="sticky lg:opacity-0 top-0 z-20 flex items-center justify-between bg-secondary-3 bg-opacity-80 px-8 py-6 backdrop-blur-sm duration-300 ease-in dark:bg-DarkModeBg md:px-[50px] xl:px-[100px]"
   >
     <div class="z-10 flex items-center">
       <span class="mr-1 text-xl text-white">

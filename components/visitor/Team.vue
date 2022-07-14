@@ -90,9 +90,11 @@ const team = [
 ];
 
 const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
+const target = ref(null);
+const observer = shallowRef();
 
 onMounted(() => {
-  const observer = new IntersectionObserver(
+  observer.value = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         entry.target.classList.toggle(
@@ -107,18 +109,18 @@ onMounted(() => {
           "lg:[&[show=true]]:translate-y-0",
           entry.isIntersecting
         );
-        // if (entry.isIntersecting) {
-        //   observer.unobserve(entry.target);
-        //   return entry.target;
-        // }
+        if (entry.isIntersecting) {
+          observer.value.unobserve(entry.target);
+          return entry.target;
+        }
       });
     },
     {
       threshold: 0.1,
     }
   );
-  document.querySelectorAll(".teami").forEach((selection) => {
-    observer.observe(selection);
+  target.value.forEach((selection) => {
+    observer.value.observe(selection);
   });
 });
 </script>
@@ -151,10 +153,11 @@ onMounted(() => {
       class="mt-11 flex flex-wrap items-center justify-center gap-x-0 gap-y-6 md:gap-x-4 lg:gap-x-6 lg:gap-y-6 4xl:gap-x-16 4xl:gap-y-16"
     >
       <div
-        show="true"
-        class="self-center rounded-md bg-white hover:shadow-lg overflow-hidden dark:bg-HahuGray1"
-        :class="`lg:delay-${delay[i]}`"
         v-for="(person, i) in team"
+        show="true"
+        ref="target"
+        class="self-center lg:duration-1000 lg:opacity-0 rounded-md bg-white hover:shadow-lg overflow-hidden dark:bg-HahuGray1"
+        :class="`lg:delay-${delay[i]}`"
       >
         <div class="relative mt-[20px] flex flex-row justify-center">
           <img class="self-center" :src="person.img" alt="team" />

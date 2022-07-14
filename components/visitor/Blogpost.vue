@@ -75,14 +75,14 @@ onBeforeUnmount(() => {
       <h1
         show="true"
         ref="target"
-        class="mt-10 opacity-0 translate-y-20 duration-1000 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
+        class="mt-10 lg:opacity-0 lg:translate-y-20 lg:duration-1000 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
       >
         Blog
       </h1>
       <div
         show="true"
         ref="target"
-        class="flex pacity-0 translate-y-20 duration-1000 mt-9"
+        class="flex lg:opacity-0 lg:translate-y-20 lg:duration-1000 mt-9"
       >
         <NuxtLink :to="{ name: 'blogs' }" class="self-center">
           <button
@@ -95,7 +95,7 @@ onBeforeUnmount(() => {
       <p
         show="true"
         ref="target"
-        class="mt-[34px] opacity-0 translate-y-20 duration-1000 max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
+        class="mt-[34px] lg:opacity-0 lg:translate-y-20 lg:duration-1000 max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
       >
         Below are some of our updates regarding our ventures with in the labor
         market and our partners offers in regards to related endeavors
@@ -108,7 +108,7 @@ onBeforeUnmount(() => {
       <div
         show="true"
         ref="target"
-        class="flex max-w-[560px] opacity-0 -translate-x-40 duration-1000 flex-col rounded-t-md rounded-b-[15px] bg-white dark:bg-HahuGray1"
+        class="flex max-w-[560px] lg:opacity-0 lg:-translate-x-40 lg:duration-1000 flex-col rounded-t-md rounded-b-[15px] bg-white dark:bg-HahuGray1"
         :class="`delay-${delay[i]}`"
         v-for="(blog, i) in blogs"
         :key="i"

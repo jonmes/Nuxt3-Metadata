@@ -8,7 +8,14 @@ onMounted(() => {
   observer.value = new IntersectionObserver((entries) => {
     entries.forEach(
       (entry) => {
-        entry.target.classList.toggle("show", entry.isIntersecting);
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:translate-y-0",
+          entry.isIntersecting
+        );
         if (entry.isIntersecting) {
           observer.value.unobserve(entry.target);
           return entry.target;
@@ -35,13 +42,15 @@ onBeforeUnmount(() => {
       <div class="flex flex-col items-center">
         <h1
           ref="target"
-          class="card mt-20 self-center text-lg font-medium leading-[18px] duration-1000 dark:text-white lg:mt-[90px]"
+          show="true"
+          class="lg:translate-y-20 lg:opacity-0 mt-20 self-center text-lg font-medium leading-[18px] duration-1000 dark:text-white lg:mt-[90px]"
         >
           About
         </h1>
         <h2
           ref="target"
-          class="card mt-8 self-center rounded-[36px] duration-1000 bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
+          show="true"
+          class="lg:translate-y-20 lg:opacity-0 mt-8 self-center rounded-[36px] duration-1000 bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
         >
           What is HaHuJobs?
         </h2>
@@ -50,7 +59,7 @@ onBeforeUnmount(() => {
         <div
           ref="target"
           show="true"
-          class="card flex flex-1 overflow-hidden duration-1000"
+          class="lg:translate-y-20 lg:opacity-0 flex flex-1 overflow-hidden duration-1000"
         >
           <img
             show="true"
@@ -63,7 +72,7 @@ onBeforeUnmount(() => {
           <p
             show="true"
             ref="target"
-            class="card text-lg font-normal duration-1000 leading-[35px] dark:text-HahuGray/4"
+            class="lg:translate-y-20 lg:opacity-0 text-lg font-normal duration-1000 leading-[35px] dark:text-HahuGray/4"
           >
             HaHuJobs a cloud services operating to capture structured data of
             the Ethiopian skilled and non-skilled labor market through digitally
@@ -86,7 +95,7 @@ onBeforeUnmount(() => {
           <p
             show="true"
             ref="target"
-            class="card text-lg font-normal duration-1000 leading-[35px] dark:text-HahuGray/4"
+            class="lg:translate-y-20 lg:opacity-0 text-lg font-normal duration-1000 leading-[35px] dark:text-HahuGray/4"
           >
             The service is built as an ecosystem of digital services to offer a
             holistic approach to respond to various data and automation gaps
@@ -99,7 +108,7 @@ onBeforeUnmount(() => {
           <div
             ref="target"
             show="true"
-            class="card mt-12 mb-14 flex duration-1000"
+            class="lg:translate-y-20 lg:opacity-0 mt-12 mb-14 flex duration-1000"
           >
             <NuxtLink :to="{ name: 'AboutUs' }" class="group">
               <button
@@ -118,14 +127,4 @@ onBeforeUnmount(() => {
   </section>
 </template>
 
-<style scoped>
-.card {
-  transition: 1000ms;
-  transform: translatey(100px);
-  opacity: 0;
-}
-.card.show {
-  transform: translatey(0);
-  opacity: 1;
-}
-</style>
+<style scoped></style>

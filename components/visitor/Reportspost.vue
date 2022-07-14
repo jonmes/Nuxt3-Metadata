@@ -1,37 +1,47 @@
 <script setup>
 import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
 
-// onMounted(() => {
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         entry.target.classList.toggle(
-//           "lg:[&[show=true]]:opacity-100",
-//           entry.isIntersecting
-//         );
-//         entry.target.classList.toggle(
-//           "lg:[&[show=true]]:translate-y-0",
-//           entry.isIntersecting
-//         );
-//         // if (entry.isIntersecting) {
-//         //   observer.unobserve(entry.target);
-//         //   return entry.target;
-//         // }
-//       });
-//     },
-//     {
-//       threshold: 0.1,
-//     }
-//   );
-//   document.querySelectorAll(".reporti").forEach((selection) => {
-//     observer.observe(selection);
-//   });
-// });
+const target = ref(null);
+const observer = shallowRef();
+
+onMounted(() => {
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach(
+      (entry) => {
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:opacity-100",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:translate-y-0",
+          entry.isIntersecting
+        );
+        if (entry.isIntersecting) {
+          observer.value.unobserve(entry.target);
+          return entry.target;
+        }
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+  });
+  target.value.forEach((card) => {
+    observer.value.observe(card);
+  });
+});
+
+onBeforeUnmount(() => {
+  observer.value.disconnect();
+});
 </script>
 
 <template>
-  <section class="flex flex-col" id="report">
-    <div class="flex flex-col items-center">
+  <section v-for="i in 1" class="flex flex-col" id="report">
+    <div
+      ref="target"
+      class="flex flex-col items-center duration-1000 translate-y-20"
+    >
       <h1
         show="true"
         class="mt-10 self-center text-base md:text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
@@ -46,7 +56,10 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
       </h2>
     </div>
     <div class="flex flex-col 2xl:flex-row">
-      <div class="flex flex-1 overflow-hidden">
+      <div
+        ref="target"
+        class="flex flex-1 overflow-hidden duration-1000 translate-y-20"
+      >
         <img
           show="true"
           class="object-contain"
@@ -56,7 +69,8 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
       <article class="flex-1 2xl:mt-48 2xl:ml-[137px]">
         <p
           show="true"
-          class="w-10/12 text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+          ref="target"
+          class="w-10/12 opacity-0 duration-1000 translate-y-20 text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
         >
           Starting from November 2018, we began to aggregate vacancies from
           various sources and started delivering them to our subscribers. From
@@ -73,19 +87,11 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
         </p>
         <br />
         <br />
-        <!-- <p
+        <div
           show="true"
-          class="text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+          ref="target"
+          class="mt-12 flex translate-y-20 duration-1000"
         >
-          Adipiscing sed ante ut magna nullam. Tincidunt nullam ornare orci in.
-          Phasellus eu mi, adipiscing vivamus. Arcu, eu adipiscing convallis at
-          faucibus eget tincidunt magna. Quisque adipiscing quis sit libero in
-          malesuada rhoncus egestas. Varius sem nec, consequat elit, aliquam
-          nullam. In augue facilisis feugiat vulputate tristique commodo,
-          turpis. In fermentum tempus sed potenti eget tortor gravida netus
-          tempor.
-        </p> -->
-        <div show="true" class="mt-12 flex">
           <NuxtLink to="/reports" class="group flex">
             <button
               class="flex items-center rounded-md bg-primary text-sm px-2 py-1 md:px-5 md:py-3 mdtext-base font-medium leading-6 text-white"

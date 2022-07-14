@@ -34,8 +34,6 @@ onMounted(() => {
     carWidth(windowWidth.value);
   };
 
-  console.log("hello", hello.value);
-
   observer.value = new IntersectionObserver((entries) => {
     entries.forEach(
       (entry) => {
@@ -53,7 +51,7 @@ onMounted(() => {
         }
       },
       {
-        threshold: 1,
+        threshold: 0.5,
       }
     );
   });
