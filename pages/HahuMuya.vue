@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen overflow-y-auto px-8 md:px-[50px] xl:px-[100px]">
     <section
-      class="mb-10 flex flex-col items-center lg:mb-0 lg:min-h-screen xl:space-x-[89px] 2xl:flex-row"
+      class="flex flex-col items-center lg:min-h-screen xl:space-x-[89px] 2xl:flex-row"
       id="home"
     >
       <div class="mt-20 flex-1 xl:mt-0">
@@ -11,7 +11,9 @@
         >
           HaHuJobs Muya
         </h1>
-
+        <div class="lg:hidden mt-10 lg:mt-0 flex-shrink max-w-[70vw]">
+          <img class="object-contain" src="/images/MuyaMain.png" />
+        </div>
         <p
           class="mt-[27px] items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
         >
@@ -26,7 +28,12 @@
           Login
         </button>
       </div>
-      <img class="mt-10 object-contain 2xl:mt-0" src="/images/MuyaMain.png" />
+      <div class="hidden lg:block flex-1 flex-shrink">
+        <img
+          class="object-contain 3xl:min-w-[950px]"
+          src="/images/MuyaMain.png"
+        />
+      </div>
     </section>
 
     <section class="flex flex-col" id="partners">
@@ -41,7 +48,7 @@
         Our Partners
       </h2>
       <p
-        class="mt-[17px] max-w-[860px] self-center text-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
+        class="mt-[17px] w-7/12 self-center text-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
       >
         The United States Agency for International Development (USAID)’s
         Building the Potential of Youth Activity (POTENTIAL) a five-year project
@@ -56,10 +63,10 @@
         class="min-h-60 mt-[59px] grid grid-cols-1 justify-items-center gap-y-10 pb-10 lg:pb-0 xl:grid-cols-3 xl:gap-y-0 xl:gap-x-5"
       >
         <div
-          class="transition-newtransition group flex h-[630px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[600px] sm:h-[500px] xl:h-60 xl:bg-transparent hover:xl:h-[600px] 2xl:px-10 hover:3xl:h-[600px] hover:4xl:h-[500px]"
+          class="transition-newtransition group flex h-[630px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[600px] sm:h-[500px] xl:h-60 xl:bg-transparent hover:xl:h-[600px] hover:2xl:h-[560px] hover:3xl:h-[500px] 2xl:px-10"
         >
           <img
-            class="mt-[90px] object-contain group-hover:opacity-100 xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0"
+            class="mt-10 object-contain dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
             src="/images/USAID_colored.png"
           />
           <hr
@@ -79,10 +86,10 @@
         </div>
 
         <div
-          class="transition-newtransition group flex h-[630px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[600px] sm:h-[500px] xl:h-60 xl:bg-transparent hover:xl:h-[600px] 2xl:px-10 hover:3xl:h-[650px] hover:4xl:h-[520px]"
+          class="transition-newtransition group flex h-[500px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[420px] sm:h-[400px] xl:h-60 xl:bg-transparent hover:xl:h-[420px] 2xl:px-10"
         >
           <img
-            class="mt-[90px] object-contain group-hover:opacity-100 xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0"
+            class="mt-10 object-contain dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
             src="/images/Savethechildren_colored.png"
           />
           <hr
@@ -99,10 +106,14 @@
         </div>
 
         <div
-          class="transition-newtransition group flex h-[630px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[700px] sm:h-[500px] xl:h-60 xl:bg-transparent hover:xl:h-[600px] 2xl:px-10 hover:3xl:h-[650px] hover:4xl:h-[520px]"
+          class="transition-newtransition group flex h-[500px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[420px] sm:h-[400px] xl:h-60 xl:bg-transparent hover:xl:h-[420px] 2xl:px-10"
         >
+          <!-- <img
+            class="mt-10 object-contain group-hover:opacity-100 xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
+            src="/images/MOSHE_colored.png"
+          /> -->
           <img
-            class="mt-[90px] object-contain group-hover:opacity-100 xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0"
+            class="mt-10 object-contain dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
             src="/images/MOSHE_colored.png"
           />
           <hr

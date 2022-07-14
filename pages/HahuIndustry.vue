@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen overflow-y-auto px-8 md:px-[50px] xl:px-[100px]">
     <section
-      class="flex flex-col items-center pb-20 lg:mb-0 lg:min-h-screen lg:flex-row xl:space-x-[89px]"
+      class="flex flex-col items-center lg:pb-20 lg:min-h-screen lg:flex-row xl:space-x-[89px]"
       id="home"
     >
       <div class="mt-20 flex-1 xl:mt-0">
@@ -11,9 +11,11 @@
         >
           HaHu Industry park
         </h1>
-
+        <div class="lg:hidden mt-10 lg:mt-0 flex-shrink max-w-[70vw]">
+          <img class="object-contain" src="/images/industryPark.png" />
+        </div>
         <p
-          class="mt-[27px] items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
+          class="mt-10 items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
         >
           The platform uses biometric based identification to both register
           workers and job seekers. The process begins with mass registration of
@@ -24,12 +26,12 @@
           transaction data for data analytics as well as visualization.
         </p>
         <button
-          class="mt-[113px] rounded-md bg-primary px-[50px] py-[13px] text-base font-medium leading-6 text-white"
+          class="mt-24 rounded-md bg-primary px-[50px] py-[13px] text-base font-medium leading-6 text-white"
         >
           Login
         </button>
       </div>
-      <div class="flex-1 flex-shrink-0">
+      <div class="hidden lg:block flex-1 flex-shrink-0 mt-10 xs:mt-0">
         <img
           class="object-fit w-auto 4xl:min-w-[960px]"
           src="/images/industryPark.png"
@@ -59,17 +61,17 @@
       </p>
 
       <div
-        class="mt-[59px] mb-10 grid min-h-[750px] grid-cols-1 justify-items-center gap-y-10 md:min-h-[800px] lg:min-h-[400px] lg:w-auto lg:grid-cols-3 lg:gap-x-10 3xl:min-h-[310px]"
+        class="mt-16 mb-10 lg:mg-0 grid min-h-[750px] grid-cols-1 justify-items-center gap-y-10 md:min-h-[800px] lg:min-h-[400px] lg:w-auto lg:grid-cols-3 lg:gap-x-10 3xl:min-h-[310px]"
       >
         <div
-          class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
+          class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:bg-HahuGray1 dark:lg:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[300px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
         >
           <img
-            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-10 dark:invert  dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
+            class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-10 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-700"
             src="/images/mastercard_colored.png"
           />
           <hr
-            class="my-4 w-10/12 border-b-[1px] border-black opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20"
+            class="my-4 w-10/12 border-b-[1px] border-black dark:border-white opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20"
           />
           <p
             class="mb-5 w-10/12 text-center text-sm font-normal leading-5 duration-500 md:invisible group-hover:md:visible"
@@ -83,14 +85,14 @@
           </p>
         </div>
         <div
-          class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
+          class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-700 hover:bg-white dark:bg-HahuGray1 dark:lg:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[300px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
         >
           <img
-            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-10 darK:invert dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
+            class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
             src="/images/first_consult_colored.png"
           />
           <hr
-            class="my-4 w-10/12 border-b-[1px] border-black opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20"
+            class="my-4 w-10/12 border-b-[1px] border-black dark:border-white opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20"
           />
           <p
             class="mb-5 w-10/12 text-center text-sm font-normal leading-5 duration-500 md:invisible group-hover:md:visible"
@@ -104,14 +106,14 @@
           </p>
         </div>
         <div
-          class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
+          class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:bg-HahuGray1 dark:lg:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[300px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
         >
           <img
-            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-0 darK:invert dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
+            class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-700"
             src="/images/minab_colorized.png"
           />
           <hr
-            class="my-4 w-10/12 border-b-[1px] border-black opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20"
+            class="my-4 w-10/12 border-b-[1px] border-black dark:border-white opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20"
           />
           <p
             class="mb-5 w-10/12 text-center text-sm font-normal leading-5 duration-500 md:invisible group-hover:md:visible"
@@ -129,7 +131,7 @@
 
     <section class="flex flex-col" id="about">
       <h3
-        class="self-center rounded-[36px] bg-primary-lite px-[33px] py-[2px] text-xs font-medium leading-[18px] text-primary-dark dark:text-HahuGray/4 xl:mt-24"
+        class="self-center rounded-[36px] bg-primary-lite px-[33px] py-[2px] text-xs font-medium leading-[18px] text-primary-dark dark:text-HahuGray/4 mt-24"
       >
         About
       </h3>

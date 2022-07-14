@@ -40,7 +40,7 @@ onBeforeUnmount(() => {
   <section v-for="i in 1" class="flex flex-col" id="report">
     <div
       ref="target"
-      class="flex flex-col items-center duration-1000 translate-y-20"
+      class="flex flex-col items-center lg:duration-1000 lg:translate-y-20"
     >
       <h1
         show="true"
@@ -58,7 +58,7 @@ onBeforeUnmount(() => {
     <div class="flex flex-col 2xl:flex-row">
       <div
         ref="target"
-        class="flex flex-1 overflow-hidden duration-1000 translate-y-20"
+        class="flex flex-1 overflow-hidden lg:duration-1000 lg:translate-y-20"
       >
         <img
           show="true"
@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
         <p
           show="true"
           ref="target"
-          class="w-10/12 opacity-0 duration-1000 translate-y-20 text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
+          class="w-10/12 lg:opacity-0 lg:duration-1000 lg:translate-y-20 text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
         >
           Starting from November 2018, we began to aggregate vacancies from
           various sources and started delivering them to our subscribers. From
@@ -90,7 +90,7 @@ onBeforeUnmount(() => {
         <div
           show="true"
           ref="target"
-          class="mt-12 flex translate-y-20 duration-1000"
+          class="mt-12 flex lg:translate-y-20 lg:duration-1000"
         >
           <NuxtLink to="/reports" class="group flex">
             <button

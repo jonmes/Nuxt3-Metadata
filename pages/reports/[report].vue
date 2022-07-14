@@ -161,6 +161,14 @@ const copyLinkFunc = () => {
         :content="filteredReport.content"
       />
       <Meta
+        property="og:video"
+        content="http://www.youtube.com/v/GFLGRidF04?version=3&autohide=1"
+      />
+      <Meta property="og:video:type" content="application/x-shockwave-flash" />
+      <Meta property="og:video:width" content="398" />
+      <Meta property="og:video:height" content="264" />
+      <Meta property="og:site_name" content="YouTube" />
+      <Meta
         data-n-head="1"
         data-hid="description"
         name="description"

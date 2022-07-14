@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen overflow-y-auto px-8 md:px-[50px] xl:px-[100px]">
     <section
-      class="mb-10 mt-10 flex flex-col items-center pb-20 lg:my-0 lg:min-h-screen lg:flex-row xl:space-x-[89px]"
+      class="mt-10 flex flex-col items-center lg:pb-20 lg:min-h-screen lg:flex-row xl:space-x-[89px]"
     >
       <div class="mt-20 flex-1 xl:mt-0" id="Home">
         <img class="object-contain" src="/images/HahuEnter_amharic.png" />
@@ -10,9 +10,11 @@
         >
           HAHU ENTERPRISE
         </h1>
-
+        <div class="lg:hidden mt-10 lg:mt-0 flex-shrink max-w-[70vw]">
+          <img class="object-contain" src="/images/enterprise_art.png" />
+        </div>
         <p
-          class="mt-[27px] items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
+          class="mt-10 items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
         >
           Provides human resources and related services starting from job
           vacancy announcements, recruitment, all the way to human resources
@@ -21,12 +23,12 @@
           parks, in addition to foreign employment agencies.
         </p>
         <button
-          class="mt-[113px] rounded-md bg-primary px-[50px] py-[13px] text-base font-medium leading-6 text-white"
+          class="mt-24 rounded-md bg-primary px-[50px] py-[13px] text-base font-medium leading-6 text-white"
         >
           Login
         </button>
       </div>
-      <div class="flex-1 flex-shrink">
+      <div class="hidden lg:block flex-1 mt-10 sm:mt-0 flex-shrink">
         <img
           class="object-contain 4xl:min-w-[950px]"
           src="/images/enterprise_art.png"
@@ -155,7 +157,7 @@
       <carousel :items-to-show="itemsToShow" class="mt-8 mb-16 lg:mb-28">
         <slide v-for="(slide, index) in cFile" :key="index" class="group py-4">
           <div
-            class="lg:min-h-auto group mx-5 flex h-full flex-col items-center rounded-[15px] border-2 border-primary bg-white shadow-full duration-500 dark:group-hover:bg-HahuGray1 lg:border-transparent lg:bg-transparent lg:group-hover:border-primary lg:group-hover:bg-white xl:min-h-[570px]"
+            class="lg:min-h-auto group mx-5 flex h-full flex-col items-center rounded-[15px] border-2 border-primary bg-white shadow-full duration-500 dark:group-hover:bg-HahuGray1 lg:border-transparent bg-transparent lg:group-hover:border-primary lg:group-hover:bg-white xl:min-h-[570px]"
           >
             <!-- <div
               class="flex flex-col items-center rounded-[15px] bg-white px-[53px] dark:bg-HahuGray1"

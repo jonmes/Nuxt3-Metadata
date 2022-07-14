@@ -150,7 +150,7 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
                   {{ branch.name }}
                 </h2>
                 <h3
-                  class="ml-2 text-base font-normal leading-8 text-gray-500 duration-500 ease-in dark:text-HahuGray4"
+                  class="sm:ml-2 text-base font-normal leading-8 text-gray-500 duration-500 ease-in dark:text-HahuGray4"
                 >
                   {{ branch.Phone }}
                 </h3>

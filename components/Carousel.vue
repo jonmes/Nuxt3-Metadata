@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
     :items-to-show="itemsToShow"
     :wrap-around="true"
     show="true"
-    class="mx-5"
+    class="lg:mx-5"
   >
     <slide
       v-for="(slide, i) in props.cardSlider"
@@ -90,7 +90,7 @@ onBeforeUnmount(() => {
               {{ slide.title }}
             </h1>
             <p
-              class="mt-5 text-left text-lg font-light leading-[30px] dark:text-HahuGray3"
+              class="mt-5 text-left text-sm lg:text-lg font-light leading-[30px] dark:text-HahuGray3"
             >
               {{ slide.text }}
             </p>

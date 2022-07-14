@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen overflow-y-auto px-8 md:px-[50px] xl:px-[100px]">
     <section
-      class="mb-10 flex flex-col items-center lg:mb-0 lg:min-h-screen xl:space-x-[89px] 2xl:flex-row"
+      class="flex flex-col items-center lg:min-h-screen xl:space-x-[89px] lg:flex-row"
       id="home"
     >
       <div class="mt-20 flex-1 xl:mt-0">
@@ -11,7 +11,9 @@
         >
           HaHuJob TVET
         </h1>
-
+        <div class="lg:hidden mt-10 lg:mt-0 flex-shrink max-w-[70vw]">
+          <img class="object-contain" src="/images/TvetMain.png" />
+        </div>
         <p
           class="mt-[27px] items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4"
         >
@@ -24,12 +26,12 @@
           non-structured digital learning materially.
         </p>
         <button
-          class="mt-[113px] rounded-md bg-primary px-[50px] py-[13px] text-base font-medium leading-6 text-white"
+          class="mt-24 rounded-md bg-primary px-[50px] py-[13px] text-base font-medium leading-6 text-white"
         >
           Login
         </button>
       </div>
-      <div class="flex-1 flex-shrink">
+      <div class="hidden lg:block flex-1 flex-shrink">
         <img
           class="object-contain 3xl:min-w-[950px]"
           src="/images/TvetMain.png"
