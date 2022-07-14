@@ -53,27 +53,24 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
           src="/images/robo_analysis-01.png"
         />
       </div>
-      <article class="flex-1 2xl:mt-[100px] 2xl:ml-[137px]">
+      <article class="flex-1 2xl:mt-48 2xl:ml-[137px]">
         <p
           show="true"
           class="text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
-          ultricies aliquet sed vel eu dictumst sed. Amet, habitant augue
-          pharetra risus bibendum scelerisque tellus. Mi imperdiet elit elit
-          quam ornare massa egestas id. Consectetur dolor at eget sem lectus
-          maecenas in. Volutpat vitae sed egestas vitae habitasse mollis
-          pharetra sit. Tellus vitae arcu massa vivamus in odio. Adipiscing sed
-          ante ut magna nullam. Tincidunt nullam ornare orci in. Phasellus eu
-          mi, adipiscing vivamus. Arcu, eu adipiscing convallis at faucibus eget
-          tincidunt magna. Quisque adipiscing quis sit libero in malesuada
-          rhoncus egestas. Varius sem nec, consequat elit, aliquam nullam. In
-          augue facilisis feugiat vulputate tristique commodo, turpis. In
-          fermentum tempus sed potenti eget tortor gravida netus tempor.
+          Under HahuJobs, we provide annually, semi-annually, and monthly
+          reports to our subscribers using a variety of visual aids such as; bar
+          chart, pie chart, and data visualization . Our reports include; annual
+          report on job vacancies by sectors, as well as annual report on job
+          vacancies by years of experience, and annual report on the source of
+          job vacancies that we aggregate. It also includes monthly visual
+          reports which reviews the overall content of the job vacancies that we
+          aggregate. You can check the list of our annually, semi-annually and
+          monthly reports by clicking the link below.
         </p>
         <br />
         <br />
-        <p
+        <!-- <p
           show="true"
           class="text-base md:text-lg font-normal leading-[35px] dark:text-HahuGray/4"
         >
@@ -84,7 +81,7 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
           nullam. In augue facilisis feugiat vulputate tristique commodo,
           turpis. In fermentum tempus sed potenti eget tortor gravida netus
           tempor.
-        </p>
+        </p> -->
         <div show="true" class="mt-12 flex">
           <NuxtLink to="/reports" class="group flex">
             <button

@@ -20,7 +20,6 @@ const Blogs = [
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "Hey! Today let's introduce you to AWAQI",
-    link: "blogs-id-blogDetail",
   },
   {
     id: 2,
@@ -29,15 +28,13 @@ const Blogs = [
     date: "19 Jan 2022",
     title:
       "HaHuJobs have signed an MoU with the Ethiopian Investment Commission",
-    link: "blogs-id-blogDetail",
   },
   {
     id: 3,
     img: "/images/blog_post_3.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "ALx Software Engineering training programm.",
-    link: "blogs-id-blogDetail",
+    title: "ALx Software Engineering training programme.",
   },
   {
     id: 4,
@@ -45,7 +42,6 @@ const Blogs = [
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "ALx African Career Catalyst (ACC)",
-    link: "blogs-id-blogDetail",
   },
   {
     id: 5,
@@ -53,7 +49,6 @@ const Blogs = [
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "ALx Young Entrepreneurs Programme (YEP)",
-    link: "blogs-id-blogDetail",
   },
   {
     id: 6,
@@ -61,7 +56,14 @@ const Blogs = [
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "HahuJobs have signed a service agreement with SNV",
-    link: "blogs-id-blogDetail",
+  },
+  {
+    id: 7,
+    img: "/images/blog_post_7.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title:
+      "Three-month training program for Bahir Dar Institute of Technology Students",
   },
   // {
   //   id: 4,

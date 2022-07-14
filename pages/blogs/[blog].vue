@@ -40,9 +40,11 @@ const Blogs = [
     img: "/images/blog_post_3.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "ALx Software Engineering training programm.",
+    title: "ALx Software Engineering training programme.",
     p1: "a 12-month Programme that prepares the youth with the technical and work-ready skills for a global career as a Full-Stack Developer which target from age 18-28, any background. Our programmes focus on building the skillsets, through real-time project-based learning, to get youths ready to transform our world.",
-    p2: "Software Engineers are highly in demand and earn great salaries. Delivered in partnership with the Holberton School, the Software Engineering program is structured as follows: Foundation: 9 Months Low-level Programming - work in C and Unix programming, graphical programming, data structures and algorithms, and reverse engineering and security protocols. Higher Level programming - advanced algorithms, space and time complexity, database management, and front-end programming. System Engineering and DevOps - while developing previously mentioned skills, emphasizes automation, scalability, and reliability so that you are familiar with the infrastructure and best practices similar to those in tech powerhouses. Specialization: 3 Months Front-end development Back-end web development",
+    p2: "Software Engineers are highly in demand and earn great salaries. Delivered in partnership with the Holberton School, the Software Engineering program is structured as follows: Foundation: 9 Months Low-level Programming - work in C and Unix programming, graphical programming, data structures and algorithms, and reverse engineering and security protocols.",
+    p2: "Higher Level programming - advanced algorithms, space and time complexity, database management, and front-end programming.",
+    p3: "System Engineering and DevOps - while developing previously mentioned skills, emphasizes automation, scalability, and reliability so that you are familiar with the infrastructure and best practices similar to those in tech powerhouses. \n Specialization: 3 Months Front-end development Back-end web development",
   },
   {
     id: 4,
@@ -59,8 +61,8 @@ const Blogs = [
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "ALx Young Entrepreneurs Programme (YEP)",
-    p1: "Are you a young, early-stage business owner keen to learn from experienced entrepreneurs that have built, managed, and grown businesses? Accelerate your business with mentors and a community of entrepreneurs with ALX’s Young Entrepreneurs Programme.",
-    p2: "Young Entrepreneurs Programme (YEP) is a 4-Week Sprint, designed to provide young entrepreneurs with the skills, mentorship, and community they need to take their business to the next level The program targets from age 18-35, and able to Provide young entrepreneurs with the know-how to move their companies to a new stage of growth.",
+    p1: "Are you a young, early-stage business owner keen to learn from experienced entrepreneurs that have built, managed, and grown businesses? Accelerate your business with mentors and a community of entrepreneurs with ALX’s Young Entrepreneurs Programme. Young Entrepreneurs Programme (YEP) is a 4-Week Sprint, designed to provide young entrepreneurs with the skills, mentorship, and community they need to take their business to the next level The program targets from age 18-35, and able to Provide young entrepreneurs with the know-how to move their companies to a new stage of growth.",
+    p2: "",
   },
   {
     id: 6,
@@ -69,6 +71,16 @@ const Blogs = [
     date: "19 Jan 2022",
     title: "HahuJobs have signed a service agreement with SNV",
     p1: "We are happy to announce that we have signed a service agreement with #SNV to provide our industry park services to Bure, Yirgalem and Bulbula integrated agro industrial parks under the RAYEE program one of master card foundation initiatives. This marks a significate mile stone in our industry park LMIS operation, we are now serving 11 industrial parks across Ethiopia.",
+    p2: "",
+  },
+  {
+    id: 7,
+    img: "/images/blog_post_7.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title:
+      "Three-month training program for Bahir Dar Institute of Technology Students",
+    p1: "A three-month training introductory program was held for students of Bahir Dar Institute of Technology students. We discussed with Bahir Dar Institute of Technology in an opening ceremony to provide training for students who are interested in web and mobile application enrichment. Our planned training will last for 3 months and will include modules such as Front End, Back End and Mobile app Development.",
     p2: "",
   },
 ];
