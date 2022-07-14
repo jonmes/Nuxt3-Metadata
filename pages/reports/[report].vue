@@ -56,36 +56,36 @@ const Reports = [
   },
   {
     id: "4",
-    img: "/images/YouTube_annual_report.png",
+    // img: "/images/YouTube_annual_report.png",
     title: "Jobs by sector from September 2020 - September 2021",
+    videoId: "yeP33pVuLxE",
     range: "Annually",
     date: "Jan 12, 2022",
     content:
       "From september 2020 to september 2021, we have been able to deliver more than 28,000 job vacancies from 16 different sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
     p1: "",
-    videoId: "",
   },
   {
     id: "5",
-    img: "/images/YouTube_annual_report.png",
+    // img: "/images/YouTube_annual_report.png",
     title: "Jobs by years of experience from September 2020 - September 2021",
+    videoId: "pmQtD9bBnEI",
     range: "Annually",
     date: "Jan 12, 2022",
     content:
       "From september 2020 to september 2021, we have been able to deliver more than 28,000 job vacancies of 16 different sectors to our followers on the HaHuJobs platform. Job vacancies requiring 1-2 years of work experience account for 30% of all job vacancies published, amounting for 7,856 of the vacancies delivered to our subscribers.",
     p1: "",
-    videoId: "",
   },
   {
     id: "6",
-    img: "/images/YouTube_annual_report.png",
+    // img: "/images/YouTube_annual_report.png",
     title: "Supply and demand data in 7 industry parks in the year 2020/21",
+    videoId: "YQFx2aCzK0E",
     range: "Annually",
     date: "Jan 12, 2022",
     content:
       "Under Bridges Ethiopia a Mastercard Foundation program implemented by First Consult support of our operations in 7 industrial parks in partnership with Ethiopian Investment Commission, this report shows a data of supply and demand from Sept 2020 to 2021.",
     p1: "",
-    videoId: "YQFx2aCzK0E",
   },
   {
     id: "7",
@@ -247,10 +247,11 @@ const copyLinkFunc = () => {
       >
         {{ filteredReport.content }}
       </p>
-      <!-- <img
+      <img
+        v-if="filteredReport.img"
         :src="filteredReport.img"
         class="mt-[54px] self-start object-contain"
-      /> -->
+      />
       <div class="mt-14 flex justify-center">
         <iframe
           v-if="filteredReport.videoId"
