@@ -19,7 +19,9 @@ const sidebarOpen = ref(false);
           <img :src="HahuLogo" class="dark:hidden" />
           <img :src="HahuLogoDark" class="hidden dark:block" />
         </NuxtLink>
-        <h1 class="mt-2 text-base font-light leading-4 text-[#444F60]">
+        <h1
+          class="mt-2 text-base font-light leading-4 text-[#444F60] dark:text-white"
+        >
           University
         </h1>
       </span>

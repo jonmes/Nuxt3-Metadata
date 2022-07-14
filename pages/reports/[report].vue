@@ -30,6 +30,7 @@ const Reports = [
     content:
       "Starting from November 2018, we began collecting job vacancies from various sources and started delivering them to our subscribers. From June 2019 to January 2020, we posted more than 6,559 vacancies on the HaHuJobs platform. From these vacancies, jobs in the finance sector were 24%, holding the largest percentage of the total jobs, followed by jobs in the business sector with 23.26%.",
     p1: "",
+    videoId: "",
   },
   {
     id: "2",
@@ -40,6 +41,7 @@ const Reports = [
     content:
       "From september 2019 to september 2020, we have been able to collect job vacancies from 10 different sources, including newspapers, and presented them in a more user-friendly manner on the HaHuJobs platform. Vacancies from the Ethiopian Reporter newspaper posses the highest number with 8,484 job posts, according to the published report.",
     p1: "",
+    videoId: "",
   },
   {
     id: "3",
@@ -50,6 +52,7 @@ const Reports = [
     content:
       "From september 2019 to september 2020, we have been able to deliver more than 19,000 job vacancies of various sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
     p1: "",
+    videoId: "",
   },
   {
     id: "4",
@@ -60,6 +63,7 @@ const Reports = [
     content:
       "From september 2020 to september 2021, we have been able to deliver more than 28,000 job vacancies from 16 different sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
     p1: "",
+    videoId: "",
   },
   {
     id: "5",
@@ -70,6 +74,7 @@ const Reports = [
     content:
       "From september 2020 to september 2021, we have been able to deliver more than 28,000 job vacancies of 16 different sectors to our followers on the HaHuJobs platform. Job vacancies requiring 1-2 years of work experience account for 30% of all job vacancies published, amounting for 7,856 of the vacancies delivered to our subscribers.",
     p1: "",
+    videoId: "",
   },
   {
     id: "6",
@@ -80,6 +85,7 @@ const Reports = [
     content:
       "Under Bridges Ethiopia a Mastercard Foundation program implemented by First Consult support of our operations in 7 industrial parks in partnership with Ethiopian Investment Commission, this report shows a data of supply and demand from Sept 2020 to 2021.",
     p1: "",
+    videoId: "YQFx2aCzK0E",
   },
   {
     id: "7",
@@ -90,6 +96,7 @@ const Reports = [
     content:
       "From April 01 - 30, 2022, more than 1,800 job postings were collected from different sources and delivered through the HaHuJobs platform. On average, we have been able to deliver more than 60 job vacancies per day during the specified month of the year alone. Vacancies from business, finance and engineering are the most frequent job categories posted on our platform. During the specified period, jobs requiring 2 years of work experience held the most data showed in the report.",
     p1: "",
+    videoId: "",
   },
   {
     id: "8",
@@ -100,6 +107,7 @@ const Reports = [
     content:
       "From May 01 - 31, 2022, more than 1,899 job postings were collected from different sources and delivered through the HaHuJobs platform. On average, we have been able to deliver more than 61 job vacancies per day during the specified month of the year alone. Vacancies from business, finance and engineering are the most frequent job categories posted on our platform. During the specified period, jobs requiring 2 years of work experience held the most data showed in the report.",
     p1: "",
+    videoId: "",
   },
   {
     id: "9",
@@ -110,6 +118,7 @@ const Reports = [
     content:
       "From June 01 - 30, 2022, more than 1,922 job postings were collected from different sources and delivered through the HaHuJobs platform. On average, we have been able to deliver more than 64 job vacancies per day during the specified month of the year alone. Vacancies from business, finance and engineering are the most frequent job sectors posted on our platform. During the specified period, jobs requiring 2 years of work experience held the most data showed in the report.",
     p1: "",
+    videoId: "",
   },
 ];
 
@@ -238,10 +247,18 @@ const copyLinkFunc = () => {
       >
         {{ filteredReport.content }}
       </p>
-      <img
+      <!-- <img
         :src="filteredReport.img"
         class="mt-[54px] self-start object-contain"
-      />
+      /> -->
+      <div class="mt-14 flex justify-center">
+        <iframe
+          v-if="filteredReport.videoId"
+          :src="`https://www.youtube.com/embed/${filteredReport.videoId}?loop=1&modestbranding=1`"
+          width="640"
+          height="360"
+        />
+      </div>
 
       <p
         class="mt-[68px] text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 lg:text-lg"

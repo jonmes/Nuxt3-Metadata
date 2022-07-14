@@ -19,7 +19,7 @@ const sidebarOpen = ref(false);
           <img :src="HahuLogo" class="dark:hidden" />
           <img :src="HahuLogoDark" class="hidden dark:block" />
         </NuxtLink>
-        <h1 class="mt-2 text-base font-light leading-4 text-[#444F60]">TVET</h1>
+        <h1 class="mt-2 text-base font-light leading-4 text-[#444F60] dark:text-white">TVET</h1>
       </span>
     </div>
     <MenuAlt3Icon

@@ -26,6 +26,39 @@ const Reports = [
       "Starting from November 2018, we began collecting job vacancies from various sources and started delivering them to our subscribers. From June 2019 to January 2020, we posted more than 6,559 vacancies on the HaHuJobs platform. From these vacancies, jobs in the finance sector were 24%, holding the largest percentage of the total jobs, followed by jobs in the business sector with 23.26%.",
   },
   {
+    id: "4",
+    link: "reports-id-reportDetail",
+    // img: "/images/YouTube_annual_report.png",
+    videoId: "yeP33pVuLxE",
+    title: "Jobs by sector from September 2020 - September 2021",
+    range: "Annually",
+    date: "Jan 12, 2022",
+    content:
+      "From September 2020 to September 2021, we have been able to deliver more than 28,000 job vacancies from 16 different sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
+  },
+  {
+    id: "5",
+    link: "reports-id-reportDetail",
+    // img: "/images/YouTube_annual_report.png",
+    videoId: "pmQtD9bBnEI",
+    title: "Jobs by years of experience from September 2020 - September 2021",
+    range: "Annually",
+    date: "Jan 12, 2022",
+    content:
+      "From 2020 to 2021, we have been able to deliver more than 28,000 job vacancies of 16 different sectors to our followers on the HaHuJobs platform. Job vacancies requiring 1-2 years of work experience account for 30% of all job vacancies published, amounting for 7,856 of the vacancies delivered to our subscribers.",
+  },
+  {
+    id: "6",
+    link: "reports-id-reportDetail",
+    // img: "/images/YouTube_annual_report.png",
+    videoId: "YQFx2aCzK0E",
+    title: "Supply and demand data in 7 industry parks in the year 2020/21",
+    range: "Annually",
+    date: "Jan 12, 2022",
+    content:
+      "Under Bridges Ethiopia a Mastercard Foundation program implemented by First Consult support of our operations in 7 industrial parks in partnership with Ethiopian Investment Commission, this report shows a data of supply and demand from Sept 2020 to 2021.",
+  },
+  {
     id: "2",
     link: "reports-id-reportDetail",
     img: "/images/YouTube_annual_report.png",
@@ -44,36 +77,6 @@ const Reports = [
     date: "Jan 12, 2022",
     content:
       "From September 2019 to September 2020, we have been able to deliver more than 19,000 job vacancies of various sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
-  },
-  {
-    id: "4",
-    link: "reports-id-reportDetail",
-    img: "/images/YouTube_annual_report.png",
-    title: "Jobs by sector from September 2020 - September 2021",
-    range: "Annually",
-    date: "Jan 12, 2022",
-    content:
-      "From September 2020 to September 2021, we have been able to deliver more than 28,000 job vacancies from 16 different sectors to our subscribers on the HaHuJobs platform. Aggregated jobs from Business, Finance and Engineering Sector hold the largest percentage of the various job positions posted on HahuJobs platform.",
-  },
-  {
-    id: "5",
-    link: "reports-id-reportDetail",
-    img: "/images/YouTube_annual_report.png",
-    title: "Jobs by years of experience from September 2020 - September 2021",
-    range: "Annually",
-    date: "Jan 12, 2022",
-    content:
-      "From 2020 to 2021, we have been able to deliver more than 28,000 job vacancies of 16 different sectors to our followers on the HaHuJobs platform. Job vacancies requiring 1-2 years of work experience account for 30% of all job vacancies published, amounting for 7,856 of the vacancies delivered to our subscribers.",
-  },
-  {
-    id: "6",
-    link: "reports-id-reportDetail",
-    img: "/images/YouTube_annual_report.png",
-    title: "Supply and demand data in 7 industry parks in the year 2020/21",
-    range: "Annually",
-    date: "Jan 12, 2022",
-    content:
-      "Under Bridges Ethiopia a Mastercard Foundation program implemented by First Consult support of our operations in 7 industrial parks in partnership with Ethiopian Investment Commission, this report shows a data of supply and demand from Sept 2020 to 2021.",
   },
   {
     id: "7",
@@ -289,7 +292,17 @@ const filter = (e) => {
           class="mt-10 flex flex-col justify-around gap-x-[67px] self-start rounded-[15px] bg-white px-7 pt-[58px] duration-500 ease-in dark:bg-HahuGray1 lg:mt-[105px] lg:flex-row xl:pl-12 4xl:min-w-[1263px]"
         >
           <NuxtLink :to="'/reports/' + report.id" class="flex flex-1 w-4/12">
-            <img :src="report.img" class="mb-2 object-contain" />
+            <img
+              v-if="report.img"
+              :src="report.img"
+              class="mb-2 object-contain"
+            />
+            <iframe
+              v-if="report.videoId"
+              :src="`https://www.youtube.com/embed/${report.videoId}?loop=1&modestbranding=1`"
+              width="640"
+              height="360"
+            />
           </NuxtLink>
           <div class="flex flex-1 flex-col">
             <h1
