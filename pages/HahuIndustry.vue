@@ -65,7 +65,7 @@
           class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
         >
           <img
-            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-10 darK:invert dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
+            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-10 dark:invert  dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
             src="/images/mastercard_colored.png"
           />
           <hr
@@ -107,7 +107,7 @@
           class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[370px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]"
         >
           <img
-            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-10 darK:invert dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
+            class="mt-10 object-contain transition duration-500 group-hover:opacity-100 group-hover:grayscale-0 md:opacity-40 md:grayscale dark:grayscale dark:brightness-0 darK:invert dark:group-hover:brightness-100 dark:group-hover:grayscale-0 dark:group-hover:invert-0"
             src="/images/minab_colorized.png"
           />
           <hr

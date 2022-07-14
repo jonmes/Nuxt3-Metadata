@@ -15,11 +15,26 @@ const category = [
 
 const Blogs = [
   {
-    id: 1,
-    img: "/images/blog_post_1.jpg",
+    id: 6,
+    img: "/images/blog_post_6.png",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
-    title: "Hey! Today let's introduce you to AWAQI",
+    title: "HahuJobs have signed a service agreement with SNV",
+  },
+  {
+    id: 7,
+    img: "/images/blog_post_7.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title:
+      "Three-month training program for Bahir Dar Institute of Technology Students",
+  },
+  {
+    id: 8,
+    img: "/images/blog_post_8.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title: "HahuJobs online job application skill training",
   },
   {
     id: 2,
@@ -28,6 +43,13 @@ const Blogs = [
     date: "19 Jan 2022",
     title:
       "HaHuJobs have signed an MoU with the Ethiopian Investment Commission",
+  },
+  {
+    id: 1,
+    img: "/images/blog_post_1.jpg",
+    cat: "TECHNOLOGY",
+    date: "19 Jan 2022",
+    title: "Hey! Today let's introduce you to AWAQI",
   },
   {
     id: 3,
@@ -50,52 +72,6 @@ const Blogs = [
     date: "19 Jan 2022",
     title: "ALx Young Entrepreneurs Programme (YEP)",
   },
-  {
-    id: 6,
-    img: "/images/blog_post_6.png",
-    cat: "TECHNOLOGY",
-    date: "19 Jan 2022",
-    title: "HahuJobs have signed a service agreement with SNV",
-  },
-  {
-    id: 7,
-    img: "/images/blog_post_7.jpg",
-    cat: "TECHNOLOGY",
-    date: "19 Jan 2022",
-    title:
-      "Three-month training program for Bahir Dar Institute of Technology Students",
-  },
-  {
-    id: 8,
-    img: "/images/blog_post_8.jpg",
-    cat: "TECHNOLOGY",
-    date: "19 Jan 2022",
-    title: "HahuJobs online job application skill training",
-  },
-  // {
-  //   id: 4,
-  //   img: "/images/Blog4.png",
-  //   cat: "TECHNOLOGY",
-  //   date: "19 Jan 2022",
-  //   title: "Lorem ipsum dolor sit amet, consectetur elit.",
-  //   link: "blogs-id-blogDetail",
-  // },
-  // {
-  //   id: 5,
-  //   img: "/images/Blog5.png",
-  //   cat: "TECHNOLOGY",
-  //   date: "19 Jan 2022",
-  //   title: "Lorem ipsum dolor sit amet, consectetur elit.",
-  //   link: "blogs-id-blogDetail",
-  // },
-  // {
-  //   id: 6,
-  //   img: "/images/Blog6.png",
-  //   cat: "TECHNOLOGY",
-  //   date: "19 Jan 2022",
-  //   title: "Lorem ipsum dolor sit amet, consectetur elit.",
-  //   link: "blogs-id-blogDetail",
-  // },
 ];
 </script>
 
