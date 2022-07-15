@@ -127,81 +127,80 @@ const filteredReport = ref(Reports.find((el) => el.id == router.params.report));
 const copyLink = ref("");
 onMounted(() => {
   copyLink.value = window.location.href;
-
-  useHead({
-    title: "test title",
-    viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-    charset: "utf-8",
-    meta: [
-      { "data-n-head": "1", charset: "utf-8" },
-      {
-        "data-n-head": "1",
-        name: "viewport",
-        content:
-          "width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
-      },
-      {
-        "data-n-head": "1",
-        "data-hid": "description",
-        name: "description",
-        content: "Testing Description",
-      },
-      {
-        "data-n-head": "1",
-        property: "og:url",
-        content: "https://nuxt-stat-dep--hahuone.netlify.app/",
-      },
-      { "data-n-head": "1", property: "og:type", content: "website" },
-      { "data-n-head": "1", property: "og:title", content: "Hahu Jobs" },
-      {
-        "data-n-head": "1",
-        property: "og:description",
-        content: "Testing Description",
-      },
-      {
-        "data-n-head": "1",
-        property: "og:image",
-        content:
-          "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
-      },
-
-      // twitter
-      {
-        "data-n-head": "1",
-        property: "twitter:card",
-        content: "summary_large_image",
-      },
-      {
-        "data-n-head": "1",
-        property: "twitter:domain",
-        content: "Hahu-nuxt-3-dep.netlify.app",
-      },
-      {
-        property: "twitter:url",
-        content: "https://nuxt-stat-dep--hahuone.netlify.app/",
-      },
-      { "data-n-head": "1", property: "twitter:title", content: "Hahu Jobs" },
-      {
-        "data-n-head": "1",
-        property: "twitter:description",
-        content: "Testing description .",
-      },
-      {
-        name: "twitter:image",
-        content:
-          "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
-      },
-      {
-        "data-n-head": "1",
-        property: "twitter:image",
-        content:
-          "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
-      },
-    ],
-    bodyAttrs: {
-      class: "test",
+});
+useHead({
+  title: "test title",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  charset: "utf-8",
+  meta: [
+    { "data-n-head": "1", charset: "utf-8" },
+    {
+      "data-n-head": "1",
+      name: "viewport",
+      content:
+        "width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
     },
-  });
+    {
+      "data-n-head": "1",
+      "data-hid": "description",
+      name: "description",
+      content: "Testing Description",
+    },
+    {
+      "data-n-head": "1",
+      property: "og:url",
+      content: "https://nuxt-stat-dep--hahuone.netlify.app/",
+    },
+    { "data-n-head": "1", property: "og:type", content: "website" },
+    { "data-n-head": "1", property: "og:title", content: "Hahu Jobs" },
+    {
+      "data-n-head": "1",
+      property: "og:description",
+      content: "Testing Description",
+    },
+    {
+      "data-n-head": "1",
+      property: "og:image",
+      content:
+        "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
+    },
+
+    // twitter
+    {
+      "data-n-head": "1",
+      property: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      "data-n-head": "1",
+      property: "twitter:domain",
+      content: "Hahu-nuxt-3-dep.netlify.app",
+    },
+    {
+      property: "twitter:url",
+      content: "https://nuxt-stat-dep--hahuone.netlify.app/",
+    },
+    { "data-n-head": "1", property: "twitter:title", content: "Hahu Jobs" },
+    {
+      "data-n-head": "1",
+      property: "twitter:description",
+      content: "Testing description .",
+    },
+    {
+      name: "twitter:image",
+      content:
+        "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
+    },
+    {
+      "data-n-head": "1",
+      property: "twitter:image",
+      content:
+        "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
+    },
+  ],
+  bodyAttrs: {
+    class: "test",
+  },
 });
 const copyLinkFunc = () => {
   let copyText = document.getElementById("myLink");
