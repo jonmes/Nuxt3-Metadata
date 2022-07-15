@@ -1,5 +1,6 @@
 <script setup>
 const title = "Index Page";
+const videoId = "YQFx2aCzK0E";
 </script>
 
 <template>
@@ -113,12 +114,15 @@ const title = "Index Page";
         name="twitter:description"
         content="Great video by @twitter_username"
       />
-      <Meta name="twitter:player" content="https://www.youtube.com/embed/rRVlWEwmbfQ" />
+      <Meta
+        name="twitter:player"
+        content="https://www.youtube.com/embed/rRVlWEwmbfQ"
+      />
       <Meta name="twitter:player:width" content="360" />
       <Meta name="twitter:player:height" content="200" />
       <Meta
         name="twitter:image"
-        content="https://www.youtube.com/embed/rRVlWEwmbfQ"
+        :content="`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`"
       />
     </Head>
     <div class="flex">
