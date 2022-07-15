@@ -99,13 +99,13 @@ const Blogs = [
       <Meta
         data-n-head="1"
         property="og:url"
-        content="https://hahu-nuxt-test.netlify.app/"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/"
       />
       <Meta data-n-head="1" property="og:type" content="website" />
       <Meta
         data-n-head="1"
         property="og:image"
-        content="https://hahu-nuxt-test.netlify.app/images/meta_img.png"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/images/meta_img.png"
       />
       <Meta
         data-n-head="1"
@@ -117,7 +117,7 @@ const Blogs = [
         property="twitter:domain"
         content="hahuone.netlify.app"
       />
-      <Meta property="twitter:url" content="https://hahu-nuxt-test.netlify.app/" />
+      <Meta property="twitter:url" content="https://nuxt-stat-dep--hahuone.netlify.app/" />
       <Meta data-n-head="1" property="twitter:title" content="Blogs" />
       <Meta
         data-n-head="1"
@@ -126,12 +126,12 @@ const Blogs = [
       />
       <Meta
         name="twitter:image"
-        content="https://hahu-nuxt-test.netlify.app/images/meta_img.png"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/images/meta_img.png"
       />
       <Meta
         data-n-head="1"
         property="twitter:image"
-        content="https://hahu-nuxt-test.netlify.app/images/meta_img.png"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/images/meta_img.png"
       />
     </Head>
     <section

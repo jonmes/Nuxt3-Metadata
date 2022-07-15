@@ -124,11 +124,11 @@ const Reports = [
 
 const filteredReport = ref(Reports.find((el) => el.id == router.params.report));
 
-const copyLinkInp = ref("");
+const copyLink = ref("");
 onMounted(() => {
-  copyLinkInp.value = window.location.href;
+  copyLink.value = window.location.href;
 
-  console.log("copyLInk", copyLinkInp.value);
+  // console.log("copyLInk", copyLink.value);
 });
 const copyLinkFunc = () => {
   let copyText = document.getElementById("myLink");
@@ -171,7 +171,7 @@ const copyLinkFunc = () => {
         data-n-head="1"
         property="og:url"
         hid="og:url"
-        :content="copyLinkInp"
+        content="https://nuxt-stat-dep--hahuone.netlify.app"
       />
       <Meta
         data-n-head="1"
@@ -183,7 +183,9 @@ const copyLinkFunc = () => {
         data-n-head="1"
         property="og:image"
         hid="og:image"
-        :content="copyLinkInp + filteredReport.img"
+        :content="
+          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredReport.img
+        "
       />
       <Meta
         data-n-head="1"
@@ -197,7 +199,10 @@ const copyLinkFunc = () => {
         hid="twitter:domain"
         content="hahuone.netlify.app"
       />
-      <Meta property="twitter:url" :content="copyLinkInp" />
+      <Meta
+        property="twitter:url"
+        content="https://nuxt-stat-dep--hahuone.netlify.app"
+      />
       <Meta
         data-n-head="1"
         property="twitter:title"
@@ -215,7 +220,9 @@ const copyLinkFunc = () => {
         data-n-head="1"
         property="twitter:image"
         hid="twitter:image"
-        :content="copyLinkInp + filteredReport.img"
+        :content="
+          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredReport.img
+        "
       />
     </Head>
 
@@ -285,13 +292,13 @@ const copyLinkFunc = () => {
           class="mr-[102px] flex items-center rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           @click="copyLinkFunc()"
         >
-          <input class="hidden" id="myLink" v-model="copyLinkInp" />
+          <input class="hidden" id="myLink" v-model="copyLink" />
           <img class="object-contain pl-4" :src="CopyLink" />
           <span class="py-2 pr-4 pl-[7px]">Copy Link</span>
         </button>
         <div class="flex gap-2">
           <a
-            :href="`http://www.facebook.com/sharer/sharer.php?u=https://hahu-nuxt-test.netlify.app${$route.fullPath}&t=${filteredReport.title}`"
+            :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&t=${filteredReport.title}`"
             target="_blank"
             class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
@@ -303,13 +310,13 @@ const copyLinkFunc = () => {
             <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
           </button>
           <a
-            :href="`http://twitter.com/share?text=${filteredReport.title}&url=https://hahu-nuxt-test.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
+            :href="`http://twitter.com/share?text=${filteredReport.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
             class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
           </a>
           <a
-            :href="`https://t.me/share/url?url=https://hahu-nuxt-test.netlify.app${$route.fullPath}&text=${filteredReport.title}`"
+            :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&text=${filteredReport.title}`"
             class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Telegram" />
