@@ -15,7 +15,6 @@ export default defineNuxtConfig({
         },
         {
           "data-n-head": "1",
-          "data-hid": "description",
           name: "description",
           content: "Testing Meta data",
         },
