@@ -169,15 +169,13 @@ const copyLinkFunc = () => {
       <Meta
         data-n-head="1"
         property="og:url"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/"
+        content="https://hahu-nuxt-test.netlify.app/"
       />
       <Meta data-n-head="1" property="og:type" content="website" />
       <Meta
         data-n-head="1"
         property="og:image"
-        :content="
-          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredReport.img
-        "
+        :content="'https://hahu-nuxt-test.netlify.app' + filteredReport.img"
       />
       <Meta
         data-n-head="1"
@@ -191,7 +189,7 @@ const copyLinkFunc = () => {
       />
       <Meta
         property="twitter:url"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/"
+        content="https://hahu-nuxt-test.netlify.app/"
       />
       <Meta
         data-n-head="1"
@@ -207,9 +205,7 @@ const copyLinkFunc = () => {
       <Meta
         data-n-head="1"
         property="twitter:image"
-        :content="
-          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredReport.img
-        "
+        :content="'https://hahu-nuxt-test.netlify.app' + filteredReport.img"
       />
     </Head>
 
@@ -285,7 +281,7 @@ const copyLinkFunc = () => {
         </button>
         <div class="flex gap-2">
           <a
-            :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&t=${filteredReport.title}`"
+            :href="`http://www.facebook.com/sharer/sharer.php?u=https://hahu-nuxt-test.netlify.app${$route.fullPath}&t=${filteredReport.title}`"
             target="_blank"
             class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
@@ -297,13 +293,13 @@ const copyLinkFunc = () => {
             <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
           </button>
           <a
-            :href="`http://twitter.com/share?text=${filteredReport.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
+            :href="`http://twitter.com/share?text=${filteredReport.title}&url=https://hahu-nuxt-test.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
             class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
           </a>
           <a
-            :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&text=${filteredReport.title}`"
+            :href="`https://t.me/share/url?url=https://hahu-nuxt-test.netlify.app${$route.fullPath}&text=${filteredReport.title}`"
             class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Telegram" />

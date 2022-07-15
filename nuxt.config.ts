@@ -119,11 +119,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
-    "@vueuse/nuxt",
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@vueuse/nuxt"],
   css: ["@/assets/css/main.css"],
   postcss: {
     plugins: {

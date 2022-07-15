@@ -113,13 +113,13 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
       <Meta
         data-n-head="1"
         property="og:url"
-        content="https://hahuone.netlify.app/"
+        content="https://hahu-nuxt-test.netlify.app/"
       />
       <Meta data-n-head="1" property="og:type" content="website" />
       <Meta
         data-n-head="1"
         property="og:image"
-        :content="'https://hahuone.netlify.app' + filteredPro.img"
+        :content="'https://hahu-nuxt-test.netlify.app' + filteredPro.img"
       />
       <Meta
         data-n-head="1"
@@ -131,7 +131,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
         property="twitter:domain"
         content="hahuone.netlify.app"
       />
-      <Meta property="twitter:url" content="https://hahuone.netlify.app/" />
+      <Meta property="twitter:url" content="https://hahu-nuxt-test.netlify.app/" />
       <Meta
         data-n-head="1"
         property="twitter:title"
@@ -144,12 +144,12 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
       />
       <Meta
         name="twitter:image"
-        :content="'https://hahuone.netlify.app' + filteredPro.img"
+        :content="'https://hahu-nuxt-test.netlify.app' + filteredPro.img"
       />
       <Meta
         data-n-head="1"
         property="twitter:image"
-        :content="'https://hahuone.netlify.app' + filteredPro.img"
+        :content="'https://hahu-nuxt-test.netlify.app' + filteredPro.img"
       />
     </Head>
     <section
