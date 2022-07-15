@@ -216,7 +216,7 @@ const copyLinkFunc = () => {
 
 <template>
   <div class="flex min-h-screen justify-center px-8 md:px-[50px] xl:px-[100px]">
-    <Head>
+    <!-- <Head>
       <Title>{{ filteredReport.title }}</Title>
       <Meta
         data-n-head="1"
@@ -297,7 +297,7 @@ const copyLinkFunc = () => {
           'https://nuxt-stat-dep--hahuone.netlify.app' + filteredReport.img
         "
       />
-    </Head>
+    </Head> -->
 
     <section
       class="mt-10 flex max-w-[80vw] flex-col rounded-2xl bg-white px-5 duration-500 ease-in dark:bg-HahuGray1 md:max-w-[70vw] md:px-20"
