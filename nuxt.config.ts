@@ -51,7 +51,7 @@ export default defineNuxtConfig({
           property: "twitter:url",
           content: "https://nuxt-3-meta-test.netlify.app/",
         },
-        { "data-n-head": "1", property: "twitter:title", content: "Hahu Jobs" },
+        { property: "twitter:title", content: "Hahu Jobs" },
         {
           "data-n-head": "1",
           property: "twitter:description",
