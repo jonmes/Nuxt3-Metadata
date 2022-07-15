@@ -6,26 +6,103 @@ const title = "Index Page";
   <div>
     <Head>
       <Title>{{ title }}</Title>
-      <Meta name="description" :content="title" />
-
-      <Meta property="og:title" content="Mux Video" />
-      <Meta property="og:type" content="video.episode" />
       <Meta
-        property="og:description"
-        content="MP4 video asset for Open Graph Cards"
+        data-n-head="ssr"
+        data-hid="og:site_name"
+        property="og:site_name"
+        content="Nuxt 3"
+      />
+      <meta
+        data-n-head="ssr"
+        data-hid="og:type"
+        property="og:type"
+        content="website"
       />
       <Meta
+        data-n-head="ssr"
+        data-hid="twitter:site"
+        name="twitter:site"
+        content="@nuxt_js"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="twitter:card"
+        name="twitter:card"
+        content="summary_large_image"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:image"
         property="og:image"
-        content="https://image.mux.com/aYKMM7VxaD2InrbhrKlhi00V6R9EpRmQNmBJ10200AK02bE/thumbnail.png"
+        content="https://res.cloudinary.com/nuxt/image/upload/v1650870623/nuxt3-rc-social_z6qh3m.png"
       />
       <Meta
-        property="og:video"
-        content="https://stream.mux.com/F9cP5Xgdcp7028hN4gQrOmlF62ZDHNloCTQQao8Pk00kk/medium.mp4"
+        data-n-head="ssr"
+        data-hid="og:image:secure_url"
+        property="og:image:secure_url"
+        content="https://res.cloudinary.com/nuxt/image/upload/v1650870623/nuxt3-rc-social_z6qh3m.png"
       />
-      <Meta property="og:video:width" content="350" />
-      <Meta property="og:video:height" content="200" />
-      <Meta property="og:video:duration" content="300" />
-      <Meta property="og:url" content="http://mux.com" />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:image:alt"
+        property="og:image:alt"
+        content="Nuxt 3"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="twitter:image"
+        name="twitter:image"
+        content="https://res.cloudinary.com/nuxt/image/upload/v1650870623/nuxt3-rc-social_z6qh3m.png"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:video"
+        name="og:video"
+        content="https://res.cloudinary.com/nuxt/video/upload/v1634114611/nuxt3-beta_sznsf8.mp4"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="apple-mobile-web-app-title"
+        name="apple-mobile-web-app-title"
+        content="Nuxt 3"
+      />
+      <Meta data-n-head="ssr" data-hid="charset" charset="utf-8" />
+      <Meta
+        data-n-head="ssr"
+        data-hid="mobile-web-app-capable"
+        name="mobile-web-app-capable"
+        content="yes"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:title"
+        property="og:title"
+        content="Head Management"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="twitter:title"
+        name="twitter:title"
+        content="Head Management"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="description"
+        name="description"
+        content="Out-of-the-box, Nuxt provides good default values for charset and viewport meta tags, but you can override these if you need to, as well as customize other meta tags for your site in several different ways."
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:description"
+        property="og:description"
+        content="Out-of-the-box, Nuxt provides good default values for charset and viewport meta tags, but you can override these if you need to, as well as customize other meta tags for your site in several different ways."
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="twitter:description"
+        name="twitter:description"
+        content="Out-of-the-box, Nuxt provides good default values for charset and viewport meta tags, but you can override these if you need to, as well as customize other meta tags for your site in several different ways."
+      />
     </Head>
     <div class="flex">
       <h1>Root Index page</h1>
