@@ -46,7 +46,7 @@ export default defineNuxtConfig({
         },
         {
           "data-n-head": "ssr",
-          hid: "twitter:title",
+          "data-hid": "twitter:title",
           property: "twitter:title",
           content: "Hahu Jobs",
         },
