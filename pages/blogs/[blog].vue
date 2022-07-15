@@ -195,13 +195,13 @@ const copyLinkFunc = () => {
         property="og:title"
         :content="filteredBlog.title"
       />
-      <!-- <Meta
+      <Meta
         data-n-head="ssr"
         data-hid="og:description"
         property="og:description"
         :content="filteredBlog.p1"
-      /> -->
-      <!-- <Meta
+      />
+      <Meta
         data-n-head="ssr"
         data-hid="description"
         name="description"
@@ -214,7 +214,7 @@ const copyLinkFunc = () => {
         content="https://nuxt-stat-dep--hahuone.netlify.app/"
       />
       <Meta data-n-head="ssr" property="og:type" content="website" />
-      <Meta data-n-head="ssr" property="og:image" :content="filteredBlog.img" /> -->
+      <Meta data-n-head="ssr" property="og:image" :content="filteredBlog.img" />
       <Meta
         data-n-head="ssr"
         property="twitter:card"
@@ -236,7 +236,7 @@ const copyLinkFunc = () => {
         property="twitter:title"
         :content="filteredBlog.title"
       />
-      <!-- <Meta
+      <Meta
         data-n-head="ssr"
         name="twitter:description"
         property="twitter:description"
@@ -248,7 +248,7 @@ const copyLinkFunc = () => {
         data-n-head="ssr"
         property="twitter:image"
         :content="filteredBlog.img"
-      /> -->
+      />
     </Head>
 
     <div class="flex min-h-screen justify-center md:px-11 xl:px-24">
