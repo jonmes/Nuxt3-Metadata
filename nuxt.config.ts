@@ -6,91 +6,117 @@ export default defineNuxtConfig({
     head: {
       title: "HahuJobs",
       meta: [
-        { "data-n-head": "1", charset: "utf-8" },
+        { "data-n-head": "ssr", charset: "utf-8" },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
           name: "viewport",
           content:
             "width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
         },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
           "data-hid": "description",
-          name: "description",
+          property: "description",
           content:
             "Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job matching and labor market information platform in Ethiopia. With various service deployments to address the Ethiopian labor market needs; we stand at the for front of the local digital job matching industry.",
         },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
+          "data-hid": "og:url",
           property: "og:url",
           content: "https://Hahu-nuxt-3-dep.netlify.app/",
         },
-        { "data-n-head": "1", property: "og:type", content: "website" },
-        { "data-n-head": "1", property: "og:title", content: "Hahu Jobs" },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
+          "data-hid": "og:type",
+          property: "og:type",
+          content: "website",
+        },
+        {
+          "data-n-head": "ssr",
+          "data-hid": "og:title",
+          property: "og:title",
+          content: "Hahu Jobs",
+        },
+        {
+          "data-n-head": "ssr",
+          "data-hid": "og:description",
           property: "og:description",
           content:
             "Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job matching and labor market information platform in Ethiopia. With various service deployments to address the Ethiopian labor market needs; we stand at the for front of the local digital job matching industry.",
         },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
+          "data-hid": "og:image",
           property: "og:image",
-          content: "https://Hahu-nuxt-3-dep.netlify.app/images/meta_img.png",
+          content:
+            "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png",
         },
 
         // twitter
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
+          "data-hid": "twitter:card",
           property: "twitter:card",
           content: "summary_large_image",
         },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
+          "data-hid": "twitter:domain",
           property: "twitter:domain",
           content: "Hahu-nuxt-3-dep.netlify.app",
         },
         {
+          "data-n-head": "ssr",
+          "data-hid": "twitter:url",
           property: "twitter:url",
           content: "https://Hahu-nuxt-3-dep.netlify.app/",
         },
-        { "data-n-head": "1", property: "twitter:title", content: "Hahu Jobs" },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
+          "data-hid": "twitter:title",
+          property: "twitter:title",
+          content: "Hahu Jobs",
+        },
+        {
+          "data-n-head": "ssr",
+          "data-hid": "twitter:description",
           property: "twitter:description",
           content:
             "Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job matching and labor market information platform in Ethiopia. With various service deployments to address the Ethiopian labor market needs; we stand at the for front of the local digital job matching industry.",
         },
-        { name: "twitter:image", content: "/images/logo_150.png" },
+        { "data-hid": "twitter:image", content: "/images/logo_150.png" },
         {
-          "data-n-head": "1",
+          "data-hid": "twitter:image",
+          "data-n-head": "ssr",
           property: "twitter:image",
-          content: "https://Hahu-nuxt-3-dep.netlify.app/images/meta_img.png",
+          content:
+            "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png",
         },
       ],
       link: [
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
           rel: "icon",
           type: "image/x-icon",
           href: "/images/favicon.ico",
         },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
           rel: "icon",
           type: "image/png",
           sizes: "16x16",
           href: "/images/favicon.ico",
         },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
           rel: "icon",
           type: "image/png",
           sizes: "32x32",
           href: "/images/favicon.ico",
         },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
           rel: "icon",
           type: "image/png",
           sizes: "96x96",
@@ -98,7 +124,7 @@ export default defineNuxtConfig({
         },
         { rel: "preconnect", href: "https://fonts.gstatic.com" },
         {
-          "data-n-head": "1",
+          "data-n-head": "ssr",
           rel: "stylesheet",
           href: "https://use.fontawesome.com/releases/v5.9.0/css/all.css",
         },

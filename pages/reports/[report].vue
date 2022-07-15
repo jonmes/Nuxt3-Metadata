@@ -128,80 +128,7 @@ const copyLink = ref("");
 onMounted(() => {
   copyLink.value = window.location.href;
 });
-useHead({
-  title: "test title",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-  charset: "utf-8",
-  meta: [
-    { "data-n-head": "1", charset: "utf-8" },
-    {
-      "data-n-head": "1",
-      name: "viewport",
-      content:
-        "width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
-    },
-    {
-      "data-n-head": "1",
-      "data-hid": "description",
-      name: "description",
-      content: "Testing Description",
-    },
-    {
-      "data-n-head": "1",
-      property: "og:url",
-      content: "https://nuxt-stat-dep--hahuone.netlify.app/",
-    },
-    { "data-n-head": "1", property: "og:type", content: "website" },
-    { "data-n-head": "1", property: "og:title", content: "Hahu Jobs" },
-    {
-      "data-n-head": "1",
-      property: "og:description",
-      content: "Testing Description",
-    },
-    {
-      "data-n-head": "1",
-      property: "og:image",
-      content:
-        "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
-    },
 
-    // twitter
-    {
-      "data-n-head": "1",
-      property: "twitter:card",
-      content: "summary_large_image",
-    },
-    {
-      "data-n-head": "1",
-      property: "twitter:domain",
-      content: "Hahu-nuxt-3-dep.netlify.app",
-    },
-    {
-      property: "twitter:url",
-      content: "https://nuxt-stat-dep--hahuone.netlify.app/",
-    },
-    { "data-n-head": "1", property: "twitter:title", content: "Hahu Jobs" },
-    {
-      "data-n-head": "1",
-      property: "twitter:description",
-      content: "Testing description .",
-    },
-    {
-      name: "twitter:image",
-      content:
-        "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
-    },
-    {
-      "data-n-head": "1",
-      property: "twitter:image",
-      content:
-        "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
-    },
-  ],
-  bodyAttrs: {
-    class: "test",
-  },
-});
 const copyLinkFunc = () => {
   let copyText = document.getElementById("myLink");
 
@@ -215,88 +142,86 @@ const copyLinkFunc = () => {
 
 <template>
   <div class="flex min-h-screen justify-center px-8 md:px-[50px] xl:px-[100px]">
-    <!-- <Head>
+    <Head>
       <Title>{{ filteredReport.title }}</Title>
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:title"
         property="og:title"
         :content="filteredReport.title"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:description"
         property="og:description"
-        hid="og:description"
         :content="filteredReport.content"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         data-hid="description"
-        name="description"
         :content="filteredReport.content"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:url"
         property="og:url"
-        hid="og:url"
-        content="https://nuxt-stat-dep--hahuone.netlify.app"
+        :content="copyLink"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:type"
         property="og:type"
-        hid="og:type"
         content="website"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:image"
         property="og:image"
-        hid="og:image"
-        :content="
-          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredReport.img
-        "
+        :content="filteredReport.img"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:card"
         property="twitter:card"
-        hid="twitter:card"
         content="summary_large_image"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:domain"
         property="twitter:domain"
-        hid="twitter:domain"
         content="hahuone.netlify.app"
       />
       <Meta
+        data-n-head="ssr"
+        data-hid="twitter:url"
         property="twitter:url"
-        content="https://nuxt-stat-dep--hahuone.netlify.app"
+        :content="copyLink"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:title"
         property="twitter:title"
-        hid="twitter:title"
         :content="filteredReport.title"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         property="twitter:description"
         hid="twitter:description"
         :content="filteredReport.content"
       />
 
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         property="twitter:image"
         hid="twitter:image"
-        :content="
-          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredReport.img
-        "
+        :content="filteredReport.img"
       />
-    </Head> -->
+    </Head>
 
     <section
       class="mt-10 flex max-w-[80vw] flex-col rounded-2xl bg-white px-5 duration-500 ease-in dark:bg-HahuGray1 md:max-w-[70vw] md:px-20"

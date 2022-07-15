@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 import {
   ArrowNarrowRightIcon,
   ArrowNarrowLeftIcon,
@@ -18,7 +17,7 @@ const Reports = [
   {
     id: "1",
     link: "reports-id-reportDetail",
-    img: "/images/report-1.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870130/Hahu/report-1_gx0h1y.jpg",
     title: "Jobs by sector from June 2019 - January 2020",
     range: "Monthly",
     date: "Jan 12, 2022",
@@ -28,7 +27,6 @@ const Reports = [
   {
     id: "4",
     link: "reports-id-reportDetail",
-    // img: "/images/YouTube_annual_report.png",
     videoId: "yeP33pVuLxE",
     title: "Jobs by sector from September 2020 - September 2021",
     range: "Annually",
@@ -39,7 +37,6 @@ const Reports = [
   {
     id: "5",
     link: "reports-id-reportDetail",
-    // img: "/images/YouTube_annual_report.png",
     videoId: "pmQtD9bBnEI",
     title: "Jobs by years of experience from September 2020 - September 2021",
     range: "Annually",
@@ -50,7 +47,6 @@ const Reports = [
   {
     id: "6",
     link: "reports-id-reportDetail",
-    // img: "/images/YouTube_annual_report.png",
     videoId: "YQFx2aCzK0E",
     title: "Supply and demand data in 7 industry parks in the year 2020/21",
     range: "Annually",
@@ -81,7 +77,7 @@ const Reports = [
   {
     id: "7",
     link: "reports-id-reportDetail",
-    img: "/images/report-7.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870133/Hahu/report-7_jsviv4.jpg",
     title: "Monthly Job Post from April 01-30, 2022",
     range: "Annually",
     date: "Jan 12, 2022",
@@ -91,7 +87,7 @@ const Reports = [
   {
     id: "8",
     link: "reports-id-reportDetail",
-    img: "/images/report-8.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870133/Hahu/report-8_tdjmyq.jpg",
     title: "Monthly Job Post from May 01-31, 2022",
     range: "Monthly",
     date: "Jan 12, 2022",
@@ -101,7 +97,7 @@ const Reports = [
   {
     id: "9",
     link: "reports-id-reportDetail",
-    img: "/images/report-9.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870133/Hahu/report-9_azlr9k.jpg",
     title: "Monthly Job Post from June 01-30, 2022",
     range: "Monthly",
     date: "Jan 12, 2022",
@@ -110,6 +106,8 @@ const Reports = [
   },
 ];
 
+const selectedReport = ref("");
+const currentLink = ref("");
 const all = ref(true);
 const weekly = ref(false);
 const monthly = ref(false);
@@ -137,64 +135,125 @@ const filter = (e) => {
     annually.value = true;
   }
 };
+
+onMounted(() => {
+  currentLink.value = window.location.href;
+});
+
+const forMeta = (i) => {
+  selectedReport.value = Reports.value.find((e) => e.id == i);
+};
 </script>
 <template>
   <div class="min-h-screen">
     <Head>
       <Title>Reports</Title>
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
-      <Meta data-n-head="1" property="og:title" content="Reports" />
       <Meta
-        data-n-head="1"
-        property="og:description"
-        content="You can find our weekly, montly and annually reports here"
+        data-n-head="ssr"
+        data-hid="og:title"
+        property="og:title"
+        content="Reports"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         data-hid="description"
-        name="description"
-        content="You can find our weekly, montly and annually reports here"
+        property="description"
+        content="You can find our weekly, monthly and annually reports here"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:description"
+        property="og:description"
+        content="You can find our weekly, monthly and annually reports here"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:url"
         property="og:url"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/"
+        :content="currentLink"
       />
-      <Meta data-n-head="1" property="og:type" content="website" />
+      <Meta data-n-head="ssr" property="og:type" content="website" />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:image"
         property="og:image"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/images/meta_img.png"
+        content="https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:card"
         property="twitter:card"
         content="summary_large_image"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:domain"
         property="twitter:domain"
-        content="hahuone.netlify.app"
+        content="hahu.vercel.app"
       />
-      <Meta property="twitter:url" content="https://nuxt-stat-dep--hahuone.netlify.app/" />
-      <Meta data-n-head="1" property="twitter:title" content="Reports" />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:url"
+        property="twitter:url"
+        :content="currentLink"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="twitter:title"
+        property="twitter:title"
+        content="Reports"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="twitter:description"
         property="twitter:description"
         content="You can find our weekly, montly and annually reports here"
       />
       <Meta
-        name="twitter:image"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/images/meta_img.png"
+        data-n-head="ssr"
+        data-hid="twitter:image"
+        property="twitter:image"
+        content="https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png"
+      />
+
+      <!-- ===================  -->
+
+      <Meta property="og:title" content="Mux Video" />
+      <Meta property="og:type" content="video.episode" />
+      <Meta property="og:description" :content="selectedReport.content" />
+      <Meta
+        property="og:image"
+        :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`"
       />
       <Meta
-        data-n-head="1"
-        property="twitter:image"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/images/meta_img.png"
+        property="og:video"
+        content="https://www.youtube.com/embed/rRVlWEwmbfQ"
+      />
+      <Meta property="og:video:width" content="350" />
+      <Meta property="og:video:height" content="200" />
+      <Meta property="og:video:duration" content="300" />
+      <Meta property="og:url" content="http://mux.com" />
+
+      <!-- ================= Twitter Video Player works for twitter and telegram ================== -->
+
+      <Meta name="twitter:card" content="player" />
+      <Meta name="twitter:title" :content="selectedReport.title" />
+      <Meta name="twitter:site" content="@hahujobs" />
+      <Meta name="twitter:description" content="video by @hahujobs" />
+      <Meta
+        name="twitter:player"
+        :content="`https://www.youtube.com/embed/${selectedReport.videoId}`"
+      />
+      <Meta name="twitter:player:width" content="360" />
+      <Meta name="twitter:player:height" content="200" />
+      <Meta
+        name="twitter:image"
+        :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`"
       />
     </Head>
     <!-- <section class="mt-10 px-[230px] flex flex-col"> -->
@@ -227,14 +286,6 @@ const filter = (e) => {
             class="relative right-10 h-6 w-6 dark:text-whitePrimary cursor-pointer md:right-20"
           />
         </div>
-        <!-- <InputsHtextfield
-          type="text"
-          name="email"
-          placeholder="Your email..."
-          placeholderStyle="text-HahuGray2"
-          class="dark:text-white w-11/12 flex justify-start mt-14"
-          :trailingIcon="SearchIcon"
-        ></InputsHtextfield> -->
 
         <div
           class="mt-[67px] ml-10 flex flex-wrap gap-14 lg:gap-[118px] xl:ml-[196px]"
@@ -340,7 +391,8 @@ const filter = (e) => {
             </p>
             <div class="mt-2 mb-10 flex gap-2">
               <a
-                :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}/${report.id}&t=${report.title}`"
+                :href="`http://www.facebook.com/sharer/sharer.php?u=${currentLink}/${report.id}&t=${report.title}`"
+                @click="forMeta(report.id)"
                 target="_blank"
                 class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
               >
@@ -355,13 +407,15 @@ const filter = (e) => {
                 <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
               </button>
               <a
-                :href="`http://twitter.com/share?text=${report.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}/${report.id}&hashtags=HahuJobs,Minab_ICT_Solutions`"
+                @click="forMeta(report.id)"
+                :href="`http://twitter.com/share?text=${report.title}&url=${currentLink}/${report.id}&hashtags=HahuJobs,Minab_ICT_Solutions`"
                 class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
               >
                 <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
               </a>
               <a
-                :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}/${report.id}&text=${report.title}`"
+                @click="forMeta(report.id)"
+                :href="`https://t.me/share/url?url=${currentLink}/${report.id}&text=${report.title}`"
                 class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
               >
                 <img
