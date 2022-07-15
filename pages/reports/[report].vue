@@ -127,8 +127,6 @@ const filteredReport = ref(Reports.find((el) => el.id == router.params.report));
 const copyLink = ref("");
 onMounted(() => {
   copyLink.value = window.location.href;
-
-  // console.log("copyLInk", copyLink.value);
 });
 const copyLinkFunc = () => {
   let copyText = document.getElementById("myLink");

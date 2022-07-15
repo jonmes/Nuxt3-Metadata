@@ -19,7 +19,7 @@ const crumb = [
 const Blogs = [
   {
     id: 1,
-    img: "/images/blog_post_1.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_1_tcgtow.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "Hey! Today let's introduce you to AWAQI",
@@ -28,7 +28,7 @@ const Blogs = [
   },
   {
     id: 2,
-    img: "/images/blog_post_2.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_2_gv5r5e.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title:
@@ -37,7 +37,7 @@ const Blogs = [
   },
   {
     id: 3,
-    img: "/images/blog_post_3.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_3_lpyg2a.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "ALx Software Engineering training programme.",
@@ -48,7 +48,7 @@ const Blogs = [
   },
   {
     id: 4,
-    img: "/images/blog_post_4.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_4_i51xnl.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "ALx African Career Catalyst (ACC)",
@@ -57,7 +57,7 @@ const Blogs = [
   },
   {
     id: 5,
-    img: "/images/blog_post_5.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_5_b0ozfd.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "ALx Young Entrepreneurs Programme (YEP)",
@@ -66,7 +66,7 @@ const Blogs = [
   },
   {
     id: 6,
-    img: "/images/blog_post_6.png",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_6_ec3adk.png",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "HahuJobs have signed a service agreement with SNV",
@@ -75,7 +75,7 @@ const Blogs = [
   },
   {
     id: 7,
-    img: "/images/blog_post_7.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_7_xvfdrv.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title:
@@ -85,7 +85,7 @@ const Blogs = [
   },
   {
     id: 8,
-    img: "/images/blog_post_8.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "HahuJobs online job application skill training",
@@ -98,6 +98,76 @@ const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
 const copyLinkInp = ref("");
 onMounted(() => {
   copyLinkInp.value = window.location.href;
+
+  // useHead({
+  //   title: "test title",
+  //   // titleTemplate: (title) => `My App - ${title}`,
+  //   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  //   charset: "utf-8",
+  //   meta: [
+  //     { "data-n-head": "1", charset: "utf-8" },
+  //     {
+  //       "data-n-head": "1",
+  //       name: "viewport",
+  //       content:
+  //         "width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+  //     },
+  //     {
+  //       "data-n-head": "1",
+  //       "data-hid": "description",
+  //       name: "description",
+  //       content: "Testing Description",
+  //     },
+  //     {
+  //       "data-n-head": "1",
+  //       property: "og:url",
+  //       content: "https://Hahu-nuxt-3-dep.netlify.app/images/blog_post_1.jpg",
+  //     },
+  //     { "data-n-head": "1", property: "og:type", content: "website" },
+  //     { "data-n-head": "1", property: "og:title", content: "Hahu Jobs" },
+  //     {
+  //       "data-n-head": "1",
+  //       property: "og:description",
+  //       content: "Testing Description",
+  //     },
+  //     {
+  //       "data-n-head": "1",
+  //       property: "og:image",
+  //       content: "https://Hahu-nuxt-3-dep.netlify.app/images/blog_post_1.png",
+  //     },
+
+  //     // twitter
+  //     {
+  //       "data-n-head": "1",
+  //       property: "twitter:card",
+  //       content: "summary_large_image",
+  //     },
+  //     {
+  //       "data-n-head": "1",
+  //       property: "twitter:domain",
+  //       content: "Hahu-nuxt-3-dep.netlify.app",
+  //     },
+  //     {
+  //       property: "twitter:url",
+  //       content: "https://Hahu-nuxt-3-dep.netlify.app/",
+  //     },
+  //     { "data-n-head": "1", property: "twitter:title", content: "Hahu Jobs" },
+  //     {
+  //       "data-n-head": "1",
+  //       property: "twitter:description",
+  //       content: "Testing description .",
+  //     },
+  //     { name: "twitter:image", content: "/images/logo_150.png" },
+  //     {
+  //       "data-n-head": "1",
+  //       property: "twitter:image",
+  //       content: "https://Hahu-nuxt-3-dep.netlify.app/images/blog_post_1.png",
+  //     },
+  //   ],
+  //   bodyAttrs: {
+  //     class: "test",
+  //   },
+  // });
 });
 const copyLinkFunc = () => {
   let copyText = document.getElementById("myLink");
@@ -107,8 +177,6 @@ const copyLinkFunc = () => {
   copyText.setSelectionRange(0, 99999);
 
   navigator.clipboard.writeText(copyText.value);
-
-  // alert("Link Copied");
 };
 </script>
 
@@ -117,42 +185,44 @@ const copyLinkFunc = () => {
     <Head>
       <Title>{{ filteredBlog.title }}</Title>
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
-      <Meta data-n-head="1" property="og:title" :content="filteredBlog.title" />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:title"
+        property="og:title"
+        :content="filteredBlog.title"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:description"
+        name="og:description"
         property="og:description"
         :content="filteredBlog.p1"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         data-hid="description"
         name="description"
         :content="filteredBlog.p1"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:url"
         property="og:url"
         content="https://nuxt-stat-dep--hahuone.netlify.app/"
       />
-      <Meta data-n-head="1" property="og:type" content="website" />
+      <Meta data-n-head="ssr" property="og:type" content="website" />
+      <Meta data-n-head="ssr" property="og:image" :content="filteredBlog.img" />
       <Meta
-        data-n-head="1"
-        property="og:image"
-        :content="
-          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredBlog.img
-        "
-      />
-      <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         property="twitter:card"
         content="summary_large_image"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         property="twitter:domain"
         content="hahuone.netlify.app"
       />
@@ -161,22 +231,24 @@ const copyLinkFunc = () => {
         content="https://nuxt-stat-dep--hahuone.netlify.app/"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:title"
+        name="twitter:title"
         property="twitter:title"
         :content="filteredBlog.title"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        name="twitter:description"
         property="twitter:description"
+        data-hid="twitter:description"
         :content="filteredBlog.p1"
       />
 
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         property="twitter:image"
-        :content="
-          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredBlog.img
-        "
+        :content="filteredBlog.img"
       />
     </Head>
 
