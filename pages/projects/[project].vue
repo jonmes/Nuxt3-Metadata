@@ -51,7 +51,7 @@ const projects = [
     title: "The NRP",
     p1: "HaHuJobs was contracted by Mercy Corps Ethiopia to build the National Recruitment Platform for the government of Ethiopia, The platform featured various function but was mainly utilized as a recruiting tool to deploy Ethiopian professionals to overseas job orders. The Ethiopian National Recruitment Platform, launched in 2019 by the government aims at creating a regular, safe and orderly labor mobility program, targeting semi-skilled and skilled Ethiopian Job seekers while maintaining current temporary migration of low skilled workers abroad. In a sector where there is a clear surplus of job seekers the government has planned to redouble recruitment and placement of workers in host countries with expressed interest in migrant labor.",
     p2: "The platform is developed for the Ethiopian National Employment program under the Jobs Creation Commission. It is designed to registers, builds profile, provides free screening, keep track of all training, testing & certification of overseas jobseekers while digitalizing the documentation process for legal and safe ways of working abroad. In doing so the platform will also be able to map out the national jobseeker landscape and provide a data driven job matching public services for both local and foreign needs.",
-    img: "/images/",
+    img: "/images/project5.png",
   },
   {
     id: "6",

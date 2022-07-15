@@ -34,35 +34,35 @@ onMounted(() => {
     carWidth(windowWidth.value);
   };
 
-  observer.value = new IntersectionObserver((entries) => {
-    entries.forEach(
-      (entry) => {
-        entry.target.classList.toggle(
-          "lg:[&[show=true]]:translate-x-0",
-          entry.isIntersecting
-        );
-        entry.target.classList.toggle(
-          "lg:[&[show=true]]:opacity-100",
-          entry.isIntersecting
-        );
-        if (entry.isIntersecting) {
-          observer.value.unobserve(entry.target);
-          return entry.target;
-        }
-      },
-      {
-        threshold: 0.5,
-      }
-    );
-  });
-  target.value.forEach((card) => {
-    observer.value.observe(card.$el);
-  });
+  // observer.value = new IntersectionObserver((entries) => {
+  //   entries.forEach(
+  //     (entry) => {
+  //       entry.target.classList.toggle(
+  //         "lg:[&[show=true]]:translate-x-0",
+  //         entry.isIntersecting
+  //       );
+  //       entry.target.classList.toggle(
+  //         "lg:[&[show=true]]:opacity-100",
+  //         entry.isIntersecting
+  //       );
+  //       if (entry.isIntersecting) {
+  //         observer.value.unobserve(entry.target);
+  //         return entry.target;
+  //       }
+  //     },
+  //     {
+  //       threshold: 0.5,
+  //     }
+  //   );
+  // });
+  // target.value.forEach((card) => {
+  //   observer.value.observe(card.$el);
+  // });
 });
 
-onBeforeUnmount(() => {
-  observer.value.disconnect();
-});
+// onBeforeUnmount(() => {
+//   observer.value.disconnect();
+// });
 </script>
 
 <template>
@@ -76,8 +76,7 @@ onBeforeUnmount(() => {
       v-for="(slide, i) in props.cardSlider"
       :key="slide"
       show="true"
-      class="w-full lg:mx-10 2xl:mx-16 py-5 lg:translate-x-40 lg:opacity-0 lg:duration-1000"
-      ref="target"
+      class="w-full lg:mx-10 2xl:mx-16 py-5 "
     >
       <NuxtLink
         :to="'/projects/' + slide.id"
