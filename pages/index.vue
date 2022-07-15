@@ -79,12 +79,14 @@ const title = "Index Page";
         property="og:title"
         content="Head Management"
       />
+
       <Meta
         data-n-head="ssr"
-        data-hid="twitter:title"
-        name="twitter:title"
+        hid="twitter:title"
+        property="twitter:title"
         content="Head Management"
       />
+
       <Meta
         data-n-head="ssr"
         data-hid="description"
