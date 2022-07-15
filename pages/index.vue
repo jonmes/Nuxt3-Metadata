@@ -87,7 +87,7 @@ const title = "Index Page";
         content="Head Management"
       />
 
-      <!-- <Meta
+      <Meta
         data-n-head="ssr"
         data-hid="description"
         name="description"
@@ -104,7 +104,7 @@ const title = "Index Page";
         data-hid="twitter:description"
         name="twitter:description"
         content="Out-of-the-box, Nuxt provides good default values for charset and viewport meta tags, but you can override these if you need to, as well as customize other meta tags for your site in several different ways."
-      /> -->
+      />
     </Head>
     <div class="flex">
       <h1>Root Index page</h1>
