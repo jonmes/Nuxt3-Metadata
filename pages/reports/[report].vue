@@ -127,6 +127,8 @@ const filteredReport = ref(Reports.find((el) => el.id == router.params.report));
 const copyLinkInp = ref("");
 onMounted(() => {
   copyLinkInp.value = window.location.href;
+
+  console.log("copyLInk", copyLinkInp.value);
 });
 const copyLinkFunc = () => {
   let copyText = document.getElementById("myLink");
@@ -136,8 +138,6 @@ const copyLinkFunc = () => {
   copyText.setSelectionRange(0, 99999);
 
   navigator.clipboard.writeText(copyText.value);
-
-  // alert("Link Copied");
 };
 </script>
 
@@ -158,6 +158,7 @@ const copyLinkFunc = () => {
       <Meta
         data-n-head="1"
         property="og:description"
+        hid="og:description"
         :content="filteredReport.content"
       />
       <Meta
@@ -169,43 +170,52 @@ const copyLinkFunc = () => {
       <Meta
         data-n-head="1"
         property="og:url"
-        content="https://hahu-nuxt-test.netlify.app/"
+        hid="og:url"
+        :content="copyLinkInp"
       />
-      <Meta data-n-head="1" property="og:type" content="website" />
+      <Meta
+        data-n-head="1"
+        property="og:type"
+        hid="og:type"
+        content="website"
+      />
       <Meta
         data-n-head="1"
         property="og:image"
-        :content="'https://hahu-nuxt-test.netlify.app' + filteredReport.img"
+        hid="og:image"
+        :content="copyLinkInp + filteredReport.img"
       />
       <Meta
         data-n-head="1"
         property="twitter:card"
+        hid="twitter:card"
         content="summary_large_image"
       />
       <Meta
         data-n-head="1"
         property="twitter:domain"
+        hid="twitter:domain"
         content="hahuone.netlify.app"
       />
-      <Meta
-        property="twitter:url"
-        content="https://hahu-nuxt-test.netlify.app/"
-      />
+      <Meta property="twitter:url" :content="copyLinkInp" />
       <Meta
         data-n-head="1"
         property="twitter:title"
+        hid="twitter:title"
         :content="filteredReport.title"
       />
       <Meta
         data-n-head="1"
         property="twitter:description"
+        hid="twitter:description"
         :content="filteredReport.content"
       />
 
       <Meta
         data-n-head="1"
         property="twitter:image"
-        :content="'https://hahu-nuxt-test.netlify.app' + filteredReport.img"
+        hid="twitter:image"
+        :content="copyLinkInp + filteredReport.img"
       />
     </Head>
 
