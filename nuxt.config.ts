@@ -84,13 +84,8 @@ export default defineNuxtConfig({
         {
           "data-n-head": "ssr",
           "data-hid": "twitter:image",
-          name: "twitter:image",
-          content: "/images/logo_150.png",
-        },
-        {
-          "data-n-head": "ssr",
           property: "twitter:image",
-          content: "https://nuxt-3-meta-test.netlify.app/images/meta_img.png",
+          content: "/images/logo_150.png",
         },
       ],
     },

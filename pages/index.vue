@@ -54,7 +54,7 @@ const videoId = "";
       <Meta
         data-n-head="ssr"
         data-hid="twitter:image"
-        name="twitter:image"
+        property="twitter:image"
         content="https://res.cloudinary.com/nuxt/image/upload/v1650870623/nuxt3-rc-social_z6qh3m.png"
       />
       <Meta
