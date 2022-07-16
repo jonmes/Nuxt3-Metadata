@@ -16,14 +16,14 @@ const category = [
 const Blogs = [
   {
     id: 6,
-    img: "/images/blog_post_6.png",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_6_ec3adk.png",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "HahuJobs have signed a service agreement with SNV",
   },
   {
     id: 7,
-    img: "/images/blog_post_7.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_7_xvfdrv.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title:
@@ -31,48 +31,53 @@ const Blogs = [
   },
   {
     id: 8,
-    img: "/images/blog_post_8.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870127/Hahu/blog_post_8_yiayrt.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "HahuJobs online job application skill training",
   },
   {
-    id: 2,
-    img: "/images/blog_post_2.jpg",
+    id: 1,
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_1_tcgtow.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title:
       "HaHuJobs have signed an MoU with the Ethiopian Investment Commission",
   },
   {
-    id: 1,
-    img: "/images/blog_post_1.jpg",
+    id: 2,
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_2_gv5r5e.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "Hey! Today let's introduce you to AWAQI",
   },
   {
     id: 3,
-    img: "/images/blog_post_3.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_3_lpyg2a.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "ALx Software Engineering training programme.",
   },
   {
     id: 4,
-    img: "/images/blog_post_4.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_4_i51xnl.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "ALx African Career Catalyst (ACC)",
   },
   {
     id: 5,
-    img: "/images/blog_post_5.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870126/Hahu/blog_post_5_b0ozfd.jpg",
     cat: "TECHNOLOGY",
     date: "19 Jan 2022",
     title: "ALx Young Entrepreneurs Programme (YEP)",
   },
 ];
+
+const currentLink = ref("");
+onMounted(() => {
+  currentLink.value = window.location.href;
+});
 </script>
 
 <template>
@@ -80,58 +85,76 @@ const Blogs = [
     <Head>
       <Title>Blogs</Title>
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
         name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
-      <Meta data-n-head="1" property="og:title" content="Blogs" />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:title"
+        property="og:title"
+        content="Blogs"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="description"
+        property="description"
+        content="You can read our blogs about Technology, Development, Marketing and Start-ups"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:description"
         property="og:description"
         content="You can read our blogs about Technology, Development, Marketing and Start-ups"
       />
       <Meta
-        data-n-head="1"
-        data-hid="description"
-        name="description"
-        content="You can read our blogs about Technology, Development, Marketing and Start-ups"
-      />
-      <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:url"
         property="og:url"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/"
+        :content="currentLink"
       />
-      <Meta data-n-head="1" property="og:type" content="website" />
+      <Meta data-n-head="ssr" property="og:type" content="website" />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="og:image"
         property="og:image"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/images/meta_img.png"
+        content="https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:card"
         property="twitter:card"
         content="summary_large_image"
       />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:domain"
         property="twitter:domain"
-        content="hahuone.netlify.app"
+        content="hahu.verce.app"
       />
-      <Meta property="twitter:url" content="https://nuxt-stat-dep--hahuone.netlify.app/" />
-      <Meta data-n-head="1" property="twitter:title" content="Blogs" />
       <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:url"
+        property="twitter:url"
+        :content="currentLink"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="twitter:title"
+        property="twitter:title"
+        content="Blogs"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="twitter:description"
         property="twitter:description"
         content="You can read our blogs about Technology, Development, Marketing and Start-ups"
       />
       <Meta
-        name="twitter:image"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/images/meta_img.png"
-      />
-      <Meta
-        data-n-head="1"
+        data-n-head="ssr"
+        data-hid="twitter:image"
         property="twitter:image"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/images/meta_img.png"
+        content="https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png"
       />
     </Head>
     <section
