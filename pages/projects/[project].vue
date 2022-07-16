@@ -119,7 +119,9 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
       <Meta
         data-n-head="1"
         property="og:image"
-        :content="'https://nuxt-stat-dep--hahuone.netlify.app' + filteredPro.img"
+        :content="
+          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredPro.img
+        "
       />
       <Meta
         data-n-head="1"
@@ -131,7 +133,10 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
         property="twitter:domain"
         content="hahuone.netlify.app"
       />
-      <Meta property="twitter:url" content="https://nuxt-stat-dep--hahuone.netlify.app/" />
+      <Meta
+        property="twitter:url"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/"
+      />
       <Meta
         data-n-head="1"
         property="twitter:title"
@@ -144,23 +149,27 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
       />
       <Meta
         name="twitter:image"
-        :content="'https://nuxt-stat-dep--hahuone.netlify.app' + filteredPro.img"
+        :content="
+          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredPro.img
+        "
       />
       <Meta
         data-n-head="1"
         property="twitter:image"
-        :content="'https://nuxt-stat-dep--hahuone.netlify.app' + filteredPro.img"
+        :content="
+          'https://nuxt-stat-dep--hahuone.netlify.app' + filteredPro.img
+        "
       />
     </Head>
     <section
-      class="mt-10 flex flex-col rounded-[15px] bg-white px-5 duration-500 ease-in dark:bg-HahuGray1 sm:px-10 md:px-20 lg:px-40 3xl:px-24"
+      class="mt-10 flex flex-col rounded-[15px] bg-white px-5 duration-500 ease-in dark:bg-HahuGray1 sm:px-10 md:px-12 lg:px-24 3xl:px-24"
     >
-      <div class="relative mb-10 flex items-end font-bold">
+      <div class="relative mb-10 mt-10 sm:mt-0 flex items-end font-bold">
         <Contained :crumb="crumb" />
         <div class="ml-auto flex">
-          <NuxtLink class="mt-[38px] flex self-end" :to="{ name: 'index' }">
+          <NuxtLink class="mt-10 flex self-end" :to="{ name: 'index' }">
             <button
-              class="group flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3"
+              class="hidden group sm:flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3"
             >
               <ArrowNarrowLeftIcon
                 class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-2"
@@ -188,7 +197,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
         {{ filteredPro.title }}
       </p>
       <p
-        class="mt-14 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
+        class="mt-6 md:mt-14 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
       >
         {{ filteredPro.p2 }}
       </p>
@@ -204,19 +213,23 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
         {{ filteredPro.p3 }}
       </p>
 
-      <div class="mt-20 flex">
-        <div class="mr-24 flex flex-col">
+      <div class="mt-20 flex flex-col md:flex-row">
+        <div class="mr-6 md:mr-10 lg:mr-24 flex flex-col">
           <h2 class="text-xl font-black leading-[30px] dark:text-white">
             Client
           </h2>
-          <img class="mt-10" src="/images/projectC1.png" />
+          <div>
+            <img class="mt-10" src="/images/projectC1.png" />
+          </div>
         </div>
         <div class="mt-16 rounded-full border-[3px] border-HahuGray3" />
-        <div class="ml-28 flex flex-col">
+        <div class="mt-10 md:mt-0 ml-6 md:ml-10 lg:ml-28 flex flex-col">
           <h2 class="text-xl font-black leading-[30px] dark:text-white">
             Partners
           </h2>
-          <div class="mt-10 grid grid-cols-2 gap-x-16 gap-y-10">
+          <div
+            class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-y-10 sm:gap-x-16 sm:gap-y-10"
+          >
             <img v-for="img in partners" class="object-contain" :src="img" />
           </div>
         </div>

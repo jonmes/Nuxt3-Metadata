@@ -160,7 +160,7 @@ onMounted(() => {
     <section
       class="mt-10 flex flex-col px-5 md:px-20 lg:px-20 xl:px-36 2xl:px-[230px]"
     >
-      <div class="mt-[42px] flex justify-between px-8">
+      <div class="mt-11 flex justify-between md:px-8">
         <h2
           class="text-start mt-5 self-start rounded-full bg-primary-lite px-3 py-1 text-base font-medium leading-[18px] text-white md:text-lg lg:px-8 lg:py-2 lg:text-xl xl:mt-0 xl:text-2xl"
         >
@@ -186,14 +186,16 @@ onMounted(() => {
           class="relative right-10 h-6 w-6 dark:text-whitePrimary cursor-pointer md:right-20"
         />
       </div>
-      <div class="flex flex-wrap items-center gap-10 xl:ml-[196px] xl:gap-x-20">
+      <div
+        class="flex flex-wrap items-center md:gap-4 lg:gap-10 xl:ml-[196px] xl:gap-x-20"
+      >
         <NuxtLink
           :href="catg.link"
-          class="mt-16 rounded-md px-4 py-2 text-sm font-bold leading-5"
+          class="mt-8 lg:mt-16 rounded-md px-4 py-2 text-sm font-bold leading-5"
           v-for="catg in category"
           :class="
             $router.options.history.location.indexOf(catg.link) !== -1
-              ? 'bg-HaHuGreen/4 text-primary'
+              ? 'bg-HaHuGreen/4 bg-opacity-80 text-primary'
               : 'text-gray-400'
           "
         >
