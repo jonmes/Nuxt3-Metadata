@@ -76,14 +76,17 @@ onMounted(() => {
       v-for="(slide, i) in props.cardSlider"
       :key="slide"
       show="true"
-      class="w-full lg:mx-10 2xl:mx-16 py-5 "
+      class="w-full lg:mx-10 2xl:mx-16 py-5"
     >
       <NuxtLink
         :to="'/projects/' + slide.id"
         class="mx-2 w-full hover:scale-105 rounded-2xl bg-white dark:bg-HahuGray1 duration-500 lg:mx-10 2xl:mx-16 border-2 border-transparent hover:border-primary"
       >
         <div class="w-full">
-          <img class="mb-7 w-full" :src="slide.thumbnail" />
+          <div class="mb-7 aspect-w-4 aspect-h-2">
+            <img class="object-cover rounded-t-2xl" :src="slide.thumbnail" />
+          </div>
+
           <div class="flex flex-col px-4 sm:px-12">
             <h1 class="self-start text-xl font-black leading-6 text-primary">
               {{ slide.title }}

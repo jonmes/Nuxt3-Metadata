@@ -1,7 +1,8 @@
 <script setup>
 const cardSlider = [
   {
-    thumbnail: "/images/project_thumbnail_carousel.png",
+    thumbnail:
+      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/project1_ywgyfc.png",
     // One
     title: "HIPSTER Labor Management Database",
     text: "In June 2018 HaHuJobs was contracted by Enterprise Partners to automate components of the Hawassa Industrial Park Sourcing and Training Employees in the Region project. The program worked to change the way that markets work for the poor so that poor people were included in the benefits of growth and economic development as consumers, employees and investors. ",
@@ -15,7 +16,8 @@ const cardSlider = [
     id: "1",
   },
   {
-    thumbnail: "/images/project_thumbnail_carousel.png",
+    thumbnail:
+      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870137/Hahu/project2_ysoqxp.png",
     // Two
     title: "World bank HIPCIE research project",
     text: "The Hawassa Industrial Park Community Impact Evaluation Project is a large-scale, rigorous evaluation of the impact that the government’s flagship industrial park in Hawassa has on workers, their rural origin households, and their broader origin communities. The project team is led by two academic principal investigators and implemented in cooperation with the World Bank Group. ",
@@ -29,7 +31,8 @@ const cardSlider = [
     id: "2",
   },
   {
-    thumbnail: "/images/project_thumbnail_carousel.png",
+    thumbnail:
+      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870131/Hahu/project3_bwre35.png",
     // Three
     title: "Young Africa works BRIDGES program",
     text: "Funded by the Master Card Foundation and implemented by First Consult the Employment Linkage Bridge works on putting in place a worker recruitment and retention system within ten industrial parks. Interventions within this BRIDGE are focused on enhancing the efficiency of the worker recruitment process by addressing quantitative and information mismatch issues in the recruitment... ",
@@ -43,7 +46,8 @@ const cardSlider = [
     id: "3",
   },
   {
-    thumbnail: "/images/project_thumbnail_carousel.png",
+    thumbnail:
+      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870165/Hahu/project4A_f9i8ze.png",
     // Four
     title: "Jobs protection Facility",
     text: "As the implementer of the jobs protection facility program, in November 2021 First consult contracted HaHuJobs to build the fund application, review and reporting platform. The platform enables investors with in the industrial park to digitally apply for the support trough digital forms with clear guidelines. All successfully submitted applications were offered to officers for review for qualification. ",
@@ -57,7 +61,8 @@ const cardSlider = [
     id: "4",
   },
   {
-    thumbnail: "/images/project_thumbnail_carousel.png",
+    thumbnail:
+      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870130/Hahu/project5_cyrreu.png",
     // Five
     title: "The NRP",
     text: "HaHuJobs was contracted by Mercy Corps Ethiopia to build the National Recruitment Platform for the government of Ethiopia, The platform featured various function but was mainly utilized as a recruiting tool to deploy Ethiopian professionals to overseas job orders. The Ethiopian National Recruitment Platform, launched in 2019 by the government aims at creating a regular, safe ...",
@@ -71,7 +76,8 @@ const cardSlider = [
     id: "5",
   },
   {
-    thumbnail: "/images/project_thumbnail_carousel.png",
+    thumbnail:
+      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657953195/Hahu/placeholder-image_md4eym.jpg",
     // Six
     title: "MOFA BLA Tool",
     text: "In regards to tragedies and abuses faced by Ethiopian migrant workers in the Middle East, labor migration and the protection of Ethiopia migrant workers in destination countries has become one of the major political discourses for the Ethiopian Government. To respond to this challenge, the government of Ethiopia have taken multiple initiatives in improving labor migration ...",
@@ -85,7 +91,8 @@ const cardSlider = [
     id: "6",
   },
   {
-    thumbnail: "/images/project_thumbnail_carousel.png",
+    thumbnail:
+      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657953195/Hahu/placeholder-image_md4eym.jpg",
     // Seven
     title: "EMDMS upgrade",
     text: "This project was contracted to HaHuJobs by ILO Ethiopia as an extension of the MoFA BLA enforcement tool to provide a holistic citizen service to both Ethiopian foreign employment seekers and deployed employees. Hence why the objectives of this project were to upgrade the former Ethiopian Migrant Data Management System (EMDMS) and integrate it with ...",
@@ -99,7 +106,8 @@ const cardSlider = [
     id: "7",
   },
   {
-    thumbnail: "/images/project_thumbnail_carousel.png",
+    thumbnail:
+      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657953195/Hahu/placeholder-image_md4eym.jpg",
     // Eight
     title: "SNV RAYEE wage employment linkage",
     text: "The RAYEE program is an SNV implementation that aims to create meaningful employment in agriculture and agri-business for 240,000 young people (of which 70% are women) until the end of 2024. RAYEE will target five geographical areas: the SNNPR, Oromia, Amhara and Tigray regions as well as the Dire Dawa city. The project is funded by ...",
@@ -113,7 +121,8 @@ const cardSlider = [
     id: "8",
   },
   {
-    thumbnail: "/images/project_thumbnail_carousel.png",
+    thumbnail:
+      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657953195/Hahu/placeholder-image_md4eym.jpg",
     // Nine
     title: "oxford university OSS",
     text: "A Research Team led by Dr. Morgan Hardy (New York University Abu Dhabi), Dr. Christian Johannes Meyer (University of Oxford), and Dr. Marc Witte (IZA Institute of Labor Economics), approached HaHuJobs with a cooperation request to share and enhance vacancy as well as jobseeker data for an academic study of the labour market of Addis Ababa, Ethiopia. ",

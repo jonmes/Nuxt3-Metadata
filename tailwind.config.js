@@ -94,7 +94,14 @@ module.exports = {
         whitePrimary: "#F0FDF4",
         "secondary-nav": "#F9FAFB",
       },
+      padding: {
+        "1/3": "33.33333%",
+        "2/3": "66.66666%",
+      },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };

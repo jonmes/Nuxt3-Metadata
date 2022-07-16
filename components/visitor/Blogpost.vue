@@ -113,7 +113,9 @@ onBeforeUnmount(() => {
         v-for="(blog, i) in blogs"
         :key="i"
       >
-        <img :src="blog.img" alt="blog Image" />
+        <div class="">
+          <img class="object-cover" :src="blog.img" alt="blog Image" />
+        </div>
         <h1
           class="mt-6 ml-8 self-start rounded-[36px] bg-primary-lite px-3 py-[5px] text-xs font-medium leading-[18px] text-primary-dark"
         >

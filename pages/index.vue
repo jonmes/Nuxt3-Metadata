@@ -5,10 +5,10 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
 <template>
   <div class="min-h-screen px-8 md:px-12 xl:px-14 2xl:px-24">
     <section
-      class="mb-0 flex flex-col items-center overflow-hidden overflow-y-hidden lg:mb-0 lg:min-h-[83vh] xl:space-x-[89px] 2xl:flex-row"
+      class="mb-0 flex flex-col items-center overflow-hidden overflow-y-hidden lg:mb-0 lg:min-h-[83vh] xl:space-x-20 lg:flex-row"
       id="home"
     >
-      <div class="mt-20 xl:flex-1">
+      <div class="mt-20 lg:flex-1">
         <img class="object-contain dark:hidden" src="/images/Hahu-031.png" />
         <img
           class="hidden object-contain dark:block"
@@ -46,11 +46,13 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
           </a>
         </div>
       </div>
-      <div>
+      <div class="flex-1 hidden dark:md:hidden">
         <img
-          class="hidden w-[570px] overflow-hidden object-contain dark:hidden md:mb-32 md:block lg:mb-10 lg:flex-1 xl:w-[750px] 2xl:w-[570px] 4xl:w-full"
+          class="w-[570px] overflow-hidden object-contain md:mb-32 md:block lg:mb-10 lg:flex-1 xl:w-[750px] 2xl:w-[570px] 4xl:w-full"
           src="/images/landing_page_1.png"
         />
+      </div>
+      <div class="hidden dark:md:block flex-1">
         <img
           class="hidden w-[570px] object-contain md:mb-32 dark:md:block lg:mb-10 lg:flex-1 xl:w-[750px] 2xl:w-[570px] 4xl:w-full"
           src="/images/landing_page_dark.png"
