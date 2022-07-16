@@ -1,6 +1,8 @@
 <script setup>
 const title = "Index Page";
-const videoId = "rRVlWEwmbfQ";
+
+// const videoId = "rRVlWEwmbfQ";
+const videoId = "";
 </script>
 
 <template>
