@@ -1,8 +1,8 @@
 <script setup>
 const title = "Index Page";
 
-// const videoId = "rRVlWEwmbfQ";
-const videoId = "";
+const videoId = "rRVlWEwmbfQ";
+// const videoId = "";
 </script>
 
 <template>
@@ -109,45 +109,46 @@ const videoId = "";
         content="Out-of-the-box, Nuxt provides good default values for charset and viewport meta tags, but you can override these if you need to, as well as customize other meta tags for your site in several different ways."
       />
       <!-- ===================  -->
+      <div v-if="videoId">
+        <Meta property="og:title" content="Mux Video" />
+        <Meta property="og:type" content="video.episode" />
+        <Meta
+          property="og:description"
+          content="MP4 video asset for Open Graph Cards"
+        />
+        <Meta
+          property="og:image"
+          :content="`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`"
+        />
+        <Meta
+          property="og:video"
+          content="https://www.youtube.com/embed/rRVlWEwmbfQ"
+        />
+        <Meta property="og:video:width" content="350" />
+        <Meta property="og:video:height" content="200" />
+        <Meta property="og:video:duration" content="300" />
+        <Meta property="og:url" content="http://mux.com" />
 
-      <Meta property="og:title" content="Mux Video" />
-      <Meta property="og:type" content="video.episode" />
-      <Meta
-        property="og:description"
-        content="MP4 video asset for Open Graph Cards"
-      />
-      <Meta
-        property="og:image"
-        :content="`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`"
-      />
-      <Meta
-        property="og:video"
-        content="https://www.youtube.com/embed/rRVlWEwmbfQ"
-      />
-      <Meta property="og:video:width" content="350" />
-      <Meta property="og:video:height" content="200" />
-      <Meta property="og:video:duration" content="300" />
-      <Meta property="og:url" content="http://mux.com" />
+        <!-- ================= Twitter Video Player works for twitter and telegram ================== -->
 
-      <!-- ================= Twitter Video Player works for twitter and telegram ================== -->
-
-      <Meta name="twitter:card" content="player" />
-      <Meta name="twitter:title" content="Some great video" />
-      <Meta name="twitter:site" content="@mesfinjohn" />
-      <Meta
-        name="twitter:description"
-        content="Great video by @twitter_username"
-      />
-      <Meta
-        name="twitter:player"
-        content="https://www.youtube.com/embed/rRVlWEwmbfQ"
-      />
-      <Meta name="twitter:player:width" content="360" />
-      <Meta name="twitter:player:height" content="200" />
-      <Meta
-        name="twitter:image"
-        :content="`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`"
-      />
+        <Meta name="twitter:card" content="player" />
+        <Meta name="twitter:title" content="Some great video" />
+        <Meta name="twitter:site" content="@mesfinjohn" />
+        <Meta
+          name="twitter:description"
+          content="Great video by @twitter_username"
+        />
+        <Meta
+          name="twitter:player"
+          content="https://www.youtube.com/embed/rRVlWEwmbfQ"
+        />
+        <Meta name="twitter:player:width" content="360" />
+        <Meta name="twitter:player:height" content="200" />
+        <Meta
+          name="twitter:image"
+          :content="`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`"
+        />
+      </div>
     </Head>
     <div class="flex">
       <h1>Root Index page</h1>
