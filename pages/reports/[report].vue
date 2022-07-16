@@ -353,7 +353,7 @@ const copyLinkFunc = () => {
         </button>
         <div class="flex gap-2">
           <a
-            :href="`http://www.facebook.com/sharer/sharer.php?u=${filteredReport.img}&t=${filteredReport.title}`"
+            :href="`http://www.facebook.com/sharer/sharer.php?u=${copyLink}&t=${filteredReport.title}`"
             target="_blank"
             class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
