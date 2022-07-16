@@ -23,7 +23,7 @@ const crumb = [
 const Reports = [
   {
     id: "1",
-    img: "/images/report-1.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870130/Hahu/report-1_gx0h1y.jpg",
     title: "Job by sector from 2019 – 2020 ",
     range: "Monthly",
     date: "Jan 12, 2022",
@@ -89,7 +89,7 @@ const Reports = [
   },
   {
     id: "7",
-    img: "/images/report-7.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870133/Hahu/report-7_jsviv4.jpg",
     title: "Monthly Job Post from April 01-30, 2022",
     range: "Annually",
     date: "Jan 12, 2022",
@@ -100,7 +100,7 @@ const Reports = [
   },
   {
     id: "8",
-    img: "/images/report-8.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870133/Hahu/report-8_tdjmyq.jpg",
     title: "Monthly Job Post from May 01-31, 2022",
     range: "Monthly",
     date: "Jan 12, 2022",
@@ -111,7 +111,7 @@ const Reports = [
   },
   {
     id: "9",
-    img: "/images/report-9.jpg",
+    img: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870133/Hahu/report-9_azlr9k.jpg",
     title: "Monthly Job Post from June 01-30, 2022",
     range: "Monthly",
     date: "Jan 12, 2022",
@@ -151,6 +151,18 @@ const copyLinkFunc = () => {
       />
       <Meta
         data-n-head="ssr"
+        data-hid="og:site_name"
+        property="og:site_name"
+        content="Hahu"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:type"
+        property="og:type"
+        content="website"
+      />
+      <Meta
+        data-n-head="ssr"
         data-hid="og:title"
         property="og:title"
         :content="filteredReport.title"
@@ -174,15 +186,21 @@ const copyLinkFunc = () => {
       />
       <Meta
         data-n-head="ssr"
-        data-hid="og:type"
-        property="og:type"
-        content="website"
-      />
-      <Meta
-        data-n-head="ssr"
         data-hid="og:image"
         property="og:image"
         :content="filteredReport.img"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:image:secure_url"
+        property="og:image:secure_url"
+        :content="filteredReport.img"
+      />
+      <Meta
+        data-n-head="ssr"
+        data-hid="og:image:alt"
+        property="og:image:alt"
+        content="Hahu"
       />
       <Meta
         data-n-head="ssr"
@@ -198,6 +216,12 @@ const copyLinkFunc = () => {
       />
       <Meta
         data-n-head="ssr"
+        data-hid="twitter:site"
+        name="twitter:site"
+        :content="copyLink"
+      />
+      <Meta
+        data-n-head="ssr"
         data-hid="twitter:url"
         property="twitter:url"
         :content="copyLink"
@@ -210,17 +234,51 @@ const copyLinkFunc = () => {
       />
       <Meta
         data-n-head="ssr"
+        data-hid="twitter:description"
         property="twitter:description"
-        hid="twitter:description"
         :content="filteredReport.content"
       />
-
       <Meta
         data-n-head="ssr"
+        data-hid="twitter:image"
         property="twitter:image"
-        hid="twitter:image"
         :content="filteredReport.img"
       />
+
+      <div v-if="filteredReport.videoId">
+        <Meta property="og:title" :content="filteredReport.title" />
+        <Meta property="og:type" content="video.episode" />
+        <Meta property="og:description" :content="filteredReport.content" />
+        <Meta
+          property="og:image"
+          :content="`https://img.youtube.com/vi/${filteredReport.videoId}/maxresdefault.jpg`"
+        />
+        <Meta
+          property="og:video"
+          :content="`https://www.youtube.com/embed/${filteredReport.videoId}`"
+        />
+        <Meta property="og:video:width" content="350" />
+        <Meta property="og:video:height" content="200" />
+        <Meta property="og:video:duration" content="300" />
+        <Meta property="og:url" :content="copyLink" />
+
+        <!-- ================= Twitter Video Player works for twitter and telegram ================== -->
+
+        <Meta name="twitter:card" content="player" />
+        <Meta name="twitter:title" :content="filteredReport.videoId" />
+        <Meta name="twitter:site" content="@hahujobs" />
+        <Meta name="twitter:description" :content="filteredReport.content" />
+        <Meta
+          name="twitter:player"
+          :content="`https://www.youtube.com/embed/${filteredReport.videoId}`"
+        />
+        <Meta name="twitter:player:width" content="360" />
+        <Meta name="twitter:player:height" content="200" />
+        <Meta
+          name="twitter:image"
+          :content="`https://img.youtube.com/vi/${filteredReport.videoId}/maxresdefault.jpg`"
+        />
+      </div>
     </Head>
 
     <section
@@ -295,7 +353,7 @@ const copyLinkFunc = () => {
         </button>
         <div class="flex gap-2">
           <a
-            :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&t=${filteredReport.title}`"
+            :href="`http://www.facebook.com/sharer/sharer.php?u=${$filteredReport.img}&t=${filteredReport.title}`"
             target="_blank"
             class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
@@ -307,13 +365,13 @@ const copyLinkFunc = () => {
             <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
           </button>
           <a
-            :href="`http://twitter.com/share?text=${filteredReport.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
+            :href="`http://twitter.com/share?text=${filteredReport.title}&url=${copyLink}&hashtags=HahuJobs,Minab_ICT_Solutions`"
             class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
           </a>
           <a
-            :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&text=${filteredReport.title}`"
+            :href="`https://t.me/share/url?url=${copyLink}&text=${filteredReport.title}`"
             class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
             <img class="object-contain px-[13px] py-[9px]" :src="Telegram" />

@@ -221,40 +221,42 @@ const forMeta = (i) => {
         content="https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png"
       />
 
-      <!-- ===================  -->
+      <!-- =================== video player for Facebook ================= -->
 
-      <Meta property="og:title" content="Mux Video" />
-      <Meta property="og:type" content="video.episode" />
-      <Meta property="og:description" :content="selectedReport.content" />
-      <Meta
-        property="og:image"
-        :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`"
-      />
-      <Meta
-        property="og:video"
-        content="https://www.youtube.com/embed/rRVlWEwmbfQ"
-      />
-      <Meta property="og:video:width" content="350" />
-      <Meta property="og:video:height" content="200" />
-      <Meta property="og:video:duration" content="300" />
-      <Meta property="og:url" content="http://mux.com" />
+      <div v-if="selectedReport.videoId">
+        <Meta property="og:title" content="Mux Video" />
+        <Meta property="og:type" content="video.episode" />
+        <Meta property="og:description" :content="selectedReport.content" />
+        <Meta
+          property="og:image"
+          :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`"
+        />
+        <Meta
+          property="og:video"
+          content="https://www.youtube.com/embed/rRVlWEwmbfQ"
+        />
+        <Meta property="og:video:width" content="350" />
+        <Meta property="og:video:height" content="200" />
+        <Meta property="og:video:duration" content="300" />
+        <Meta property="og:url" content="http://mux.com" />
 
-      <!-- ================= Twitter Video Player works for twitter and telegram ================== -->
+        <!-- ================= Twitter Video Player works for twitter and telegram ================== -->
 
-      <Meta name="twitter:card" content="player" />
-      <Meta name="twitter:title" :content="selectedReport.title" />
-      <Meta name="twitter:site" content="@hahujobs" />
-      <Meta name="twitter:description" content="video by @hahujobs" />
-      <Meta
-        name="twitter:player"
-        :content="`https://www.youtube.com/embed/${selectedReport.videoId}`"
-      />
-      <Meta name="twitter:player:width" content="360" />
-      <Meta name="twitter:player:height" content="200" />
-      <Meta
-        name="twitter:image"
-        :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`"
-      />
+        <Meta name="twitter:card" content="player" />
+        <Meta name="twitter:title" :content="selectedReport.title" />
+        <Meta name="twitter:site" content="@hahujobs" />
+        <Meta name="twitter:description" content="video by @hahujobs" />
+        <Meta
+          name="twitter:player"
+          :content="`https://www.youtube.com/embed/${selectedReport.videoId}`"
+        />
+        <Meta name="twitter:player:width" content="360" />
+        <Meta name="twitter:player:height" content="200" />
+        <Meta
+          name="twitter:image"
+          :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`"
+        />
+      </div>
     </Head>
     <!-- <section class="mt-10 px-[230px] flex flex-col"> -->
     <section
