@@ -56,7 +56,7 @@ const Reports = [
   },
   {
     id: "4",
-    // img: "/images/YouTube_annual_report.png",
+    img: "",
     title: "Jobs by sector from September 2020 - September 2021",
     videoId: "yeP33pVuLxE",
     range: "Annually",
@@ -67,7 +67,7 @@ const Reports = [
   },
   {
     id: "5",
-    // img: "/images/YouTube_annual_report.png",
+    img: "",
     title: "Jobs by years of experience from September 2020 - September 2021",
     videoId: "pmQtD9bBnEI",
     range: "Annually",
@@ -78,7 +78,7 @@ const Reports = [
   },
   {
     id: "6",
-    // img: "/images/YouTube_annual_report.png",
+    img: "",
     title: "Supply and demand data in 7 industry parks in the year 2020/21",
     videoId: "YQFx2aCzK0E",
     range: "Annually",
@@ -353,7 +353,7 @@ const copyLinkFunc = () => {
         </button>
         <div class="flex gap-2">
           <a
-            :href="`http://www.facebook.com/sharer/sharer.php?u=${$filteredReport.img}&t=${filteredReport.title}`"
+            :href="`http://www.facebook.com/sharer/sharer.php?u=${filteredReport.img}&t=${filteredReport.title}`"
             target="_blank"
             class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
           >
