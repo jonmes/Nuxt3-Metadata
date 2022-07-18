@@ -40,40 +40,23 @@ onBeforeUnmount(() => {
   <section>
     <div v-for="i in 1" id="about">
       <div class="flex flex-col items-center">
-        <h1
-          ref="target"
-          show="true"
-          class="lg:translate-y-20 lg:opacity-0 mt-20 self-center text-lg font-medium leading-[18px] duration-1000 dark:text-white lg:mt-[90px]"
-        >
+        <h1 ref="target" show="true"
+          class="lg:translate-y-20 lg:opacity-0 mt-20 self-center text-lg font-medium leading-5 duration-1000 dark:text-white lg:mt-20">
           About
         </h1>
-        <h2
-          ref="target"
-          show="true"
-          class="lg:translate-y-20 lg:opacity-0 mt-8 self-center rounded-[36px] duration-1000 bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
-        >
+        <h2 ref="target" show="true"
+          class="lg:translate-y-20 lg:opacity-0 mt-8 self-center rounded-[36px] duration-1000 bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-4 lg:py-2 lg:text-xl 3xl:text-3xl lg:leading-5">
           What is HaHuJobs?
         </h2>
       </div>
-      <div class="flex flex-col lg:mt-10 3xl:flex-row">
-        <div
-          ref="target"
-          show="true"
-          class="lg:translate-y-20 lg:opacity-0 flex flex-1 overflow-hidden duration-1000"
-        >
-          <img
-            show="true"
-            class="object-contain"
-            alt="hahu core"
-            src="/images/Hahu_core.png"
-          />
+      <div class="flex flex-col lg:mt-10 xl:flex-row">
+        <div ref="target" show="true"
+          class="lg:translate-y-20 lg:opacity-0 flex overflow-hidden duration-1000 lg:w-5/12 3xl:w-6/12 p-10 justify-center">
+          <img show="true" class="object-contain" alt="hahu core" src="/images/Hahu_core_crop.png" />
         </div>
-        <article class="mt-[54px] flex-1">
-          <p
-            show="true"
-            ref="target"
-            class="lg:translate-y-20 lg:opacity-0 text-lg font-normal duration-1000 leading-[35px] dark:text-HahuGray/4"
-          >
+        <article class="mt-14 lg:w-7/12 3xl:w-6/12">
+          <p show="true" ref="target"
+            class="lg:translate-y-20 lg:opacity-0 text-lg xl:text-sm 2xl:text-base 3xl:text-lg font-normal duration-1000 leading-9 dark:text-HahuGray/4">
             HaHuJobs a cloud services operating to capture structured data of
             the Ethiopian skilled and non-skilled labor market through digitally
             connecting thousands of job seekers in major Ethiopian cities as
@@ -92,11 +75,8 @@ onBeforeUnmount(() => {
           </p>
           <br />
           <br />
-          <p
-            show="true"
-            ref="target"
-            class="lg:translate-y-20 lg:opacity-0 text-lg font-normal duration-1000 leading-[35px] dark:text-HahuGray/4"
-          >
+          <p show="true" ref="target"
+            class="lg:translate-y-20 lg:opacity-0 text-lg xl:text-sm 2xl:text-base 3xl:text-lg font-normal duration-1000 leading-9 dark:text-HahuGray/4">
             The service is built as an ecosystem of digital services to offer a
             holistic approach to respond to various data and automation gaps
             with in the Ethiopian labor market. It features layers and network
@@ -105,19 +85,13 @@ onBeforeUnmount(() => {
             development partners.
           </p>
 
-          <div
-            ref="target"
-            show="true"
-            class="lg:translate-y-20 lg:opacity-0 mt-12 mb-14 flex duration-1000"
-          >
+          <div ref="target" show="true" class="lg:translate-y-20 lg:opacity-0 mt-12 mb-14 flex duration-1000">
             <NuxtLink :to="{ name: 'AboutUs' }" class="group">
               <button
-                class="flex items-center self-end rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white"
-              >
+                class="flex items-center self-end rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
                 Explore More
                 <ArrowNarrowRightIcon
-                  class="ml-3 inline-block h-5 w-5 text-white duration-300 group-hover:translate-x-1"
-                />
+                  class="ml-3 inline-block h-5 w-5 text-white duration-300 group-hover:translate-x-1" />
               </button>
             </NuxtLink>
           </div>
@@ -127,4 +101,5 @@ onBeforeUnmount(() => {
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
