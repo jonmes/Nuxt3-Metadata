@@ -1,5 +1,15 @@
+<script setup>
+import {
+  ArrowNarrowRightIcon,
+  ArrowNarrowLeftIcon,
+} from "@heroicons/vue/solid/index.js";
+
+
+const crumb = [{ id: 1, name: "About Us", link: "", current: true }];
+</script>
+
 <template>
-  <div class="min-h-screen px-8 md:px-[50px] xl:px-[100px]">
+  <div class="min-h-screen px-8 md:px-10  2xl:px-[100px]">
     <section class="mt-10 flex flex-col px-1 md:px-16 lg:px-16 2xl:px-[100px]">
       <div class="relative mb-10 flex items-start justify-between font-bold">
         <Contained :crumb="crumb" />
@@ -17,10 +27,13 @@
         About HaHu
       </h2>
 
-      <div class="flex flex-col-reverse 3xl:flex-row-reverse">
-        <img class="object-contain" src="/images/Hahu_core.png" />
+      <div class="flex flex-col-reverse xl:flex-row-reverse">
+        <div class="flex w-6/12 px-20 justify-center">
+          <img class="object-contain block dark:hidden" src="/images/Hahu_core_light.png" />
+          <img class="object-contain hidden dark:block" src="/images/Hahu_core_dark.png" />
+        </div>
 
-        <p class="mt-[50px] flex-1 text-base font-normal leading-[35px] dark:text-HahuGray/4 md:text-lg">
+        <p class="mt-12 flex-1 text-base font-normal leading-[35px] dark:text-HahuGray/4 md:text-lg">
           HaHuJobs a cloud services operating to capture structured data of the
           Ethiopian skilled and non-skilled labor market through digitally
           connecting thousands of job seekers in major Ethiopian cities as well
@@ -46,7 +59,7 @@
           development partners.
         </p>
       </div>
-      <p class="mt-10 w-9/12 text-base font-normal leading-[35px] dark:text-HahuGray/4 md:text-lg">
+      <p class="mt-10 text-base font-normal leading-[35px] dark:text-HahuGray/4 md:text-lg">
         HaHuJobs services also include deliverology tacking and an online career
         capacity development platform called Muya that targets both universities
         and federal TVET organization graduates, and students. This allows for a
@@ -58,11 +71,11 @@
         module that collects and standardizes aggregated job vacancies from
         local digital and analog posting entities.
       </p>
-      <div class="flex mt-14">
-        <img src="/images/hahu-about.jpg" />
+      <div class="flex mt-14 justify-center">
+        <img class="rounded-lg" src="/images/Hahu_about_banner.png" />
       </div>
 
-      <p class="mt-14 w-9/12 text-base font-normal leading-[35px] dark:text-HahuGray/4 md:text-lg">
+      <p class="mt-14 text-base font-normal leading-[35px] dark:text-HahuGray/4 md:text-lg">
         The discussed components and services were conceived and implemented by our founders each of whom has notable
         experience in labor economics and a well demonstrated cababaility in software development. Each with their own
         pillar of contribution always are working hard to work on the next feature or service to even propel the product
@@ -74,8 +87,8 @@
       </h2>
 
       <div
-        class="mt-[141px] flex flex-col items-center space-y-20 xl:flex-row xl:justify-center xl:space-y-0 xl:space-x-[74px]">
-        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2">
+        class="mt-[141px] flex flex-col items-center gap-y-20 xl:flex-row xl:justify-center xl:gap-y-0 xl:gap-x-[74px]">
+        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
           <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder.png" />
           <h1 class="text-3xl font-semibold leading-[30px] text-white">
             Michael Sahlu
@@ -92,7 +105,7 @@
           </p>
         </div>
 
-        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2">
+        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
           <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder2.png" />
           <h1 class="text-3xl font-semibold leading-[30px] text-white">
             Kaleab Mezgebu
@@ -109,7 +122,82 @@
           </p>
         </div>
 
-        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2">
+        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
+          <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder3.png" />
+          <h1 class="text-3xl font-semibold leading-[30px] text-white">
+            Eskinder Mamo
+          </h1>
+          <h2 class="leading[30px] mt-[10px] text-base font-medium text-HahuGray/4 md:text-lg">
+            CBO/CO-Founder
+          </h2>
+          <p
+            class="mt-10 mb-[30px] px-2 text-center text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7">
+            Innovation manager by training and with over eleven years of
+            experience, Eskinder is involved in business and project
+            development, specifically in developing concepts and proposals as
+            well as securing funding for HaHuJobs.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="mt-[118px] flex justify-center text-3xl font-black leading-6 text-primary">
+        Technical advisor
+      </h2>
+
+      <div
+        class="mt-[141px] flex flex-col items-center gap-y-20 xl:flex-row xl:justify-center xl:gap-y-20 xl:gap-x-[74px] flex-wrap">
+        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
+          <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder.png" />
+          <h1 class="text-3xl font-semibold leading-[30px] text-white">
+            Michael Sahlu
+          </h1>
+          <h2 class="leading[30px] mt-[10px] text-base font-medium text-HahuGray/4 md:text-lg">
+            CTO/CO-Founder
+          </h2>
+          <p
+            class="mt-10 mb-[30px] px-2 text-center text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7">
+            A full stack developer specializing in front end implementation and
+            architecture design. With over nine years of working experience
+            Michael leads all the technology advances of all HaHuJobs product
+            deployments.
+          </p>
+        </div>
+
+        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
+          <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder2.png" />
+          <h1 class="text-3xl font-semibold leading-[30px] text-white">
+            Kaleab Mezgebu
+          </h1>
+          <h2 class="leading[30px] mt-[10px] text-base font-medium text-HahuGray/4 md:text-lg">
+            CEO/CO-Founder
+          </h2>
+          <p
+            class="mt-10 mb-[30px] px-2 text-center text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7">
+            A system analyst and solutions architect with active involvement in
+            system designs, incepting real world application of service
+            components and managing stakeholder communications Kaleab leads the
+            overall operation of HaHuJobs.
+          </p>
+        </div>
+
+        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
+          <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder3.png" />
+          <h1 class="text-3xl font-semibold leading-[30px] text-white">
+            Eskinder Mamo
+          </h1>
+          <h2 class="leading[30px] mt-[10px] text-base font-medium text-HahuGray/4 md:text-lg">
+            CBO/CO-Founder
+          </h2>
+          <p
+            class="mt-10 mb-[30px] px-2 text-center text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7">
+            Innovation manager by training and with over eleven years of
+            experience, Eskinder is involved in business and project
+            development, specifically in developing concepts and proposals as
+            well as securing funding for HaHuJobs.
+          </p>
+        </div>
+
+        <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
           <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder3.png" />
           <h1 class="text-3xl font-semibold leading-[30px] text-white">
             Eskinder Mamo
@@ -130,13 +218,5 @@
   </div>
 </template>
 
-<script setup>
-import {
-  ArrowNarrowRightIcon,
-  ArrowNarrowLeftIcon,
-} from "@heroicons/vue/solid/index.js";
-
-const crumb = [{ id: 1, name: "About Us", link: "", current: true }];
-</script>
 <style scoped>
 </style>

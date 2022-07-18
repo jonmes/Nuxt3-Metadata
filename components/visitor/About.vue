@@ -1,6 +1,5 @@
 <script setup>
 import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
-
 const target = ref(null);
 const observer = shallowRef();
 
@@ -14,6 +13,10 @@ onMounted(() => {
         );
         entry.target.classList.toggle(
           "lg:[&[show=true]]:translate-y-0",
+          entry.isIntersecting
+        );
+        entry.target.classList.toggle(
+          "lg:[&[show=true]]:translate-x-0",
           entry.isIntersecting
         );
         if (entry.isIntersecting) {
@@ -49,12 +52,13 @@ onBeforeUnmount(() => {
           What is HaHuJobs?
         </h2>
       </div>
-      <div class="flex flex-col lg:mt-10 xl:flex-row">
+      <div class="flex flex-col items-center lg:mt-10 xl:flex-row overflow-hidden">
         <div ref="target" show="true"
-          class="lg:translate-y-20 lg:opacity-0 flex overflow-hidden duration-1000 lg:w-5/12 3xl:w-6/12 p-10 justify-center">
-          <img show="true" class="object-contain" alt="hahu core" src="/images/Hahu_core_crop.png" />
+          class="lg:translate-x-10 lg:opacity-0 flex overflow-hidden duration-1000 lg:w-6/12 2xl:w-6/12 lg:px-7 2xl:px-20 justify-center">
+          <img show="true" class="object-contain dark:hidden" alt="hahu core" src="/images/Hahu_core_crop.png" />
+          <img show="true" class="object-contain hidden dark:block" alt="hahu core" src="/images/Hahu_core_dark.png" />
         </div>
-        <article class="mt-14 lg:w-7/12 3xl:w-6/12">
+        <article class="mt-14 xl:w-6/12 2xl:w-6/12">
           <p show="true" ref="target"
             class="lg:translate-y-20 lg:opacity-0 text-lg xl:text-base 2xl:text-base 3xl:text-lg font-normal duration-1000 leading-9 dark:text-HahuGray/4">
             HaHuJobs a cloud services operating to capture structured data of

@@ -41,6 +41,12 @@ module.exports = {
     },
     namedGroups: ["outer", "inner"],
     extend: {
+      lineClamp: {
+        7: "7",
+        8: "8",
+        9: "9",
+        10: "10",
+      },
       transitionProperty: {
         height: "height",
         visibility: "visibility",
@@ -103,5 +109,6 @@ module.exports = {
   plugins: [
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/line-clamp"),
   ],
 };

@@ -20,6 +20,7 @@
     "@headlessui/vue": "^1.6.6",
     "@heroicons/vue": "^1.0.6",
     "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/line-clamp": "^0.4.0",
     "@vueuse/core": "^8.9.1",
     "@vueuse/motion": "^2.0.0-beta.12",
     "@vueuse/nuxt": "^8.9.1",
