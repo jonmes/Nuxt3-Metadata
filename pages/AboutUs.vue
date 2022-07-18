@@ -46,7 +46,7 @@
           development partners.
         </p>
       </div>
-      <p class="mt-16 w-9/12 text-base font-normal leading-[35px] dark:text-HahuGray/4 md:text-lg">
+      <p class="mt-10 w-9/12 text-base font-normal leading-[35px] dark:text-HahuGray/4 md:text-lg">
         HaHuJobs services also include deliverology tacking and an online career
         capacity development platform called Muya that targets both universities
         and federal TVET organization graduates, and students. This allows for a
@@ -58,11 +58,23 @@
         module that collects and standardizes aggregated job vacancies from
         local digital and analog posting entities.
       </p>
-      <h2 class="mt-[118px] text-3xl font-black leading-6 text-primary">
+      <div class="flex mt-14">
+        <img src="/images/hahu-about.jpg" />
+      </div>
+
+      <p class="mt-14 w-9/12 text-base font-normal leading-[35px] dark:text-HahuGray/4 md:text-lg">
+        The discussed components and services were conceived and implemented by our founders each of whom has notable
+        experience in labor economics and a well demonstrated cababaility in software development. Each with their own
+        pillar of contribution always are working hard to work on the next feature or service to even propel the product
+        further. The founders tremendously realy on the technical advices offered by the technical advisory who are
+        international experts in the labour market sector.
+      </p>
+      <h2 class="mt-[118px] flex justify-center text-3xl font-black leading-6 text-primary">
         Founders
       </h2>
 
-      <div class="mt-[141px] flex flex-col items-center space-y-20 xl:flex-row xl:space-y-0 xl:space-x-[74px]">
+      <div
+        class="mt-[141px] flex flex-col items-center space-y-20 xl:flex-row xl:justify-center xl:space-y-0 xl:space-x-[74px]">
         <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2">
           <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder.png" />
           <h1 class="text-3xl font-semibold leading-[30px] text-white">
@@ -93,7 +105,7 @@
             A system analyst and solutions architect with active involvement in
             system designs, incepting real world application of service
             components and managing stakeholder communications Kaleab leads the
-            overall operation of HaHuJobs
+            overall operation of HaHuJobs.
           </p>
         </div>
 

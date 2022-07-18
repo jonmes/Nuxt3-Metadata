@@ -56,7 +56,7 @@ onBeforeUnmount(() => {
         </div>
         <article class="mt-14 lg:w-7/12 3xl:w-6/12">
           <p show="true" ref="target"
-            class="lg:translate-y-20 lg:opacity-0 text-lg xl:text-sm 2xl:text-base 3xl:text-lg font-normal duration-1000 leading-9 dark:text-HahuGray/4">
+            class="lg:translate-y-20 lg:opacity-0 text-lg xl:text-base 2xl:text-base 3xl:text-lg font-normal duration-1000 leading-9 dark:text-HahuGray/4">
             HaHuJobs a cloud services operating to capture structured data of
             the Ethiopian skilled and non-skilled labor market through digitally
             connecting thousands of job seekers in major Ethiopian cities as
@@ -76,7 +76,7 @@ onBeforeUnmount(() => {
           <br />
           <br />
           <p show="true" ref="target"
-            class="lg:translate-y-20 lg:opacity-0 text-lg xl:text-sm 2xl:text-base 3xl:text-lg font-normal duration-1000 leading-9 dark:text-HahuGray/4">
+            class="lg:translate-y-20 lg:opacity-0 text-lg xl:text-base 3xl:text-lg font-normal duration-1000 leading-9 dark:text-HahuGray/4">
             The service is built as an ecosystem of digital services to offer a
             holistic approach to respond to various data and automation gaps
             with in the Ethiopian labor market. It features layers and network
