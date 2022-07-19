@@ -16,7 +16,7 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
           <img class="mt-10 object-contain dark:hidden " src="/images/Hahu_logo2.png" />
           <img class="mt-10 hidden object-contain dark:block" src="/images/Hahu_logo2_dark.png" />
         </div>
-        <p class="mt-12 3xl:mt-20 w-full text-lg font-normal leading-9 dark:text-HahuGray/4">
+        <p class="mt-12 3xl:mt-20 w-full text-lg font-normal leading-8 dark:text-HahuGray/4">
           Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job
           matching and labor market information platform in Ethiopia. With
           various service deployments to address the Ethiopian labor market

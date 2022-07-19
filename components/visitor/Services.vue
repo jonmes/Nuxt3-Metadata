@@ -38,11 +38,11 @@ onBeforeUnmount(() => {
   <section v-for="i in 1" id="services" class="flex min-h-full flex-col">
     <div class="flex flex-col items-center">
       <h1 show="true" ref="target"
-        class="lg:opacity-0 lg:translate-y-20 duration-1000 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]">
+        class="lg:opacity-0 lg:translate-y-20 duration-1000 mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-24">
         Services
       </h1>
       <h2 show="true" ref="target"
-        class="lg:opacity-0 lg:translate-y-20 duration-1000 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]">
+        class="lg:opacity-0 lg:translate-y-20 duration-1000 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-5 3xl:px-8 3xl:py-4 lg:py-2 lg:text-2xl 3xl:text-3xl lg:leading-[18px]">
         Standard service with Ethiopian hospitality!
       </h2>
     </div>
@@ -67,7 +67,7 @@ onBeforeUnmount(() => {
           HaHu Core services
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-[68px]">
+          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
           HaHU core services is a deployment targeting the Ethiopian jobseeker,
           with both online and assisted models the platform caters to the tool
           needs of looking for a job in all levels of employment. It features
@@ -97,7 +97,7 @@ onBeforeUnmount(() => {
           Hahu Enterprise
         </h2>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-[68px]">
+          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
           Provides human resources and related services starting from job
           vacancy announcements, recruitment, all the way to human resources
           management until termination. This deployment also offers unique
@@ -125,7 +125,7 @@ onBeforeUnmount(() => {
           HaHu Industry Parks
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-[68px]">
+          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
           With biometric based identification to both register workers and job
           seekers. The process begins with mass registration of employment
           seekers to build a digital pool of job seekers from which they are
@@ -154,7 +154,7 @@ onBeforeUnmount(() => {
           HaHuJob TVET
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-[68px]">
+          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
           HaHuJobs TVET is a targeted service deployment to trace skill-based
           education graduates and content encoding service offered for TVET
           institutes intended for both formal as well as career guiding lesson
@@ -185,7 +185,7 @@ onBeforeUnmount(() => {
           HaHu University
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-[68px]">
+          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
           HaHuJobs university is a deployment intended to serve the needs of
           deliver ology departments, offer alternative digital contend
           disbursement for instructors and tracing graduates of Ethiopian
@@ -216,7 +216,7 @@ onBeforeUnmount(() => {
           Hahu Muya
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-[68px]">
+          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
           HaHuJobs Muya is capacity building and training platform intended for
           both jobseeker and students’ which sources various digital contents
           from training institutes in both document and multimedia formats. It

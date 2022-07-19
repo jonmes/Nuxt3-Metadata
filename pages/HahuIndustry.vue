@@ -49,7 +49,7 @@
         <div
           class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:bg-HahuGray1 dark:lg:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[300px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]">
           <img
-            class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-10 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-700"
+            class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-10 dark:xl:invert xl:grayscale xl:group-hover:grayscale-0 duration-700"
             src="/images/mastercard_colored.png" />
           <hr
             class="my-4 w-10/12 border-b-[1px] border-black dark:border-white opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20" />
@@ -66,7 +66,7 @@
         <div
           class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-700 hover:bg-white dark:bg-HahuGray1 dark:lg:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[300px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]">
           <img
-            class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
+            class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert  xl:grayscale xl:group-hover:grayscale-0 duration-300"
             src="/images/first_consult_colored.png" />
           <hr
             class="my-4 w-10/12 border-b-[1px] border-black dark:border-white opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20" />
@@ -83,7 +83,7 @@
         <div
           class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:bg-HahuGray1 dark:lg:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[300px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]">
           <img
-            class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-700"
+            class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:grayscale xl:group-hover:grayscale-0 duration-700"
             src="/images/minab_colorized.png" />
           <hr
             class="my-4 w-10/12 border-b-[1px] border-black dark:border-white opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20" />

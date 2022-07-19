@@ -61,22 +61,15 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
 <template>
   <section class="mt-10 flex flex-col" id="contact">
     <div class="mb-20 flex flex-col items-center">
-      <h2
-        show="true"
-        class="mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]"
-      >
+      <h2 show="true" class="mt-10 self-center text-lg font-medium leading-[18px] dark:text-white lg:mt-[90px]">
         Contact
       </h2>
-      <h2
-        show="true"
-        class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-8 lg:py-4 lg:text-3xl lg:leading-[18px]"
-      >
+      <h2 show="true"
+        class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-4 3xl:px-8 lg:py-2 3xl:py-4 lg:text-2xl 3xl:text-3xl lg:leading-[18px]">
         We would love to hear from you!
       </h2>
-      <p
-        show="true"
-        class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg"
-      >
+      <p show="true"
+        class="mt-[34px] max-w-[900px] text-center text-base font-light leading-[30px] dark:text-HahuGray/4 xs:text-lg">
         Please fill out the form below to reach our communications department
         for any enquiries you may have, our doors are open for everyone
       </p>
@@ -90,9 +83,7 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
               <h2 class="text-xl font-bold leading-[38px] text-primary">
                 Email
               </h2>
-              <h4
-                class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4"
-              >
+              <h4 class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4">
                 info@hahu.jobs
               </h4>
             </div>
@@ -104,9 +95,7 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
               <h2 class="text-xl font-bold leading-[38px] text-primary">
                 Phone
               </h2>
-              <h4
-                class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4"
-              >
+              <h4 class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4">
                 +251-11 822 1001
                 <br />
                 +251-11 822 1002
@@ -120,9 +109,7 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
               <h2 class="text-xl font-bold leading-[38px] text-primary">
                 Office
               </h2>
-              <h4
-                class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4"
-              >
+              <h4 class="text-lg font-normal leading-[30px] text-HahuGray2 duration-500 ease-in dark:text-HahuGray/4">
                 Bole, Behind DH geda tower <br />Afomi Building 3rd floor
                 <br />Addis Ababa
               </h4>
@@ -137,21 +124,13 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
               Branch
             </h2>
             <ul
-              class="mt-8 grid w-full grid-cols-2 items-center justify-items-end gap-x-4 gap-y-9 xs:gap-x-28 md:grid-cols-3 md:gap-x-28"
-            >
-              <li
-                show="true"
-                class="flex flex-col gap-y-1"
-                v-for="(branch, i) in branchs"
-              >
-                <h2
-                  class="text-xl font-semibold leading-6 text-HahuGray1 duration-500 ease-in dark:text-white"
-                >
+              class="mt-8 grid w-full grid-cols-2 items-center justify-items-end gap-x-4 gap-y-9 xs:gap-x-28 md:grid-cols-3 lg:gap-x-16 3xl:gap-x-28">
+              <li show="true" class="flex flex-col gap-y-1" v-for="(branch, i) in branchs">
+                <h2 class="text-xl font-semibold leading-6 text-HahuGray1 duration-500 ease-in dark:text-white">
                   {{ branch.name }}
                 </h2>
                 <h3
-                  class="sm:ml-2 text-base font-normal leading-8 text-gray-500 duration-500 ease-in dark:text-HahuGray4"
-                >
+                  class="sm:ml-2 text-base font-normal leading-8 text-gray-500 duration-500 ease-in dark:text-HahuGray4">
                   {{ branch.Phone }}
                 </h3>
               </li>
@@ -160,72 +139,35 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
         </div>
       </div>
       <div class="sm:flex-1 flex sm:justify-center">
-        <form
-          @submit.prevent="submit"
-          show="true"
-          class="flex pb-10 lg:pb-0 max-h-[915px] w-full sm:w-10/12 flex-col rounded-md bg-white pt-11 px-2 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24"
-        >
-          <InputsHtextfield
-            v-model="item.name"
-            type="text"
-            name="name"
-            placeholder="Your name..."
-            class="dark:text-white"
-            placeholderStyle="text-HahuGray2"
-          >
-            <template v-slot:label
-              ><div
-                class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white"
-              >
+        <form @submit.prevent="submit" show="true"
+          class="flex pb-10 lg:pb-5 max-h-[915px] w-full sm:w-10/12 lg:w-full 3xl:w-10/12 flex-col rounded-md bg-white pt-11 px-2 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24">
+          <InputsHtextfield v-model="item.name" type="text" name="name" placeholder="Your name..."
+            class="dark:text-white" placeholderStyle="text-HahuGray2">
+            <template v-slot:label>
+              <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
                 Name
-              </div></template
-            >
+              </div>
+            </template>
           </InputsHtextfield>
-          <InputsHtextfield
-            v-model="item.phone"
-            type="text"
-            name="phone"
-            placeholder="09..."
-            placeholderStyle="text-HahuGray2"
-            class="dark:text-white"
-            ><template v-slot:label
-              ><div
-                class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white"
-              >
+          <InputsHtextfield v-model="item.phone" type="text" name="phone" placeholder="09..."
+            placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
+              <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
                 Phone Number
-              </div></template
-            ></InputsHtextfield
-          >
-          <InputsHtextfield
-            v-model="item.email"
-            type="text"
-            name="email"
-            placeholder="Your email..."
-            placeholderStyle="text-HahuGray2"
-            class="dark:text-white"
-            ><template v-slot:label
-              ><div
-                class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white"
-              >
+              </div>
+            </template></InputsHtextfield>
+          <InputsHtextfield v-model="item.email" type="text" name="email" placeholder="Your email..."
+            placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
+              <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
                 Email
-              </div></template
-            ></InputsHtextfield
-          >
-          <InputsHtextarea
-            type="text"
-            v-model="item.message"
-            placeholder="Your message..."
-            placeholderStyle="text-HahuGray1 dark:text-white"
-            label="Message"
+              </div>
+            </template></InputsHtextfield>
+          <InputsHtextarea type="text" v-model="item.message" placeholder="Your message..."
+            placeholderStyle="text-HahuGray1 dark:text-white" label="Message"
             labelClass="font-medium text-gray-800 text-lg leading-6 dark:text-white duration-500 ease-in mb-5"
-            name="message"
-            class="dark:text-white"
-          />
+            name="message" class="dark:text-white" />
 
-          <button
-            type="submit"
-            class="mt-9 w-full rounded-md bg-primary py-3 text-xl font-medium leading-7 text-whitePrimary"
-          >
+          <button type="submit"
+            class="mt-9 w-full rounded-md bg-primary py-3 text-xl font-medium leading-7 text-whitePrimary">
             Send
           </button>
         </form>
@@ -234,4 +176,5 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
   </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>

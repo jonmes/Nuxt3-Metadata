@@ -18,10 +18,10 @@ const carWidth = (windowWidth) => {
     itemsToShow.value = 1.5;
     showNav.value = true;
   } else if (windowWidth > 1280 && windowWidth < 1600) {
-    itemsToShow.value = 2;
+    itemsToShow.value = 2.5;
     showNav.value = true;
   } else if (windowWidth > 1600) {
-    itemsToShow.value = 2.5;
+    itemsToShow.value = 3;
     showNav.value = true;
   }
 };
@@ -66,72 +66,47 @@ onMounted(() => {
 </script>
 
 <template>
-  <carousel
-    :items-to-show="itemsToShow"
-    :wrap-around="true"
-    show="true"
-    class="lg:mx-5"
-  >
-    <slide
-      v-for="(slide, i) in props.cardSlider"
-      :key="slide"
-      show="true"
-      class="w-full lg:mx-10 2xl:mx-16 py-5"
-    >
-      <NuxtLink
-        :to="'/projects/' + slide.id"
-        class="mx-2 w-full hover:scale-105 rounded-2xl bg-white dark:bg-HahuGray1 duration-500 lg:mx-10 2xl:mx-16 border-2 border-transparent hover:border-primary"
-      >
-        <div class="w-full">
+  <carousel :items-to-show="itemsToShow" :wrap-around="true" show="true" class="lg:mx-5">
+    <slide v-for="(slide, i) in props.cardSlider" :key="slide" show="true" class="w-full lg:mx-10 2xl:mx-16 py-5">
+      <NuxtLink :to="'/projects/' + slide.id"
+        class="mx-2 w-full hover:scale-[1.01] rounded-2xl bg-white dark:bg-HahuGray1 duration-300 lg:mx-10 xl:mx-8 3xl:mx-16 border-2 border-transparent hover:border-primary hover:shadow-lg">
+        <div class="w-full group">
           <div class="mb-7 aspect-w-4 aspect-h-2">
             <img class="object-cover rounded-t-2xl" :src="slide.thumbnail" />
           </div>
 
-          <div class="flex flex-col px-4 sm:px-12">
+          <div class="flex flex-col px-4 sm:px-6 xl:px-8 3xl:px-12">
             <h1 class="self-start text-xl font-black leading-6 text-primary">
               {{ slide.title }}
             </h1>
-            <p
-              class="mt-5 text-left text-sm lg:text-lg font-light leading-[30px] dark:text-HahuGray3"
-            >
+            <p class="mt-5 text-left text-sm lg:text-lg font-light leading-[30px] dark:text-HahuGray3 line-clamp-7">
               {{ slide.text }}
             </p>
 
             <div class="mt-4 mb-9 flex">
               <div class="mr-4 flex flex-col">
-                <h2
-                  class="self-start text-xl font-black leading-[30px] dark:text-white"
-                >
+                <h2 class="self-start text-xl font-black leading-[30px] dark:text-white">
                   Client
                 </h2>
                 <img class="mt-10" src="/images/projectC1.png" />
               </div>
-              <div class="mt-16 rounded-full border-2 border-HahuGray3" />
+              <div
+                class="mt-16 rounded-full border-2 border-HahuGray3 bg-HahuGray3 group-hover:border-primary group-hover:bg-primary duration-500" />
               <div class="ml-6 flex flex-col">
-                <h2
-                  class="self-start text-xl font-black leading-[30px] dark:text-white"
-                >
+                <h2 class="self-start text-xl font-black leading-[30px] dark:text-white">
                   Partners
                 </h2>
                 <div class="mt-10 grid grid-cols-2 gap-x-6 gap-y-5">
-                  <img
-                    v-for="img in slide.partner"
-                    class="object-contain"
-                    :src="img"
-                  />
+                  <img v-for="img in slide.partner" class="object-contain" :src="img" />
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="mr-12 mb-8 flex justify-end">
-          <button
-            class="group flex items-center text-lg font-semibold leading-7 text-primary"
-          >
+          <button class="group flex items-center text-lg font-semibold leading-7 text-primary">
             Explore More
-            <ArrowNarrowRightIcon
-              class="ml-2 h-5 w-5 text-primary duration-300 group-hover:translate-x-2"
-            />
+            <ArrowNarrowRightIcon class="ml-2 h-5 w-5 text-primary duration-300 group-hover:translate-x-2" />
             <!-- <div class="mr-[46px]"></div> -->
           </button>
         </div>
