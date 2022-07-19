@@ -95,23 +95,24 @@ onBeforeUnmount(() => {
       <div show="true" ref="target"
         class="flex max-w-[560px] lg:opacity-0 lg:-translate-x-40 lg:duration-700 flex-col rounded-b-[15px] bg-white dark:bg-HahuGray1 hover:scale-[1.01] active:scale-100 border-2 border-transparent hover:border-primary hover:shadow-xl"
         :class="`delay-${delay[i]}`" v-for="(blog, i) in blogs" :key="i">
-        <div>
-          <img class="object-cover" :src="blog.img" alt="blog Image" />
-        </div>
-        <h1
-          class="mt-6 ml-8 self-start rounded-[36px] bg-primary-lite px-3 py-[5px] text-xs font-medium leading-[18px] text-primary-dark">
-          {{ blog.catg }}
-        </h1>
-        <h4 class="mt-4 ml-8 text-base font-medium leading-6">
-          {{ blog.date }}
-        </h4>
-        <p class="mt-4 ml-8 pr-[24px] text-xl font-bold leading-[38px] dark:text-HahuGray/4 xl:text-2xl">
-          {{ blog.title }}
-        </p>
-        <NuxtLink :to="'/blogs/' + blog.id"
-          class="group mt-[34px] ml-8 mb-[30px] flex items-center self-start text-lg font-medium text-primary">
-          Read Post
-          <ArrowNarrowRightIcon class="ml-[9px] w-[18px] text-primary duration-200 group-hover:translate-x-1" />
+        <NuxtLink :to="'/blogs/' + blog.id" class="flex flex-col">
+          <div>
+            <img class="object-cover" :src="blog.img" alt="blog Image" />
+          </div>
+          <h1
+            class="mt-6 ml-8 self-start rounded-[36px] bg-primary-lite px-3 py-[5px] text-xs font-medium leading-[18px] text-primary-dark">
+            {{ blog.catg }}
+          </h1>
+          <h4 class="mt-4 ml-8 text-base font-medium leading-6">
+            {{ blog.date }}
+          </h4>
+          <p class="mt-4 ml-8 pr-[24px] text-xl font-bold leading-[38px] dark:text-HahuGray/4 xl:text-2xl">
+            {{ blog.title }}
+          </p>
+          <button class="group mt-[34px] ml-8 mb-[30px] flex items-center self-start text-lg font-medium text-primary">
+            Read Post
+            <ArrowNarrowRightIcon class="ml-[9px] w-[18px] text-primary duration-200 group-hover:translate-x-1" />
+          </button>
         </NuxtLink>
       </div>
     </div>

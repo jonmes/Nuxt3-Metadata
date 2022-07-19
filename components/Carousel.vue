@@ -21,7 +21,7 @@ const carWidth = (windowWidth) => {
     itemsToShow.value = 2.5;
     showNav.value = true;
   } else if (windowWidth > 1600) {
-    itemsToShow.value = 3;
+    itemsToShow.value = 2.5;
     showNav.value = true;
   }
 };
