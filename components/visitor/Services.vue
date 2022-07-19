@@ -53,7 +53,7 @@ onBeforeUnmount(() => {
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
           to="https://hahu.jobs/">
-          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75">
+          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
               <img :src="readmore" class="mr-[13px]" /> Read More
@@ -84,7 +84,7 @@ onBeforeUnmount(() => {
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
           to="/HahuEnterprise">
-          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75">
+          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
               <img :src="readmore" class="mr-[13px]" /> Read More
@@ -112,7 +112,7 @@ onBeforeUnmount(() => {
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
           to="/HahuIndustry">
-          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75">
+          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
               <img :src="readmore" class="mr-[13px]" /> Read More
@@ -141,7 +141,7 @@ onBeforeUnmount(() => {
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
           to="/HahuTvet">
-          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75">
+          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
               <img :src="readmore" class="mr-[13px]" /> Read More
@@ -172,7 +172,7 @@ onBeforeUnmount(() => {
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
           to="/HahuUniversity">
-          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75">
+          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
               <img :src="readmore" class="mr-[13px]" /> Read More
@@ -203,7 +203,7 @@ onBeforeUnmount(() => {
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
           to="/HahuMuya">
-          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75">
+          <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
               <img :src="readmore" class="mr-[13px]" /> Read More

@@ -43,19 +43,20 @@ onMounted(() => {
     <MenuAlt3Icon @click="open = !open" class="w-8 z-20 cursor-pointer items-center dark:text-white lg:hidden" />
 
     <ul
-      class="absolute top-14 right-0 w-full space-y-7 bg-secondary-4 pb-10 duration-700 ease-in dark:bg-gray-700 dark:text-HahuGray/4 lg:static lg:flex lg:w-auto lg:items-center lg:space-x-9 lg:space-y-0 lg:bg-transparent lg:pb-0 dark:lg:bg-transparent"
+      class="absolute top-14 right-0 w-full gap-y-7 bg-secondary-4 pb-10 duration-700 ease-in dark:bg-gray-700 dark:text-HahuGray/4 lg:static lg:flex lg:w-auto lg:items-center lg:gap-x-9 lg:gap-y-0 lg:bg-transparent lg:pb-0 dark:lg:bg-transparent"
       :class="[open ? 'z-0' : 'top-[-800%]']">
       <li class="flex justify-center">
-        <NuxtLink to="/" class="text-lg font-medium leading-[35px] duration-500 hover:text-primary" :class="
-          $route.fullPath == '' || $route.fullPath.length <= 1
-            ? 'text-primary'
-            : 'text-HahuGray1 dark:text-white'
-        " @click="open = !open">Home</NuxtLink>
+        <NuxtLink to="/"
+          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary dark:hover:text-primary" :class="
+            $route.fullPath == '' || $route.fullPath.length <= 1
+              ? 'text-primary'
+              : 'text-HahuGray1 dark:text-white '
+          " @click="open = !open">Home</NuxtLink>
       </li>
 
       <li class="flex justify-center">
         <NuxtLink :to="{ path: '/', hash: '#about' }"
-          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary" :class="
+          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary dark:hover:text-primary" :class="
             $route.fullPath == '/#about' || $route.fullPath == '/aboutus'
               ? 'text-primary'
               : 'text-HahuGray1 dark:text-white'
@@ -64,7 +65,7 @@ onMounted(() => {
 
       <li class="flex justify-center">
         <NuxtLink :to="{ path: '/', hash: '#services' }"
-          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary" :class="
+          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary dark:hover:text-primary" :class="
             $route.fullPath == '/#services'
               ? 'text-primary'
               : 'text-HahuGray1 dark:text-white'
@@ -73,7 +74,7 @@ onMounted(() => {
 
       <li class="flex justify-center">
         <NuxtLink :to="{ path: '/', hash: '#projects' }"
-          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary" :class="
+          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary dark:hover:text-primary" :class="
             $route.fullPath == '/#projects' || $route.fullPath == '/projects'
               ? 'text-primary'
               : 'text-HahuGray1 dark:text-white'
@@ -82,7 +83,7 @@ onMounted(() => {
 
       <li class="flex justify-center">
         <NuxtLink :to="{ path: '/', hash: '#blog' }"
-          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary" :class="
+          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary dark:hover:text-primary" :class="
             $route.fullPath == '/#blog' || $route.fullPath == '/blogs'
               ? 'text-primary'
               : 'text-HahuGray1 dark:text-white'
@@ -91,7 +92,7 @@ onMounted(() => {
 
       <li class="flex justify-center">
         <NuxtLink :to="{ path: '/', hash: '#report' }"
-          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary" :class="
+          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary dark:hover:text-primary" :class="
             $route.fullPath == '/#report' || $route.fullPath == '/reports'
               ? 'text-primary'
               : 'text-HahuGray1 dark:text-white'
@@ -100,7 +101,7 @@ onMounted(() => {
 
       <li class="flex justify-center">
         <NuxtLink :to="{ path: '/', hash: '#team' }"
-          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary" :class="
+          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary dark:hover:text-primary" :class="
             $route.fullPath == '/#team'
               ? 'text-primary'
               : 'text-HahuGray1 dark:text-white'
@@ -109,14 +110,15 @@ onMounted(() => {
 
       <li class="flex justify-center">
         <NuxtLink :to="{ path: '/', hash: '#contact' }"
-          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary" :class="
+          class="text-lg font-medium leading-[35px] duration-500 hover:text-primary dark:hover:text-primary" :class="
             $route.fullPath == '/#contact'
               ? 'text-primary'
               : 'text-HahuGray1 dark:text-white'
           " @click="open = !open">Contact</NuxtLink>
       </li>
       <li class="flex justify-center">
-        <button class="mt-1 flex text-lg text-HahuGray1 font-medium leading-[35px] dark:text-white"
+        <button
+          class="mt-1 flex text-lg text-HahuGray1 font-medium leading-[35px] dark:text-white dark:hover:text-primary"
           @click="open = !open">
           Eng <img :src="dropdown" class="ml-[15px] self-center" />
         </button>
