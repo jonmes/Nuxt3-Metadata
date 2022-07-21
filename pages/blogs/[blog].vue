@@ -6,7 +6,7 @@ const blog = ref(router.params.blog);
 
 <template>
   <div>
-    <NuxtLink to="/blogs">{{$t("backtoblogs")}}</NuxtLink>
+    <NuxtLink to="/blogs">{{ $t("backtoblogs") }}</NuxtLink>
     <h1>{{ $t("blog") }} {{ blog }}</h1>
   </div>
 </template>

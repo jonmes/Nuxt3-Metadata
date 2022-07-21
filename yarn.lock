@@ -4208,6 +4208,13 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
+vee-validate@^4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.6.2.tgz#b6e02f3d565bd09968b67fa87d485f880cb987e2"
+  integrity sha512-DOOQn3lLgDQXuLogEaiv0WfaW7lNydODdmtB/RjkodioaJ1hjlwoM0zdsIGzMW/t35p04GdZfWM4UCd0gfTiLg==
+  dependencies:
+    "@vue/devtools-api" "^6.1.4"
+
 vite-node@^0.18.1:
   version "0.18.1"
   resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-0.18.1.tgz#f25e721ece6105de13004723e9bb6f5cd81674c5"

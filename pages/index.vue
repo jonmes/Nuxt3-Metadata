@@ -3,6 +3,7 @@ const title = "Index Page";
 
 // const videoId = "rRVlWEwmbfQ";
 const videoId = "";
+const item = ref({})
 </script>
 
 <template>
@@ -74,6 +75,42 @@ const videoId = "";
         <source src="https://stream.mux.com/F9cP5Xgdcp7028hN4gQrOmlF62ZDHNloCTQQao8Pk00kk/medium.mp4"
           type="video/mp4" />
       </video>
+
+      <form @submit.prevent="submit" show="true"
+        class="flex pb-10 lg:pb-5 max-h-[915px] w-full sm:w-10/12 lg:w-full 3xl:w-10/12 flex-col rounded-md bg-white pt-11 px-2 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24">
+        <H-text-field v-model="item.name" type="text" name="name" placeholder="Your name..." class="dark:text-white"
+          placeholderStyle="text-HahuGray2">
+          <template v-slot:label>
+            <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
+              Name
+            </div>
+          </template>
+        </H-text-field>
+        <H-text-field v-model="item.phone" type="text" name="phone" placeholder="09..."
+          placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
+            <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
+              Phone Number
+            </div>
+          </template></H-text-field>
+        <H-text-field v-model="item.email" type="text" name="email" placeholder="Your email..."
+          placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
+            <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
+              Email
+            </div>
+          </template></H-text-field>
+        <H-text-area type="text" v-model="item.message" placeholder="Your message..."
+          placeholderStyle="text-HahuGray1 dark:text-white" label="Message"
+          labelClass="font-medium text-gray-800 text-lg leading-6 dark:text-white duration-500 ease-in mb-5"
+          name="message" class="dark:text-white" />
+
+        <button type="submit"
+          class="mt-9 w-full rounded-md bg-primary py-3 text-xl font-medium leading-7 text-whitePrimary">
+          Send
+        </button>
+      </form>
+
+
+
     </div>
   </div>
 </template>
