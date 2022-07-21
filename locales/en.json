@@ -1,4 +1,9 @@
 {
   "hello": "Hello",
-  "index": "Root Index page"
+  "index": "Root Index page",
+  "backtohome": "Go to Home",
+  "blogspage": "Blogs Page",
+  "gotoblog": "Go to Blog",
+  "blog": "Blog",
+  "backtoblogs": "Back to Blogs" 
 }

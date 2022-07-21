@@ -62,8 +62,14 @@ const videoId = "";
       </div>
     </Head>
     <div class="flex">
+      <div>
+        <select v-model="$i18n.locale">
+          <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}
+          </option>
+        </select>
+      </div>
       <h1>{{ $t("hello") }}</h1>
-      <NuxtLink to="/blogs"> Go to Blogs </NuxtLink>
+      <NuxtLink to="/blogs"> {{ $t("blogspage") }} </NuxtLink>
       <video id="my-player" controls style="width: 100%; max-width: 500px">
         <source src="https://stream.mux.com/F9cP5Xgdcp7028hN4gQrOmlF62ZDHNloCTQQao8Pk00kk/medium.mp4"
           type="video/mp4" />
