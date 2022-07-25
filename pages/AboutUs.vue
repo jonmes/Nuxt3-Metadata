@@ -59,9 +59,9 @@ const team = [
 
       <div class="flex flex-col-reverse xl:flex-row-reverse xl:justify-between">
         <div class="flex xl:flex-1 lg:w-[50vw] xl:w-6/12 justify-end">
-          <img class="object-contain block dark:hidden xl:w-10/12 3xl:w-auto" src="/images/Hahu_core_light.png"
+          <img class="object-contain block dark:hidden xl:w-10/12 3xl:w-9/12" src="/images/Hahu_core_light.png"
             alt="hahuCore" />
-          <img class="object-contain hidden dark:block xl:w-10/12 3xl:w-auto" src="/images/Hahu_core_dark.png"
+          <img class="object-contain hidden dark:block xl:w-10/12 3xl:w-9/12" src="/images/Hahu_core_dark.png"
             alt="hahuCore" />
         </div>
 
