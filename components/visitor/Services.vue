@@ -98,11 +98,10 @@ onBeforeUnmount(() => {
         </h2>
         <p
           class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray3 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
-          Provides human resources and related services starting from job
-          vacancy announcements, recruitment, all the way to human resources
-          management until termination. This deployment also offers unique
-          services to a category of businesses that operate within industry
-          parks, in addition to Addis Ababa based foreign employment agencies.
+          Provides human resources and related services starting from job vacancy announcements, and recruitment, all
+          the way to human resources management until termination. This deployment also offers unique services to a
+          category of businesses that operate within industrial parks, in addition to Addis Ababa-based foreign
+          employment agencies.
         </p>
         <hr class="bg-primary mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
       </div>
@@ -126,12 +125,10 @@ onBeforeUnmount(() => {
         </h1>
         <p
           class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray3 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
-          With biometric based identification to both register workers and job
-          seekers. The process begins with mass registration of employment
-          seekers to build a digital pool of job seekers from which they are
-          allocated for labor demands from factories with in the industry parks.
-          It logs the recruitment status of allocated jobseekers and indexes
-          transaction data for analytics.
+          With biometric-based identification to both register workers and job seekers. The process begins with mass
+          registration of employment seekers to build a digital pool of job seekers from which they are allocated for
+          labor demands from factories within the industrial parks. It logs the recruitment status of allocated
+          jobseekers and indexes transaction data for analytics.
         </p>
         <hr class="bg-primary mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
       </div>
@@ -155,13 +152,11 @@ onBeforeUnmount(() => {
         </h1>
         <p
           class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray/4 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
-          HaHuJobs TVET is a targeted service deployment to trace skill-based
-          education graduates and content encoding service offered for TVET
-          institutes intended for both formal as well as career guiding lesson
-          materials. The platform aims to capacitate deliverlogy departments of
-          both private and government TVET institutes for digitized graduate
-          tracing and supporting TVET trainers to provide curricular as well as
-          non-structured digital learning materially.
+          HaHuJobs TVET is a targeted service deployment to trace skill-based education graduates and content-encoding
+          service offered for TVET institutes intended for both formal as well as career guiding lesson materials. The
+          platform aims to capacitate delivery departments of both private and government TVET institutes for digitized
+          graduate tracing and supporting TVET trainers to provide curricular as well as non-structured digital learning
+          materially.
         </p>
 
         <hr class="bg-primary mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
@@ -186,14 +181,11 @@ onBeforeUnmount(() => {
         </h1>
         <p
           class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray/4 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
-          HaHuJobs university is a deployment intended to serve the needs of
-          deliver ology departments, offer alternative digital contend
-          disbursement for instructors and tracing graduates of Ethiopian
-          universities that are subscribers of these services. The service
-          offers a reporting and visualization for all its service components
-          cospeciating higher education institute with a well compiled data to
-          acquire relevant insights regarding the labor market and competence
-          requirements.
+          HaHuJobs university is a deployment intended to serve the needs of deliverology departments, offer alternative
+          digital contend disbursement for instructors, and trace graduates of Ethiopian universities that are
+          subscribers of these services. The service offers a reporting and visualization for all its service components
+          cospeciation higher education institutes with well-compiled data to acquire relevant insights regarding the
+          labor market and competence requirements.
         </p>
         <hr class="bg-primary mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
       </div>
@@ -217,13 +209,11 @@ onBeforeUnmount(() => {
         </h1>
         <p
           class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray/4 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
-          HaHuJobs Muya is capacity building and training platform intended for
-          both jobseeker and students’ which sources various digital contents
-          from training institutes in both document and multimedia formats. It
-          offers users a digitally enabled environment to consume both formal
-          and non-formal training material sourced from instructors with in the
-          local context. Resources can be offered in both targeted or public
-          access formats depending on the choice of the contributor.
+          HaHuJobs Muya is a capacity-building and training platform intended for both jobseeker and students’ which
+          sources various digital contents from training institutes in both document and multimedia formats. It offers
+          users a digitally enabled environment to consume both formal and non-formal training material sourced from
+          instructors within the local context. Resources can be offered in targeted or public access formats depending
+          on the contributor's choice.
         </p>
         <hr class="bg-primary mb-5 mt-7 w-10/12 rounded-full border-2 border-primary" />
       </div>
