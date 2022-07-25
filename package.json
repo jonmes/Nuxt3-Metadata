@@ -12,6 +12,8 @@
     "vue-i18n": "^9.1.10"
   },
   "dependencies": {
+    "@vee-validate/i18n": "^4.6.2",
+    "petite-vue-i18n": "^9.2.0-beta.39",
     "vee-validate": "^4.6.2"
   }
 }

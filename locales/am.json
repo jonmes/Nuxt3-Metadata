@@ -5,5 +5,12 @@
   "blogspage": "ጦማር ገፅ",
   "gotoblog": "ወደ ጦማር",
   "blog": "ጦማር",
-  "backtoblogs": "ወደ ጦማር ተመለስ"
+  "backtoblogs": "ወደ ጦማር ተመለስ",
+  "field_required": "ይህ መስክ አልተሞላም",
+  "must_be_number": "እባክዎን ቁጥር ብቻ ያስገቡ",
+  "name": "ስም",
+  "phone_number": "ስልክ ቁጥር",
+  "email": "ኢሜይል",
+  "send": "ላክ",
+  "message": "መልዕክት"
 }

@@ -5,5 +5,12 @@
   "blogspage": "Blogs Page",
   "gotoblog": "Go to Blog",
   "blog": "Blog",
-  "backtoblogs": "Back to Blogs"
+  "backtoblogs": "Back to Blogs",
+  "field_required": "This filed is required from en",
+  "must_be_number": "This field must be number",
+  "name": "Name",
+  "phone_number": "Phone",
+  "email": "Email",
+  "send": "Send",
+  "message": "Message"
 }
