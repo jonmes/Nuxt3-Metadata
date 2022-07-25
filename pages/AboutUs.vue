@@ -4,11 +4,15 @@ import {
   ArrowNarrowLeftIcon,
 } from "@heroicons/vue/solid/index.js";
 
-import LinkedIn from "@/assets/svg/LinkedInFooter.svg?url"
-import Twitter from "@/assets/svg/Twitterfooter.svg?url"
-import Github from "@/assets/svg/GithubFooter.svg?url"
+import Twitter from "@/assets/svg/Tech_twitter.svg?url"
+import LinkedIn from "@/assets/svg/Tech_linkedin.svg?url"
+import Github from "@/assets/svg/Tech_github.svg?url"
+import FounderTwitter from '@/assets/svg/Founder_twitter.svg?url'
+import FounderLinkedIn from '@/assets/svg/Founder_linkedIn.svg?url'
+import FounderTelegram from '@/assets/svg/Founder_telegram.svg?url'
 
 const crumb = [{ id: 1, name: "About Us", link: "", current: true }];
+
 
 const team = [
   {
@@ -54,9 +58,11 @@ const team = [
       </h2>
 
       <div class="flex flex-col-reverse xl:flex-row-reverse xl:justify-between">
-        <div class="flex xl:flex-1 lg:w-[50vw] xl:pl-20 justify-end">
-          <img class="object-contain block dark:hidden" src="/images/Hahu_core_light.png" alt="hahuCore" />
-          <img class="object-contain hidden dark:block" src="/images/Hahu_core_dark.png" alt="hahuCore" />
+        <div class="flex xl:flex-1 lg:w-[50vw] xl:w-6/12 justify-end">
+          <img class="object-contain block dark:hidden xl:w-10/12 3xl:w-auto" src="/images/Hahu_core_light.png"
+            alt="hahuCore" />
+          <img class="object-contain hidden dark:block xl:w-10/12 3xl:w-auto" src="/images/Hahu_core_dark.png"
+            alt="hahuCore" />
         </div>
 
         <p class="mt-12 flex-1 text-base text-justify font-normal leading-7 dark:text-HahuGray/4 3xl:text-lg">
@@ -122,12 +128,23 @@ const team = [
             CTO/CO-Founder
           </h2>
           <p
-            class="mt-10 mb-8 px-2 text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7 text-justify">
+            class="mt-10 mb-8 px-2 text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7 text-center">
             A full stack developer specializing in front end implementation and
             architecture design. With over nine years of working experience
             Michael leads all the technology advances of all HaHuJobs product
             deployments.
           </p>
+          <div class="flex gap-5 mb-5">
+            <button>
+              <img :src="FounderTwitter" alt="twitterIcon" class="hover:brightness-50 hover:invert" />
+            </button>
+            <button>
+              <img :src="FounderLinkedIn" alt="LinkedIn" class="hover:brightness-50 hover:invert" />
+            </button>
+            <button>
+              <img :src="FounderTelegram" alt="Github" class="hover:brightness-50 hover:invert" />
+            </button>
+          </div>
         </div>
 
         <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
@@ -139,12 +156,24 @@ const team = [
           <h2 class="leading[30px] mt-[10px] text-base font-medium text-HahuGray/4 md:text-lg">
             CEO/CO-Founder
           </h2>
-          <p class="mt-10 mb-8 px-2 text-left text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7">
+          <p
+            class="mt-10 mb-8 px-2 text-center text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7">
             A system analyst and solutions architect with active involvement in
             system designs, incepting real world application of service
             components and managing stakeholder communications Kaleab leads the
             overall operation of HaHuJobs.
           </p>
+          <div class="flex gap-5 mb-5">
+            <button>
+              <img :src="FounderTwitter" alt="twitterIcon" class="hover:brightness-50 hover:invert" />
+            </button>
+            <button>
+              <img :src="FounderLinkedIn" alt="LinkedIn" class="hover:brightness-50 hover:invert" />
+            </button>
+            <button>
+              <img :src="FounderTelegram" alt="Github" class="hover:brightness-50 hover:invert" />
+            </button>
+          </div>
         </div>
 
         <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
@@ -156,12 +185,24 @@ const team = [
           <h2 class="leading[30px] mt-[10px] text-base font-medium text-HahuGray/4 md:text-lg">
             CBO/CO-Founder
           </h2>
-          <p class="mt-10 mb-8 px-2 text-left text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7">
+          <p
+            class="mt-10 mb-8 px-2 text-center text-base font-medium leading-[30px] text-HahuGray/4 md:text-lg xl:px-7">
             Innovation manager by training and with over eleven years of
             experience, Eskinder is involved in business and project
             development, specifically in developing concepts and proposals as
             well as securing funding for HaHuJobs.
           </p>
+          <div class="flex gap-5 mb-5">
+            <button>
+              <img :src="FounderTwitter" alt="twitterIcon" class="hover:brightness-50 hover:invert" />
+            </button>
+            <button>
+              <img :src="FounderLinkedIn" alt="LinkedIn" class="hover:brightness-50 hover:invert" />
+            </button>
+            <button>
+              <img :src="FounderTelegram" alt="Github" class="hover:brightness-50 hover:invert" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -175,28 +216,28 @@ const team = [
 background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); -->
       <div class="mt-32 grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 gap-x-10 gap-y-20 justify-items-center">
         <div
-          class="flex flex-col items-center rounded-[15px] bg-[#caf0f8] dark:bg-LightDark xl:last:col-span-3 2xl:last:col-span-1 2xl:last:max-w-none xl:last:max-w-[25vw]"
+          class="flex flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark xl:last:col-span-3 2xl:last:col-span-1 2xl:last:max-w-none xl:last:max-w-[25vw]"
           v-for="t in team">
           <img class="self-center rounded-full object-contain mt-3" src="/images/About_avatar.png" alt="advisor" />
           <h1 class="text-lg font-semibold leading-[30px] text-primary ">
             {{ t.name }}
           </h1>
-          <h2 class="leading[30px] mt-2 text-base font-medium text-HahuGray/4 md:text-lg text-primary-lite">
+          <h2 class="leading[30px] mt-2 text-base font-medium text-HahuGray/4 md:text-lg">
             {{ t.position }}
           </h2>
           <p
-            class="mt-6 mb-8 px-2 text-justify text-base font-medium leading-7  text-HahuGray2 md:text-lg xl:px-4 line-clamp-8 hover:line-clamp-none">
+            class="mt-6 mb-8 px-2 text-center text-base font-medium leading-7  text-white md:text-lg xl:px-4 line-clamp-8 hover:line-clamp-none">
             {{ t.plot }}
           </p>
           <div class="flex gap-5 mb-5">
             <button>
-              <img :src="Twitter" alt="twitterIcon" />
+              <img :src="Twitter" class="hover:brightness-0 hover:invert" alt="twitterIcon" />
             </button>
             <button>
-              <img :src="LinkedIn" alt="LinkedIn" />
+              <img :src="LinkedIn" alt="LinkedIn" class="hover:brightness-0 hover:invert" />
             </button>
             <button>
-              <img class="opacity-50" :src="Github" alt="Github" />
+              <img :src="Github" alt="Github" class="hover:brightness-0 hover:invert" />
             </button>
           </div>
         </div>

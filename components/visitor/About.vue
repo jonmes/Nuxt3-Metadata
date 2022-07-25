@@ -54,7 +54,7 @@ onBeforeUnmount(() => {
       </div>
       <div class="flex flex-col items-center lg:mt-10 xl:flex-row overflow-hidden">
         <div ref="target" show="true"
-          class="lg:translate-x-10 lg:opacity-0 flex overflow-hidden duration-1000 lg:w-6/12 2xl:w-6/12 lg:px-7 justify-start">
+          class="lg:translate-x-10 lg:opacity-0 flex overflow-hidden duration-1000 lg:w-6/12 2xl:w-6/12 lg:px-7 xl:pr-28 justify-start">
           <img show="true" class="object-contain dark:hidden" alt="hahu core" src="/images/Hahu_core_light.png" />
           <img show="true" class="object-contain hidden dark:block" alt="hahu core" src="/images/Hahu_core_dark.png" />
         </div>
