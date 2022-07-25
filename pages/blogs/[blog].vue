@@ -225,7 +225,7 @@ const copyLinkFunc = () => {
         >
           {{ filteredBlog.p1 }}
         </p>
-        <img class="mt-10 md:mt-[90px] rounded-2xl" :src="filteredBlog.img" />
+        <img class="mt-10 md:mt-[90px] rounded-2xl" :src="filteredBlog.img" alt="blogImg"/>
         <p
           v-if="filteredBlog.p2"
           class="mt-10 text-base font-normal leading-[30px] text-HahuGray1 dark:text-HahuGray/4 md:mt-[90px] md:text-lg"
@@ -239,7 +239,7 @@ const copyLinkFunc = () => {
             @click="copyLinkFunc()"
           >
             <input class="hidden" id="myLink" v-model="copyLinkInp" />
-            <img class="object-contain pl-4" :src="CopyLink" />
+            <img class="object-contain pl-4" :src="CopyLink" alt="copyLink"/>
             <span class="py-2 pr-4 pl-[7px]">Copy Link</span>
           </button>
           <div class="flex gap-2">
@@ -248,24 +248,24 @@ const copyLinkFunc = () => {
               target="_blank"
               class="share-popup rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
             >
-              <img class="object-contain px-[13px] py-[9px]" :src="Facebook" />
+              <img class="object-contain px-[13px] py-[9px]" :src="Facebook" alt="facebook"/>
             </a>
             <button
               class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
             >
-              <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
+              <img class="object-contain px-[13px] py-[9px]" :src="Insta" alt="instagram"/>
             </button>
             <a
               :href="`http://twitter.com/share?text=${filteredBlog.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
               class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
             >
-              <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
+              <img class="object-contain px-[13px] py-[9px]" :src="Twitter" alt="twitter"/>
             </a>
             <a
               :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&text=${filteredBlog.title}`"
               class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
             >
-              <img class="object-contain px-[13px] py-[9px]" :src="Telegram" />
+              <img class="object-contain px-[13px] py-[9px]" :src="Telegram" alt="telegram"/>
             </a>
           </div>
         </div>

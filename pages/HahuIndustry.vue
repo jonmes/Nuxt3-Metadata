@@ -2,12 +2,12 @@
   <div class="min-h-screen overflow-y-auto px-8 md:px-[50px] xl:px-[100px]">
     <section class="flex flex-col items-center lg:pb-20 lg:min-h-screen lg:flex-row xl:space-x-[89px]" id="home">
       <div class="mt-20 flex-1 xl:mt-0">
-        <img class="object-contain" src="/images/HahuEnter_amharic.png" />
+        <img class="object-contain" src="/images/HahuEnter_amharic.png" alt="hahujobsImg" />
         <h1 class="items-center text-[50px] font-black leading-[50px] dark:text-HahuGray/4">
           HaHu Industry park
         </h1>
         <div class="lg:hidden mt-10 lg:mt-0 flex-shrink max-w-[70vw]">
-          <img class="object-contain" src="/images/industryPark.png" />
+          <img class="object-contain" src="/images/industryPark.png" alt="industryPark" />
         </div>
         <p class="mt-10 items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4">
           The platform uses biometric based identification to both register
@@ -23,7 +23,7 @@
         </button>
       </div>
       <div class="hidden lg:block flex-1 flex-shrink-0 mt-10 xs:mt-0">
-        <img class="object-fit w-auto 4xl:min-w-[960px]" src="/images/industryPark.png" />
+        <img class="object-fit w-auto 4xl:min-w-[960px]" src="/images/industryPark.png" alt="industryPark" />
       </div>
     </section>
 
@@ -50,7 +50,7 @@
           class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:bg-HahuGray1 dark:lg:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[300px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]">
           <img
             class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-10 dark:xl:invert xl:grayscale xl:group-hover:grayscale-0 duration-700"
-            src="/images/mastercard_colored.png" />
+            src="/images/mastercard_colored.png" alt="masterCard" />
           <hr
             class="my-4 w-10/12 border-b-[1px] border-black dark:border-white opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20" />
           <p
@@ -67,34 +67,30 @@
           class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-700 hover:bg-white dark:bg-HahuGray1 dark:lg:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[300px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]">
           <img
             class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert  xl:grayscale xl:group-hover:grayscale-0 duration-300"
-            src="/images/first_consult_colored.png" />
+            src="/images/first_consult_colored.png" alt="firstConsult" />
           <hr
             class="my-4 w-10/12 border-b-[1px] border-black dark:border-white opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20" />
           <p
             class="mb-5 w-10/12 text-center text-sm font-normal leading-5 duration-500 md:invisible group-hover:md:visible">
-            The Mastercard Foundation’s new strategy, Young Africa Works,
-            outlines how, over the next decade, the organization will focus on
-            finding solutions to the youth employment challenge and reducing
-            poverty in African institute profiles, as part of this initiative in
-            Ethiopia Master card is funding the BRIDGES program implemented by
-            First Consult PLC.
+            First Consult PLC is an Ethiopian based consultation implementing a five-year initiative called BRISGES, to
+            support the creation of close to 600,000 jobs for young people (80% women) and 15,000 micro, small, and
+            medium enterprises (MSMEs). Furthermore, the program will train 300,000 unemployed youth through industrial
+            park job creation initiatives, and market linkage between industrial parks and MSMEs.
           </p>
         </div>
         <div
           class="transition-newtransition group dark:text-white flex h-full w-auto flex-col items-center overflow-hidden rounded-2xl shadow-full duration-500 hover:bg-white dark:bg-HahuGray1 dark:lg:hover:bg-HahuGray1 hover:shadow-full sm:w-9/12 md:h-40 md:shadow-none hover:md:h-[300px] lg:w-auto hover:lg:h-[400px] hover:3xl:h-[310px]">
           <img
             class="mt-5 object-contain transition dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:grayscale xl:group-hover:grayscale-0 duration-700"
-            src="/images/minab_colorized.png" />
+            src="/images/minab_colorized.png" alt="EIC" />
           <hr
             class="my-4 w-10/12 border-b-[1px] border-black dark:border-white opacity-20 duration-500 md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-20" />
           <p
             class="mb-5 w-10/12 text-center text-sm font-normal leading-5 duration-500 md:invisible group-hover:md:visible">
-            The Mastercard Foundation’s new strategy, Young Africa Works,
-            outlines how, over the next decade, the organization will focus on
-            finding solutions to the youth employment challenge and reducing
-            poverty in African institute profiles, as part of this initiative in
-            Ethiopia Master card is funding the BRIDGES program implemented by
-            First Consult PLC.
+            Ethiopian Investment commission is the lead coordinator of this Industry park LMIS intervention in
+            supervising the development of the IP labour database and manage its data collection and aggregation of
+            information from all participating industrial parks. The EIC will also work to ensure proper buy-in and
+            utilization of the database by stakeholders and investors.
           </p>
         </div>
       </div>
@@ -121,7 +117,7 @@
           class="group flex h-full max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white shadow-full duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/InduRegistration.png" />
+            <img class="object-contain" src="/images/InduRegistration.png" alt="registration" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
@@ -142,7 +138,7 @@
           class="group flex h-full max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white shadow-full duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/InduAllocation.png" />
+            <img class="object-contain" src="/images/InduAllocation.png" alt="allocation" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
@@ -161,7 +157,7 @@
           class="group flex h-full max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white shadow-full duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/InduReport.png" />
+            <img class="object-contain" src="/images/InduReport.png" alt="report" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">

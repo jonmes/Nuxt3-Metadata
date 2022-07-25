@@ -49,7 +49,7 @@ onBeforeUnmount(() => {
     </div>
     <div class="flex flex-col 2xl:flex-row">
       <div ref="target" class="flex flex-1 overflow-hidden lg:duration-1000 lg:translate-y-20">
-        <img show="true" class="object-contain" src="/images/robo_analysis-01.png" />
+        <img show="true" class="object-contain" src="/images/robo_analysis-01.png" alt="reportRobotImage"/>
       </div>
       <article class="flex-1 2xl:mt-48 2xl:ml-24">
         <p show="true" ref="target"

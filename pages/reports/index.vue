@@ -155,80 +155,28 @@ const forMeta = (i) => {
 </script>
 <template>
   <div class="min-h-screen">
+
     <Head>
       <Title>Reports</Title>
-      <Meta
-        data-n-head="ssr"
-        name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:title"
-        property="og:title"
-        content="Reports"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="description"
-        property="description"
-        content="You can find our weekly, monthly and annually reports here"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:description"
-        property="og:description"
-        content="You can find our weekly, monthly and annually reports here"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:url"
-        property="og:url"
-        :content="currentLink"
-      />
+      <Meta data-n-head="ssr" name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <Meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Reports" />
+      <Meta data-n-head="ssr" data-hid="description" property="description"
+        content="You can find our weekly, monthly and annually reports here" />
+      <Meta data-n-head="ssr" data-hid="og:description" property="og:description"
+        content="You can find our weekly, monthly and annually reports here" />
+      <Meta data-n-head="ssr" data-hid="og:url" property="og:url" :content="currentLink" />
       <Meta data-n-head="ssr" property="og:type" content="website" />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:image"
-        property="og:image"
-        content="https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:card"
-        property="twitter:card"
-        content="summary_large_image"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:domain"
-        property="twitter:domain"
-        content="hahu.vercel.app"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:url"
-        property="twitter:url"
-        :content="currentLink"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:title"
-        property="twitter:title"
-        content="Reports"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:description"
-        property="twitter:description"
-        content="You can find our weekly, montly and annually reports here"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:image"
-        property="twitter:image"
-        content="https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png"
-      />
+      <Meta data-n-head="ssr" data-hid="og:image" property="og:image"
+        content="https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png" />
+      <Meta data-n-head="ssr" data-hid="twitter:card" property="twitter:card" content="summary_large_image" />
+      <Meta data-n-head="ssr" data-hid="twitter:domain" property="twitter:domain" content="hahu.vercel.app" />
+      <Meta data-n-head="ssr" data-hid="twitter:url" property="twitter:url" :content="currentLink" />
+      <Meta data-n-head="ssr" data-hid="twitter:title" property="twitter:title" content="Reports" />
+      <Meta data-n-head="ssr" data-hid="twitter:description" property="twitter:description"
+        content="You can find our weekly, montly and annually reports here" />
+      <Meta data-n-head="ssr" data-hid="twitter:image" property="twitter:image"
+        content="https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/Hahu_MetaCard_e38h2i.png" />
 
       <!-- =================== video player for Facebook ================= -->
 
@@ -236,14 +184,8 @@ const forMeta = (i) => {
         <Meta property="og:title" content="Mux Video" />
         <Meta property="og:type" content="video.episode" />
         <Meta property="og:description" :content="selectedReport.content" />
-        <Meta
-          property="og:image"
-          :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`"
-        />
-        <Meta
-          property="og:video"
-          content="https://www.youtube.com/embed/rRVlWEwmbfQ"
-        />
+        <Meta property="og:image" :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`" />
+        <Meta property="og:video" content="https://www.youtube.com/embed/rRVlWEwmbfQ" />
         <Meta property="og:video:width" content="350" />
         <Meta property="og:video:height" content="200" />
         <Meta property="og:video:duration" content="300" />
@@ -255,35 +197,25 @@ const forMeta = (i) => {
         <Meta name="twitter:title" :content="selectedReport.title" />
         <Meta name="twitter:site" content="@hahujobs" />
         <Meta name="twitter:description" content="video by @hahujobs" />
-        <Meta
-          name="twitter:player"
-          :content="`https://www.youtube.com/embed/${selectedReport.videoId}`"
-        />
+        <Meta name="twitter:player" :content="`https://www.youtube.com/embed/${selectedReport.videoId}`" />
         <Meta name="twitter:player:width" content="360" />
         <Meta name="twitter:player:height" content="200" />
-        <Meta
-          name="twitter:image"
-          :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`"
-        />
+        <Meta name="twitter:image"
+          :content="`https://img.youtube.com/vi/${selectedReport.videoId}/maxresdefault.jpg`" />
       </div>
     </Head>
     <!-- <section class="mt-10 px-[230px] flex flex-col"> -->
-    <section
-      class="mt-10 flex flex-col justify-center px-5 md:px-20 lg:px-20 2xl:px-[230px]"
-    >
+    <section class="mt-10 flex flex-col justify-center px-5 md:px-20 lg:px-20 2xl:px-[230px]">
       <div class="mt-[42px] flex max-w-[1240px] justify-between">
         <h2
-          class="text-start mt-5 self-start rounded-full bg-primary-lite px-2 py-1 text-base font-medium leading-[18px] text-white md:text-lg lg:px-8 lg:py-2 lg:text-xl xl:mt-0 xl:text-2xl"
-        >
+          class="text-start mt-5 self-start rounded-full bg-primary-lite px-2 py-1 text-base font-medium leading-[18px] text-white md:text-lg lg:px-8 lg:py-2 lg:text-xl xl:mt-0 xl:text-2xl">
           Reports
         </h2>
         <NuxtLink class="flex" :to="{ name: 'index' }">
           <button
-            class="group flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3"
-          >
+            class="group flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3">
             <ArrowNarrowLeftIcon
-              class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-1"
-            />Back
+              class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-1" />Back
           </button>
         </NuxtLink>
       </div>
@@ -291,160 +223,96 @@ const forMeta = (i) => {
         <div class="relative mt-24 flex items-center">
           <input
             class="w-full rounded-2xl dark:text-whitePrimary dark:bg-LightDark px-8 py-4 text-xl font-normal leading-6 text-HahuGray2 focus:outline-primary md:px-16 md:py-7"
-            placeholder="Search"
-          />
-          <SearchIcon
-            class="relative right-10 h-6 w-6 dark:text-whitePrimary cursor-pointer md:right-20"
-          />
+            placeholder="Search" />
+          <SearchIcon class="relative right-10 h-6 w-6 dark:text-whitePrimary cursor-pointer md:right-20" />
         </div>
 
-        <div
-          class="mt-[67px] ml-10 flex flex-wrap gap-14 lg:gap-[118px] xl:ml-[196px]"
-        >
-          <NuxtLink
-            href="#"
-            class="text-sm font-bold leading-5"
-            :class="
-              all
-                ? 'border-b-2 border-primary text-primary'
-                : 'text-gray-400 duration-300 hover:scale-110 hover:text-HahuGray1'
-            "
-            @click="filter('all')"
-          >
+        <div class="mt-[67px] ml-10 flex flex-wrap gap-14 lg:gap-[118px] xl:ml-[196px]">
+          <NuxtLink href="#" class="text-sm font-bold leading-5" :class="
+            all
+              ? 'border-b-2 border-primary text-primary'
+              : 'text-gray-400 duration-300 hover:scale-110 hover:text-HahuGray1'
+          " @click="filter('all')">
             All
           </NuxtLink>
-          <NuxtLink
-            href="#"
-            class="text-sm font-bold leading-5"
-            :class="
-              weekly
-                ? 'border-b-2 border-primary text-primary'
-                : 'text-gray-400 duration-300 hover:scale-110 hover:text-HahuGray1'
-            "
-            @click="filter('weekly')"
-            >Weekly</NuxtLink
-          >
-          <NuxtLink
-            href="#"
-            class="text-sm font-bold leading-5"
-            :class="
-              monthly
-                ? 'border-b-2 border-primary text-primary'
-                : 'text-gray-400 duration-300 hover:scale-110 hover:text-HahuGray1'
-            "
-            @click="filter('monthly')"
-            >Monthly</NuxtLink
-          >
-          <NuxtLink
-            href="#"
-            class="text-sm font-bold leading-5"
-            :class="
-              annually
-                ? 'border-b-2 border-primary text-primary'
-                : 'text-gray-400 duration-300 hover:scale-110 hover:text-HahuGray1'
-            "
-            @click="filter('annually')"
-            >Annually</NuxtLink
-          >
+          <NuxtLink href="#" class="text-sm font-bold leading-5" :class="
+            weekly
+              ? 'border-b-2 border-primary text-primary'
+              : 'text-gray-400 duration-300 hover:scale-110 hover:text-HahuGray1'
+          " @click="filter('weekly')">Weekly</NuxtLink>
+          <NuxtLink href="#" class="text-sm font-bold leading-5" :class="
+            monthly
+              ? 'border-b-2 border-primary text-primary'
+              : 'text-gray-400 duration-300 hover:scale-110 hover:text-HahuGray1'
+          " @click="filter('monthly')">Monthly</NuxtLink>
+          <NuxtLink href="#" class="text-sm font-bold leading-5" :class="
+            annually
+              ? 'border-b-2 border-primary text-primary'
+              : 'text-gray-400 duration-300 hover:scale-110 hover:text-HahuGray1'
+          " @click="filter('annually')">Annually</NuxtLink>
         </div>
 
-        <div
-          v-for="(report, index) in Reports"
-          :key="index"
-          class="mt-10 flex flex-col justify-around gap-x-[67px] self-start rounded-[15px] bg-white px-7 pt-[58px] duration-500 ease-in dark:bg-HahuGray1 lg:mt-[105px] lg:flex-row xl:pl-12 4xl:min-w-[1263px]"
-        >
+        <div v-for="(report, index) in Reports" :key="index"
+          class="mt-10 flex flex-col justify-around gap-x-[67px] self-start rounded-[15px] bg-white px-7 pt-[58px] duration-500 ease-in dark:bg-HahuGray1 lg:mt-[105px] lg:flex-row xl:pl-12 4xl:min-w-[1263px]">
           <NuxtLink :to="'/reports/' + report.id" class="flex flex-1 w-4/12">
-            <img
-              v-if="report.img"
-              :src="report.img"
-              class="mb-2 object-contain"
-            />
-            <iframe
-              v-if="report.videoId"
-              :src="`https://www.youtube.com/embed/${report.videoId}?loop=1&modestbranding=1`"
-              width="640"
-              height="360"
-            />
+            <img v-if="report.img" :src="report.img" class="mb-2 object-contain" alt="report" />
+            <iframe v-if="report.videoId"
+              :src="`https://www.youtube.com/embed/${report.videoId}?loop=1&modestbranding=1`" width="640"
+              height="360" />
           </NuxtLink>
           <div class="flex flex-1 flex-col">
-            <h1
-              class="text-lg font-bold leading-[30px] text-HahuGray1 duration-500 ease-in dark:text-HahuGray/4"
-            >
+            <h1 class="text-lg font-bold leading-[30px] text-HahuGray1 duration-500 ease-in dark:text-HahuGray/4">
               {{ report.title }}
             </h1>
             <div class="mt-11 flex gap-x-7">
               <h4
-                class="self-center rounded-full bg-primary-lite px-4 py-[2px] text-xs font-normal leading-[18px] duration-500 ease-in dark:text-HahuGray/4"
-              >
+                class="self-center rounded-full bg-primary-lite px-4 py-[2px] text-xs font-normal leading-[18px] duration-500 ease-in dark:text-HahuGray/4">
                 {{ report.range }}
               </h4>
               <h4 class="text-base font-light leading-6 text-primary">
                 {{ report.date }}
               </h4>
             </div>
-            <p
-              class="mt-7 max-w-[590px] duration-500 ease-in dark:text-HahuGray/4 lg:pr-2 xl:pr-[89px]"
-            >
+            <p class="mt-7 max-w-[590px] duration-500 ease-in dark:text-HahuGray/4 lg:pr-2 xl:pr-[89px]">
               {{ report.content }}
             </p>
 
-            <NuxtLink
-              :to="'/reports/' + report.id"
-              class="rounded-md px-2 py-1 hover:bg-primary-lite space-x-3 mt-4 self-start flex justify-between border-2 border-primary duration-200 ease-in dark:bg-HahuGray/4"
-            >
-              <span>Read More</span> <img :src="readmoreGreen" />
+            <NuxtLink :to="'/reports/' + report.id"
+              class="rounded-md px-2 py-1 hover:bg-primary-lite space-x-3 mt-4 self-start flex justify-between border-2 border-primary duration-200 ease-in dark:bg-HahuGray/4">
+              <span>Read More</span> <img :src="readmoreGreen" alt="readmore" />
             </NuxtLink>
 
             <p
-              class="mt-11 text-xs font-normal leading-[18px] text-HahuGray1 duration-500 ease-in dark:text-HahuGray/4"
-            >
+              class="mt-11 text-xs font-normal leading-[18px] text-HahuGray1 duration-500 ease-in dark:text-HahuGray/4">
               Share
             </p>
             <div class="mt-2 mb-10 flex gap-2">
-              <a
-                :href="`http://www.facebook.com/sharer/sharer.php?u=${currentLink}/${report.id}&t=${report.title}`"
-                @click="forMeta(report.id)"
-                target="_blank"
-                class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
-              >
-                <img
-                  class="object-contain px-[13px] py-[9px]"
-                  :src="Facebook"
-                />
+              <a :href="`http://www.facebook.com/sharer/sharer.php?u=${currentLink}/${report.id}&t=${report.title}`"
+                @click="forMeta(report.id)" target="_blank"
+                class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4">
+                <img class="object-contain px-[13px] py-[9px]" :src="Facebook" alt="facebook" />
               </a>
-              <button
-                class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
-              >
-                <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
+              <button class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4">
+                <img class="object-contain px-[13px] py-[9px]" :src="Insta" alt="instagram" />
               </button>
-              <a
-                @click="forMeta(report.id)"
+              <a @click="forMeta(report.id)"
                 :href="`http://twitter.com/share?text=${report.title}&url=${currentLink}/${report.id}&hashtags=HahuJobs,Minab_ICT_Solutions`"
-                class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
-              >
-                <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
+                class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4">
+                <img class="object-contain px-[13px] py-[9px]" :src="Twitter" alt="twitter" />
               </a>
-              <a
-                @click="forMeta(report.id)"
+              <a @click="forMeta(report.id)"
                 :href="`https://t.me/share/url?url=${currentLink}/${report.id}&text=${report.title}`"
-                class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
-              >
-                <img
-                  class="object-contain px-[13px] py-[9px]"
-                  :src="Telegram"
-                />
+                class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4">
+                <img class="object-contain px-[13px] py-[9px]" :src="Telegram" alt="telegram" />
               </a>
             </div>
           </div>
         </div>
 
         <button
-          class="group mt-[78px] flex items-center self-center rounded-md bg-primary py-2 pl-4 pr-5 text-sm font-medium leading-5 text-HahuGray/4"
-        >
-          <span class="pr-3">View more</span
-          ><ArrowNarrowDownIcon
-            class="h-4 w-4 fill-white duration-300 ease-out group-hover:translate-y-1"
-          />
+          class="group mt-[78px] flex items-center self-center rounded-md bg-primary py-2 pl-4 pr-5 text-sm font-medium leading-5 text-HahuGray/4">
+          <span class="pr-3">View more</span>
+          <ArrowNarrowDownIcon class="h-4 w-4 fill-white duration-300 ease-out group-hover:translate-y-1" />
         </button>
       </div>
     </section>

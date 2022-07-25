@@ -1,5 +1,7 @@
 import { defineNuxtConfig } from "nuxt";
-
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "url";
+import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
@@ -16,7 +18,7 @@ export default defineNuxtConfig({
         {
           "data-n-head": "ssr",
           "data-hid": "description",
-          property: "description",
+          name: "description",
           content:
             "Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job matching and labor market information platform in Ethiopia. With various service deployments to address the Ethiopian labor market needs; we stand at the for front of the local digital job matching industry.",
         },
@@ -159,6 +161,15 @@ export default defineNuxtConfig({
       },
       autoprefixer: {},
     },
+  },
+  vite: {
+    plugins: [
+      VueI18nPlugin({
+        include: [
+          resolve(dirname(fileURLToPath(import.meta.url)), "./locales/*.json"),
+        ],
+      }),
+    ],
   },
   colorMode: {
     classPrefix: "",

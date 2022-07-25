@@ -2,12 +2,12 @@
   <div class="min-h-screen overflow-y-auto px-8 md:px-[50px] xl:px-[100px]">
     <section class="mt-10 flex flex-col items-center lg:pb-20 lg:min-h-screen lg:flex-row xl:space-x-[89px]">
       <div class="mt-20 flex-1 xl:mt-0" id="Home">
-        <img class="object-contain" src="/images/HahuEnter_amharic.png" />
+        <img class="object-contain" src="/images/HahuEnter_amharic.png" alt="hahuEnterprise" />
         <h1 class="items-center text-[50px] font-black leading-[50px] dark:text-HahuGray/4">
           HAHU ENTERPRISE
         </h1>
         <div class="lg:hidden mt-10 lg:mt-0 flex-shrink max-w-[70vw]">
-          <img class="object-contain" src="/images/enterprise_art.png" />
+          <img class="object-contain" src="/images/enterprise_art.png" alt="hahuEnterprise" />
         </div>
         <p class="mt-10 items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4">
           Provides human resources and related services starting from job
@@ -21,7 +21,7 @@
         </button>
       </div>
       <div class="hidden lg:block flex-1 mt-10 sm:mt-0 flex-shrink">
-        <img class="object-contain 4xl:min-w-[950px]" src="/images/enterprise_art.png" />
+        <img class="object-contain 4xl:min-w-[950px]" src="/images/enterprise_art.png" alt="enterprise" />
       </div>
     </section>
 
@@ -47,7 +47,7 @@
           class="group flex min-h-[570px] max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white shadow-full duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img :src="HahuEnter_hrms" />
+            <img :src="HahuEnter_hrms" alt="Hrms" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
@@ -67,7 +67,7 @@
           class="group flex min-h-[570px] max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white shadow-full duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-start justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/HahuEnter_recruit.png" />
+            <img class="object-contain" src="/images/HahuEnter_recruit.png" alt="Recruit" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
@@ -87,7 +87,7 @@
           class="group flex min-h-[570px] max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white shadow-full duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/HahuEnter_indu.png" />
+            <img class="object-contain" src="/images/HahuEnter_indu.png" alt="Indu" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
@@ -132,7 +132,7 @@
             > -->
             <div
               class="mt-2 flex w-32 items-center justify-center rounded-full border-2 border-transparent bg-HaHuGreen/4 p-4 shadow-full duration-500 group-hover:border-primary">
-              <img class="object-contain" :src="slide.img" />
+              <img class="object-contain" :src="slide.img" alt="carouselImage" />
             </div>
             <h2 class="mt-5 text-center text-2xl font-bold leading-[35px] dark:text-HahuGray/4">
               {{ slide.title }}

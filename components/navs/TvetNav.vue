@@ -16,8 +16,8 @@ const sidebarOpen = ref(false);
     <div class="z-10 flex items-center">
       <span class="mr-1 text-xl text-white">
         <NuxtLink :to="{ path: '/' }">
-          <img :src="HahuLogo" class="dark:hidden" />
-          <img :src="HahuLogoDark" class="hidden dark:block" />
+          <img :src="HahuLogo" class="dark:hidden" alt="hahuLogo"/>
+          <img :src="HahuLogoDark" class="hidden dark:block" alt="hahuLogo"/>
         </NuxtLink>
         <h1 class="mt-2 text-base font-light leading-4 text-[#444F60] dark:text-white">TVET</h1>
       </span>
@@ -86,7 +86,7 @@ const sidebarOpen = ref(false);
           class="mt-1 flex text-lg font-medium leading-[35px]"
           @click="open = !open"
         >
-          Eng <img :src="dropdown" class="ml-[15px] self-center" />
+          Eng <img :src="dropdown" class="ml-[15px] self-center" alt="dropdownIcon"/>
         </button>
       </li>
     </ul>

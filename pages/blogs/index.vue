@@ -212,7 +212,7 @@ onMounted(() => {
           v-for="(blog, index) in Blogs"
           :key="index"
         >
-          <img :src="blog.img" class="object-contain rounded-t-2xl" />
+          <img :src="blog.img" class="object-contain rounded-t-2xl" alt="blogImg"/>
           <h3
             class="mt-6 ml-8 self-start rounded-full bg-primary-lite px-3 py-[5px] text-xs font-medium leading-[18px] text-primary-dark"
           >

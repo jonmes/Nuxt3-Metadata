@@ -142,121 +142,36 @@ const copyLinkFunc = () => {
 
 <template>
   <div class="flex min-h-screen justify-center px-8 md:px-[50px] xl:px-[100px]">
+
     <Head>
       <Title>{{ filteredReport.title }}</Title>
-      <Meta
-        data-n-head="ssr"
-        name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:site_name"
-        property="og:site_name"
-        content="Hahu"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:type"
-        property="og:type"
-        content="website"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:title"
-        property="og:title"
-        :content="filteredReport.title"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:description"
-        property="og:description"
-        :content="filteredReport.content"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="description"
-        :content="filteredReport.content"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:url"
-        property="og:url"
-        :content="copyLink"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:image"
-        property="og:image"
-        :content="filteredReport.img"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:image:secure_url"
-        property="og:image:secure_url"
-        :content="filteredReport.img"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:image:alt"
-        property="og:image:alt"
-        content="Hahu"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:card"
-        property="twitter:card"
-        content="summary_large_image"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:domain"
-        property="twitter:domain"
-        content="hahuone.netlify.app"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:site"
-        name="twitter:site"
-        :content="copyLink"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:url"
-        property="twitter:url"
-        :content="copyLink"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:title"
-        property="twitter:title"
-        :content="filteredReport.title"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:description"
-        property="twitter:description"
-        :content="filteredReport.content"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:image"
-        property="twitter:image"
-        :content="filteredReport.img"
-      />
+      <Meta data-n-head="ssr" name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <Meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Hahu" />
+      <Meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website" />
+      <Meta data-n-head="ssr" data-hid="og:title" property="og:title" :content="filteredReport.title" />
+      <Meta data-n-head="ssr" data-hid="og:description" property="og:description" :content="filteredReport.content" />
+      <Meta data-n-head="ssr" data-hid="description" :content="filteredReport.content" />
+      <Meta data-n-head="ssr" data-hid="og:url" property="og:url" :content="copyLink" />
+      <Meta data-n-head="ssr" data-hid="og:image" property="og:image" :content="filteredReport.img" />
+      <Meta data-n-head="ssr" data-hid="og:image:secure_url" property="og:image:secure_url"
+        :content="filteredReport.img" />
+      <Meta data-n-head="ssr" data-hid="og:image:alt" property="og:image:alt" content="Hahu" />
+      <Meta data-n-head="ssr" data-hid="twitter:card" property="twitter:card" content="summary_large_image" />
+      <Meta data-n-head="ssr" data-hid="twitter:domain" property="twitter:domain" content="hahuone.netlify.app" />
+      <Meta data-n-head="ssr" data-hid="twitter:site" name="twitter:site" :content="copyLink" />
+      <Meta data-n-head="ssr" data-hid="twitter:url" property="twitter:url" :content="copyLink" />
+      <Meta data-n-head="ssr" data-hid="twitter:title" property="twitter:title" :content="filteredReport.title" />
+      <Meta data-n-head="ssr" data-hid="twitter:description" property="twitter:description"
+        :content="filteredReport.content" />
+      <Meta data-n-head="ssr" data-hid="twitter:image" property="twitter:image" :content="filteredReport.img" />
 
       <div v-if="filteredReport.videoId">
         <Meta property="og:title" :content="filteredReport.title" />
         <Meta property="og:type" content="video.episode" />
         <Meta property="og:description" :content="filteredReport.content" />
-        <Meta
-          property="og:image"
-          :content="`https://img.youtube.com/vi/${filteredReport.videoId}/maxresdefault.jpg`"
-        />
-        <Meta
-          property="og:video"
-          :content="`https://www.youtube.com/embed/${filteredReport.videoId}`"
-        />
+        <Meta property="og:image" :content="`https://img.youtube.com/vi/${filteredReport.videoId}/maxresdefault.jpg`" />
+        <Meta property="og:video" :content="`https://www.youtube.com/embed/${filteredReport.videoId}`" />
         <Meta property="og:video:width" content="350" />
         <Meta property="og:video:height" content="200" />
         <Meta property="og:video:duration" content="300" />
@@ -268,113 +183,80 @@ const copyLinkFunc = () => {
         <Meta name="twitter:title" :content="filteredReport.videoId" />
         <Meta name="twitter:site" content="@hahujobs" />
         <Meta name="twitter:description" :content="filteredReport.content" />
-        <Meta
-          name="twitter:player"
-          :content="`https://www.youtube.com/embed/${filteredReport.videoId}`"
-        />
+        <Meta name="twitter:player" :content="`https://www.youtube.com/embed/${filteredReport.videoId}`" />
         <Meta name="twitter:player:width" content="360" />
         <Meta name="twitter:player:height" content="200" />
-        <Meta
-          name="twitter:image"
-          :content="`https://img.youtube.com/vi/${filteredReport.videoId}/maxresdefault.jpg`"
-        />
+        <Meta name="twitter:image"
+          :content="`https://img.youtube.com/vi/${filteredReport.videoId}/maxresdefault.jpg`" />
       </div>
     </Head>
 
     <section
-      class="mt-10 flex max-w-[80vw] flex-col rounded-2xl bg-white px-5 duration-500 ease-in dark:bg-HahuGray1 md:max-w-[70vw] md:px-20"
-    >
+      class="mt-10 flex max-w-[80vw] flex-col rounded-2xl bg-white px-5 duration-500 ease-in dark:bg-HahuGray1 md:max-w-[70vw] md:px-20">
       <div class="relative mb-10 mt-6 flex flex-wrap items-end font-bold">
         <Contained :crumb="crumb" />
         <div class="ml-auto flex">
           <NuxtLink class="mt-[38px] flex self-end" :to="{ name: 'reports' }">
             <button
-              class="group flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3"
-            >
+              class="group flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3">
               <ArrowNarrowLeftIcon
-                class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-1"
-              />Back
+                class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-1" />Back
             </button>
           </NuxtLink>
         </div>
       </div>
 
       <h2
-        class="mt-10 text-xl font-bold leading-[30px] text-HahuGray1 duration-500 ease-in dark:text-HahuGray/4 lg:text-2xl xl:text-3xl 2xl:mt-1"
-      >
+        class="mt-10 text-xl font-bold leading-[30px] text-HahuGray1 duration-500 ease-in dark:text-HahuGray/4 lg:text-2xl xl:text-3xl 2xl:mt-1">
         {{ filteredReport.title }}
       </h2>
       <div class="mt-9 flex gap-x-7">
         <h4
-          class="self-center rounded-full bg-primary-lite px-4 py-[2px] text-xs font-normal leading-[18px] text-HahuGray/4"
-        >
+          class="self-center rounded-full bg-primary-lite px-4 py-[2px] text-xs font-normal leading-[18px] text-HahuGray/4">
           Monthly
         </h4>
         <h4 class="text-base font-light leading-6 text-primary">
           Jan 12, 2022
         </h4>
       </div>
-      <p
-        class="mt-[42px] text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 lg:text-lg"
-      >
+      <p class="mt-[42px] text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 lg:text-lg">
         {{ filteredReport.content }}
       </p>
-      <img
-        v-if="filteredReport.img"
-        :src="filteredReport.img"
-        class="mt-[54px] self-start object-contain"
-      />
+      <img v-if="filteredReport.img" :src="filteredReport.img" class="mt-[54px] self-start object-contain"
+        alt="reportImage" />
       <div class="mt-14 flex justify-center">
-        <iframe
-          v-if="filteredReport.videoId"
-          :src="`https://www.youtube.com/embed/${filteredReport.videoId}?loop=1&modestbranding=1`"
-          width="640"
-          height="360"
-        />
+        <iframe v-if="filteredReport.videoId"
+          :src="`https://www.youtube.com/embed/${filteredReport.videoId}?loop=1&modestbranding=1`" width="640"
+          height="360" />
       </div>
 
-      <p
-        class="mt-[68px] text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 lg:text-lg"
-      >
+      <p class="mt-[68px] text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 lg:text-lg">
         {{ filteredReport.p1 }}
       </p>
 
-      <div
-        class="mt-20 mb-16 flex flex-wrap justify-start gap-2 sm:justify-center"
-      >
-        <button
-          id="copyLinkButton"
+      <div class="mt-20 mb-16 flex flex-wrap justify-start gap-2 sm:justify-center">
+        <button id="copyLinkButton"
           class="mr-[102px] flex items-center rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
-          @click="copyLinkFunc()"
-        >
+          @click="copyLinkFunc()">
           <input class="hidden" id="myLink" v-model="copyLink" />
-          <img class="object-contain pl-4" :src="CopyLink" />
+          <img class="object-contain pl-4" :src="CopyLink" alt="copyLink" />
           <span class="py-2 pr-4 pl-[7px]">Copy Link</span>
         </button>
         <div class="flex gap-2">
-          <a
-            :href="`http://www.facebook.com/sharer/sharer.php?u=${copyLink}&t=${filteredReport.title}`"
-            target="_blank"
-            class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
-          >
-            <img class="object-contain px-[13px] py-[9px]" :src="Facebook" />
+          <a :href="`http://www.facebook.com/sharer/sharer.php?u=${copyLink}&t=${filteredReport.title}`" target="_blank"
+            class="share-popup rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4">
+            <img class="object-contain px-[13px] py-[9px]" :src="Facebook" alt="facebook" />
           </a>
-          <button
-            class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
-          >
-            <img class="object-contain px-[13px] py-[9px]" :src="Insta" />
+          <button class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4">
+            <img class="object-contain px-[13px] py-[9px]" :src="Insta" alt="instagram" />
           </button>
-          <a
-            :href="`http://twitter.com/share?text=${filteredReport.title}&url=${copyLink}&hashtags=HahuJobs,Minab_ICT_Solutions`"
-            class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
-          >
-            <img class="object-contain px-[13px] py-[9px]" :src="Twitter" />
+          <a :href="`http://twitter.com/share?text=${filteredReport.title}&url=${copyLink}&hashtags=HahuJobs,Minab_ICT_Solutions`"
+            class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4">
+            <img class="object-contain px-[13px] py-[9px]" :src="Twitter" alt="twitter" />
           </a>
-          <a
-            :href="`https://t.me/share/url?url=${copyLink}&text=${filteredReport.title}`"
-            class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4"
-          >
-            <img class="object-contain px-[13px] py-[9px]" :src="Telegram" />
+          <a :href="`https://t.me/share/url?url=${copyLink}&text=${filteredReport.title}`"
+            class="rounded-md border-2 border-gray-200 duration-500 ease-in dark:bg-HahuGray/4">
+            <img class="object-contain px-[13px] py-[9px]" :src="Telegram" alt="telegram" />
           </a>
         </div>
       </div>
@@ -382,4 +264,5 @@ const copyLinkFunc = () => {
   </div>
 </template>
 
-<style></style>
+<style>
+</style>

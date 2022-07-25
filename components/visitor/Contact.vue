@@ -78,7 +78,7 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
       <div class="mb-[58px] flex-1">
         <div class="mt-6 flex flex-col justify-around sm:flex-row">
           <div show="true" class="flex flex-row flex-wrap items-baseline">
-            <img :src="Email" />
+            <img :src="Email" alt="email" />
             <div class="ml-[15px] flex flex-col">
               <h2 class="text-xl font-bold leading-[38px] text-primary">
                 Email
@@ -90,7 +90,7 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
           </div>
 
           <div show="true" class="flex flex-row flex-wrap items-baseline">
-            <img :src="Phone" />
+            <img :src="Phone" alt="phone" />
             <div class="ml-[15px] flex flex-col">
               <h2 class="text-xl font-bold leading-[38px] text-primary">
                 Phone
@@ -104,7 +104,7 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
           </div>
 
           <div show="true" class="flex flex-row flex-wrap items-baseline">
-            <img :src="Office" />
+            <img :src="Office" alt="office" />
             <div class="ml-[15px] flex flex-col">
               <h2 class="text-xl font-bold leading-[38px] text-primary">
                 Office
@@ -118,7 +118,7 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
         </div>
         <img class="mt-[58px]" src="/images/map.png" alt="map" />
         <div class="mt-[56px] flex flex-row flex-wrap items-baseline">
-          <img :src="Branch" />
+          <img :src="Branch" alt="branch" />
           <div class="ml-[15px] flex flex-col">
             <h2 class="text-xl font-bold leading-[38px] text-primary">
               Branch

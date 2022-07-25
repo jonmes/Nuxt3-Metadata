@@ -3,11 +3,11 @@
     class="mt-10 flex flex-col flex-wrap items-center justify-between space-y-10 bg-white px-8 duration-500 ease-in dark:bg-DarkModeBg md:px-[50px] lg:flex-row xl:px-[100px]">
     <div class="flex flex-col">
       <h1 class="mt-[27px] dark:text-HahuGray/4">Powered by</h1>
-      <img src="/images/Hahu_footer_logo1.png" class="mt-[13px] object-contain dark:hidden" />
-      <img src="/images/Hahu_footer_logo1_dark.png" class="mt-[13px] hidden object-contain dark:block" />
+      <img src="/images/Hahu_footer_logo1.png" class="mt-[13px] object-contain dark:hidden" alt="hahuLogoFooterIcon"/>
+      <img src="/images/Hahu_footer_logo1_dark.png" class="mt-[13px] hidden object-contain dark:block" alt="hahuLogoFooterIcon"/>
 
-      <img src="/images/Hahu_footer_logo2.png" class="mt-[9px] mb-[41px] object-contain dark:hidden" />
-      <img src="/images/Hahu_footer_logo2_dark.png" class="mt-[9px] mb-[41px] hidden object-contain dark:block" />
+      <img src="/images/Hahu_footer_logo2.png" class="mt-[9px] mb-[41px] object-contain dark:hidden" alt="hahuLogoFooterIcon"/>
+      <img src="/images/Hahu_footer_logo2_dark.png" class="mt-[9px] mb-[41px] hidden object-contain dark:block" alt="hahuLogoFooterIcon"/>
     </div>
     <div class="flex flex-col space-y-10 lg:flex-row lg:space-x-16 lg:space-y-0 xl:space-x-[85px]">
       <NuxtLink :to="{ name: 'index' }"
@@ -55,13 +55,13 @@
     </h1>
     <div class="ml-10 flex space-x-7 lg:mr-28">
       <button>
-        <img class="object-contain" :src="Facebook" />
+        <img class="object-contain" :src="Facebook" alt="facebookIcon"/>
       </button>
       <button>
-        <img class="object-contain" :src="Twitter" />
+        <img class="object-contain" :src="Twitter" alt="TwitterIcon"/>
       </button>
       <button>
-        <img class="object-contain" :src="LinkedIn" />
+        <img class="object-contain" :src="LinkedIn" alt="LinkedInIcon"/>
       </button>
     </div>
   </div>

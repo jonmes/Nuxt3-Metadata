@@ -153,7 +153,7 @@ onMounted(() => {
         :class="`lg:delay-${delay[i]}`">
         <div class="relative mt-5 flex flex-row justify-center">
           <img class="self-center" :src="person.img" alt="team" />
-          <img :src="person.icon" class="absolute top-[-5px] right-5 w-6" />
+          <img :src="person.icon" class="absolute top-[-5px] right-5 w-6" alt="personIcon"/>
         </div>
         <h2 class="mt-1 items-center text-center text-2xl font-black leading-[38px] dark:text-HahuGray/4">
           {{ person.name }}
@@ -177,7 +177,7 @@ onMounted(() => {
         :class="`lg:delay-${delay[i]}`">
         <div class="relative mt-5 flex flex-row justify-center">
           <img class="self-center" :src="person.img" alt="team" />
-          <img :src="person.icon" class="absolute top-[-5px] right-5 w-6" />
+          <img :src="person.icon" class="absolute top-[-5px] right-5 w-6" alt="personIcon"/>
         </div>
         <h2 class="mt-1 items-center text-center text-2xl font-black leading-[38px] dark:text-HahuGray/4">
           {{ person.name }}

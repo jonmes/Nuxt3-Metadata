@@ -203,7 +203,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
       >
         {{ filteredPro.p1 }}
       </p>
-      <img class="mt-[54px] rounded-lg" :src="filteredPro.img" />
+      <img class="mt-[54px] rounded-lg" :src="filteredPro.img" alt="projectImage1"/>
 
       <p
         class="mt-5 text-base font-light leading-9 duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
@@ -219,6 +219,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
         class="mt-[54px] rounded-lg"
         v-if="filteredPro.img2"
         :src="filteredPro.img2"
+        alt="projectImage2"
       />
       <p
         class="mt-14 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
@@ -233,7 +234,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
             Client
           </h2>
           <div>
-            <img class="mt-10" src="/images/projectC1.png" />
+            <img class="mt-10" src="/images/projectC1.png" alt="clientImg"/>
           </div>
         </div>
         <div class="mt-16 rounded-full border-[3px] border-HahuGray3" />
@@ -244,7 +245,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
           <div
             class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-y-10 sm:gap-x-16 sm:gap-y-10"
           >
-            <img v-for="img in partners" class="object-contain" :src="img" />
+            <img v-for="img in partners" class="object-contain" :src="img" alt="partnerImg"/>
           </div>
         </div>
       </div>
@@ -255,7 +256,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
           class="mt-12 flex flex-col gap-y-10 gap-x-20 md:flex-row md:gap-y-10"
         >
           <div class="flex flex-col items-center">
-            <img class="object-contain" src="/images/Ellipse1.png" />
+            <img class="object-contain" src="/images/Ellipse1.png" alt="ellipse"/>
             <h2
               class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4"
             >
@@ -266,7 +267,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
             </h2>
           </div>
           <div class="flex flex-col items-center">
-            <img class="object-contain" src="/images/Ellipse2.png" />
+            <img class="object-contain" src="/images/Ellipse2.png" alt="ellipse"/>
             <h2
               class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4"
             >
@@ -277,7 +278,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
             </h2>
           </div>
           <div class="flex flex-col items-center">
-            <img class="object-contain" src="/images/Ellipse3.png" />
+            <img class="object-contain" src="/images/Ellipse3.png" alt="ellipse"/>
             <h2
               class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4"
             >
@@ -288,7 +289,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
             </h2>
           </div>
           <div class="flex flex-col items-center">
-            <img class="object-contain" src="/images/Ellipse4.png" />
+            <img class="object-contain" src="/images/Ellipse4.png" alt="ellipse"/>
 
             <h2
               class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4"

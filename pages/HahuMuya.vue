@@ -2,12 +2,12 @@
   <div class="min-h-screen overflow-y-auto px-8 md:px-[50px] xl:px-[100px]">
     <section class="flex flex-col items-center lg:min-h-screen xl:space-x-[89px] 2xl:flex-row" id="home">
       <div class="mt-20 flex-1 xl:mt-0">
-        <img class="object-contain" src="/images/HahuEnter_amharic.png" />
+        <img class="object-contain" src="/images/HahuEnter_amharic.png" alt="hahuLogo" />
         <h1 class="items-center text-[50px] font-black leading-[50px] dark:text-HahuGray/4">
           HaHuJobs Muya
         </h1>
         <div class="lg:hidden mt-10 lg:mt-0 flex-shrink max-w-[70vw]">
-          <img class="object-contain" src="/images/MuyaMain.png" />
+          <img class="object-contain" src="/images/MuyaMain.png" alt="hahuMuya" />
         </div>
         <p class="mt-[27px] items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4">
           Muya provides a variety of resources to assist Ethiopian students and
@@ -20,7 +20,7 @@
         </button>
       </div>
       <div class="hidden lg:block flex-1 flex-shrink">
-        <img class="object-contain 3xl:min-w-[950px]" src="/images/MuyaMain.png" />
+        <img class="object-contain 3xl:min-w-[950px]" src="/images/MuyaMain.png" alt="hahuMuya" />
       </div>
     </section>
 
@@ -49,7 +49,7 @@
           class="transition-newtransition group flex h-[630px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[600px] sm:h-[500px] xl:h-60 xl:bg-transparent hover:xl:h-[600px] hover:2xl:h-[560px] hover:3xl:h-[500px] 2xl:px-10">
           <img
             class="mt-10 object-contain dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
-            src="/images/USAID_colored.png" />
+            src="/images/USAID_colored.png" alt="USAID" />
           <hr
             class="mt-6 w-full border-t-[1px] border-HahuGray2 group-hover:visible dark:border-HahuGray/4 xl:invisible" />
           <p
@@ -68,7 +68,7 @@
           class="transition-newtransition group flex h-[500px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[420px] sm:h-[400px] xl:h-60 xl:bg-transparent hover:xl:h-[420px] 2xl:px-10">
           <img
             class="mt-10 object-contain dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
-            src="/images/Savethechildren_colored.png" />
+            src="/images/Savethechildren_colored.png" alt="saveTheChildren" />
           <hr
             class="mt-6 w-full border-t-[1px] border-HahuGray2 group-hover:visible dark:border-HahuGray/4 xl:invisible" />
           <p
@@ -88,7 +88,7 @@
           /> -->
           <img
             class="mt-10 object-contain dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
-            src="/images/MOSHE_colored.png" />
+            src="/images/MOSHE_colored.png" alt="MOSHE" />
           <hr
             class="mt-6 w-full border-t-[1px] border-HahuGray2 group-hover:visible dark:border-HahuGray/4 xl:invisible" />
           <p
@@ -124,7 +124,7 @@
           class="group flex shadow-full max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/MuyaJob.png" />
+            <img class="object-contain" src="/images/MuyaJob.png" alt="muyaJobs" />
           </div>
           <h2 class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1">
             Jobs & Scholarships
@@ -143,7 +143,7 @@
           class="group flex shadow-full max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 border-transparent bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/MuyaCareer.png" />
+            <img class="object-contain" src="/images/MuyaCareer.png" alt="MuyaCarreer" />
           </div>
           <h2 class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1">
             Career Guidance & CV Building
@@ -162,7 +162,7 @@
           class="group flex shadow-full max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg group-hover:border-primary">
-            <img class="object-contain" src="/images/MuyaEducation.png" />
+            <img class="object-contain" src="/images/MuyaEducation.png" alt="education"/>
           </div>
           <h2 class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1">
             Content & Assessment

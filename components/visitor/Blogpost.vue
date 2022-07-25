@@ -1,5 +1,6 @@
 <script setup>
 import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
+import readmore from "@/assets/svg/readmore.svg?url";
 
 const blogs = [
   {
@@ -79,8 +80,9 @@ onBeforeUnmount(() => {
       <div show="true" ref="target" class="flex lg:opacity-0 lg:translate-y-20 lg:duration-1000 mt-9">
         <NuxtLink :to="{ name: 'blogs' }" class="self-center">
           <button
-            class="rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white duration-300 hover:translate-x-1 hover:-translate-y-1 hover:shadow-2xl active:translate-x-0 active:translate-y-0 active:shadow-none xs:px-8 xs:text-lg lg:px-5 3xl:px-8 3xl:py-4 lg:py-2 lg:text-2xl 3xl:text-3xl lg:leading-[18px]">
+            class="gap-2 group flex rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white duration-300 hover:translate-x-1 hover:-translate-y-1 hover:shadow-2xl active:translate-x-0 active:translate-y-0 active:shadow-none xs:px-8 xs:text-lg lg:px-5 3xl:px-8 3xl:py-4 lg:py-2 lg:text-2xl 3xl:text-3xl lg:leading-[18px]">
             Recent Blogs
+            <img :src="readmore" class="text-white scale-0 group-hover:scale-100 duration-300" alt="button" />
           </button>
         </NuxtLink>
       </div>
@@ -97,7 +99,7 @@ onBeforeUnmount(() => {
         :class="`delay-${delay[i]}`" v-for="(blog, i) in blogs" :key="i">
         <NuxtLink :to="'/blogs/' + blog.id" class="flex flex-col">
           <div>
-            <img class="object-cover" :src="blog.img" alt="blog Image" />
+            <img class="object-cover" :src="blog.img" alt="blogImage" />
           </div>
           <h1
             class="mt-6 ml-8 self-start rounded-[36px] bg-primary-lite px-3 py-[5px] text-xs font-medium leading-[18px] text-primary-dark">
@@ -106,7 +108,7 @@ onBeforeUnmount(() => {
           <h4 class="mt-4 ml-8 text-base font-medium leading-6">
             {{ blog.date }}
           </h4>
-          <p class="mt-4 ml-8 pr-[24px] text-xl font-bold leading-[38px] dark:text-HahuGray/4 xl:text-2xl">
+          <p class="mt-4 ml-8 pr-[24px] text-xl font-bold leading-[38px] dark:text-HahuGray/4 3xl:text-2xl">
             {{ blog.title }}
           </p>
           <button class="group mt-[34px] ml-8 mb-[30px] flex items-center self-start text-lg font-medium text-primary">

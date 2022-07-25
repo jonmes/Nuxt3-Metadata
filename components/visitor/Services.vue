@@ -56,18 +56,18 @@ onBeforeUnmount(() => {
           <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
-              <img :src="readmore" class="mr-[13px]" /> Read More
+              <img :src="readmore" class="mr-[13px]" alt="button" /> Read More
             </button>
           </div>
         </NuxtLink>
 
-        <img class="mt-[15px] w-9/12 object-contain xs:w-auto md:w-9/12 lg:w-auto" src="/images/HahuCore.png"
+        <img class="mt-[15px] w-9/12 object-contain xs:w-auto md:w-9/12 xl:w-7/12 3xl:w-auto" src="/images/HahuCore.png"
           alt="Hahucore" />
-        <h1 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray/4 lg:text-2xl xl:text-3xl">
+        <h1 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray/4 lg:text-2xl 3xl:text-3xl">
           HaHu Core services
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
+          class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray3 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
           HaHU core services is a deployment targeting the Ethiopian jobseeker,
           with both online and assisted models the platform caters to the tool
           needs of looking for a job in all levels of employment. It features
@@ -87,17 +87,17 @@ onBeforeUnmount(() => {
           <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
-              <img :src="readmore" class="mr-[13px]" /> Read More
+              <img :src="readmore" class="mr-[13px]" alt="button" /> Read More
             </button>
           </div>
         </NuxtLink>
-        <img class="mt-[15px] w-9/12 object-contain xs:w-auto md:w-9/12 lg:w-auto" src="/images/HahuEnterprise.png"
-          alt="enterprise" />
-        <h2 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray/4 lg:text-2xl xl:text-3xl">
+        <img class="mt-[15px] w-9/12 object-contain xs:w-auto md:w-9/12 xl:w-7/12 3xl:w-auto"
+          src="/images/HahuEnterprise.png" alt="enterprise" />
+        <h2 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray/4 lg:text-2xl 3xl:text-3xl">
           Hahu Enterprise
         </h2>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
+          class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray3 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
           Provides human resources and related services starting from job
           vacancy announcements, recruitment, all the way to human resources
           management until termination. This deployment also offers unique
@@ -115,17 +115,17 @@ onBeforeUnmount(() => {
           <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
-              <img :src="readmore" class="mr-[13px]" /> Read More
+              <img :src="readmore" class="mr-[13px]" alt="button" /> Read More
             </button>
           </div>
         </NuxtLink>
-        <img class="mt-[15px] max-h-[198px] w-9/12 object-contain xs:w-auto md:w-9/12 lg:w-auto"
+        <img class="mt-[15px] max-h-[198px] w-9/12 object-contain xs:w-auto md:w-9/12 xl:w-7/12 3xl:w-auto"
           src="/images/industryPark.png" alt="industryPark" />
-        <h1 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray/4 lg:text-2xl xl:text-3xl">
+        <h1 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray/4 lg:text-2xl 3xl:text-3xl">
           HaHu Industry Parks
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray3 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
+          class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray3 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
           With biometric based identification to both register workers and job
           seekers. The process begins with mass registration of employment
           seekers to build a digital pool of job seekers from which they are
@@ -144,17 +144,17 @@ onBeforeUnmount(() => {
           <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
-              <img :src="readmore" class="mr-[13px]" /> Read More
+              <img :src="readmore" class="mr-[13px]" alt="button" /> Read More
             </button>
           </div>
         </NuxtLink>
-        <img class="mt-[15px] w-9/12 object-contain xs:w-auto md:w-9/12 lg:w-auto" src="/images/HahuTvet.png"
+        <img class="mt-[15px] w-9/12 object-contain xs:w-auto md:w-9/12 xl:w-7/12 3xl:w-auto" src="/images/HahuTvet.png"
           alt="tvet" />
-        <h1 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray3 lg:text-2xl xl:text-3xl">
+        <h1 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray3 lg:text-2xl 3xl:text-3xl">
           HaHuJob TVET
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
+          class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray/4 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
           HaHuJobs TVET is a targeted service deployment to trace skill-based
           education graduates and content encoding service offered for TVET
           institutes intended for both formal as well as career guiding lesson
@@ -175,17 +175,17 @@ onBeforeUnmount(() => {
           <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
-              <img :src="readmore" class="mr-[13px]" /> Read More
+              <img :src="readmore" class="mr-[13px]" alt="button" /> Read More
             </button>
           </div>
         </NuxtLink>
-        <img class="mt-[15px] w-9/12 object-contain xs:w-auto md:w-9/12 lg:w-auto" src="/images/HahuUniversity.png"
-          alt="university" />
-        <h1 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray3 lg:text-2xl xl:text-3xl">
+        <img class="mt-[15px] w-9/12 object-contain xs:w-auto md:w-9/12 xl:w-7/12 3xl:w-auto"
+          src="/images/HahuUniversity.png" alt="university" />
+        <h1 class="mt-[13px] text-lg font-black leading-6 dark:text-HahuGray3 lg:text-2xl 3xl:text-3xl">
           HaHu University
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
+          class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray/4 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
           HaHuJobs university is a deployment intended to serve the needs of
           deliver ology departments, offer alternative digital contend
           disbursement for instructors and tracing graduates of Ethiopian
@@ -206,17 +206,17 @@ onBeforeUnmount(() => {
           <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
-              <img :src="readmore" class="mr-[13px]" /> Read More
+              <img :src="readmore" class="mr-[13px]" alt="button" /> Read More
             </button>
           </div>
         </NuxtLink>
-        <img class="mt-[15px] max-h-[198px] w-9/12 object-contain xs:w-auto md:w-9/12 lg:w-auto"
+        <img class="mt-[15px] max-h-[198px] w-9/12 object-contain xs:w-auto md:w-9/12 xl:w-6/12 3xl:w-auto"
           src="/images/MuyaMain.png" alt="muya" />
-        <h1 class="mt-[13px] text-xl font-black leading-6 dark:text-HahuGray3 lg:text-2xl xl:text-3xl">
+        <h1 class="mt-[13px] text-lg font-black leading-6 dark:text-HahuGray3 lg:text-2xl 3xl:text-3xl">
           Hahu Muya
         </h1>
         <p
-          class="line-clamp-8 mt-8 px-6 text-center text-sm leading-[20px] dark:text-HahuGray/4 xs:text-lg md:px-8 2xl:px-12 3xl:px-16">
+          class="line-clamp-8 mt-8 px-6 text-justify text-sm leading-[20px] dark:text-HahuGray/4 xl:text-base 3xl:text-lg md:px-8 2xl:px-12 3xl:px-16">
           HaHuJobs Muya is capacity building and training platform intended for
           both jobseeker and students’ which sources various digital contents
           from training institutes in both document and multimedia formats. It

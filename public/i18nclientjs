@@ -4,7 +4,7 @@ import { createI18n } from "petite-vue-i18n";
 const i18n = createI18n({
   legacy: false,
   locale: "en",
-//   messages,
+  //   messages,
   fallbackLocale: "en",
   globalInjection: true,
 });

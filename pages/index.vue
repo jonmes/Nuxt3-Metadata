@@ -9,14 +9,14 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
       id="home">
       <div class="mt-14 3xl:mt-20 lg:flex-1">
         <div class="w-6/12 sm:w-4/12 2xl:w-full">
-          <img class="object-contain dark:hidden " src="/images/Hahu-031.png" />
-          <img class="hidden object-contain dark:block " src="/images/Hahu-031_dark.png" />
+          <img class="object-contain dark:hidden " src="/images/Hahu-031.png" alt="hahuLogo" />
+          <img class="hidden object-contain dark:block " src="/images/Hahu-031_dark.png" alt="hahuLogo" />
         </div>
         <div class="w-8/12 sm:w-6/12 3xl:w-full">
-          <img class="mt-10 object-contain dark:hidden " src="/images/Hahu_logo2.png" />
-          <img class="mt-10 hidden object-contain dark:block" src="/images/Hahu_logo2_dark.png" />
+          <img class="mt-10 object-contain dark:hidden " src="/images/Hahu_logo2.png" alt="hahujobsLogo" />
+          <img class="mt-10 hidden object-contain dark:block" src="/images/Hahu_logo2_dark.png" alt="hahujobsLogo" />
         </div>
-        <p class="mt-12 3xl:mt-20 w-full text-lg font-normal leading-8 dark:text-HahuGray/4">
+        <p class="mt-12 3xl:mt-20 w-full text-base 3xl:text-lg font-normal leading-8 dark:text-HahuGray/4">
           Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job
           matching and labor market information platform in Ethiopia. With
           various service deployments to address the Ethiopian labor market
@@ -36,9 +36,9 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
       </div>
       <div class="flex-1 hidden md:block 4xl:w-full">
         <img class="overflow-hidden object-contain md:mb-32 lg:mb-10 lg:flex-1 block dark:hidden"
-          src="/images/landing_page_1.png" />
+          src="/images/landing_page_1.png" alt="hahuWelcomeSvg" />
         <img class="overflow-hidden object-contain md:mb-32 lg:mb-10 lg:flex-1 hidden dark:block"
-          src="/images/landing_page_dark.png" />
+          src="/images/landing_page_dark.png" alt="hahuWelcomeSvg" />
       </div>
     </section>
     <main>

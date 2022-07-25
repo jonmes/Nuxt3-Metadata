@@ -72,7 +72,7 @@ onMounted(() => {
         class="mx-2 w-full hover:scale-[1.01] rounded-2xl bg-white dark:bg-HahuGray1 duration-300 lg:mx-10 xl:mx-8 3xl:mx-16 border-2 border-transparent hover:border-primary hover:shadow-lg">
         <div class="w-full group">
           <div class="mb-7 aspect-w-4 aspect-h-2">
-            <img class="object-cover rounded-t-2xl" :src="slide.thumbnail" />
+            <img class="object-cover rounded-t-2xl" :src="slide.thumbnail" alt="thumbnail" />
           </div>
 
           <div class="flex flex-col px-4 sm:px-6 xl:px-8 3xl:px-12">
@@ -88,7 +88,7 @@ onMounted(() => {
                 <h2 class="self-start text-xl font-black leading-[30px] dark:text-white">
                   Client
                 </h2>
-                <img class="mt-10" src="/images/projectC1.png" />
+                <img class="mt-10" src="/images/projectC1.png" alt="clientImage" />
               </div>
               <div
                 class="mt-16 rounded-full border-2 border-HahuGray3 bg-HahuGray3 group-hover:border-primary group-hover:bg-primary duration-500" />
@@ -97,7 +97,7 @@ onMounted(() => {
                   Partners
                 </h2>
                 <div class="mt-10 grid grid-cols-2 gap-x-6 gap-y-5">
-                  <img v-for="img in slide.partner" class="object-contain" :src="img" />
+                  <img v-for="img in slide.partner" class="object-contain" :src="img" alt="partnerImage" />
                 </div>
               </div>
             </div>
