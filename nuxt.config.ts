@@ -3,8 +3,8 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "url";
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  //Metadata
   app: {
     head: {
       title: "Nuxt Meta test",
@@ -96,12 +96,14 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
-      // VueI18nPlugin.vite({ /* options */ }),
       VueI18nPlugin({
         include: [
           resolve(dirname(fileURLToPath(import.meta.url)), "./locales/*.json"),
         ],
       }),
     ],
+  },
+  build: {
+    transpile: ["@intlify/unplugin-vue-i18n"],
   },
 });
