@@ -33,36 +33,7 @@ onMounted(() => {
     windowWidth.value = window.innerWidth;
     carWidth(windowWidth.value);
   };
-
-  // observer.value = new IntersectionObserver((entries) => {
-  //   entries.forEach(
-  //     (entry) => {
-  //       entry.target.classList.toggle(
-  //         "lg:[&[show=true]]:translate-x-0",
-  //         entry.isIntersecting
-  //       );
-  //       entry.target.classList.toggle(
-  //         "lg:[&[show=true]]:opacity-100",
-  //         entry.isIntersecting
-  //       );
-  //       if (entry.isIntersecting) {
-  //         observer.value.unobserve(entry.target);
-  //         return entry.target;
-  //       }
-  //     },
-  //     {
-  //       threshold: 0.5,
-  //     }
-  //   );
-  // });
-  // target.value.forEach((card) => {
-  //   observer.value.observe(card.$el);
-  // });
 });
-
-// onBeforeUnmount(() => {
-//   observer.value.disconnect();
-// });
 </script>
 
 <template>
@@ -88,16 +59,19 @@ onMounted(() => {
                 <h2 class="self-start text-xl font-black leading-[30px] dark:text-white">
                   Client
                 </h2>
-                <img class="mt-10" src="/images/projectC1.png" alt="clientImage" />
+                <img class="mt-10  xl:opacity-60 xl:grayscale xl:group-hover:opacity-100 xl:group-hover:grayscale-0"
+                  src="/images/MLs_Logo_color.png" alt="clientImage" />
               </div>
               <div
-                class="mt-16 rounded-full border-2 border-HahuGray3 bg-HahuGray3 group-hover:border-primary group-hover:bg-primary duration-500" />
+                class="mt-16 rounded-full border-2 border-primary bg-primary xl:border-HahuGray3 xl:bg-HahuGray3 xl:group-hover:border-primary xl:group-hover:bg-primary duration-500" />
               <div class="ml-6 flex flex-col">
                 <h2 class="self-start text-xl font-black leading-[30px] dark:text-white">
                   Partners
                 </h2>
-                <div class="mt-10 grid grid-cols-2 gap-x-6 gap-y-5">
-                  <img v-for="img in slide.partner" class="object-contain" :src="img" alt="partnerImage" />
+                <div class="mt-10  grid grid-cols-2 gap-x-6 gap-y-5">
+                  <img v-for="img in slide.partner"
+                    class="object-contain  xl:opacity-60 xl:grayscale xl:group-hover:opacity-100 xl:group-hover:grayscale-0"
+                    :src="img" alt="partnerImage" />
                 </div>
               </div>
             </div>

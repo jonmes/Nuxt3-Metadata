@@ -56,7 +56,7 @@
             Graduate tracer
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             This service enables universities of all types to conduct biometric
             based registration of both their students and graduates that have
             successfully completed their required course work. The registration
@@ -77,7 +77,7 @@
             Digital Contents
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             Contents relevant to all levels of the university students can be
             submitted by the institution using these services, contents
             delivered through our training platform called HaHuJobs muya. Each
@@ -98,7 +98,7 @@
             Digital assessment
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             These set of university services are extension of the HaHuJobs core
             assessment services customized for academic purposed to evaluate
             specific competence of students or graduates regarding a set of
@@ -137,7 +137,7 @@
             Muya
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             HaHuJobs Muya is capacity building and training platform intended
             for both jobseeker and students’ which sources various digital
             contents from training institutes in both document and multimedia
@@ -158,7 +158,7 @@
             Job seekers pool
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             Any student or graduate registered in HaHuJobs university services
             will automatically join our jobseekers’ pools and based on their
             consent their details will be availed for employers as well as
@@ -172,14 +172,14 @@
           class="group shadow-full flex max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/TvetReport.png" alt="report"/>
+            <img class="object-contain" src="/images/TvetReport.png" alt="report" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
             Reporting
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             One of the primary challenges of training providing institutes is
             lack of compiled data to plan for demand driven training and tracing
             the success of trainees or graduates after joining the work force.

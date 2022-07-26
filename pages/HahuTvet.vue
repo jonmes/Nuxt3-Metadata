@@ -2,12 +2,12 @@
   <div class="min-h-screen overflow-y-auto px-8 md:px-[50px] xl:px-[100px]">
     <section class="flex flex-col items-center lg:min-h-screen xl:space-x-[89px] lg:flex-row" id="home">
       <div class="mt-20 flex-1 xl:mt-0">
-        <img class="object-contain" src="/images/HahuEnter_amharic.png" alt="hahuLogo"/>
+        <img class="object-contain" src="/images/HahuEnter_amharic.png" alt="hahuLogo" />
         <h1 class="items-center text-[50px] font-black leading-[50px] dark:text-HahuGray/4">
           HaHuJob TVET
         </h1>
         <div class="lg:hidden mt-10 lg:mt-0 flex-shrink max-w-[70vw]">
-          <img class="object-contain" src="/images/TvetMain.png" alt="tvet"/>
+          <img class="object-contain" src="/images/TvetMain.png" alt="tvet" />
         </div>
         <p class="mt-[27px] items-center text-lg font-normal leading-[35px] text-HahuGray2 dark:text-HahuGray/4">
           HaHuJobs TVET is a targeted service deployment to trace skill-based
@@ -23,7 +23,7 @@
         </button>
       </div>
       <div class="hidden lg:block flex-1 flex-shrink">
-        <img class="object-contain 3xl:min-w-[950px]" src="/images/TvetMain.png" alt="tvet"/>
+        <img class="object-contain 3xl:min-w-[950px]" src="/images/TvetMain.png" alt="tvet" />
       </div>
     </section>
 
@@ -47,14 +47,14 @@
           class="group shadow-full flex max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/TvetTracer.png" alt="tvetTracer"/>
+            <img class="object-contain" src="/images/TvetTracer.png" alt="tvetTracer" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
             Graduate Tracer
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             This service enables TVET institutions to conduct biometric based
             registration of both their students and graduates that have
             successfully completed their enrolled occupation level. The
@@ -68,14 +68,14 @@
           class="group shadow-full flex max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/TvetContent.png" alt="tvetContent"/>
+            <img class="object-contain" src="/images/TvetContent.png" alt="tvetContent" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
             Digital Contents
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             Contents relevant to all levels of students can be submitted by the
             institution using these services, contents delivered through our
             training platform called HaHuJobs muya. Each of these contents can
@@ -89,14 +89,14 @@
           class="group shadow-full flex max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/TvetAssess.png" alt="TvetAssess"/>
+            <img class="object-contain" src="/images/TvetAssess.png" alt="TvetAssess" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
             Digital assessment
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             These set of TVET services are extension of the HaHuJobs core
             assessment services customized for academic purposed to evaluate
             specific competence of TVET students or graduates regarding a set of
@@ -128,14 +128,14 @@
           class="group shadow-full flex max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/TvetMuya.png" alt="tvetMuya"/>
+            <img class="object-contain" src="/images/TvetMuya.png" alt="tvetMuya" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
             Muya
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             HaHuJobs Muya is capacity building and training platform intended
             for both jobseeker and students’ which sources various digital
             contents from training institutes in both document and multimedia
@@ -149,14 +149,14 @@
           class="group shadow-full flex max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/TvetPool.png" alt="tvetPool"/>
+            <img class="object-contain" src="/images/TvetPool.png" alt="tvetPool" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
             Job Seekers Pool
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             Any student or graduate registered in HaHuJobs TVET services will
             automatically join our jobseekers’ pools and based on their concept
             their details will be availed for employers as well as enterprises
@@ -170,14 +170,14 @@
           class="group shadow-full flex max-w-[485px] flex-col items-center rounded-[15px] border-2 border-transparent bg-white duration-500 hover:border-primary dark:bg-HahuGray1">
           <div
             class="mt-[38px] flex h-[141px] w-[141px] items-center justify-center rounded-full border-2 bg-HaHuGreen/4 shadow-lg duration-500 group-hover:border-primary">
-            <img class="object-contain" src="/images/TvetReport.png" alt="tvetReport"/>
+            <img class="object-contain" src="/images/TvetReport.png" alt="tvetReport" />
           </div>
           <h2
             class="mt-[44px] self-center text-center text-xl font-bold leading-[35px] text-HahuGray1 dark:text-HahuGray/4">
             Reporting
           </h2>
           <p
-            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 2xl:px-[59px]">
+            class="mt-[26px] self-center px-5 pb-[42px] text-center text-lg font-light leading-[30px] dark:text-HahuGray/4 3xl:px-[59px]">
             One of the primary challenges of training providing institutes is
             lack of compiled data to plan for demand driven training and tracing
             the succuss of trainees or graduates after joining the work force.

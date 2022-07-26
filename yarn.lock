@@ -401,12 +401,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@headlessui/vue@npm:^1.6.6":
-  version: 1.6.6
-  resolution: "@headlessui/vue@npm:1.6.6"
+"@headlessui/vue@npm:insiders":
+  version: 0.0.0-insiders.5af3bd4
+  resolution: "@headlessui/vue@npm:0.0.0-insiders.5af3bd4"
   peerDependencies:
     vue: ^3.2.0
-  checksum: 7e4849c9ddbe02a5000a476c0393921d8b05f54bc9ccd0a811f27fbd048f71f1cf8a355cc8934c3d2730f936afdc99275aaf9bd686b7eabb3ba1cf737ba36537
+  checksum: cc82b73654ba56da31b384d412565b90986827cafb08501fc7ce8eb06d60f2a8906be52061fe629eb54003a7d855b81b4a7a3bfe9b160adcd51bfca9c9a332df
   languageName: node
   linkType: hard
 
@@ -6619,7 +6619,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@headlessui/vue": ^1.6.6
+    "@headlessui/vue": insiders
     "@heroicons/vue": ^1.0.6
     "@intlify/eslint-plugin-vue-i18n": ^2.0.0
     "@intlify/unplugin-vue-i18n": ^0.4.0

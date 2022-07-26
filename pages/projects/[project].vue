@@ -1,8 +1,8 @@
 <script setup>
-import Partner1 from "@/assets/svg/projectPartner1.svg?url";
-import Partner2 from "@/assets/svg/projectPartner2.svg?url";
-import Partner3 from "@/assets/svg/projectPartner3.svg?url";
-import Partner4 from "@/assets/svg/projectPartner4.svg?url";
+import Partner1 from "/images/MLs_Logo_color.png";
+import Partner2 from "/images/ILO_color.png";
+import Partner3 from "/images/MOFA_color.png";
+import Partner4 from "/images/mc_color.png";
 import {
   ArrowNarrowRightIcon,
   ArrowNarrowLeftIcon,
@@ -95,171 +95,90 @@ const router = useRoute();
 const filteredPro = ref(projects.find((el) => el.id == router.params.project));
 </script>
 <template>
-  <div class="min-h-screen px-8 md:px-[50px] xl:px-[100px]">
+  <div class="min-h-screen flex justify-center">
+
     <Head>
       <Title>{{ filteredPro.title }}</Title>
-      <Meta
-        data-n-head="ssr"
-        name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:title"
-        property="og:title"
-        :content="filteredPro.title"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:description"
-        property="og:description"
-        :content="filteredPro.p1"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="description"
-        property="description"
-        :content="filteredPro.p1"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:url"
-        property="og:url"
-        :content="currentLink"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:type"
-        property="og:type"
-        content="website"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:image"
-        property="og:image"
-        :content="filteredPro.img"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:card"
-        property="twitter:card"
-        content="summary_large_image"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:domain"
-        property="twitter:domain"
-        content="hahu.vercel.app"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:url"
-        property="twitter:url"
-        :content="currentLink"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:title"
-        property="twitter:title"
-        :content="filteredPro.title"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:description"
-        property="twitter:description"
-        :content="filteredPro.p1"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:image"
-        property="twitter:image"
-        :content="filteredPro.img"
-      />
+      <Meta data-n-head="ssr" name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <Meta data-n-head="ssr" data-hid="og:title" property="og:title" :content="filteredPro.title" />
+      <Meta data-n-head="ssr" data-hid="og:description" property="og:description" :content="filteredPro.p1" />
+      <Meta data-n-head="ssr" data-hid="description" property="description" :content="filteredPro.p1" />
+      <Meta data-n-head="ssr" data-hid="og:url" property="og:url" :content="currentLink" />
+      <Meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website" />
+      <Meta data-n-head="ssr" data-hid="og:image" property="og:image" :content="filteredPro.img" />
+      <Meta data-n-head="ssr" data-hid="twitter:card" property="twitter:card" content="summary_large_image" />
+      <Meta data-n-head="ssr" data-hid="twitter:domain" property="twitter:domain" content="hahu.vercel.app" />
+      <Meta data-n-head="ssr" data-hid="twitter:url" property="twitter:url" :content="currentLink" />
+      <Meta data-n-head="ssr" data-hid="twitter:title" property="twitter:title" :content="filteredPro.title" />
+      <Meta data-n-head="ssr" data-hid="twitter:description" property="twitter:description" :content="filteredPro.p1" />
+      <Meta data-n-head="ssr" data-hid="twitter:image" property="twitter:image" :content="filteredPro.img" />
     </Head>
     <section
-      class="mt-10 flex flex-col rounded-[15px] bg-white px-5 duration-500 ease-in dark:bg-HahuGray1 sm:px-10 md:px-12 lg:px-24 3xl:px-24"
-    >
+      class="mt-10 flex flex-col rounded-[15px] bg-white px-5 duration-500 ease-in dark:bg-HahuGray1 sm:px-10 w-11/12 xl:w-9/12 md:px-12 lg:px-24 3xl:px-24">
       <div class="relative mb-10 mt-10 sm:mt-0 flex items-end font-bold">
         <Contained :crumb="crumb" />
         <div class="ml-auto flex">
           <NuxtLink class="mt-10 flex self-end" :to="{ name: 'index' }">
             <button
-              class="hidden group sm:flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3"
-            >
+              class="hidden group sm:flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3">
               <ArrowNarrowLeftIcon
-                class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-2"
-              />Back
+                class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-2" />Back
             </button>
           </NuxtLink>
         </div>
       </div>
-      <h1
-        class="mt-5 text-xl font-black leading-6 text-primary lg:mt-[78px] lg:text-2xl xl:text-3xl"
-      >
+      <h1 class="mt-5 text-xl font-black leading-6 text-primary lg:mt-[78px] lg:text-2xl 3xl:text-3xl">
         {{ filteredPro.title }}
       </h1>
-      <p
-        class="mt-[35px] text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
-      >
+      <p class="mt-[35px] text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-base">
         {{ filteredPro.p1 }}
       </p>
-      <img class="mt-[54px] rounded-lg" :src="filteredPro.img" alt="projectImage1"/>
+      <img class="mt-[54px] rounded-lg" :src="filteredPro.img" alt="projectImage1" />
 
-      <p
-        class="mt-5 text-base font-light leading-9 duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
-      >
+      <p class="mt-5 text-base font-light leading-9 duration-500 ease-in dark:text-HahuGray/4 md:text-lg">
         {{ filteredPro.title }}
       </p>
       <p
-        class="mt-6 md:mt-14 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
-      >
+        class="mt-6 md:mt-14 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-base">
         {{ filteredPro.p2 }}
       </p>
-      <img
-        class="mt-[54px] rounded-lg"
-        v-if="filteredPro.img2"
-        :src="filteredPro.img2"
-        alt="projectImage2"
-      />
-      <p
-        class="mt-14 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
-        v-if="filteredPro.p3"
-      >
+      <img class="mt-[54px] rounded-lg" v-if="filteredPro.img2" :src="filteredPro.img2" alt="projectImage2" />
+      <p class="mt-14 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-lg"
+        v-if="filteredPro.p3">
         {{ filteredPro.p3 }}
       </p>
 
       <div class="mt-20 flex flex-col md:flex-row">
-        <div class="mr-6 md:mr-10 lg:mr-24 flex flex-col">
+        <div class="mr-4 md:mr-10 lg:mr-20 flex flex-col">
           <h2 class="text-xl font-black leading-[30px] dark:text-white">
             Client
           </h2>
-          <div>
-            <img class="mt-10" src="/images/projectC1.png" alt="clientImg"/>
+          <div class="max-w-md">
+            <img class="mt-10 max-w-[221px] xl:opacity-60 xl:grayscale xl:hover:opacity-100 xl:hover:grayscale-0"
+              src="/images/MLs_Logo_color.png" alt="clientImg" />
           </div>
         </div>
-        <div class="mt-16 rounded-full border-[3px] border-HahuGray3" />
-        <div class="mt-10 md:mt-0 ml-6 md:ml-10 lg:ml-28 flex flex-col">
+        <div class="mt-16 rounded-full border-[3px] border-HahuGray3 bg-HahuGray3" />
+        <div class="mt-10 md:mt-0 ml-6 md:ml-10 lg:ml-24 flex flex-col">
           <h2 class="text-xl font-black leading-[30px] dark:text-white">
             Partners
           </h2>
           <div
-            class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-y-10 sm:gap-x-16 sm:gap-y-10"
-          >
-            <img v-for="img in partners" class="object-contain" :src="img" alt="partnerImg"/>
+            class="mt-10 grid grid-cols-1 place-items-center sm:grid-cols-2 max-w-md gap-y-10 sm:gap-x-16 sm:gap-y-10">
+            <img v-for="img in partners"
+              class="object-contain max-w-[221px] xl:opacity-60 xl:grayscale xl:hover:opacity-100 xl:hover:grayscale-0"
+              :src="img" alt="partnerImg" />
           </div>
         </div>
       </div>
 
       <div class="mb-[78px] mt-20 flex flex-col">
         <h2 class="text-xl font-black leading-[30px] dark:text-white">Team</h2>
-        <div
-          class="mt-12 flex flex-col gap-y-10 gap-x-20 md:flex-row md:gap-y-10"
-        >
+        <div class="mt-12 flex flex-col gap-y-10 gap-x-20 md:flex-row md:gap-y-10">
           <div class="flex flex-col items-center">
-            <img class="object-contain" src="/images/Ellipse1.png" alt="ellipse"/>
-            <h2
-              class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4"
-            >
+            <img class="object-contain" src="/images/Ellipse1.png" alt="ellipse" />
+            <h2 class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4">
               Teklawol Belayneh
             </h2>
             <h2 class="text-base font-normal leading-[30px] text-primary">
@@ -267,10 +186,8 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
             </h2>
           </div>
           <div class="flex flex-col items-center">
-            <img class="object-contain" src="/images/Ellipse2.png" alt="ellipse"/>
-            <h2
-              class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4"
-            >
+            <img class="object-contain" src="/images/Ellipse2.png" alt="ellipse" />
+            <h2 class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4">
               Jane Doe
             </h2>
             <h2 class="text-base font-normal leading-[30px] text-primary">
@@ -278,10 +195,8 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
             </h2>
           </div>
           <div class="flex flex-col items-center">
-            <img class="object-contain" src="/images/Ellipse3.png" alt="ellipse"/>
-            <h2
-              class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4"
-            >
+            <img class="object-contain" src="/images/Ellipse3.png" alt="ellipse" />
+            <h2 class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4">
               Jane Doe
             </h2>
             <h2 class="text-base font-normal leading-[30px] text-primary">
@@ -289,11 +204,9 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
             </h2>
           </div>
           <div class="flex flex-col items-center">
-            <img class="object-contain" src="/images/Ellipse4.png" alt="ellipse"/>
+            <img class="object-contain" src="/images/Ellipse4.png" alt="ellipse" />
 
-            <h2
-              class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4"
-            >
+            <h2 class="mt-[15px] text-xl font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4">
               Jane Doe
             </h2>
             <h2 class="text-base font-normal leading-[30px] text-primary">
@@ -305,4 +218,5 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
     </section>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+</style>

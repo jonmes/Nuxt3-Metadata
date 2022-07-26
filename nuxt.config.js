@@ -2,7 +2,7 @@ import { defineNuxtConfig } from "nuxt";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "url";
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -146,21 +146,23 @@ export default defineNuxtConfig({
       // ],
     },
   },
-
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@vueuse/nuxt"],
   css: ["@/assets/css/main.css"],
-  postcss: {
-    plugins: {
-      tailwindcss: {
-        cssPath: "@/assets/css/main.css",
-        configPath: "tailwind.config.js",
-        exposeConfig: false,
-        config: {},
-        injectPosition: 0,
-        viewer: true,
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {
+          cssPath: "@/assets/css/main.css",
+          configPath: "tailwind.config.js",
+          exposeConfig: false,
+          config: {},
+          injectPosition: 0,
+          viewer: true,
+        },
+        autoprefixer: {},
       },
-      autoprefixer: {},
     },
+    transpile: ["@headlessui/vue", "@intlify/unplugin-vue-i18n"],
   },
   vite: {
     plugins: [

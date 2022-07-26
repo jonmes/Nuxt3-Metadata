@@ -112,107 +112,50 @@ const copyLinkFunc = () => {
 
 <template>
   <div>
+
     <Head>
       <Title>{{ filteredBlog.title }}</Title>
-      <Meta
-        data-n-head="ssr"
-        name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:title"
-        property="og:title"
-        :content="filteredBlog.title"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:description"
-        property="og:description"
-        :content="filteredBlog.p1"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="description"
-        name="description"
-        :content="filteredBlog.p1"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="og:url"
-        property="og:url"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/"
-      />
+      <Meta data-n-head="ssr" name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <Meta data-n-head="ssr" data-hid="og:title" property="og:title" :content="filteredBlog.title" />
+      <Meta data-n-head="ssr" data-hid="og:description" property="og:description" :content="filteredBlog.p1" />
+      <Meta data-n-head="ssr" data-hid="description" name="description" :content="filteredBlog.p1" />
+      <Meta data-n-head="ssr" data-hid="og:url" property="og:url"
+        content="https://nuxt-stat-dep--hahuone.netlify.app/" />
       <Meta data-n-head="ssr" property="og:type" content="website" />
       <Meta data-n-head="ssr" property="og:image" :content="filteredBlog.img" />
-      <Meta
-        data-n-head="ssr"
-        property="twitter:card"
-        content="summary_large_image"
-      />
-      <Meta
-        data-n-head="ssr"
-        property="twitter:domain"
-        content="hahuone.netlify.app"
-      />
-      <Meta
-        property="twitter:url"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/"
-      />
-      <Meta
-        data-n-head="ssr"
-        data-hid="twitter:title"
-        name="twitter:title"
-        property="twitter:title"
-        :content="filteredBlog.title"
-      />
-      <Meta
-        data-n-head="ssr"
-        name="twitter:description"
-        property="twitter:description"
-        data-hid="twitter:description"
-        :content="filteredBlog.p1"
-      />
+      <Meta data-n-head="ssr" property="twitter:card" content="summary_large_image" />
+      <Meta data-n-head="ssr" property="twitter:domain" content="hahuone.netlify.app" />
+      <Meta property="twitter:url" content="https://nuxt-stat-dep--hahuone.netlify.app/" />
+      <Meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" property="twitter:title"
+        :content="filteredBlog.title" />
+      <Meta data-n-head="ssr" name="twitter:description" property="twitter:description" data-hid="twitter:description"
+        :content="filteredBlog.p1" />
 
-      <Meta
-        data-n-head="ssr"
-        property="twitter:image"
-        :content="filteredBlog.img"
-      />
+      <Meta data-n-head="ssr" property="twitter:image" :content="filteredBlog.img" />
     </Head>
 
-    <div class="flex min-h-screen justify-center md:px-11 xl:px-24">
+    <div class="flex min-h-screen justify-center md:px-11 xl:px-10">
       <section
-        class="mt-3 flex w-11/12 xs:w-9/12 flex-col rounded-xl bg-white dark:bg-HahuGray1 px-4 xs:px-10 sm:px-10 md:px-20 xl:px-40 2xl:px-40"
-      >
+        class="mt-3 flex w-11/12 xs:w-9/12 flex-col rounded-xl bg-white dark:bg-HahuGray1 px-4 xs:px-10 sm:px-10 md:px-20 xl:px-20 2xl:px-20">
         <div
-          class="relative mb-10 mt-6 flex flex-wrap flex-col xs:flex-row justify-start xs:justify-between items-end xs:items-center font-bold"
-        >
+          class="relative mb-10 mt-6 flex flex-wrap flex-col xs:flex-row justify-start xs:justify-between items-end xs:items-center font-bold">
           <Contained :crumb="crumb" class="self-start" />
           <div class="flex">
-            <NuxtLink
-              class="mt-[38px] sm:mt-0 flex self-start sm:self-end"
-              to="/blogs"
-            >
+            <NuxtLink class="mt-[38px] sm:mt-0 flex self-start sm:self-end" to="/blogs">
               <button
-                class="group flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-5 lg:py-3"
-              >
+                class="group flex items-center justify-end self-end rounded-md bg-primary px-2 py-1 text-base font-medium leading-6 text-white lg:px-3 lg:py-2">
                 <ArrowNarrowLeftIcon
-                  class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-1"
-                />Back
+                  class="mr-[9px] inline-block h-5 w-5 text-white duration-300 group-hover:-translate-x-1" />Back
               </button>
             </NuxtLink>
           </div>
         </div>
-        <h1
-          class="mt-10 text-2xl font-bold leading-[60px] text-HahuGray1 dark:text-HahuGray/4 xl:text-3xl"
-        >
+        <h1 class="mt-10 text-2xl font-bold leading-[60px] text-HahuGray1 dark:text-HahuGray/4 xl:text-3xl">
           {{ filteredBlog.title }}
         </h1>
         <div class="mt-6 flex items-center gap-14">
-          <h1
-            class="rounded-full bg-primary-lite px-3 py-[5px] text-xs font-medium leading-[18px] text-primary"
-          >
+          <h1 class="rounded-full bg-primary-lite px-3 py-[5px] text-xs font-medium leading-[18px] text-primary">
             {{ filteredBlog.cat }}
           </h1>
           <p class="text-base font-medium leading-6 text-primary">
@@ -220,52 +163,39 @@ const copyLinkFunc = () => {
           </p>
         </div>
 
-        <p
-          class="mt-[40px] text-base font-normal leading-[30px] text-HahuGray2 dark:text-HahuGray/4 md:text-lg"
-        >
+        <p class="mt-[40px] text-base font-normal leading-[30px] text-HahuGray2 dark:text-HahuGray/4 md:text-lg">
           {{ filteredBlog.p1 }}
         </p>
-        <img class="mt-10 md:mt-[90px] rounded-2xl" :src="filteredBlog.img" alt="blogImg"/>
-        <p
-          v-if="filteredBlog.p2"
-          class="mt-10 text-base font-normal leading-[30px] text-HahuGray1 dark:text-HahuGray/4 md:mt-[90px] md:text-lg"
-        >
+        <img class="mt-10 md:mt-[90px] rounded-2xl" :src="filteredBlog.img" alt="blogImg" />
+        <p v-if="filteredBlog.p2"
+          class="mt-10 text-base font-normal leading-[30px] text-HahuGray1 dark:text-HahuGray/4 md:mt-[90px] md:text-lg">
           {{ filteredBlog.p2 }}
         </p>
 
         <div class="mt-10 mb-16 flex flex-wrap justify-center gap-2 xl:mt-20">
           <button
             class="flex items-center rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4 sm:mr-[102px]"
-            @click="copyLinkFunc()"
-          >
+            @click="copyLinkFunc()">
             <input class="hidden" id="myLink" v-model="copyLinkInp" />
-            <img class="object-contain pl-4" :src="CopyLink" alt="copyLink"/>
+            <img class="object-contain pl-4" :src="CopyLink" alt="copyLink" />
             <span class="py-2 pr-4 pl-[7px]">Copy Link</span>
           </button>
           <div class="flex gap-2">
-            <a
-              :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&t=${filteredBlog.title}`"
+            <a :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&t=${filteredBlog.title}`"
               target="_blank"
-              class="share-popup rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
-            >
-              <img class="object-contain px-[13px] py-[9px]" :src="Facebook" alt="facebook"/>
+              class="share-popup rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4">
+              <img class="object-contain px-[13px] py-[9px]" :src="Facebook" alt="facebook" />
             </a>
-            <button
-              class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
-            >
-              <img class="object-contain px-[13px] py-[9px]" :src="Insta" alt="instagram"/>
+            <button class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4">
+              <img class="object-contain px-[13px] py-[9px]" :src="Insta" alt="instagram" />
             </button>
-            <a
-              :href="`http://twitter.com/share?text=${filteredBlog.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
-              class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
-            >
-              <img class="object-contain px-[13px] py-[9px]" :src="Twitter" alt="twitter"/>
+            <a :href="`http://twitter.com/share?text=${filteredBlog.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
+              class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4">
+              <img class="object-contain px-[13px] py-[9px]" :src="Twitter" alt="twitter" />
             </a>
-            <a
-              :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&text=${filteredBlog.title}`"
-              class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4"
-            >
-              <img class="object-contain px-[13px] py-[9px]" :src="Telegram" alt="telegram"/>
+            <a :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&text=${filteredBlog.title}`"
+              class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4">
+              <img class="object-contain px-[13px] py-[9px]" :src="Telegram" alt="telegram" />
             </a>
           </div>
         </div>
@@ -274,4 +204,5 @@ const copyLinkFunc = () => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
