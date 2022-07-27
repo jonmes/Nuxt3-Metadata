@@ -2,7 +2,7 @@
 const cardSlider = [
   {
     thumbnail:
-      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870128/Hahu/project1_ywgyfc.png",
+      "/images/projects/Hipster-01.png",
     // One
     title: "HIPSTER Labor Management Database",
     text: "In June 2018 HaHuJobs was contracted by Enterprise Partners to automate components of the Hawassa Industrial Park Sourcing and Training Employees in the Region project. The program worked to change the way that markets work for the poor so that poor people were included in the benefits of growth and economic development as consumers, employees and investors. ",
@@ -17,7 +17,7 @@ const cardSlider = [
   },
   {
     thumbnail:
-      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657870137/Hahu/project2_ysoqxp.png",
+      "/images/projects/World bank-01.png",
     // Two
     title: "World bank HIPCIE research project",
     text: "The Hawassa Industrial Park Community Impact Evaluation Project is a large-scale, rigorous evaluation of the impact that the government’s flagship industrial park in Hawassa has on workers, their rural origin households, and their broader origin communities. The project team is led by two academic principal investigators and implemented in cooperation with the World Bank Group. ",
@@ -77,7 +77,7 @@ const cardSlider = [
   },
   {
     thumbnail:
-      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657953195/Hahu/placeholder-image_md4eym.jpg",
+      "/images/projects/mofa-01.png",
     // Six
     title: "MOFA BLA Tool",
     text: "In regards to tragedies and abuses faced by Ethiopian migrant workers in the Middle East, labor migration and the protection of Ethiopia migrant workers in destination countries has become one of the major political discourses for the Ethiopian Government. To respond to this challenge, the government of Ethiopia have taken multiple initiatives in improving labor migration ...",
@@ -92,7 +92,7 @@ const cardSlider = [
   },
   {
     thumbnail:
-      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657953195/Hahu/placeholder-image_md4eym.jpg",
+      "/images/projects/Emdms-01.png",
     // Seven
     title: "EMDMS upgrade",
     text: "This project was contracted to HaHuJobs by ILO Ethiopia as an extension of the MoFA BLA enforcement tool to provide a holistic citizen service to both Ethiopian foreign employment seekers and deployed employees. Hence why the objectives of this project were to upgrade the former Ethiopian Migrant Data Management System (EMDMS) and integrate it with ...",
@@ -107,7 +107,7 @@ const cardSlider = [
   },
   {
     thumbnail:
-      "https://res.cloudinary.com/dyut9eifz/image/upload/v1657953195/Hahu/placeholder-image_md4eym.jpg",
+      "/images/projects/SNV-01-01-01.png",
     // Eight
     title: "SNV RAYEE wage employment linkage",
     text: "The RAYEE program is an SNV implementation that aims to create meaningful employment in agriculture and agri-business for 240,000 young people (of which 70% are women) until the end of 2024. RAYEE will target five geographical areas: the SNNPR, Oromia, Amhara and Tigray regions as well as the Dire Dawa city. The project is funded by ...",
