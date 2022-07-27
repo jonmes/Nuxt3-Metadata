@@ -8,11 +8,13 @@
   },
   "devDependencies": {
     "@intlify/unplugin-vue-i18n": "^0.4.0",
+    "@nuxt/image-edge": "^1.0.0-27628766.3629b9a",
     "nuxt": "3.0.0-rc.5",
     "vue-i18n": "^9.1.10"
   },
   "dependencies": {
     "@vee-validate/i18n": "^4.6.2",
+    "@vueuse/motion": "^2.0.0-beta.12",
     "petite-vue-i18n": "^9.2.0-beta.39",
     "vee-validate": "^4.6.2"
   }

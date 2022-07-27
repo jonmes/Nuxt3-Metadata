@@ -93,7 +93,18 @@ export default defineNuxtConfig({
       ],
     },
   },
-
+  image: {
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      "2xl": 1536,
+    },
+  },
+  modules: ["@nuxt/image-edge"],
   vite: {
     plugins: [
       VueI18nPlugin({
@@ -104,6 +115,6 @@ export default defineNuxtConfig({
     ],
   },
   build: {
-    transpile: ["@intlify/unplugin-vue-i18n"],
+    transpile: ["@intlify/unplugin-vue-i18n", "@nuxt/image-edge", "@vueuse/motion"],
   },
 });

@@ -82,12 +82,23 @@ const item = ref({})
         </select>
       </div>
       <h1>{{ $t("hello") }}</h1>
-      <NuxtLink to="/blogs"> {{ $t("blogspage") }} </NuxtLink>
+      <NuxtLink to="/blogs" 
+      v-motion="{
+        initial: {
+          y: 100,
+          opacity: 0
+        },
+        enter: {
+          y: 0,
+          opacity: 1
+        }
+      }"> {{ $t("blogspage") }} </NuxtLink>
       <video id="my-player" controls style="width: 100%; max-width: 500px">
         <source src="https://stream.mux.com/F9cP5Xgdcp7028hN4gQrOmlF62ZDHNloCTQQao8Pk00kk/medium.mp4"
           type="video/mp4" />
       </video>
-
+      <!-- <nuxt-img src="About_avatar.png" format="webp" sizes="sm:2vw md: 5vw: lg:100vw" /> -->
+      <!-- <img src="About_avatar.png" /> -->
       <form @submit.prevent="submit" show="true"
         class="flex pb-10 lg:pb-5 max-h-[915px] w-full sm:w-10/12 lg:w-full 3xl:w-10/12 flex-col rounded-md bg-white pt-11 px-2 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24">
         <H-text-field v-model="item.name" rules="required|number" type="text" name="name" placeholder="Your name..."
