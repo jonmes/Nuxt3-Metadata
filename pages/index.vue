@@ -17,11 +17,9 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
           <img class="mt-10 hidden object-contain dark:block" src="/images/Hahu_logo2_dark.png" alt="hahujobsLogo" />
         </div>
         <p class="mt-12 3xl:mt-20 w-full text-base 3xl:text-lg font-normal leading-8 dark:text-HahuGray/4">
-          Hey there, ሰላም ነው? Welcome to HaHuJobs the larges data driven job
-          matching and labor market information platform in Ethiopia. With
-          various service deployments to address the Ethiopian labor market
-          needs; we stand at the for front of the local digital job matching
-          industry.
+          Hey there, ሰላም ነው? Welcome to HaHuJobs the largest data-driven job matching and labor market information
+          platform in Ethiopia. With various service deployments to address the Ethiopian labor market needs; we stand
+          at the forefront of the local digital job matching industry.
         </p>
         <div class="mt-5 md:mt-14 3xl:20 flex">
           <a href="#services" class="group">

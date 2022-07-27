@@ -43,8 +43,10 @@ onBeforeUnmount(() => {
       </h1>
       <h2 show="true" ref="target"
         class="lg:opacity-0 lg:translate-y-20 duration-1000 mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-lg lg:px-5 3xl:px-8 3xl:py-4 lg:py-2 lg:text-2xl 3xl:text-3xl lg:leading-[18px]">
-        Standard service with Ethiopian hospitality!
+        Standardized services with Ethiopian hospitality!
       </h2>
+      <p>We provide a category of services to offer a holistic solution to the multi-faceted needs of the Ethiopian
+        labor market.</p>
     </div>
     <div
       class="mt-[76px] grid grid-cols-1 justify-items-center gap-y-12 md:grid-cols-2 md:gap-x-12 md:gap-y-12 xl:grid-cols-3 xl:gap-x-12 xl:gap-y-12">
