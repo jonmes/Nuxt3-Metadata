@@ -115,6 +115,6 @@ export default defineNuxtConfig({
     ],
   },
   build: {
-    transpile: ["@intlify/unplugin-vue-i18n", "@nuxt/image-edge", "@vueuse/motion"],
+    transpile: ["@intlify/unplugin-vue-i18n", "@nuxt/image-edge"],
   },
 });

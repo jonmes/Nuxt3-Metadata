@@ -82,8 +82,7 @@ const item = ref({})
         </select>
       </div>
       <h1>{{ $t("hello") }}</h1>
-      <NuxtLink to="/blogs" 
-      v-motion="{
+      <NuxtLink to="/blogs" v-motion="{
         initial: {
           y: 100,
           opacity: 0
@@ -93,7 +92,16 @@ const item = ref({})
           opacity: 1
         }
       }"> {{ $t("blogspage") }} </NuxtLink>
-      <video id="my-player" controls style="width: 100%; max-width: 500px">
+      <video id="my-player" controls style="width: 100%; max-width: 500px" v-motion="{
+        initial: {
+          y: 100,
+          opacity: 0
+        },
+        enter: {
+          y: 0,
+          opacity: 1
+        }
+      }">
         <source src="https://stream.mux.com/F9cP5Xgdcp7028hN4gQrOmlF62ZDHNloCTQQao8Pk00kk/medium.mp4"
           type="video/mp4" />
       </video>
