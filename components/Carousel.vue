@@ -1,6 +1,6 @@
 <script setup>
 import "vue3-carousel/dist/carousel.css";
-import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
+import { ArrowNarrowRightIcon } from "@heroicons/vue/solid";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 
 const props = defineProps({ cardSlider: Array });

@@ -2,8 +2,8 @@
 import HahuLogo from "@/assets/svg/Hahu_logo1.svg?url";
 import HahuLogoDark from "@/assets/svg/Hahu_logo1_dark.svg?url";
 import dropdown from "@/assets/svg/dropDownIcon.svg?url";
-import { MenuAlt3Icon } from "@heroicons/vue/solid/index.js";
-import { SunIcon, MoonIcon } from "@heroicons/vue/outline/index.js"
+import { MenuAlt3Icon } from "@heroicons/vue/solid";
+import { SunIcon, MoonIcon } from "@heroicons/vue/outline"
 import { Switch } from "@headlessui/vue";
 
 import {
@@ -15,7 +15,7 @@ import {
 import {
   MenuIcon,
   XIcon,
-} from "@heroicons/vue/outline/index.js";
+} from "@heroicons/vue/outline";
 const enabled = ref(true);
 const open = ref(false);
 const sidebarOpen = ref(false);

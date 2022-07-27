@@ -43,7 +43,7 @@ import {
     ListboxOptions,
     ListboxOption,
 } from '@headlessui/vue'
-import { CheckIcon, SelectorIcon } from '@heroicons/vue/solid/index.js'
+import { CheckIcon, SelectorIcon } from '@heroicons/vue/solid'
 
 const people = [
     { name: 'አማ', img: '/images/ethiopia.png' },

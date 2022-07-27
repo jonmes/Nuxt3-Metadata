@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import { HomeIcon } from "@heroicons/vue/solid/index.js";
+import { HomeIcon } from "@heroicons/vue/solid";
 
 // const pages = [
 //   { id: 1, name: "Projects", link: "Projects", current: false },

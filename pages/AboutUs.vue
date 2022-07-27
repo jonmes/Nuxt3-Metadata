@@ -2,7 +2,7 @@
 import {
   ArrowNarrowRightIcon,
   ArrowNarrowLeftIcon,
-} from "@heroicons/vue/solid/index.js";
+} from "@heroicons/vue/solid";
 
 import Twitter from "@/assets/svg/Tech_twitter.svg?url"
 import LinkedIn from "@/assets/svg/Tech_linkedin.svg?url"

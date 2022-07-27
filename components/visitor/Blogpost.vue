@@ -1,5 +1,5 @@
 <script setup>
-import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
+import { ArrowNarrowRightIcon } from "@heroicons/vue/solid";
 import readmore from "@/assets/svg/readmore.svg?url";
 
 const blogs = [

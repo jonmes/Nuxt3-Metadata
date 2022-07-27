@@ -5,7 +5,7 @@ import {
   ArrowNarrowDownIcon,
   SearchIcon,
   ChevronRightIcon,
-} from "@heroicons/vue/solid/index.js";
+} from "@heroicons/vue/solid";
 import Facebook from "@/assets/svg/facebookShare.svg?url";
 import Insta from "@/assets/svg/instaShare.svg?url";
 import Twitter from "@/assets/svg/twitterShare.svg?url";

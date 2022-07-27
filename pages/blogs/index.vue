@@ -4,7 +4,7 @@ import {
   ArrowNarrowLeftIcon,
   ArrowNarrowDownIcon,
   SearchIcon,
-} from "@heroicons/vue/solid/index.js";
+} from "@heroicons/vue/solid";
 const category = [
   { name: "All Category", link: "#all" },
   { name: "Technology", link: "#tech" },

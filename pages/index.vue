@@ -1,6 +1,6 @@
 <script setup>
 import { gsap } from "gsap";
-import { ArrowNarrowRightIcon } from "@heroicons/vue/solid/index.js";
+import { ArrowNarrowRightIcon } from "@heroicons/vue/solid";
 </script>
 <template>
   <div class="min-h-screen px-8 md:px-12 xl:px-14 2xl:px-24">

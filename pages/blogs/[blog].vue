@@ -8,7 +8,7 @@ import {
   ArrowNarrowRightIcon,
   ArrowNarrowLeftIcon,
   ArrowNarrowDownIcon,
-} from "@heroicons/vue/solid/index.js";
+} from "@heroicons/vue/solid";
 
 const router = useRoute();
 const crumb = [
