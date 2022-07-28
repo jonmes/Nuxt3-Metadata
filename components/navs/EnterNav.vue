@@ -63,7 +63,7 @@ const sidebarOpen = ref(false);
 
       <li class="flex justify-center hover:text-primary">
         <button class="mt-1 flex text-lg font-medium leading-[35px]" @click="open = !open">
-          Eng <img :src="dropdown" class="ml-[15px] self-center" alt="dropdownIcon"/>
+          Eng <img :src="dropdown" class="ml-[15px] self-center" alt="dropdownIcon" />
         </button>
       </li>
     </ul>

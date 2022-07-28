@@ -34,7 +34,7 @@ import { ArrowNarrowRightIcon } from "@heroicons/vue/solid";
       </div>
       <div class="flex-1 hidden md:block 4xl:w-full">
         <img class="overflow-hidden object-contain md:mb-32 lg:mb-10 lg:flex-1 block dark:hidden"
-          src="/images/landing_page_1.png" alt="hahuWelcomeSvg" />
+          src="/images/landing_page_dark.png" alt="hahuWelcomeSvg" />
         <img class="overflow-hidden object-contain md:mb-32 lg:mb-10 lg:flex-1 hidden dark:block"
           src="/images/landing_page_dark.png" alt="hahuWelcomeSvg" />
       </div>

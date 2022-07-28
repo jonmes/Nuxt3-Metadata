@@ -44,28 +44,28 @@ onBeforeUnmount(() => {
       </h1>
       <h2 show="true"
         class="mt-[34px] self-center rounded-[36px] bg-primary-lite px-3 py-2 text-center text-base font-black leading-5 text-white xs:px-8 xs:text-base lg:px-5 3xl:px-8 3xl:py-4 lg:py-2 lg:text-2xl 3xl:text-3xl lg:leading-[18px]">
-        Our Reports are here!
+        HaHuJobs offers various reports
       </h2>
     </div>
     <div class="flex flex-col 2xl:flex-row">
-      <div ref="target" class="flex flex-1 overflow-hidden lg:duration-1000 lg:translate-y-20">
-        <img show="true" class="object-contain" src="/images/robo_analysis-01.png" alt="reportRobotImage"/>
+      <div ref="target" class="flex flex-1 overflow-hidden lg:duration-1000 lg:translate-y-20 max-w-2xl">
+        <img show="true" class="object-contain" src="/images/robo_analysis-01.png" alt="reportRobotImage" />
       </div>
       <article class="flex-1 2xl:mt-48 2xl:ml-24">
         <p show="true" ref="target"
           class="lg:opacity-0 lg:duration-1000 lg:translate-y-20 text-base text-justify 3xl:text-lg font-normal leading-7 dark:text-HahuGray/4">
-          Starting from November 2018, we began to aggregate vacancies from
-          various sources and started delivering them to our subscribers. From
-          the various sources of vacancies we aggregate, we provide annually,
-          semi-annually, and monthly reports to our subscribers using a variety
-          of visual aids such as; bar chart, pie chart, and data visualization.
-          Our reports include; annual report on job vacancies by sectors, as
-          well as annual report on job vacancies by years of experience, and
-          annual report on the source of job vacancies that we aggregate. It
-          also includes monthly visual reports which reviews the overall content
-          of the job vacancies that we aggregate. You can check the list of
-          annual, semi-annual and monthly reports we provide in the section
-          below.
+          Three service pillars data vacancy data aggregation and analysis of vacancies, defining jobseekers' career
+          profiles based on predefined data structure, and data-driven digital job matching. each generates a large
+          quantity of data that offers insight into the labor market of Ethiopia within the scope of HaHuJobs operation
+          scale. These reported insights also address all levels of the labor market from low and medium-skill workers
+          to highly specialized professionals covering anything within the range span. Each report communicates a given
+          scope of information on specific periodic service operations of HaHuJobs deployed platforms.
+          <br />
+          <br />
+          Our reports are periodic and presented in multiple communication formats selected based on their best fit to
+          the information set forth. Reports usually are composed using visualized data charts, infographic videos, and
+          metrics. All our reports follow a consistent format incorporating accurate insights on data insights we aim to
+          communicate to all our audience.
         </p>
         <br />
         <br />

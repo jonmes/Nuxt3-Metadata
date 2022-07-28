@@ -1,1 +1,15 @@
-{}
+{
+    "email": "Email",
+    "password": "Password",
+    "login": "Login",
+    "select_entity": "Select entity",
+    "logout": "Logout",
+    "upload_a_file": "Upload a file",
+    "drag_and_drop": "Drag and drop",
+    "or": "or",
+    "field_required": "This field is required",
+    "this field must be number": "This field must be number",
+    "invalid_phone": "Invalid Phone Number",
+    "invalid_email": "Invalid Email"
+  }
+  

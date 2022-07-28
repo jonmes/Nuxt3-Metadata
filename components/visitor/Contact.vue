@@ -21,7 +21,8 @@ const branchs = [
 
 const { handleSubmit } = useForm({});
 const submit = handleSubmit(async (values) => {
-  // console.log("printing out value", values);
+  const { data: api } = await useFetch('https://formspree.io/f/mgeqwwwe', { method: 'post', body: values })
+
 });
 
 const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
@@ -141,7 +142,7 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
       <div class="sm:flex-1 flex sm:justify-center">
         <form @submit.prevent="submit" show="true"
           class="flex pb-10 lg:pb-5 max-h-[915px] w-full sm:w-10/12 lg:w-full 3xl:w-10/12 flex-col rounded-md bg-white pt-11 px-2 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24">
-          <InputsHtextfield v-model="item.name" type="text" name="name" placeholder="Your name..."
+          <InputsHtextfield rules="required" v-model="item.name" type="text" name="name" placeholder="Your name..."
             class="dark:text-white" placeholderStyle="text-HahuGray2">
             <template v-slot:label>
               <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
@@ -149,19 +150,20 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
               </div>
             </template>
           </InputsHtextfield>
-          <InputsHtextfield v-model="item.phone" type="text" name="phone" placeholder="09..."
-            placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
+          <InputsHtextfield rules="required|ethiopian_phone_number" v-model="item.phone" type="text" name="phone"
+            placeholder="09..." placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
               <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
                 Phone Number
               </div>
             </template></InputsHtextfield>
-          <InputsHtextfield v-model="item.email" type="text" name="email" placeholder="Your email..."
-            placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
+          <InputsHtextfield rules="required|email" v-model="item.email" type="text" name="email"
+            placeholder="Your email..." placeholderStyle="text-HahuGray2" class="dark:text-white"><template
+              v-slot:label>
               <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
                 Email
               </div>
             </template></InputsHtextfield>
-          <InputsHtextarea type="text" v-model="item.message" placeholder="Your message..."
+          <InputsHtextarea type="text" rules="required" v-model="item.message" placeholder="Your message..."
             placeholderStyle="text-HahuGray1 dark:text-white" label="Message"
             labelClass="font-medium text-gray-800 text-lg leading-6 dark:text-white duration-500 ease-in mb-5"
             name="message" class="dark:text-white" />

@@ -24,7 +24,7 @@ const projects = [
     p2: "HaHuJobs offered a labor management platform initially to the Hawassa Industrial Park which kept a unique record of job seekers looking for employment in the industrial park, this registration identified their relevant details like age, education background, origination details, and given name. This later grew to two more parks, Kobolcha and Mekelle. The process starts with the biometric-based registration of candidates who will then be asked to undergo a set of dexterity tests to identify and set their grading labels. Graded job seekers will then be identified using their fingerprints for attendance and allocated to a company with system-submitted demands. After allocation digital details of these candidates will be presented to employing companies through the platform on which they provide their recruitment status. All the above operation procedures generate data relevant to stakeholders and are offered through digital summary dashboards.",
     p3: "This process helped mint the foundation of HaHuJobs’s job matching model as it offered scale as well as a controlled environment to test system functions. Also provided various inputs to restructure our industry park platform from consultancy to a service model which heavily inspired our HaHuJobs Industry Park services.",
     img: "/images/projects/Hipster-C.png",
-    img2: "https://res.cloudinary.com/dyut9eifz/image/upload/v1657953195/Hahu/placeholder-image_md4eym.jpg"
+    img2: "/images/projects/Hipster-C-2.png"
   },
   {
     id: "2",
@@ -145,7 +145,7 @@ const filteredPro = ref(projects.find((el) => el.id == router.params.project));
         class="mt-6 md:mt-10 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-base 3xl:text-lg">
         {{ filteredPro.p2 }}
       </p>
-      <img class="mt-[54px] rounded-lg" v-if="filteredPro.img2" :src="filteredPro.img2" alt="projectImage2" />
+      <img class="mt-[54px] " v-if="filteredPro.img2" :src="filteredPro.img2" alt="projectImage2" />
       <p class="mt-14 text-base font-normal leading-[30px] duration-500 ease-in dark:text-HahuGray/4 md:text-base 3xl:text-lg"
         v-if="filteredPro.p3">
         {{ filteredPro.p3 }}
