@@ -10,8 +10,9 @@ const notify = ref()
 const { handleSubmit } = useForm({});
 const submit = handleSubmit(async (values) => {
   console.log("printing out value", values);
-  // $fetch('https://formsubmit.co/c6e020eb53adb54330a3a60ce575b036', { method: 'post', body: { values } })
-  const { data: api } = await useFetch('/api/contact', { method: 'post', body: values })
+  // const { data: api } = await useFetch('https://formsubmit.co/c6e020eb53adb54330a3a60ce575b036', { method: 'post' })
+  const { data: api } = await useFetch('https://formspree.io/f/mgeqwwwe', { method: 'post', body: values })
+
   notify.value = api
 });
 
