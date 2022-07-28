@@ -1,19 +1,19 @@
 <script setup>
-import { setLocale } from '@vee-validate/i18n';
-// import i18n from '@/plugins/i18n'
-// import rules from '@/plugins/rules'
-// import { useI18n } from 'vue-i18n';
 
-
-
+import { Form, Field, useForm } from "vee-validate";
 // const videoId = "rRVlWEwmbfQ";
 const title = "Index Page";
 const videoId = "";
-const item = ref({})
+const item = reactive({});
 
-
-// const { t } = useI18n()
-// console.log(rules(t));
+const notify = ref()
+const { handleSubmit } = useForm({});
+const submit = handleSubmit(async (values) => {
+  console.log("printing out value", values);
+  // $fetch('https://formsubmit.co/c6e020eb53adb54330a3a60ce575b036', { method: 'post', body: { values } })
+  const { data: api } = await useFetch('/api/contact', { method: 'post', body: values })
+  notify.value = api
+});
 
 </script>
 
@@ -105,11 +105,12 @@ const item = ref({})
         <source src="https://stream.mux.com/F9cP5Xgdcp7028hN4gQrOmlF62ZDHNloCTQQao8Pk00kk/medium.mp4"
           type="video/mp4" />
       </video>
-      <!-- <nuxt-img src="About_avatar.png" format="webp" sizes="sm:2vw md: 5vw: lg:100vw" /> -->
-      <!-- <img src="About_avatar.png" /> -->
-      <form @submit.prevent="submit" show="true"
+      <p>
+        {{ notify }}
+      </p>
+      <form @submit.prevent="submit" action="https://formsubmit.co/your@email.com" method="POST" show="true"
         class="flex pb-10 lg:pb-5 max-h-[915px] w-full sm:w-10/12 lg:w-full 3xl:w-10/12 flex-col rounded-md bg-white pt-11 px-2 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24">
-        <H-text-field v-model="item.name" rules="required|number" type="text" name="name" placeholder="Your name..."
+        <H-text-field v-model="item.name" rules="required" type="text" name="name" placeholder="Your name..."
           class="dark:text-white" placeholderStyle="text-HahuGray2">
           <template v-slot:label>
             <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
@@ -117,19 +118,19 @@ const item = ref({})
             </div>
           </template>
         </H-text-field>
-        <H-text-field v-model="item.phone" type="text" name="phone" placeholder="09..."
-          placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
+        <H-text-field rules="required|ethiopian_phone_number" v-model="item.phone" type="text" name="phone"
+          placeholder="09..." placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
             <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
               {{ $t('phone_number') }}
             </div>
           </template></H-text-field>
-        <H-text-field v-model="item.email" type="text" name="email" placeholder="Your email..."
+        <H-text-field rules="required|email" v-model="item.email" type="text" name="email" placeholder="Your email..."
           placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
             <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
               {{ $t('email') }}
             </div>
           </template></H-text-field>
-        <H-text-area type="text" v-model="item.message" placeholder="Your message..."
+        <H-text-area rules="required" type="text" v-model="item.message" placeholder="Your message..."
           placeholderStyle="text-HahuGray1 dark:text-white" :label="$t('message')"
           labelClass="font-medium text-gray-800 text-lg leading-6 dark:text-white duration-500 ease-in mb-5"
           name="message" class="dark:text-white" />

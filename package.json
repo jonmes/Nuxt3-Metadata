@@ -13,6 +13,7 @@
     "vue-i18n": "^9.1.10"
   },
   "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.72",
     "@vee-validate/i18n": "^4.6.2",
     "@vueuse/motion": "^2.0.0-beta.12",
     "petite-vue-i18n": "^9.2.0-beta.39",

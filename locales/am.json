@@ -12,5 +12,9 @@
   "phone_number": "ስልክ ቁጥር",
   "email": "ኢሜይል",
   "send": "ላክ",
-  "message": "መልዕክት"
+  "message": "መልዕክት",
+  "invalid_email": "ትክክለኛ ኢሜይል ያስገቡ",
+  "invalid_phone": "ትክክለኛ ስልክ ቁጥር ያስገቡ",
+  "password_too_short": "ሚስጥር ቁጥሩ አጥሯል",
+  "passwords_do_not_match": "ሚስጥር ቁጥርዎ አይመሳሰልም"
 }

@@ -12,5 +12,9 @@
   "phone_number": "Phone",
   "email": "Email",
   "send": "Send",
-  "message": "Message"
+  "message": "Message",
+  "invalid_email": "Invalid Message",
+  "invalid_phone": "Invalid Phone Number",
+  "password_too_short": "Password too short",
+  "passwords_do_not_match": "Password do not match"
 }
