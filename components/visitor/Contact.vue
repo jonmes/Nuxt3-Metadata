@@ -4,6 +4,24 @@ import Branch from "@/assets/svg/Branch.svg?url";
 import Email from "@/assets/svg/Email.svg?url";
 import Phone from "@/assets/svg/Phone.svg?url";
 import Office from "@/assets/svg/Office.svg?url";
+import {
+  TransitionRoot,
+  TransitionChild,
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+} from '@headlessui/vue'
+
+const isOpen = ref(false)
+
+function closeModal() {
+  isOpen.value = false
+}
+function openModal() {
+  isOpen.value = true
+}
+
+
 const item = reactive({});
 const branchs = [
   { name: "Bahr Dar", Phone: "+251-5-85-56-67-77" },
@@ -22,41 +40,15 @@ const branchs = [
 const { handleSubmit } = useForm({});
 const submit = handleSubmit(async (values) => {
   const { data: api } = await useFetch('https://formspree.io/f/mgeqwwwe', { method: 'post', body: values })
-
+  console.log('api : ', api.value.ok);
+  if (api.value.ok) {
+    openModal()
+  } else {
+    alert('Message submission failed')
+  }
 });
 
 const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
-
-// onMounted(() => {
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         entry.target.classList.toggle(
-//           "lg:[&[show=true]]:opacity-100",
-//           entry.isIntersecting
-//         );
-//         entry.target.classList.toggle(
-//           "lg:[&[show=true]]:translate-x-0",
-//           entry.isIntersecting
-//         );
-//         entry.target.classList.toggle(
-//           "lg:[&[show=true]]:translate-y-0",
-//           entry.isIntersecting
-//         );
-//         if (entry.isIntersecting) {
-//           observer.unobserve(entry.target);
-//           return entry.target;
-//         }
-//       });
-//     },
-//     {
-//       threshold: 0.1,
-//     }
-//   );
-//   document.querySelectorAll(".contacti").forEach((selection) => {
-//     observer.observe(selection);
-//   });
-// });
 </script>
 
 <template>
@@ -140,38 +132,76 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
         </div>
       </div>
       <div class="sm:flex-1 flex sm:justify-center">
+
         <form @submit.prevent="submit" show="true"
           class="flex pb-10 lg:pb-5 max-h-[915px] w-full sm:w-10/12 lg:w-full 3xl:w-10/12 flex-col rounded-md bg-white pt-11 px-2 ease-in dark:bg-HahuGray1 sm:px-3 md:px-10 lg:px-20 xl:px-24">
-          <InputsHtextfield rules="required" v-model="item.name" type="text" name="name" placeholder="Your name..."
+          <InputsHtextfield rules="required" v-model="item.name" type="text" name="name" :placeholder="$t('your_name')"
             class="dark:text-white" placeholderStyle="text-HahuGray2">
             <template v-slot:label>
               <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
-                Name
+                {{ $t("name") }}
               </div>
             </template>
           </InputsHtextfield>
           <InputsHtextfield rules="required|ethiopian_phone_number" v-model="item.phone" type="text" name="phone"
             placeholder="09..." placeholderStyle="text-HahuGray2" class="dark:text-white"><template v-slot:label>
               <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
-                Phone Number
+                {{ $t("phone_number") }}
               </div>
             </template></InputsHtextfield>
           <InputsHtextfield rules="required|email" v-model="item.email" type="text" name="email"
-            placeholder="Your email..." placeholderStyle="text-HahuGray2" class="dark:text-white"><template
-              v-slot:label>
+            :placeholder="$t('your_email')" placeholderStyle="text-HahuGray2 dark:text-white" class="dark:text-white">
+            <template v-slot:label>
               <div class="mb-5 text-lg font-medium leading-6 text-gray-800 dark:text-white">
-                Email
+                {{ $t("email") }}
               </div>
-            </template></InputsHtextfield>
-          <InputsHtextarea type="text" rules="required" v-model="item.message" placeholder="Your message..."
-            placeholderStyle="text-HahuGray1 dark:text-white" label="Message"
+            </template>
+          </InputsHtextfield>
+          <InputsHtextarea type="text" rules="required" v-model="item.message" :placeholder="$t('your_message_here')"
+            placeholderStyle="placeholder-HahuGray1  dark:placeholder-white" :label="$t('message')"
             labelClass="font-medium text-gray-800 text-lg leading-6 dark:text-white duration-500 ease-in mb-5"
             name="message" class="dark:text-white" />
 
           <button type="submit"
             class="mt-9 w-full rounded-md bg-primary py-3 text-xl font-medium leading-7 text-whitePrimary">
-            Send
+            {{ $t('send') }}
           </button>
+          <TransitionRoot appear :show="isOpen" as="template">
+            <Dialog as="div" @close="closeModal" class="relative z-10">
+              <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0" enter-to="opacity-100"
+                leave="duration-200 ease-in" leave-from="opacity-100" leave-to="opacity-0">
+                <div class="fixed inset-0 bg-black bg-opacity-25" />
+              </TransitionChild>
+
+              <div class="fixed inset-0 overflow-y-auto">
+                <div class="flex min-h-full items-center justify-center p-4 text-center">
+                  <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0 scale-95"
+                    enter-to="opacity-100 scale-100" leave="duration-200 ease-in" leave-from="opacity-100 scale-100"
+                    leave-to="opacity-0 scale-95">
+                    <DialogPanel
+                      class="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                      <DialogTitle as="h3" class="text-lg font-medium leading-6 text-gray-900">
+                        Message successful sent.
+                      </DialogTitle>
+                      <div class="mt-2">
+                        <p class="text-sm text-gray-500">
+                          Your Message has been successfully submitted. We will contact you soon.
+                        </p>
+                      </div>
+
+                      <div class="mt-4">
+                        <button type="button"
+                          class="inline-flex justify-center rounded-md border border-transparent bg-green-100 px-4 py-2 text-sm font-medium text-primary hover:bg-green-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2"
+                          @click="closeModal">
+                          Got it, thanks!
+                        </button>
+                      </div>
+                    </DialogPanel>
+                  </TransitionChild>
+                </div>
+              </div>
+            </Dialog>
+          </TransitionRoot>
         </form>
       </div>
     </div>

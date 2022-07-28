@@ -1,15 +1,24 @@
 {
-    "email": "Email",
-    "password": "Password",
-    "login": "Login",
-    "select_entity": "Select entity",
-    "logout": "Logout",
-    "upload_a_file": "Upload a file",
-    "drag_and_drop": "Drag and drop",
-    "or": "or",
-    "field_required": "This field is required",
-    "this field must be number": "This field must be number",
-    "invalid_phone": "Invalid Phone Number",
-    "invalid_email": "Invalid Email"
-  }
-  
+  "hello": "እንኳን ደህና መጣችሁ",
+  "index": "ስር ጠቋሚ ገፅ",
+  "backtohome": "ወደ መጀመሪያ ተመለስ",
+  "blogspage": "ጦማር ገፅ",
+  "gotoblog": "ወደ ጦማር",
+  "blog": "ጦማር",
+  "backtoblogs": "ወደ ጦማር ተመለስ",
+  "field_required": "ይህ መስክ አልተሞላም",
+  "must_be_number": "እባክዎን ቁጥር ብቻ ያስገቡ",
+  "name": "ስም",
+  "your_name": "የእርስዎ ስም ...",
+  "phone_number": "ስልክ ቁጥር",
+  "email": "ኢሜይል",
+  "your_email": "የእርስዎ ኢሜይል",
+  "send": "ላክ",
+  "message": "መልዕክት",
+  "your_message_here": "መልክትዎን እዚ ያስቅምጡ ...",
+  "invalid_email": "ትክክለኛ ኢሜይል ያስገቡ",
+  "invalid_phone": "ትክክለኛ ስልክ ቁጥር ያስገቡ",
+  "password_too_short": "ሚስጥር ቁጥሩ አጥሯል",
+  "passwords_do_not_match": "ሚስጥር ቁጥርዎ አይመሳሰልም",
+  "ethiopian_phone_number": "የኢትዮጵያ ስልክ ቁጥር"
+}

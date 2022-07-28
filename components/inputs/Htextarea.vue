@@ -55,37 +55,21 @@ watch(
 </script>
 <template>
   <div>
-    <label :for="id" :class="labelClass" class="block"
-      ><span v-show="rules !== undefined" class="text-red-500"></span
-      >{{ label }}</label
-    >
+    <label :for="id" :class="labelClass" class="block"><span v-show="rules !== undefined" class="text-red-500"></span>{{
+        label
+    }}</label>
     <slot name="label"></slot>
     <div class="relative mt-1 rounded-md shadow-sm">
-      <textarea
-        v-model="inputValue"
-        @input="set($event)"
-        :type="type"
-        :name="name"
-        :rows="rows"
-        :id="id"
-        :class="[
-          props.placeholderStyle ? props.placeholderStyle : 'text-primary',
-          !errorMessage
-            ? 'hover:border-primary-2  border-1 border-gray-300 focus:border-primary focus:ring-primary'
-            : 'border-red-500 hover:border-red-500 focus:border-red-500 focus:ring-red-500',
-          props.inputClass ? props.inputClass : '',
-        ]"
-        class="text-HahuGray1 block w-full rounded-md pr-10 text-base dark:bg-HahuGray1 focus:outline-none"
-        :placeholder="placeholder"
-        aria-invalid="true"
-        aria-describedby="email-error"
-      />
+      <textarea v-model="inputValue" @input="set($event)" :type="type" :name="name" :rows="rows" :id="id" :class="[
+        props.placeholderStyle ? props.placeholderStyle : 'text-primary',
+        !errorMessage
+          ? 'hover:border-primary-2  border-1 border-gray-300 focus:border-primary focus:ring-primary hover:border-primary'
+          : 'border-red-500 hover:border-red-500 focus:border-red-500 focus:ring-red-500 ',
+        props.inputClass ? props.inputClass : '',
+      ]" class="text-HahuGray1 block w-full rounded-md pr-10 text-base dark:bg-HahuGray1 focus:outline-none"
+        :placeholder="placeholder" aria-invalid="true" aria-describedby="email-error" />
     </div>
-    <p
-      :visible="errorMessage"
-      class="mt-2 text-sm text-red-600"
-      id="email-error"
-    >
+    <p :visible="errorMessage" class="mt-2 text-sm text-red-600" id="email-error">
       {{ errorMessage }} &nbsp;
     </p>
   </div>
