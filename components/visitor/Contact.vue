@@ -12,6 +12,20 @@ import {
   DialogTitle,
 } from '@headlessui/vue'
 
+import {
+  LMap,
+  LTileLayer,
+  LMarker,
+  LControlScale,
+  LTooltip,
+  LControlZoom,
+  LPopup,
+  LIcon,
+} from "@vue-leaflet/vue-leaflet";
+
+import "leaflet/dist/leaflet.css";
+
+const zoom = ref(18)
 const isOpen = ref(false)
 
 function closeModal() {
@@ -109,8 +123,33 @@ const delay = [0, 75, 100, 150, 200, 300, 500, 700, 1000];
             </div>
           </div>
         </div>
-        <img class="mt-[58px]" src="/images/map.png" alt="map" />
-        <div class="mt-[56px] flex flex-row flex-wrap items-baseline">
+        <div class="mt-16 w-full h-96">
+          <l-map v-model="zoom" v-model:zoom="zoom" :maxZoom="18" :options="{ zoomControl: false }"
+            :center="[8.9894, 38.786]" class="z-0 w-10/12 h-20">
+            <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"></l-tile-layer>
+            <l-control-zoom position="bottomright"></l-control-zoom>
+            <l-control-scale position="topright" :imperial="true" :metric="false"></l-control-scale>
+            <l-marker :lat-lng="[8.9894, 38.786]">
+              <l-tooltip> Hahu Jobs </l-tooltip>
+              <l-popup>
+                <div class="w-28 h-28">
+                  <div class="flex justify-center font-body font-medium text-sm text-primary">
+                    Hahu Jobs
+                  </div>
+                  <div class="flex flex-col justify-center mt-3">
+                    <img src="/images/Hahu-031.png" class="w-full" />
+                    <img src="/images/Hahu_logo2.png" class="w-full mt-3" />
+                  </div>
+                  <div class="mt-5 text-primary">
+                    <a href="#" class="hover:underline hover:italic font-body text-sm">www.HahuJobs.io</a>
+                  </div>
+                </div>
+              </l-popup>
+              <l-icon icon-url="/icons/favicon.ico" :icon-size="[20, 20]" />
+            </l-marker>
+          </l-map>
+        </div>
+        <div class="mt-16 flex flex-row flex-wrap items-baseline">
           <img :src="Branch" alt="branch" />
           <div class="ml-[15px] flex flex-col">
             <h2 class="text-xl font-bold leading-[38px] text-primary">

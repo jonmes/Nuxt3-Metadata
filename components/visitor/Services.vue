@@ -88,7 +88,7 @@ onBeforeUnmount(() => {
         class="lg:translate-y-20 group relative delay-150 z-10 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-1000 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]">
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
-          to="/HahuEnterprise">
+          to="https://enterprises.hahu.jobs">
           <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">
@@ -115,7 +115,7 @@ onBeforeUnmount(() => {
         class="lg:translate-y-20 group relative delay-300 flex max-w-[450px] flex-col items-center rounded-lg bg-white duration-1000 hover:shadow-xl dark:bg-HahuGray1 4xl:max-w-[500px]">
         <NuxtLink
           class="invisible absolute h-full w-full rounded-lg opacity-0 transition duration-300 ease-linear hover:shadow-xl group-hover:visible group-hover:opacity-100"
-          to="/HahuIndustry">
+          to="https://industryparks.hahu.jobs">
           <div class="flex h-full w-full justify-center rounded-lg bg-HaHuGreen/4/75 dark:bg-HahuGray3/20">
             <button
               class="flex items-center self-center rounded-md bg-primary px-5 py-3 text-base font-medium leading-6 text-white">

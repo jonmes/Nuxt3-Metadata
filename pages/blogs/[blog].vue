@@ -43,8 +43,8 @@ const Blogs = [
     title: "ALx Software Engineering training programme.",
     p1: "a 12-month Programme that prepares the youth with the technical and work-ready skills for a global career as a Full-Stack Developer which target from age 18-28, any background. Our programmes focus on building the skillsets, through real-time project-based learning, to get youths ready to transform our world.",
     p2: "Software Engineers are highly in demand and earn great salaries. Delivered in partnership with the Holberton School, the Software Engineering program is structured as follows: Foundation: 9 Months Low-level Programming - work in C and Unix programming, graphical programming, data structures and algorithms, and reverse engineering and security protocols.",
-    p2: "Higher Level programming - advanced algorithms, space and time complexity, database management, and front-end programming.",
-    p3: "System Engineering and DevOps - while developing previously mentioned skills, emphasizes automation, scalability, and reliability so that you are familiar with the infrastructure and best practices similar to those in tech powerhouses. \n Specialization: 3 Months Front-end development Back-end web development",
+    p3: "- Higher Level programming - advanced algorithms, space and time complexity, database management, and front-end programming.",
+    p4: "- System Engineering and DevOps - while developing previously mentioned skills, emphasizes automation, scalability, and reliability so that you are familiar with the infrastructure and best practices similar to those in tech powerhouses. \n Specialization: 3 Months Front-end development Back-end web development",
   },
   {
     id: 4,
@@ -168,8 +168,18 @@ const copyLinkFunc = () => {
         </p>
         <img class="mt-10 md:mt-[90px] rounded-2xl" :src="filteredBlog.img" alt="blogImg" />
         <p v-if="filteredBlog.p2"
-          class="mt-10 text-base font-normal leading-[30px] text-HahuGray1 dark:text-HahuGray/4 md:mt-[90px] md:text-lg">
+          class="mt-10 text-base font-normal leading-[30px] text-HahuGray1 dark:text-HahuGray/4 md:text-lg">
           {{ filteredBlog.p2 }}
+        </p>
+        <br />
+        <p v-if="filteredBlog.p3"
+          class="text-base font-normal leading-[30px] text-HahuGray1 dark:text-HahuGray/4  md:text-lg">
+          {{ filteredBlog.p3 }}
+        </p>
+        <br />
+        <p v-if="filteredBlog.p4"
+          class="text-base font-normal leading-[30px] text-HahuGray1 dark:text-HahuGray/4 md:text-lg">
+          {{ filteredBlog.p4 }}
         </p>
 
         <div class="mt-10 mb-16 flex flex-wrap justify-center gap-2 xl:mt-20">

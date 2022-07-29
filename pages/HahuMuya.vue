@@ -46,7 +46,7 @@
       <div
         class="min-h-60 mt-[59px] grid grid-cols-1 justify-items-center gap-y-10 pb-10 lg:pb-0 xl:grid-cols-3 xl:gap-y-0 xl:gap-x-5">
         <div
-          class="transition-newtransition group flex h-[500px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[420px] sm:h-[400px] xl:h-60 xl:bg-transparent hover:xl:h-[420px] 2xl:px-10">
+          class="transition-newtransition group flex h-[500px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[420px] sm:h-[400px] xl:h-60 xl:bg-transparent hover:xl:h-[420px] hover:3xl:h-[380px] 2xl:px-10">
           <img
             class="mt-10 object-contain dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:group-hover:opacity-100 xl:grayscale xl:group-hover:grayscale-0 duration-300"
             src="/images/USAID_colored.png" alt="USAID" />
@@ -61,7 +61,7 @@
         </div>
 
         <div
-          class="transition-newtransition group flex h-[500px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[420px] sm:h-[400px] xl:h-60 xl:bg-transparent hover:xl:h-[420px] 2xl:px-10">
+          class="transition-newtransition group flex h-[500px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[420px] sm:h-[400px] xl:h-60 xl:bg-transparent hover:xl:h-[420px] hover:3xl:h-[380px] 2xl:px-10">
           <img
             class="mt-10 object-contain dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:group-hover:opacity-100 xl:grayscale xl:group-hover:grayscale-0 duration-300"
             src="/images/Savethechildren_colored.png" alt="saveTheChildren" />
@@ -76,11 +76,7 @@
         </div>
 
         <div
-          class="transition-newtransition group flex h-[500px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[420px] sm:h-[400px] xl:h-60 xl:bg-transparent hover:xl:h-[420px] 2xl:px-10">
-          <!-- <img
-            class="mt-10 object-contain group-hover:opacity-100 xl:opacity-60 xl:grayscale xl:group-hover:grayscale-0 duration-300"
-            src="/images/MOSHE_colored.png"
-          /> -->
+          class="transition-newtransition group flex h-[500px] max-w-[560px] flex-col items-center overflow-hidden rounded-t-[15px] bg-white px-5 duration-500 hover:bg-white hover:shadow-full dark:bg-HahuGray1 dark:hover:bg-HahuGray1 xs:h-[420px] sm:h-[400px] xl:h-60 xl:bg-transparent hover:xl:h-[420px] hover:3xl:h-[380px] 2xl:px-10">
           <img
             class="mt-10 object-contain dark:xl:group-hover:brightness-100 dark:xl:group-hover:invert-0 dark:xl:brightness-0 dark:xl:invert xl:opacity-60 xl:group-hover:opacity-100 xl:grayscale xl:group-hover:grayscale-0 duration-300"
             src="/images/MOSHE_colored.png" alt="MOSHE" />

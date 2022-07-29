@@ -1291,6 +1291,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue-leaflet/vue-leaflet@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "@vue-leaflet/vue-leaflet@npm:0.6.1"
+  peerDependencies:
+    "@types/leaflet": ^1.5.7
+    leaflet: ^1.6.0
+    vue: ^3.0.0
+  checksum: 1ddaff3cca80e6ffa07c50d76064630a7c1c620ed1d4570c0a89eb19e4c953911451c06c00fcad33f12a758742c97fa908c2b38f08d1efb289b3f0cb0e8fe662
+  languageName: node
+  linkType: hard
+
 "@vue/babel-helper-vue-transform-on@npm:^1.0.2":
   version: 1.0.2
   resolution: "@vue/babel-helper-vue-transform-on@npm:1.0.2"
@@ -4560,6 +4571,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"leaflet@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "leaflet@npm:1.8.0"
+  checksum: 4a27895d4253844f2f13f94cbc52a2030b10833cdf553085d931b834745236a8d2a38844a01eb968cc109eb43268bfadb97aad85b51deffb17b6ccd106542e00
+  languageName: node
+  linkType: hard
+
 "lilconfig@npm:^2.0.3, lilconfig@npm:^2.0.5":
   version: 2.0.6
   resolution: "lilconfig@npm:2.0.6"
@@ -6631,11 +6649,13 @@ __metadata:
     "@tailwindcss/aspect-ratio": ^0.4.0
     "@tailwindcss/forms": ^0.5.2
     "@tailwindcss/line-clamp": ^0.4.0
+    "@vue-leaflet/vue-leaflet": ^0.6.1
     "@vueuse/core": ^8.9.1
     "@vueuse/motion": ^2.0.0-beta.12
     "@vueuse/nuxt": ^8.9.1
     autoprefixer: latest
     gsap: ^3.10.4
+    leaflet: ^1.8.0
     nuxt: 3.0.0-rc.4
     petite-vue-i18n: ^9.2.0-beta.39
     postcss: latest

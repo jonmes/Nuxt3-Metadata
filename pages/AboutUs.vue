@@ -119,8 +119,9 @@ const team = [
 
       <div class="mt-32 flex flex-col items-center gap-y-20 xl:flex-row xl:justify-center xl:gap-y-0 xl:gap-x-[74px]">
         <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
-          <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder.png"
-            alt="Founder" />
+          <div class="relative bottom-10 bg-HaHuGreen/2 dark:bg-LightDark p-4 rounded-full">
+            <img class="self-center rounded-full object-contain" src="/images/About_avatar.png" alt="Founder" />
+          </div>
           <h1 class="text-3xl font-semibold leading-[30px] text-white">
             Michael Sahlu
           </h1>
@@ -148,8 +149,9 @@ const team = [
         </div>
 
         <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
-          <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder2.png"
-            alt="Founder" />
+          <div class="relative bottom-10 bg-HaHuGreen/2 dark:bg-LightDark p-4 rounded-full">
+            <img class="self-center rounded-full object-contain" src="/images/About_avatar.png" alt="Founder" />
+          </div>
           <h1 class="text-3xl font-semibold leading-[30px] text-white">
             Kaleab Mezgebu
           </h1>
@@ -177,8 +179,9 @@ const team = [
         </div>
 
         <div class="flex max-w-[385px] flex-col items-center rounded-[15px] bg-HaHuGreen/2 dark:bg-LightDark">
-          <img class="relative bottom-10 self-center rounded-full object-contain" src="/images/Founder3.png"
-            alt="Founder" />
+          <div class="relative bottom-10 bg-HaHuGreen/2 dark:bg-LightDark p-4 rounded-full">
+            <img class="self-center rounded-full object-contain" src="/images/About_avatar.png" alt="Founder" />
+          </div>
           <h1 class="text-3xl font-semibold leading-[30px] text-white">
             Eskinder Mamo
           </h1>

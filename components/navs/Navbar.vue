@@ -150,7 +150,7 @@ onMounted(() => {
             <img :src="HahuLogo" class="dark:hidden" alt="hahuLogo" />
             <img :src="HahuLogoDark" class="hidden dark:block" alt="hahuLogo" />
           </NuxtLink>
-          <h1 class="mt-2 text-base font-light flex justify-center leading-4 text-[#444F60] dark:text-white">
+          <h1 class="mt-2 text-base font-light leading-4 text-[#444F60] dark:text-white">
             IO
           </h1>
         </span>
