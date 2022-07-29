@@ -152,19 +152,6 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@vueuse/nuxt"],
   css: ["@/assets/css/main.css"],
   build: {
-    postcss: {
-      plugins: {
-        tailwindcss: {
-          cssPath: "@/assets/css/main.css",
-          configPath: "tailwind.config.js",
-          exposeConfig: false,
-          config: {},
-          injectPosition: 0,
-          viewer: true,
-        },
-        autoprefixer: {},
-      },
-    },
     transpile: ["@headlessui/vue", "@intlify/unplugin-vue-i18n", "@heroicons/vue"],
   },
   vite: {

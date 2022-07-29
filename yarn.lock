@@ -6659,7 +6659,6 @@ __metadata:
     nuxt: 3.0.0-rc.4
     petite-vue-i18n: ^9.2.0-beta.39
     postcss: latest
-    tailwindcss: ^3.1.5
     vee-validate: ^4.5.11
     vue-i18n: 9
     vue3-carousel: ^0.1.40
@@ -7190,7 +7189,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.1.5, tailwindcss@npm:^3.1.6":
+"tailwindcss@npm:^3.1.6":
   version: 3.1.6
   resolution: "tailwindcss@npm:3.1.6"
   dependencies:
