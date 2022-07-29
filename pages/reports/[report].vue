@@ -158,7 +158,7 @@ const copyLinkFunc = () => {
         :content="filteredReport.img" />
       <Meta data-n-head="ssr" data-hid="og:image:alt" property="og:image:alt" content="Hahu" />
       <Meta data-n-head="ssr" data-hid="twitter:card" property="twitter:card" content="summary_large_image" />
-      <Meta data-n-head="ssr" data-hid="twitter:domain" property="twitter:domain" content="hahuone.netlify.app" />
+      <Meta data-n-head="ssr" data-hid="twitter:domain" property="twitter:domain" content="hahu io" />
       <Meta data-n-head="ssr" data-hid="twitter:site" name="twitter:site" :content="copyLink" />
       <Meta data-n-head="ssr" data-hid="twitter:url" property="twitter:url" :content="copyLink" />
       <Meta data-n-head="ssr" data-hid="twitter:title" property="twitter:title" :content="filteredReport.title" />

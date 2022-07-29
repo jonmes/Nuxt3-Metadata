@@ -143,7 +143,7 @@ onMounted(() => {
     </TransitionRoot>
 
     <nav
-      class="sticky top-0 z-20 flex items-center justify-between bg-secondary-3 bg-opacity-80 px-8 py-6 backdrop-blur-sm duration-300 ease-in dark:bg-DarkModeBg md:px-12 xl:pl-24  3xl:px-24">
+      class="sticky top-0 z-20 flex items-center justify-between bg-secondary-3 bg-opacity-80 px-8 py-4 backdrop-blur-sm duration-300 ease-in dark:bg-DarkModeBg md:px-12 xl:pl-24  3xl:px-24">
       <div class="z-10 flex items-center">
         <span class="mr-1 text-xl text-white">
           <NuxtLink :to="{ path: '/' }">

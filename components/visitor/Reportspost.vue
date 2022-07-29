@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
 <template>
   <section v-for="i in 1" class="flex flex-col" id="report">
     <div ref="target" class="flex flex-col items-center lg:duration-1000 lg:translate-y-20">
-      <h1 show="true" class="mt-10 self-center text-base md:text-lg font-medium leading-[18px] dark:text-white lg:mt-0">
+      <h1 show="true" class="mt-12 self-center text-base md:text-lg font-medium leading-[18px] dark:text-white lg:mt-0">
         Report
       </h1>
       <h2 show="true"

@@ -3,7 +3,7 @@ import Facebook from "@/assets/svg/facebookShare.svg?url";
 import Insta from "@/assets/svg/instaShare.svg?url";
 import Twitter from "@/assets/svg/twitterShare.svg?url";
 import Telegram from "@/assets/svg/telegramShare.svg?url";
-import CopyLink from "@/assets/svg/copyLinkIcon.svg?url";
+import CopyLinkIco from "@/assets/svg/copyLinkIcon.svg?url";
 import {
   ArrowNarrowRightIcon,
   ArrowNarrowLeftIcon,
@@ -95,9 +95,9 @@ const Blogs = [
 ];
 const filteredBlog = ref(Blogs.find((el) => el.id == router.params.blog));
 
-const copyLinkInp = ref("");
+const copyLink = ref("");
 onMounted(() => {
-  copyLinkInp.value = window.location.href;
+  copyLink.value = window.location.href;
 });
 const copyLinkFunc = () => {
   let copyText = document.getElementById("myLink");
@@ -120,13 +120,13 @@ const copyLinkFunc = () => {
       <Meta data-n-head="ssr" data-hid="og:title" property="og:title" :content="filteredBlog.title" />
       <Meta data-n-head="ssr" data-hid="og:description" property="og:description" :content="filteredBlog.p1" />
       <Meta data-n-head="ssr" data-hid="description" name="description" :content="filteredBlog.p1" />
-      <Meta data-n-head="ssr" data-hid="og:url" property="og:url"
-        content="https://nuxt-stat-dep--hahuone.netlify.app/" />
+      <Meta data-n-head="ssr" data-hid="og:url" property="og:url" :content="copyLink" />
       <Meta data-n-head="ssr" property="og:type" content="website" />
       <Meta data-n-head="ssr" property="og:image" :content="filteredBlog.img" />
       <Meta data-n-head="ssr" property="twitter:card" content="summary_large_image" />
-      <Meta data-n-head="ssr" property="twitter:domain" content="hahuone.netlify.app" />
-      <Meta property="twitter:url" content="https://nuxt-stat-dep--hahuone.netlify.app/" />
+      <Meta data-n-head="ssr" property="twitter:domain" content="hahu io" />
+      <Meta property="twitter:url" :content="copyLink" />
+      <Meta data-n-head="ssr" data-hid="twitter:site" name="twitter:site" :content="copyLink" />
       <Meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" property="twitter:title"
         :content="filteredBlog.title" />
       <Meta data-n-head="ssr" name="twitter:description" property="twitter:description" data-hid="twitter:description"
@@ -176,24 +176,23 @@ const copyLinkFunc = () => {
           <button
             class="flex items-center rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4 sm:mr-[102px]"
             @click="copyLinkFunc()">
-            <input class="hidden" id="myLink" v-model="copyLinkInp" />
-            <img class="object-contain pl-4" :src="CopyLink" alt="copyLink" />
+            <input class="hidden" id="myLink" v-model="copyLink" />
+            <img class="object-contain pl-4" :src="CopyLinkIco" alt="CopyLinkIco" />
             <span class="py-2 pr-4 pl-[7px]">Copy Link</span>
           </button>
           <div class="flex gap-2">
-            <a :href="`http://www.facebook.com/sharer/sharer.php?u=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&t=${filteredBlog.title}`"
-              target="_blank"
+            <a :href="`http://www.facebook.com/sharer/sharer.php?u=${copyLink}&t=${filteredBlog.title}`" target="_blank"
               class="share-popup rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4">
               <img class="object-contain px-[13px] py-[9px]" :src="Facebook" alt="facebook" />
             </a>
             <button class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4">
               <img class="object-contain px-[13px] py-[9px]" :src="Insta" alt="instagram" />
             </button>
-            <a :href="`http://twitter.com/share?text=${filteredBlog.title}&url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&hashtags=HahuJobs,Minab_ICT_Solutions`"
+            <a :href="`http://twitter.com/share?text=${filteredBlog.title}&url=${copyLink}&hashtags=HahuJobs,Minab_ICT_Solutions`"
               class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4">
               <img class="object-contain px-[13px] py-[9px]" :src="Twitter" alt="twitter" />
             </a>
-            <a :href="`https://t.me/share/url?url=https://nuxt-stat-dep--hahuone.netlify.app${$route.fullPath}&text=${filteredBlog.title}`"
+            <a :href="`https://t.me/share/url?url=${copyLink}&text=${filteredBlog.title}`"
               class="rounded-md border-2 border-gray-300 bg-white duration-500 ease-in dark:bg-HahuGray/4">
               <img class="object-contain px-[13px] py-[9px]" :src="Telegram" alt="telegram" />
             </a>

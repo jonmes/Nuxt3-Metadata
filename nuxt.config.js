@@ -9,6 +9,7 @@ export default defineNuxtConfig({
       title: "HahuJobs",
       meta: [
         { "data-n-head": "ssr", charset: "utf-8" },
+        { "x-robots-tag": "all" },
         {
           "data-n-head": "ssr",
           name: "viewport",
@@ -136,6 +137,8 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap",
           rel: "stylesheet",
         },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { href: "https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap", rel: "stylesheet" }
       ],
       // script: [
       //   {
