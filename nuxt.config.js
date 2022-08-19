@@ -104,7 +104,11 @@ export default defineNuxtConfig({
       "2xl": 1536,
     },
   },
+  ssr: true,
   modules: ["@nuxt/image-edge"],
+  image: {
+    domains: ['nuxtjs.org']
+  },
   vite: {
     plugins: [
       VueI18nPlugin({
