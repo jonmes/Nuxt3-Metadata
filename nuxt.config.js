@@ -107,7 +107,9 @@ export default defineNuxtConfig({
   ssr: true,
   modules: ["@nuxt/image-edge"],
   image: {
-    domains: ['nuxtjs.org']
+    domains: ['nuxtjs.org'],
+    staticFilename: '/images/[name]-[hash][ext]',
+    dir: 'public'
   },
   vite: {
     plugins: [

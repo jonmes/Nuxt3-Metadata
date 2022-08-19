@@ -217,7 +217,7 @@ const submit = handleSubmit(async (values) => {
         format="webp"
         width="300"
         height="300"
-        src="/About_avatar.png"
+        src="/images/About_avatar.png"
       />
       <p>
         {{ notify }}
